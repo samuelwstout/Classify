@@ -66,3 +66,14 @@ bottom: 75px;
   right: 475px;
   bottom: 75px;
 }
+.loginBtn {
+  position: relative;
+  left: 650px;
+  top: 50px;
+}
+.loginbtntext {
+  color: white;
+}
+.dashboard {
+  color: white;
+}

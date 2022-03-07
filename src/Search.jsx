@@ -1,11 +1,8 @@
-import './App.css';
 import {useState} from 'react';
-
+import './App.css';
 
 export const Search = () => {
-
     const [color, setColor] = useState('white')
-
     const handleInput = (e) => {
         if (e) {
            setColor('transparent')
@@ -18,10 +15,7 @@ export const Search = () => {
         if (e) {
             setColor('white')
         }
-    }
-    
-
-
+    }   
   return (
     <div>
          <form className="search-bar">
