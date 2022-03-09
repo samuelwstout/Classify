@@ -9,7 +9,6 @@ app.use(bodyParser.json())
 
 app.post('/refresh', (req, res) => {
     const refreshToken = req.body.refreshToken
-    console.log('hi')
     const spotifyApi = new SpotifyWebApi({
         redirectUri: 'http://localhost:3000',
         clientId: 'a45eb12484d24c4199050bdefee6d24b',
