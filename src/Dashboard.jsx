@@ -4,7 +4,6 @@ import './App.css'
 import SpotifyWebApi from 'spotify-web-api-node'
 import TrackSearchResult from './TrackSearchResult'
 import Player from './Player'
-import { green } from '@mui/material/colors'
 
 const spotifyApi = new SpotifyWebApi({
   clientId: 'a45eb12484d24c4199050bdefee6d24b',
@@ -44,12 +43,15 @@ export const Dashboard = ({code}) => {
             artist: track.artists[0].name,
             title: track.name,
             uri: track.uri,
-            albumUrl: smallestAlbumImage.url
+            albumUrl: smallestAlbumImage.url,
+            duration: track.duration_ms/60000
           }
         }))
     })
     return () => cancel = true
   }, [search, accessToken])
+
+  const fourSearchResults = searchResults.slice(0, searchResults.length - 16)
 
   const handleInput = (e) => {
     if (e) {
@@ -73,14 +75,22 @@ return (
            <input onClick={handleClick} style={{backgroundColor: color}} id="resetbutton" type="reset" value=""></input>
            <input className="searchbutton" type="submit" value="Search"></input>
        </form>
+    <div className="flex-wrapper">
+      <h3 className='songs'>Songs</h3>
+      <h3 className='topResult'>Top Result</h3>
+      <h3 className='featuring'>Featuring artistName</h3>
+      <h3 className='artists'>Artists</h3>
+      <h3 className='albums'>Albums</h3>
+      <h3 className='playlists'>Playlists</h3>
        <div className="searchResults">
-        {searchResults.map(track => (
+        {fourSearchResults.map(track => (
           <TrackSearchResult track={track} key={track.uri} chooseTrack={chooseTrack} />
         ))}
        </div>
        <div className="player">
        <Player accessToken={accessToken} trackUri={playingTrack?.uri} />
        </div>
+    </div>
   </div>
 )
 }

@@ -1,7 +1,9 @@
 body {
   background-color: #111;
   width: 100%;
-  height: 100%;
+  height: 1400px;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 #search {
  text-align: center;
@@ -18,7 +20,7 @@ body {
 }
 .search-bar {
   position: absolute;
-  top: 120px;
+  top: 100px;
   left: 525px;
 }
 #textsearch {
@@ -73,8 +75,15 @@ svg#close-icon {
 .dashboard {
   color: white;
 }
+.trackImg {
+  position: relative;
+  top: 22px;
+}
 .trackText {
   color: white;
+  position: relative;
+  left: 80px;
+  bottom: 33px;
 }
 .PlayerRSWP {
   background-color: #181818 !important;
@@ -90,16 +99,60 @@ path {
 }
 .track {
  position: relative;
- top: 200px;
+ top: 500px;
+ left: 414px;
+ width: 400px;
+}
+.flex-wrapper {
+  display: flex;
+  min-height: 100vh;
 }
 .searchResults {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 .player {
   width: 100%;
-  height: 55px;
+  height: 60px;
   position: fixed;
   bottom: 0;
+}
+.track:hover {
+  background-color: #181818;
+}
+.songs {
+  color: white;
+  position: absolute;
+  left: 900px;
+  top: 450px;
+}
+.topResult {
+  color: white;
+  position: relative;
+  left: 225px;
+  top: 450px;
+}
+.featuring {
+  color: white;
+  position: relative;
+  top: 920px;
+  left: 124px;
+}
+.artists {
+  color: white;
+  position: relative;
+  top: 1300px;
+  right: 55px;
+}
+.albums {
+  color: white;
+  position: relative;
+  top: 1600px;
+  right: 116px;
+}
+.playlists {
+  color: white;
+  position: relative;
+  top: 1900px;
+  right: 182px;
 }
