@@ -70,14 +70,19 @@ export const Dashboard = ({code}) => {
           }, artist.images[0])
           return {
           artistImg: smallestArtistImage.url,
-          artistName: artist.name
+          artistName: artist.name,
+          artistId: artist.uri.replace('spotify:artist:', ''),
+          artistPopularity: artist.popularity
           }
       })
     )})
     return () => cancel = true
   }, [search, accessToken])
+ 
 
   const fiveArtistResults = artistResults.slice(0, artistResults.length - 15)
+  // const mostPopularArtist = 
+  console.log(artistResults)
 
   const handleInput = (e) => {
     if (e) {
@@ -118,6 +123,9 @@ return (
            <TrackArtistResult artist={artist} key={artist.uri} chooseTrack={chooseTrack} />
          ))}
        </div>
+       {/* <div className='albumResults'>
+         
+       </div> */}
        <div className="player">
        <Player accessToken={accessToken} trackUri={playingTrack?.uri} />
        </div>
