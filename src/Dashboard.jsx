@@ -3,6 +3,7 @@ import useAuth from './useAuth'
 import './App.css'
 import SpotifyWebApi from 'spotify-web-api-node'
 import TrackSearchResult from './TrackSearchResult'
+import TrackArtistResult from './TrackArtistResult'
 import Player from './Player'
 
 const spotifyApi = new SpotifyWebApi({
@@ -14,7 +15,8 @@ export const Dashboard = ({code}) => {
 
     const [color, setColor] = useState('white')
     const [search, setSearch] = useState('')
-    const [searchResults, setSearchResults] = useState([])
+    const [trackResults, setTrackResults] = useState([])
+    const [artistResults, setArtistResults] = useState([])
     const [playingTrack, setPlayingTrack] = useState()
 
     const chooseTrack = (track) => {
@@ -28,12 +30,12 @@ export const Dashboard = ({code}) => {
   }, [accessToken])
 
     useEffect(() => {
-    if (!search) return setSearchResults([])
+    if (!search) return setTrackResults([])
     if (!accessToken) return
     let cancel = false
     spotifyApi.searchTracks(search).then(res => {
       if (cancel) return
-      setSearchResults(res.body.tracks.items.map(track => {
+      setTrackResults(res.body.tracks.items.map(track => {
           const smallestAlbumImage = track.album.images.reduce(
           (smallest, image) => {
             if (image.height < smallest.height) return image
@@ -51,7 +53,31 @@ export const Dashboard = ({code}) => {
     return () => cancel = true
   }, [search, accessToken])
 
-  const fourSearchResults = searchResults.slice(0, searchResults.length - 16)
+  const fourTrackResults = trackResults.slice(0, trackResults.length - 16)
+
+  useEffect(() => {
+    if (!search) return setArtistResults([])
+    if (!accessToken) return
+    let cancel = false
+
+    spotifyApi.searchArtists(search).then(res => {
+      if (cancel) return
+      setArtistResults(res.body.artists.items.map(artist => {
+        const smallestArtistImage = artist.images.reduce(
+          (smallest, image) => {
+            if (image.height < smallest.height) return image
+            return smallest
+          }, artist.images[0])
+          return {
+          artistImg: smallestArtistImage.url,
+          artistName: artist.name
+          }
+      })
+    )})
+    return () => cancel = true
+  }, [search, accessToken])
+
+  const fiveArtistResults = artistResults.slice(0, artistResults.length - 15)
 
   const handleInput = (e) => {
     if (e) {
@@ -82,10 +108,15 @@ return (
       <h3 className='artists'>Artists</h3>
       <h3 className='albums'>Albums</h3>
       <h3 className='playlists'>Playlists</h3>
-       <div className="searchResults">
-        {fourSearchResults.map(track => (
+       <div className="trackResults">
+        {fourTrackResults.map(track => (
           <TrackSearchResult track={track} key={track.uri} chooseTrack={chooseTrack} />
         ))}
+       </div>
+       <div className='artistResults'>
+         {fiveArtistResults.map(artist => (
+           <TrackArtistResult artist={artist} key={artist.uri} chooseTrack={chooseTrack} />
+         ))}
        </div>
        <div className="player">
        <Player accessToken={accessToken} trackUri={playingTrack?.uri} />

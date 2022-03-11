@@ -6,17 +6,20 @@ const handlePlay = () => {
     chooseTrack(track)
 }
   return (
-    <div 
-    className="track" 
-    style={{cursor: 'pointer'}}
-    onClick={handlePlay}
-    >
-        <img className='trackImg' src={track.albumUrl} style={{height: '64px', width: '64px'}} />
-        <div className='trackText'>
-            <div>{track.title}</div>
-            <div>{track.artist}</div>
-        </div> 
-    </div>
+  <div>
+      <div 
+      className="track" 
+      style={{cursor: 'pointer'}}
+      onClick={handlePlay}
+      >
+          <img className='trackImg' src={track.albumUrl} style={{height: '64px', width: '64px'}} />
+          <div className='trackText'>
+              <div>{track.title}</div>
+              <div>{track.artist}</div>
+          </div> 
+      </div>
+
+  </div>
   )
 }
 
