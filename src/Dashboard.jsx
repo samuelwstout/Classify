@@ -4,6 +4,7 @@ import './App.css'
 import SpotifyWebApi from 'spotify-web-api-node'
 import TrackSearchResult from './TrackSearchResult'
 import TrackArtistResult from './TrackArtistResult'
+import TrackAlbumResult from './TrackAlbumResult'
 import Player from './Player'
 
 const spotifyApi = new SpotifyWebApi({
@@ -17,6 +18,7 @@ export const Dashboard = ({code}) => {
     const [search, setSearch] = useState('')
     const [trackResults, setTrackResults] = useState([])
     const [artistResults, setArtistResults] = useState([])
+    // const [popular, setPopular] = useState([])
     const [playingTrack, setPlayingTrack] = useState()
 
     const chooseTrack = (track) => {
@@ -68,21 +70,39 @@ export const Dashboard = ({code}) => {
             if (image.height < smallest.height) return image
             return smallest
           }, artist.images[0])
+        
           return {
           artistImg: smallestArtistImage.url,
           artistName: artist.name,
           artistId: artist.uri.replace('spotify:artist:', ''),
-          artistPopularity: artist.popularity
           }
       })
     )})
     return () => cancel = true
   }, [search, accessToken])
- 
+
+  useEffect(() => {
+    if (!search) return 
+    if (!accessToken) return
+    let cancel = false
+
+   spotifyApi.searchArtists(search).then(res => {
+     if (cancel) return
+    const artistObj = res.body.artists.items
+    artistObj.reduce((initial, item) => {
+      if (item.popularity > initial) {
+        Math.max(item.popularity)
+        let mostPopular = item
+        console.log(mostPopular)
+      }
+    }, 0)
+   })
+  },[search, accessToken])
+
+//It looks like artistObj is an array with 20 elements. I would set a couple of variables let highestPopularity = 0  and let mostPopularArtist, then iterate over each item in the array (artistObj) and check each  item.popularity . If it is greater than highestPopularity then reset your highestPopularity variable to the new high popularity score and save that object to mostPopularArtist… then you will have all of the info for that artist
 
   const fiveArtistResults = artistResults.slice(0, artistResults.length - 15)
-  // const mostPopularArtist = 
-  console.log(artistResults)
+ 
 
   const handleInput = (e) => {
     if (e) {
@@ -123,9 +143,9 @@ return (
            <TrackArtistResult artist={artist} key={artist.uri} chooseTrack={chooseTrack} />
          ))}
        </div>
-       {/* <div className='albumResults'>
-         
-       </div> */}
+       <div className='albumResults'>
+         <TrackAlbumResult />
+       </div>
        <div className="player">
        <Player accessToken={accessToken} trackUri={playingTrack?.uri} />
        </div>

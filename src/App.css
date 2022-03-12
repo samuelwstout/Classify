@@ -182,3 +182,9 @@ path {
   left: 24px;
   top: 15px;
 }
+.albumResults {
+  color: white;
+  position: relative;
+  top: 1700px;
+  right: 250px;
+}
