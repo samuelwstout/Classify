@@ -99,7 +99,7 @@ export const Dashboard = ({code}) => {
    })
   },[search, accessToken])
 
-//It looks like artistObj is an array with 20 elements. I would set a couple of variables let highestPopularity = 0  and let mostPopularArtist, then iterate over each item in the array (artistObj) and check each  item.popularity . If it is greater than highestPopularity then reset your highestPopularity variable to the new high popularity score and save that object to mostPopularArtist… then you will have all of the info for that artist
+//For 3/12, be able to display values from mostPopular
 
   const fiveArtistResults = artistResults.slice(0, artistResults.length - 15)
  
