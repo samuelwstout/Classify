@@ -14,12 +14,13 @@ const spotifyApi = new SpotifyWebApi({
 export const Dashboard = ({code}) => {
     const accessToken = useAuth(code)
 
-    const [color, setColor] = useState('white')
+    const [color, setColor] = useState('#FFF')
     const [search, setSearch] = useState('')
     const [trackResults, setTrackResults] = useState([])
     const [artistResults, setArtistResults] = useState([])
-    // const [popular, setPopular] = useState([])
+    const [popular, setPopular] = useState([])
     const [playingTrack, setPlayingTrack] = useState()
+    const [albums, setAlbums] = useState()
 
     const chooseTrack = (track) => {
       setPlayingTrack(track)
@@ -70,11 +71,12 @@ export const Dashboard = ({code}) => {
             if (image.height < smallest.height) return image
             return smallest
           }, artist.images[0])
-        
+    
           return {
           artistImg: smallestArtistImage.url,
           artistName: artist.name,
           artistId: artist.uri.replace('spotify:artist:', ''),
+          uri: artist.uri
           }
       })
     )})
@@ -82,39 +84,62 @@ export const Dashboard = ({code}) => {
   }, [search, accessToken])
 
   useEffect(() => {
-    if (!search) return 
+    if (!search) return setPopular([])
     if (!accessToken) return
     let cancel = false
 
    spotifyApi.searchArtists(search).then(res => {
      if (cancel) return
     const artistObj = res.body.artists.items
-    artistObj.reduce((initial, item) => {
+
+     artistObj.reduce((initial, item) => {
       if (item.popularity > initial) {
-        Math.max(item.popularity)
-        let mostPopular = item
-        console.log(mostPopular)
+        const smallestPopImg = item.images.reduce((smallest, image) => {
+          if (image.height < smallest.height) return image
+          return smallest
+        }, item.images[0])
+       Math.max(item.popularity)
+       setPopular(item)
+        return {
+        name: item.name,
+        type: item.type,
+        image: smallestPopImg.url,
+        url: item.external_urls.spotify,
+        uri: item.uri,
+        id: item.id
+        }
       }
     }, 0)
    })
+   return () => cancel = true
   },[search, accessToken])
 
-//For 3/12, be able to display values from mostPopular
+  useEffect(() => {
+    if (!search) return setAlbums([])
+    if (!accessToken) return
+    let cancel = false
+
+    spotifyApi.getArtistAlbums(popular.id, { limit: 5 }).then(res => {
+      console.log(res)
+    })
+    return () => cancel = true
+  }, [search, accessToken])
+
 
   const fiveArtistResults = artistResults.slice(0, artistResults.length - 15)
- 
+  
 
   const handleInput = (e) => {
     if (e) {
        setColor('transparent')
     }
     if (e.target.value === '') {
-        setColor('white')
+        setColor('#fff')
     }
 }
   const handleClick = (e) => {
     if (e) {
-        setColor('white')
+        setColor('#fff')
     }
 }   
 return (
@@ -127,12 +152,6 @@ return (
            <input className="searchbutton" type="submit" value="Search"></input>
        </form>
     <div className="flex-wrapper">
-      <h3 className='songs'>Songs</h3>
-      <h3 className='topResult'>Top Result</h3>
-      <h3 className='featuring'>Featuring artistName</h3>
-      <h3 className='artists'>Artists</h3>
-      <h3 className='albums'>Albums</h3>
-      <h3 className='playlists'>Playlists</h3>
        <div className="trackResults">
         {fourTrackResults.map(track => (
           <TrackSearchResult track={track} key={track.uri} chooseTrack={chooseTrack} />
@@ -144,7 +163,7 @@ return (
          ))}
        </div>
        <div className='albumResults'>
-         <TrackAlbumResult />
+         <TrackAlbumResult popular={popular} key={popular.uri}/>
        </div>
        <div className="player">
        <Player accessToken={accessToken} trackUri={playingTrack?.uri} />

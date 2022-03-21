@@ -1,9 +1,12 @@
 import './App.css'
 
-const TrackAlbumResult = ({ }) => {
 
-    return (
-     <div className='popular'>
+
+
+const TrackAlbumResult = ({ popular }) => {
+
+  return (
+     <div>
        <p>hey</p>
      </div>
     )
