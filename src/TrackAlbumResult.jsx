@@ -3,11 +3,11 @@ import './App.css'
 
 
 
-const TrackAlbumResult = ({ popular }) => {
+const TrackAlbumResult = ({ }) => {
 
   return (
      <div>
-       <p>hey</p>
+  
      </div>
     )
  }
