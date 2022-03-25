@@ -22,13 +22,22 @@ export const Results = ({ name, code }) => {
     let cancel = false
     spotifyApi.searchTracks(name).then(res => {
       if (cancel) return
-      console.log(res.body.tracks.items)
+      setResults(res.body.tracks.items.map((item) => {
+        return (
+          <div key={item.id}>
+            <p>{item.name}</p>
+          </div>
+        )
+      }))
     })
-  })
+  }, [name, accessToken])
 
   return (
-    <div>{name}</div>
+    <div>
+      {results}
+    </div>
   )
 }
 
 export default Results;
+

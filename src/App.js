@@ -45,9 +45,7 @@ const App = () => {
           <Route path='/timeline' element={<Timeline composers={composers}  />} />
           <Route path='/results' element={<Results name={name} code={code} />} />
         </Routes>
-      </Router>
-     
-      
+      </Router> 
     </div>
   );
 }
