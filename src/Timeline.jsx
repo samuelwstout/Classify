@@ -1,16 +1,11 @@
-import {useNavigate} from 'react-router-dom';
 
-export const Timeline = ({handleClick}) => {
-    let navigate = useNavigate()
 
-const toResults = () => {
-    navigate('../results')
-}
+export const Timeline = ({ composers }) => {
+
 
     return (
         <div>
-       <div onClick={toResults}><button onClick={handleClick}>Click</button></div>
-        
+           {composers}
         </div>
     )
     }
