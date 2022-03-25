@@ -6,9 +6,14 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Link } from "react-router-dom";
 
 
+const code = new URLSearchParams(window.location.search).get('code');
+
+
 const App = () => {
+ 
   const [name, setName] = useState('');
   const [composers, setComposers] = useState([]);
+
 
   useEffect(() => {
     
@@ -31,13 +36,14 @@ const App = () => {
 
 //use name for the value in Spotify API fetch
 
+
   return (
     <div>
       <Router>
         <Routes>
-          <Route path='/' element={<Login />} />
+          <Route path='/' element={<Login code={code} />} />
           <Route path='/timeline' element={<Timeline composers={composers}  />} />
-          <Route path='/results' element={<Results name={name} />} />
+          <Route path='/results' element={<Results name={name} code={code} />} />
         </Routes>
       </Router>
      
