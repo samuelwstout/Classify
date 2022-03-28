@@ -1,5 +1,4 @@
-
-export const Timeline = ({ composers }) => {
+export const Timeline = ({composers}) => {
 
 
     return (

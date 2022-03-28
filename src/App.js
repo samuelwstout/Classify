@@ -5,21 +5,19 @@ import { Results } from './Results';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Link } from "react-router-dom";
 
-
 const code = new URLSearchParams(window.location.search).get('code');
-
 
 const App = () => {
  
   const [name, setName] = useState('');
   const [composers, setComposers] = useState([]);
 
-
   useEffect(() => {
     
     const fetchComposers = async () => {
       const response = await fetch('composers.json');
       const data = await response.json();
+      
      const listofComposers = data.composers.map((composer) => {
         return (
           <div key={composer.id}>
@@ -34,8 +32,6 @@ const App = () => {
     fetchComposers();
   }, []);
 
-//use name for the value in Spotify API fetch
-
 
   return (
     <div>
@@ -43,7 +39,7 @@ const App = () => {
         <Routes>
           <Route path='/' element={<Login code={code} />} />
           <Route path='/timeline' element={<Timeline composers={composers}  />} />
-          <Route path='/results' element={<Results name={name} code={code} />} />
+          <Route path='/results' element={<Results name={name} code={code}  />} />
         </Routes>
       </Router> 
     </div>
@@ -51,4 +47,3 @@ const App = () => {
 }
 
 export default App;
-// {code ? <Timeline handleClick={clicked} name={name} code={code} /> : <Login />}

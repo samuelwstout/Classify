@@ -16,7 +16,7 @@ export const Login = ({code}) => {
   return (
     <div>
         <Button className="loginBtn" variant='contained'>
-            <a  className='loginbtntext' href={AUTH_URL}>Login to Spotify</a> 
+            <a className='loginbtntext' href={AUTH_URL}>Login to Spotify</a> 
         </Button>
     </div>
   )
