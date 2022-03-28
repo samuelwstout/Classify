@@ -5,3 +5,9 @@ body {
   overflow-y: scroll;
   overflow-x: hidden;
 }
+.tracks {
+ display: flex;
+ flex-direction: column;
+ position: relative;
+ left: 1rem;
+}

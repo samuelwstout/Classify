@@ -4,6 +4,7 @@ import { Timeline } from './Timeline';
 import { Results } from './Results';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Link } from "react-router-dom";
+import './App.css';
 
 const code = new URLSearchParams(window.location.search).get('code');
 
@@ -21,7 +22,7 @@ const App = () => {
      const listofComposers = data.composers.map((composer) => {
         return (
           <div key={composer.id}>
-            <ul>
+            <ul className='trackul'>
               <button onClick={() => setName(composer.name)}><Link to='/results'>{composer.name}</Link></button>
             </ul>
           </div>
