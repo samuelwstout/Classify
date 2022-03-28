@@ -2,7 +2,6 @@ import {useState, useEffect} from 'react'
 import useAuth from './useAuth'
 import SpotifyWebApi from 'spotify-web-api-node'
 
-
 const spotifyApi = new SpotifyWebApi({
   clientId: 'a45eb12484d24c4199050bdefee6d24b',
 })
@@ -14,6 +13,7 @@ export const Results = ({ name, code}) => {
   const accessToken = useAuth(code)
   const [artistId, setArtistId] = useState([])
   const [tracks, setTracks] = useState([])
+  const [albums, setAlbums] = useState([])
 
   //Set access token
   useEffect(() => {
@@ -49,11 +49,33 @@ export const Results = ({ name, code}) => {
     })
   }, [artistId, accessToken])
 
+
+  useEffect(() => {
+    if (!artistId) return setAlbums([])
+    if (!accessToken) return
+    let cancel = false
+    spotifyApi.getArtistAlbums(artistId).then(res => {
+      if (cancel) return
+      setAlbums(res.body.items.map((item) => {
+        return (
+          <div key={item.id}>
+            <p>{item.name}</p>
+          </div>
+        )
+      }))
+    })
+  }, [artistId, accessToken])
+
   return (
     <div>
       <a className='timelineBtn' href={AUTH_URL}>Timeline</a> 
       <div>
+        <h3>Tracks</h3>
         {tracks}
+      </div>
+      <div>
+        <h3>Albums</h3>
+        {albums}
       </div>
     </div>
   )
