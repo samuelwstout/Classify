@@ -9,11 +9,14 @@ const spotifyApi = new SpotifyWebApi({
 const AUTH_URL = 'https://accounts.spotify.com/authorize?client_id=a45eb12484d24c4199050bdefee6d24b&response_type=code&redirect_uri=http://localhost:3000&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state'
 
 export const Results = ({ name, code}) => {
-
   const accessToken = useAuth(code)
+
   const [artistId, setArtistId] = useState([])
   const [tracks, setTracks] = useState([])
   const [albums, setAlbums] = useState([])
+  // const [related, setRelated] = useState([])
+  const [albumId, setAlbumId] = useState([])
+  const [albumTracks, setAlbumTracks] = useState([])
 
   //Set access token
   useEffect(() => {
@@ -49,7 +52,7 @@ export const Results = ({ name, code}) => {
     })
   }, [artistId, accessToken])
 
-
+//if user clicks on album, get album id
   useEffect(() => {
     if (!artistId) return setAlbums([])
     if (!accessToken) return
@@ -57,14 +60,52 @@ export const Results = ({ name, code}) => {
     spotifyApi.getArtistAlbums(artistId).then(res => {
       if (cancel) return
       setAlbums(res.body.items.map((item) => {
+        const handleClick = () => {
+          setAlbumId(item.id)
+        }
         return (
-          <div key={item.id}>
+          <div onClick={handleClick} key={item.id}>
             <p>{item.name}</p>
           </div>
         )
       }))
     })
   }, [artistId, accessToken])
+
+
+// useEffect(() => {
+//   if (!artistId) return setRelated([])
+//   if (!accessToken) return
+//   let cancel = false
+//   spotifyApi.getArtistRelatedArtists(artistId).then(res => {
+//     if (cancel) return
+//     setRelated(res.body.artists.map((item) => {
+//       return (
+//         <div key={item.id}>
+//           <p>{item.name}</p>
+//         </div>
+//       )
+//     }))
+//   })
+// }, [artistId, accessToken])
+
+useEffect(() => {
+  if (!albumId) return setAlbumTracks([])
+  if (!accessToken) return
+  let cancel = false
+  spotifyApi.getAlbumTracks(albumId).then(res => {
+    if (cancel) return
+    setAlbumTracks(res.body.items.map((item => {
+      return (
+        <div key={item.id}>
+          <p>{item.name}</p>
+        </div>
+      )
+    })))
+  })
+}, [albumId, accessToken])
+
+
 
   return (
     <div>
@@ -77,6 +118,14 @@ export const Results = ({ name, code}) => {
         <h3>Albums</h3>
         {albums}
       </div>
+      <div>
+        <h3>Album tracks</h3>
+        {albumTracks}
+      </div>
+      {/* <div>
+        <h3>Related Artists</h3>
+        {related}
+      </div> */}
     </div>
   )
 }
