@@ -33,7 +33,6 @@ const App = () => {
     fetchComposers();
   }, []);
 
-
   return (
     <div>
       <Router>
