@@ -9,7 +9,7 @@ import './App.css';
 const code = new URLSearchParams(window.location.search).get('code');
 
 const App = () => {
- 
+
   const [name, setName] = useState('');
   const [composers, setComposers] = useState([]);
 
@@ -21,9 +21,8 @@ const App = () => {
      const listofComposers = data.composers.map((composer) => {
         return (
           <div key={composer.id}>
-            <ul className='trackul'>
-              <button onClick={() => setName(composer.name)}><Link to='/results'>{composer.name}</Link></button>
-            </ul>
+              <h3 onClick={() => setName(composer.name)}><Link to='/results'>{composer.name}</Link></h3>
+              <img className='composerImg' src={composer.img}/>
           </div>
         )
      })
@@ -46,4 +45,3 @@ const App = () => {
 }
 
 export default App;
-

@@ -1,9 +1,17 @@
+import Player from './Player'
+
 export const Timeline = ({composers}) => {
+
 
 
     return (
         <div>
-           {composers}
+            <ul>
+                <li>{composers}</li>
+            </ul>
+            <div>
+                <Player  />
+            </div>
         </div>
     )
     }

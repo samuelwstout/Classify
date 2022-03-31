@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react'
-import useAuth from './useAuth'
 import SpotifyWebApi from 'spotify-web-api-node'
 import Player from './Player'
+import useAuth from './useAuth'
 
 const spotifyApi = new SpotifyWebApi({
   clientId: 'a45eb12484d24c4199050bdefee6d24b',
@@ -9,7 +9,7 @@ const spotifyApi = new SpotifyWebApi({
 
 const AUTH_URL = 'https://accounts.spotify.com/authorize?client_id=a45eb12484d24c4199050bdefee6d24b&response_type=code&redirect_uri=http://localhost:3000&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state'
 
-export const Results = ({ name, code }) => {
+export const Results = ({ name, code}) => {
   const accessToken = useAuth(code)
 
   const [artistId, setArtistId] = useState([])
@@ -103,9 +103,11 @@ useEffect(() => {
   })
 }, [albumId, accessToken])
 
+
+
   return (
   <div>
-    <a className='timelineBtn' href={AUTH_URL}>Timeline</a> 
+    <a className='timelineBtn' href={AUTH_URL}>Timeline</a>
     <div>
       <h3>Tracks</h3>
       {tracks}
@@ -128,28 +130,3 @@ useEffect(() => {
 export default Results;
 
 
-//This is for related artists if I want to add later
-
-// const [related, setRelated] = useState([])
-
-// useEffect(() => {
-//   if (!artistId) return setRelated([])
-//   if (!accessToken) return
-//   let cancel = false
-//   spotifyApi.getArtistRelatedArtists(artistId).then(res => {
-//     if (cancel) return
-//     setRelated(res.body.artists.map((item) => {
-//       return (
-//         <div key={item.id}>
-//           <p>{item.name}</p>
-//         </div>
-//       )
-//     }))
-//   })
-// }, [artistId, accessToken])
-
-
-{/* <div>
-      <h3>Related Artists</h3>
-      {related}
-    </div> */}
