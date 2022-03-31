@@ -23,6 +23,14 @@
     {
         "name": "Alexander Agricola",
         "id": 6
+    },
+    {
+        "name": "Josquin des Prez",
+        "id": 7
+    },
+    {
+        "name": "Heinrich Isaac",
+        "id": 8
     }
  ]
 }
