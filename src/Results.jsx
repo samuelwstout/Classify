@@ -18,12 +18,13 @@ export const Results = ({ name, code }) => {
   const [albumId, setAlbumId] = useState([])
   const [albumTracks, setAlbumTracks] = useState([])
   const [playingTrack, setPlayingTrack] = useState()
+  const [albumImg, setAlbumImg] = useState()
 
-  //Set access token
+  //set access token
   useEffect(() => {
     if (!accessToken) return
     spotifyApi.setAccessToken(accessToken)
-}, [accessToken])
+  }, [accessToken])
 
   //to get artist id
   useEffect(() => {
@@ -44,14 +45,14 @@ export const Results = ({ name, code }) => {
     spotifyApi.getArtistTopTracks(artistId, 'US').then(res => {
       if (cancel) return
       setTracks(res.body.tracks.map((track) => {
-        // const smallestImg = track.album.images.reduce(
-        //   (smallest, image) => {
-        //     if (image.height < smallest.height) return image
-        //     return smallest
-        //   }, track.album.images[0])
+        const smallestImg = track.album.images.reduce(
+          (smallest, image) => {
+            if (image.height < smallest.height) return image
+            return smallest
+          }, track.album.images[0])
         return (
           <button onClick={() => setPlayingTrack(track)} key={track.id}>
-            {/* <img src={smallestImg.url}  /> */}
+            <img src={smallestImg.url}  />
             <p>{track.name}</p>
           </button>
         )
@@ -67,34 +68,38 @@ useEffect(() => {
   spotifyApi.getArtistAlbums(artistId).then(res => {
     if (cancel) return
     setAlbums(res.body.items.map((item) => {
+      const smallestImg = item.images.reduce(
+        (smallest, image) => {
+          if (image.height < smallest.height) return image
+          return smallest
+        }, item.images[0])
       return (
-        <button onClick={() => setAlbumId(item.id)} key={item.id}>
+        <div onClick={() => setAlbumImg(smallestImg.url)}>
+         <button onClick={() => setAlbumId(item.id)} key={item.id}>
+          <img src={smallestImg.url} />
           <p>{item.name}</p>
         </button>
+        </div>
         )
       }))
     })
   }, [artistId, accessToken])
+  
 
 useEffect(() => {
   if (!albumId) return setAlbumTracks([])
   if (!accessToken) return
   let cancel = false
-  spotifyApi.getAlbumTracks(albumId).then(res => {
+  spotifyApi.getAlbumTracks(albumId).then(res => {  
     if (cancel) return
-    setAlbumTracks(res.body.items.map((track => {
-      // const smallestImg = track.album.images.reduce(
-      //   (smallest, image) => {
-      //     if (image.height < smallest.height) return image
-      //     return smallest
-      //   }, track.album.images[0])
+    setAlbumTracks(res.body.items.map((track) => {
       return (
-        <button onClick={() => setPlayingTrack(track)} key={track.id}>
-          {/* <img src={smallestImg.url}  /> */}
+        <div onClick={() => setPlayingTrack(track)}>
+          <img src={albumImg} />
           <p>{track.name}</p>
-        </button>
+        </div>
       )
-    })))
+    }))
   })
 }, [albumId, accessToken])
 
@@ -113,9 +118,9 @@ useEffect(() => {
       <h3>Album tracks</h3>
       {albumTracks}
     </div>
-    {/* <div>
+    <div>
       <Player accessToken={accessToken} trackUri={playingTrack?.uri} />
-    </div> */}
+    </div>
   </div>
   )
 }
