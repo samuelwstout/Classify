@@ -499,6 +499,54 @@
     {
         "name": "Karlheinz Stockhausen",
         "id": 125
+    },
+    {
+        "name": "Einojuhani Rautavaara",
+        "id": 126
+    },
+    {
+        "name": "George Crumb",
+        "id": 127
+    },
+    {
+        "name": "Sofia Gubaidulina",
+        "id": 128
+    },
+    {
+        "name": "Rodion Shchedrin",
+        "id": 129
+    },
+    {
+        "name": "Alfred Schnittke",
+        "id": 130
+    },
+    {
+        "name": "Harrison Birtwistle",
+        "id": 131
+    },
+    {
+        "name": "Terry Riley",
+        "id": 132
+    },
+    {
+        "name": "La Monte Young",
+        "id": 133
+    },
+    {
+        "name": "Arvo Pärt",
+        "id": 134
+    },
+    {
+        "name": "Steve Reich",
+        "id": 135
+    },
+    {
+        "name": "Philip Glass",
+        "id": 136
+    },
+    {
+        "name": "John Adams",
+        "id": 137
     }
  ]
 }
