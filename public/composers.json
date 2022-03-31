@@ -259,6 +259,46 @@
     {
         "name": "Carl Czerny",
         "id": 65
+    },
+    {
+        "name": "Gioachino Rossini",
+        "id": 66
+    },
+    {
+        "name": "Franz Schubert",
+        "id": 67
+    },
+    {
+        "name": "Gaetano Donizetti",
+        "id": 68
+    },
+    {
+        "name": "Hector Berlioz",
+        "id": 69
+    },
+    {
+        "name": "Felix Mendelssohn",
+        "id": 70
+    },
+    {
+        "name": "Frédéric Chopin",
+        "id": 71
+    },
+    {
+        "name": "Robert Schumann",
+        "id": 72
+    },
+    {
+        "name": "Franz Liszt",
+        "id": 73
+    },
+    {
+        "name": "Richard Wagner",
+        "id": 74
+    },
+    {
+        "name": "Giuseppe Verdi",
+        "id": 75
     }
  ]
 }
