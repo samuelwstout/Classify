@@ -14,7 +14,6 @@ const App = () => {
   const [composers, setComposers] = useState([]);
 
   useEffect(() => {
-    
     const fetchComposers = async () => {
       const response = await fetch('composers.json');
       const data = await response.json();
@@ -41,7 +40,7 @@ const App = () => {
           <Route path='/timeline' element={<Timeline composers={composers}  />} />
           <Route path='/results' element={<Results name={name} code={code}  />} />
         </Routes>
-      </Router> 
+      </Router>
     </div>
   );
 }

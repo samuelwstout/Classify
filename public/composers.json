@@ -2,28 +2,27 @@
  "composers": [
     {
         "name": "Guillaume Dufay",
-        "img": "/DufayBinchois.jpg",
         "id": 1
     },
     {
         "name": "Gilles Binchois",
-        "img": "/DufayBinchois.jpg",
         "id": 2
     },
     {
         "name": "Johannes Ockeghem",
-        "img": "/Johannes+Ockeghem.png",
         "id": 3
     },
     {
         "name": "Antoine Busnois",
-        "img": "/Busnois_mass.jpg",
         "id": 4
     },
     {
         "name": "Johannes Tinctoris",
-        "img": "/Tinctoris.jpg",
         "id": 5
+    },
+    {
+        "name": "Alexander Agricola",
+        "id": 6
     }
  ]
 }
