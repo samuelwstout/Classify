@@ -299,6 +299,46 @@
     {
         "name": "Giuseppe Verdi",
         "id": 75
+    },
+    {
+        "name": "Jacques Offenbach",
+        "id": 76
+    },
+    {
+        "name": "César Franck",
+        "id": 77
+    },
+    {
+        "name": "Bedřich Smetana",
+        "id": 78
+    },
+    {
+        "name": "Anton Bruckner",
+        "id": 79
+    },
+    {
+        "name": "Johann Strauss II",
+        "id": 80
+    },
+    {
+        "name": "Johannes Brahms",
+        "id": 81
+    },
+    {
+        "name": "Alexander Borodin",
+        "id": 82
+    },
+    {
+        "name": "Camille Saint-Saëns",
+        "id": 83
+    },
+    {
+        "name": "Georges Bizet",
+        "id": 84
+    },
+    {
+        "name": "Modest Mussorgsky",
+        "id": 85
     }
  ]
 }
