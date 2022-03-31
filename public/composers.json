@@ -183,6 +183,22 @@
     {
         "name": "Domenico Scarlatti",
         "id": 46
+    },
+    {
+        "name": "George Frideric Handel",
+        "id": 47
+    },
+    {
+        "name": "Johann Adolf Hasse",
+        "id": 48
+    },
+    {
+        "name": "Giovanni Battista Pergolesi",
+        "id": 49
+    },
+    {
+        "name": "Christoph Willibald Gluck",
+        "id": 50
     }
  ]
 }
