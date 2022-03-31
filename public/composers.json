@@ -127,6 +127,14 @@
     {
         "name": "Johann Jakob Froberger",
         "id": 32
+    },
+    {
+        "name": "Jean-Baptiste Lully",
+        "id": 33
+    },
+    {
+        "name": "Dieterich Buxtehude",
+        "id": 34
     }
  ]
 }
