@@ -151,6 +151,22 @@
     {
         "name": "Henry Purcell",
         "id": 38
+    },
+    {
+        "name": "Alessandro Scarlatti",
+        "id": 39
+    },
+    {
+        "name": "François Couperin",
+        "id": 40
+    },
+    {
+        "name": "Tomaso Albinoni",
+        "id": 41
+    },
+    {
+        "name": "Antonio Vivaldi",
+        "id": 42
     }
  ]
 }
