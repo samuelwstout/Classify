@@ -47,6 +47,14 @@
     {
         "name": "John Taverner",
         "id": 12
+    },
+    {
+        "name": "Adrian Willaert",
+        "id": 13
+    },
+    {
+        "name": "Nicolas Gombert",
+        "id": 14
     }
  ]
 }
