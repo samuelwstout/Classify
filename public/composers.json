@@ -31,6 +31,14 @@
     {
         "name": "Heinrich Isaac",
         "id": 8
+    },
+    {
+        "name": "Pierre de la Rue",
+        "id": 9
+    },
+    {
+        "name": "Jacob Obrecht",
+        "id": 10
     }
  ]
 }
