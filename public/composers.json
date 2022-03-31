@@ -27,530 +27,662 @@
     },
     {
         "name": "Alexander Agricola",
+        "img": "/composerImgs/Agricola.jpeg",
         "id": 6
     },
     {
         "name": "Josquin des Prez",
+        "img": "/composerImgs/Prez.jpeg",
         "id": 7
     },
     {
         "name": "Heinrich Isaac",
+        "img": "/composerImgs/Isaac.jpeg",
         "id": 8
     },
     {
         "name": "Pierre de la Rue",
+        "img": "/composerImgs/Rue.jpeg",
         "id": 9
     },
     {
         "name": "Jacob Obrecht",
+        "img": "/composerImgs/Obrecht.jpeg",
         "id": 10
     },
     {
         "name": "Clément Janequin",
+        "img": "/composerImgs/",
         "id": 11
     },
     {
         "name": "John Taverner",
+        "img": "/composerImgs/",
         "id": 12
     },
     {
         "name": "Adrian Willaert",
+        "img": "/composerImgs/",
         "id": 13
     },
     {
         "name": "Nicolas Gombert",
+        "img": "/composerImgs/",
         "id": 14
     },
     {
         "name": "Cristóbal de Morales",
+        "img": "/composerImgs/",
         "id": 15
     },
     {
         "name": "Luis de Milán",
+        "img": "/composerImgs/",
         "id": 16
     },
     {
         "name": "Thomas Tallis",
+        "img": "/composerImgs/",
         "id": 17
     },
     {
         "name": "Jacques Arcadelt",
+        "img": "/composerImgs/",
         "id": 18
     },
     {
         "name": "Giovanni Pierluigi da Palestrina",
+        "img": "/composerImgs/",
         "id": 19
     },
     {
         "name": "Orlande de Lassus",
+        "img": "/composerImgs/",
         "id": 20
     },
     {
         "name": "William Byrd",
+        "img": "/composerImgs/",
         "id": 21
     },
     {
         "name": "Tomás Luis de Victoria",
+        "img": "/composerImgs/",
         "id": 22
     },
     {
         "name": "Giulio Caccini",
+        "img": "/composerImgs/",
         "id": 23
     },
     {
         "name": "Giovanni Gabrieli",
+        "img": "/composerImgs/",
         "id": 24
     },
     {
         "name": "Jan Pieterszoon Sweelinck",
+        "img": "/composerImgs/",
         "id": 25
     },
     {
         "name": "John Dowland",
+        "img": "/composerImgs/",
         "id": 26
     },
     {
         "name": "Carlo Gesualdo",
+        "img": "/composerImgs/",
         "id": 27
     },
     {
         "name": "Claudio Monteverdi",
+        "img": "/composerImgs/",
         "id": 28
     },
     {
         "name": "Michael Praetorius",
+        "img": "/composerImgs/",
         "id": 29
     },
     {
         "name": "Heinrich Schütz",
+        "img": "/composerImgs/",
         "id": 30
     },
     {
         "name": "Francesco Cavalli",
+        "img": "/composerImgs/",
         "id": 31
     },
     {
         "name": "Johann Jakob Froberger",
+        "img": "/composerImgs/",
         "id": 32
     },
     {
         "name": "Jean-Baptiste Lully",
+        "img": "/composerImgs/",
         "id": 33
     },
     {
         "name": "Dieterich Buxtehude",
+        "img": "/composerImgs/",
         "id": 34
     },
     {
         "name": "Marc-Antoine Charpentier",
+        "img": "/composerImgs/",
         "id": 35
     },
     {
         "name": "Arcangelo Corelli",
+        "img": "/composerImgs/",
         "id": 36
     },
     {
         "name": "Johann Pachelbel",
+        "img": "/composerImgs/",
         "id": 37
     },
     {
         "name": "Henry Purcell",
+        "img": "/composerImgs/",
         "id": 38
     },
     {
         "name": "Alessandro Scarlatti",
+        "img": "/composerImgs/",
         "id": 39
     },
     {
         "name": "François Couperin",
+        "img": "/composerImgs/",
         "id": 40
     },
     {
         "name": "Tomaso Albinoni",
+        "img": "/composerImgs/",
         "id": 41
     },
     {
         "name": "Antonio Vivaldi",
+        "img": "/composerImgs/",
         "id": 42
     },
     {
         "name": "Georg Philipp Telemann",
+        "img": "/composerImgs/",
         "id": 43
     },
     {
         "name": "Jean-Philippe Rameau",
+        "img": "/composerImgs/",
         "id": 44
     },
     {
         "name": "Johann Sebastian Bach",
+        "img": "/composerImgs/",
         "id": 45
     },
     {
         "name": "Domenico Scarlatti",
+        "img": "/composerImgs/",
         "id": 46
     },
     {
         "name": "George Frideric Handel",
+        "img": "/composerImgs/",
         "id": 47
     },
     {
         "name": "Johann Adolf Hasse",
+        "img": "/composerImgs/",
         "id": 48
     },
     {
         "name": "Giovanni Battista Pergolesi",
+        "img": "/composerImgs/",
         "id": 49
     },
     {
         "name": "Christoph Willibald Gluck",
+        "img": "/composerImgs/",
         "id": 50
     },
     {
         "name": "Carl Philipp Emanuel Bach",
+        "img": "/composerImgs/",
         "id": 51
     },
     {
         "name": "Johann Stamitz",
+        "img": "/composerImgs/",
         "id": 52
     },
     {
         "name": "Antonio Soler",
+        "img": "/composerImgs/",
         "id": 53
     },
     {
         "name": "Joseph Haydn",
+        "img": "/composerImgs/",
         "id": 54
     },
     {
         "name": "Johann Christian Bach",
+        "img": "/composerImgs/",
         "id": 55
     },
     {
         "name": "Antonio Salieri",
+        "img": "/composerImgs/",
         "id": 56
     },
     {
         "name": "Dmitry Bortniansky",
+        "img": "/composerImgs/",
         "id": 57
     },
     {
         "name": "Muzio Clementi",
+        "img": "/composerImgs/",
         "id": 58
     },
     {
         "name": "Wolfgang Amadeus Mozart",
+        "img": "/composerImgs/",
         "id": 59
     },
     {
         "name": "Luigi Cherubini",
+        "img": "/composerImgs/",
         "id": 60
     },
     {
         "name": "Ludwig van Beethoven",
+        "img": "/composerImgs/",
         "id": 61
     },
     {
         "name": "John Field",
+        "img": "/composerImgs/",
         "id": 62
     },
     {
         "name": "Niccolò Paganini",
+        "img": "/composerImgs/",
         "id": 63
     },
     {
         "name": "Carl Maria von Weber",
+        "img": "/composerImgs/",
         "id": 64
     },
     {
         "name": "Carl Czerny",
+        "img": "/composerImgs/",
         "id": 65
     },
     {
         "name": "Gioachino Rossini",
+        "img": "/composerImgs/",
         "id": 66
     },
     {
         "name": "Franz Schubert",
+        "img": "/composerImgs/",
         "id": 67
     },
     {
         "name": "Gaetano Donizetti",
+        "img": "/composerImgs/",
         "id": 68
     },
     {
         "name": "Hector Berlioz",
+        "img": "/composerImgs/",
         "id": 69
     },
     {
         "name": "Felix Mendelssohn",
+        "img": "/composerImgs/",
         "id": 70
     },
     {
         "name": "Frédéric Chopin",
+        "img": "/composerImgs/",
         "id": 71
     },
     {
         "name": "Robert Schumann",
+        "img": "/composerImgs/",
         "id": 72
     },
     {
         "name": "Franz Liszt",
+        "img": "/composerImgs/",
         "id": 73
     },
     {
         "name": "Richard Wagner",
+        "img": "/composerImgs/",
         "id": 74
     },
     {
         "name": "Giuseppe Verdi",
+        "img": "/composerImgs/",
         "id": 75
     },
     {
         "name": "Jacques Offenbach",
+        "img": "/composerImgs/",
         "id": 76
     },
     {
         "name": "César Franck",
+        "img": "/composerImgs/",
         "id": 77
     },
     {
         "name": "Bedřich Smetana",
+        "img": "/composerImgs/",
         "id": 78
     },
     {
         "name": "Anton Bruckner",
+        "img": "/composerImgs/",
         "id": 79
     },
     {
         "name": "Johann Strauss II",
+        "img": "/composerImgs/",
         "id": 80
     },
     {
         "name": "Johannes Brahms",
+        "img": "/composerImgs/",
         "id": 81
     },
     {
         "name": "Alexander Borodin",
+        "img": "/composerImgs/",
         "id": 82
     },
     {
         "name": "Camille Saint-Saëns",
+        "img": "/composerImgs/",
         "id": 83
     },
     {
         "name": "Georges Bizet",
+        "img": "/composerImgs/",
         "id": 84
     },
     {
         "name": "Modest Mussorgsky",
+        "img": "/composerImgs/",
         "id": 85
     },
     {
         "name": "Pyotr Ilyich Tchaikovsky",
+        "img": "/composerImgs/",
         "id": 86
     },
     {
         "name": "Antonín Dvořák",
+        "img": "/composerImgs/",
         "id": 87
     },
     {
         "name": "Edvard Grieg",
+        "img": "/composerImgs/",
         "id": 88
     },
     {
         "name": "Nikolai Rimsky-Korsakov",
+        "img": "/composerImgs/",
         "id": 89
     },
     {
         "name": "Gabriel Fauré",
+        "img": "/composerImgs/",
         "id": 90
     },
     {
         "name": "Edward Elgar",
+        "img": "/composerImgs/",
         "id": 91
     },
     {
         "name": "Eugène Ysaÿe",
+        "img": "/composerImgs/",
         "id": 92
     },
     {
         "name": "Giacomo Puccini",
+        "img": "/composerImgs/",
         "id": 93
     },
     {
         "name": "Gustav Mahler",
+        "img": "/composerImgs/",
         "id": 94
     },
     {
         "name": "Frederick Delius",
+        "img": "/composerImgs/",
         "id": 95
     },
     {
         "name": "Claude Debussy",
+        "img": "/composerImgs/",
         "id": 96
     },
     {
         "name": "Richard Strauss",
+        "img": "/composerImgs/",
         "id": 97
     },
     {
         "name": "Jean Sibelius",
+        "img": "/composerImgs/",
         "id": 98
     },
     {
         "name": "Enrique Granados",
+        "img": "/composerImgs/",
         "id": 99
     },
     {
         "name": "Ralph Vaughan Williams",
+        "img": "/composerImgs/",
         "id": 100
     },
     {
         "name": "Sergei Rachmaninoff",
+        "img": "/composerImgs/",
         "id": 101
     },
     {
         "name": "Arnold Schoenberg",
+        "img": "/composerImgs/",
         "id": 102
     },
     {
         "name": "Gustav Holst",
+        "img": "/composerImgs/",
         "id": 103
     },
     {
         "name": "Charles Ives",
+        "img": "/composerImgs/",
         "id": 104
     },
     {
         "name": "Maurice Ravel",
+        "img": "/composerImgs/",
         "id": 105
     },
     {
         "name": "Manuel de Falla",
+        "img": "/composerImgs/",
         "id": 106
     },
     {
         "name": "Béla Bartók",
+        "img": "/composerImgs/",
         "id": 107
     },
     {
         "name": "Igor Stravinsky",
+        "img": "/composerImgs/",
         "id": 108
     },
     {
         "name": "Edgard Varèse",
+        "img": "/composerImgs/",
         "id": 109
     },
     {
         "name": "Sergei Prokofiev",
+        "img": "/composerImgs/",
         "id": 110
     },
     {
         "name": "Paul Hindemith",
+        "img": "/composerImgs/",
         "id": 111
     },
     {
         "name": "Francis Poulenc",
+        "img": "/composerImgs/",
         "id": 112
     },
     {
         "name": "Aaron Copland",
+        "img": "/composerImgs/",
         "id": 113
     },
     {
         "name": "Harry Partch",
+        "img": "/composerImgs/",
         "id": 114
     },
     {
         "name": "Dmitri Shostakovich",
+        "img": "/composerImgs/",
         "id": 115
     },
     {
         "name": "Olivier Messiaen",
+        "img": "/composerImgs/",
         "id": 116
     },
     {
         "name": "Samuel Barber",
+        "img": "/composerImgs/",
         "id": 117
     },
     {
         "name": "John Cage",
+        "img": "/composerImgs/",
         "id": 118
     },
     {
         "name": "Witold Lutosławski",
+        "img": "/composerImgs/",
         "id": 119
     },
     {
         "name": "Benjamin Britten",
+        "img": "/composerImgs/",
         "id": 120
     },
     {
         "name": "Moondog",
+        "img": "/composerImgs/",
         "id": 121
     },
     {
         "name": "Iannis Xenakis",
+        "img": "/composerImgs/",
         "id": 122
     },
     {
         "name": "György Ligeti",
+        "img": "/composerImgs/",
         "id": 123
     },
     {
         "name": "Pierre Boulez",
+        "img": "/composerImgs/",
         "id": 124
     },
     {
         "name": "Karlheinz Stockhausen",
+        "img": "/composerImgs/",
         "id": 125
     },
     {
         "name": "Einojuhani Rautavaara",
+        "img": "/composerImgs/",
         "id": 126
     },
     {
         "name": "George Crumb",
+        "img": "/composerImgs/",
         "id": 127
     },
     {
         "name": "Sofia Gubaidulina",
+        "img": "/composerImgs/",
         "id": 128
     },
     {
         "name": "Rodion Shchedrin",
+        "img": "/composerImgs/",
         "id": 129
     },
     {
         "name": "Alfred Schnittke",
+        "img": "/composerImgs/",
         "id": 130
     },
     {
         "name": "Harrison Birtwistle",
+        "img": "/composerImgs/",
         "id": 131
     },
     {
         "name": "Terry Riley",
+        "img": "/composerImgs/",
         "id": 132
     },
     {
         "name": "La Monte Young",
+        "img": "/composerImgs/",
         "id": 133
     },
     {
         "name": "Arvo Pärt",
+        "img": "/composerImgs/",
         "id": 134
     },
     {
         "name": "Steve Reich",
+        "img": "/composerImgs/",
         "id": 135
     },
     {
         "name": "Philip Glass",
+        "img": "/composerImgs/",
         "id": 136
     },
     {
         "name": "John Adams",
+        "img": "/composerImgs/",
         "id": 137
     }
  ]
