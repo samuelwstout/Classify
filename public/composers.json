@@ -103,6 +103,14 @@
     {
         "name": "John Dowland",
         "id": 26
+    },
+    {
+        "name": "Carlo Gesualdo",
+        "id": 27
+    },
+    {
+        "name": "Claudio Monteverdi",
+        "id": 28
     }
  ]
 }
