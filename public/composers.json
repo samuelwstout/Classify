@@ -167,6 +167,22 @@
     {
         "name": "Antonio Vivaldi",
         "id": 42
+    },
+    {
+        "name": "Georg Philipp Telemann",
+        "id": 43
+    },
+    {
+        "name": "Jean-Philippe Rameau",
+        "id": 44
+    },
+    {
+        "name": "Johann Sebastian Bach",
+        "id": 45
+    },
+    {
+        "name": "Domenico Scarlatti",
+        "id": 46
     }
  ]
 }
