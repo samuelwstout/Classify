@@ -459,6 +459,46 @@
     {
         "name": "Dmitri Shostakovich",
         "id": 115
+    },
+    {
+        "name": "Olivier Messiaen",
+        "id": 116
+    },
+    {
+        "name": "Samuel Barber",
+        "id": 117
+    },
+    {
+        "name": "John Cage",
+        "id": 118
+    },
+    {
+        "name": "Witold Lutosławski",
+        "id": 119
+    },
+    {
+        "name": "Benjamin Britten",
+        "id": 120
+    },
+    {
+        "name": "Moondog",
+        "id": 121
+    },
+    {
+        "name": "Iannis Xenakis",
+        "id": 122
+    },
+    {
+        "name": "György Ligeti",
+        "id": 123
+    },
+    {
+        "name": "Pierre Boulez",
+        "id": 124
+    },
+    {
+        "name": "Karlheinz Stockhausen",
+        "id": 125
     }
  ]
 }
