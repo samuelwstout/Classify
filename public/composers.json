@@ -231,6 +231,34 @@
     {
         "name": "Muzio Clementi",
         "id": 58
+    },
+    {
+        "name": "Wolfgang Amadeus Mozart",
+        "id": 59
+    },
+    {
+        "name": "Luigi Cherubini",
+        "id": 60
+    },
+    {
+        "name": "Ludwig van Beethoven",
+        "id": 61
+    },
+    {
+        "name": "John Field",
+        "id": 62
+    },
+    {
+        "name": "Niccolò Paganini",
+        "id": 63
+    },
+    {
+        "name": "Carl Maria von Weber",
+        "id": 64
+    },
+    {
+        "name": "Carl Czerny",
+        "id": 65
     }
  ]
 }
