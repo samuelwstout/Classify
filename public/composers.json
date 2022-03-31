@@ -135,6 +135,22 @@
     {
         "name": "Dieterich Buxtehude",
         "id": 34
+    },
+    {
+        "name": "Marc-Antoine Charpentier",
+        "id": 35
+    },
+    {
+        "name": "Arcangelo Corelli",
+        "id": 36
+    },
+    {
+        "name": "Johann Pachelbel",
+        "id": 37
+    },
+    {
+        "name": "Henry Purcell",
+        "id": 38
     }
  ]
 }
