@@ -419,6 +419,46 @@
     {
         "name": "Maurice Ravel",
         "id": 105
+    },
+    {
+        "name": "Manuel de Falla",
+        "id": 106
+    },
+    {
+        "name": "Béla Bartók",
+        "id": 107
+    },
+    {
+        "name": "Igor Stravinsky",
+        "id": 108
+    },
+    {
+        "name": "Edgard Varèse",
+        "id": 109
+    },
+    {
+        "name": "Sergei Prokofiev",
+        "id": 110
+    },
+    {
+        "name": "Paul Hindemith",
+        "id": 111
+    },
+    {
+        "name": "Francis Poulenc",
+        "id": 112
+    },
+    {
+        "name": "Aaron Copland",
+        "id": 113
+    },
+    {
+        "name": "Harry Partch",
+        "id": 114
+    },
+    {
+        "name": "Dmitri Shostakovich",
+        "id": 115
     }
  ]
 }
