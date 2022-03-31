@@ -79,6 +79,14 @@
     {
         "name": "Orlande de Lassus",
         "id": 20
+    },
+    {
+        "name": "William Byrd",
+        "id": 21
+    },
+    {
+        "name": "Tomás Luis de Victoria",
+        "id": 22
     }
  ]
 }
