@@ -379,6 +379,46 @@
     {
         "name": "Frederick Delius",
         "id": 95
+    },
+    {
+        "name": "Claude Debussy",
+        "id": 96
+    },
+    {
+        "name": "Richard Strauss",
+        "id": 97
+    },
+    {
+        "name": "Jean Sibelius",
+        "id": 98
+    },
+    {
+        "name": "Enrique Granados",
+        "id": 99
+    },
+    {
+        "name": "Ralph Vaughan Williams",
+        "id": 100
+    },
+    {
+        "name": "Sergei Rachmaninoff",
+        "id": 101
+    },
+    {
+        "name": "Arnold Schoenberg",
+        "id": 102
+    },
+    {
+        "name": "Gustav Holst",
+        "id": 103
+    },
+    {
+        "name": "Charles Ives",
+        "id": 104
+    },
+    {
+        "name": "Maurice Ravel",
+        "id": 105
     }
  ]
 }
