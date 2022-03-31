@@ -215,6 +215,22 @@
     {
         "name": "Joseph Haydn",
         "id": 54
+    },
+    {
+        "name": "Johann Christian Bach",
+        "id": 55
+    },
+    {
+        "name": "Antonio Salieri",
+        "id": 56
+    },
+    {
+        "name": "Dmitry Bortniansky",
+        "id": 57
+    },
+    {
+        "name": "Muzio Clementi",
+        "id": 58
     }
  ]
 }
