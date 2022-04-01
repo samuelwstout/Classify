@@ -52,17 +52,17 @@
     },
     {
         "name": "Clément Janequin",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/janequin.jpeg",
         "id": 11
     },
     {
         "name": "John Taverner",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Taverner.jpeg",
         "id": 12
     },
     {
         "name": "Adrian Willaert",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Willaert.jpeg",
         "id": 13
     },
     {
@@ -72,32 +72,32 @@
     },
     {
         "name": "Cristóbal de Morales",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Morales.jpeg",
         "id": 15
     },
     {
         "name": "Luis de Milán",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Milan.jpeg",
         "id": 16
     },
     {
         "name": "Thomas Tallis",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Tallis.png",
         "id": 17
     },
     {
         "name": "Jacques Arcadelt",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Arcadelt.jpeg",
         "id": 18
     },
     {
         "name": "Giovanni Pierluigi da Palestrina",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Palestrina.jpeg",
         "id": 19
     },
     {
         "name": "Orlande de Lassus",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Lassus.jpeg",
         "id": 20
     },
     {
