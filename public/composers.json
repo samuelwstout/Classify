@@ -252,12 +252,12 @@
     },
     {
         "name": "Carl Philipp Emanuel Bach",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/CPEBach.jpeg",
         "id": 51
     },
     {
         "name": "Johann Stamitz",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Stamitz.jpeg",
         "id": 52
     },
     {
@@ -267,37 +267,37 @@
     },
     {
         "name": "Joseph Haydn",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Haydn.jpeg",
         "id": 54
     },
     {
         "name": "Johann Christian Bach",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/JCBach.jpeg",
         "id": 55
     },
     {
         "name": "Antonio Salieri",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Salieri.jpeg",
         "id": 56
     },
     {
         "name": "Dmitry Bortniansky",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Bortniansky.jpeg",
         "id": 57
     },
     {
         "name": "Muzio Clementi",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Clementi.jpeg",
         "id": 58
     },
     {
         "name": "Wolfgang Amadeus Mozart",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Mozart.jpeg",
         "id": 59
     },
     {
         "name": "Luigi Cherubini",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Cherubini.jpeg",
         "id": 60
     },
     {
