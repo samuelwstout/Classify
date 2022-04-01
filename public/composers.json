@@ -152,7 +152,7 @@
     },
     {
         "name": "Francesco Cavalli",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Cavalli.png",
         "id": 31
     },
     {
@@ -162,22 +162,22 @@
     },
     {
         "name": "Jean-Baptiste Lully",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Lully.jpeg",
         "id": 33
     },
     {
         "name": "Dieterich Buxtehude",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Buxtehude.jpeg",
         "id": 34
     },
     {
         "name": "Marc-Antoine Charpentier",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Charpentier.gif",
         "id": 35
     },
     {
         "name": "Arcangelo Corelli",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Corelli.jpeg",
         "id": 36
     },
     {
@@ -187,17 +187,17 @@
     },
     {
         "name": "Henry Purcell",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Purcell.jpeg",
         "id": 38
     },
     {
         "name": "Alessandro Scarlatti",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Scarlatti.jpeg",
         "id": 39
     },
     {
         "name": "François Couperin",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Couperin.jpeg",
         "id": 40
     },
     {
