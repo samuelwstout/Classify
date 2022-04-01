@@ -202,52 +202,52 @@
     },
     {
         "name": "Tomaso Albinoni",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Albinoni.jpeg",
         "id": 41
     },
     {
         "name": "Antonio Vivaldi",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Vivaldi.jpeg",
         "id": 42
     },
     {
         "name": "Georg Philipp Telemann",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Telmann.jpeg",
         "id": 43
     },
     {
         "name": "Jean-Philippe Rameau",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Rameau.jpeg",
         "id": 44
     },
     {
         "name": "Johann Sebastian Bach",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/JSBach.jpeg",
         "id": 45
     },
     {
         "name": "Domenico Scarlatti",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/DScarlatti.jpeg",
         "id": 46
     },
     {
         "name": "George Frideric Handel",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Handel.jpeg",
         "id": 47
     },
     {
         "name": "Johann Adolf Hasse",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Hasse.jpeg",
         "id": 48
     },
     {
         "name": "Giovanni Battista Pergolesi",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Pergolesi.jpeg",
         "id": 49
     },
     {
         "name": "Christoph Willibald Gluck",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Gluck.jpeg",
         "id": 50
     },
     {
