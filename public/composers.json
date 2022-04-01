@@ -302,102 +302,102 @@
     },
     {
         "name": "Ludwig van Beethoven",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Beethoven.jpeg",
         "id": 61
     },
     {
         "name": "John Field",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Field.jpeg",
         "id": 62
     },
     {
         "name": "Niccolò Paganini",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Paganini.jpeg",
         "id": 63
     },
     {
         "name": "Carl Maria von Weber",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Weber.jpeg",
         "id": 64
     },
     {
         "name": "Carl Czerny",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Czerny.jpeg",
         "id": 65
     },
     {
         "name": "Gioachino Rossini",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Rossini.jpeg",
         "id": 66
     },
     {
         "name": "Franz Schubert",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Schubert.png",
         "id": 67
     },
     {
         "name": "Gaetano Donizetti",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Donizetti.jpeg",
         "id": 68
     },
     {
         "name": "Hector Berlioz",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Berlioz.png",
         "id": 69
     },
     {
         "name": "Felix Mendelssohn",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Mendelssohn.jpeg",
         "id": 70
     },
     {
         "name": "Frédéric Chopin",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Chopin.jpeg",
         "id": 71
     },
     {
         "name": "Robert Schumann",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Schumann.jpeg",
         "id": 72
     },
     {
         "name": "Franz Liszt",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Liszt.jpeg",
         "id": 73
     },
     {
         "name": "Richard Wagner",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Wagner.jpeg",
         "id": 74
     },
     {
         "name": "Giuseppe Verdi",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Verdi.jpeg",
         "id": 75
     },
     {
         "name": "Jacques Offenbach",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Offenbach.jpeg",
         "id": 76
     },
     {
         "name": "César Franck",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Franck.jpeg",
         "id": 77
     },
     {
         "name": "Bedřich Smetana",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Smetana.jpeg",
         "id": 78
     },
     {
         "name": "Anton Bruckner",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Bruckner.jpeg",
         "id": 79
     },
     {
         "name": "Johann Strauss II",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/StraussJr.jpeg",
         "id": 80
     },
     {
