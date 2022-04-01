@@ -102,52 +102,52 @@
     },
     {
         "name": "William Byrd",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Byrd.jpeg",
         "id": 21
     },
     {
         "name": "Tomás Luis de Victoria",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Victoria.jpeg",
         "id": 22
     },
     {
         "name": "Giulio Caccini",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Caccini.jpeg",
         "id": 23
     },
     {
         "name": "Giovanni Gabrieli",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Gabrieli.jpeg",
         "id": 24
     },
     {
         "name": "Jan Pieterszoon Sweelinck",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Sweelinck.jpeg",
         "id": 25
     },
     {
         "name": "John Dowland",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Dowland.gif",
         "id": 26
     },
     {
         "name": "Carlo Gesualdo",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Gesualdo.jpeg",
         "id": 27
     },
     {
         "name": "Claudio Monteverdi",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Monteverdi.jpeg",
         "id": 28
     },
     {
         "name": "Michael Praetorius",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Praetorius.jpeg",
         "id": 29
     },
     {
         "name": "Heinrich Schütz",
-        "img": "/composerImgs/",
+        "img": "/composerImgs/Schutz.jpeg",
         "id": 30
     },
     {
