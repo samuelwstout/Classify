@@ -1,4 +1,4 @@
-import Player from './Player'
+
 
 export const Timeline = ({composers}) => {
 
@@ -9,9 +9,6 @@ export const Timeline = ({composers}) => {
             <ul>
                 <li>{composers}</li>
             </ul>
-            <div>
-                <Player  />
-            </div>
         </div>
     )
     }
