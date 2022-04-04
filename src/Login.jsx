@@ -3,7 +3,6 @@ import { styled } from '@mui/material/styles'
 import Button from '@mui/material/Button'
 import {useNavigate} from 'react-router-dom'
 
-
 const AUTH_URL = 'https://accounts.spotify.com/authorize?client_id=a45eb12484d24c4199050bdefee6d24b&response_type=code&redirect_uri=http://localhost:3000&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state'
 
 const MainDiv = styled('div')({
@@ -17,25 +16,44 @@ const LoginButton = styled(Button)({
   ':hover': {
     backgroundColor: '#000'
   },
-  '@media (max-width: 600px)': {
-    backgroundColor: 'red'
+  '@media (max-width: 400px)': {
+    width: '18rem',
+    height: '6rem'
+  },
+  '@media (max-width: 315px)': {
+    width: '15rem',
+    height: '5rem'
   },
   width: '21rem',
-  height: '7rem',
+  height: '7rem'
 })
 const LoginButtonText = styled('a')({
   color: '#fff',
   textDecoration: 'none',
   position: 'relative',
   bottom: '1rem',
-  right: '.4rem'
+  right: '.4rem',
+  '@media (max-width: 400px)': {
+    bottom: '.5rem',
+  },
+  '@media (max-width: 315px)': {
+    bottom: '.4rem'
+  }
 })
 
 const SpotifyLogo = styled('img')({
   width: '12rem',
   position: 'relative',
   top: '1.35rem',
-  left: '.8rem'
+  left: '.8rem',
+  '@media (max-width: 400px)': {
+    width: '9rem',
+    top: '.9rem'
+  },
+  '@media (max-width: 315px)': {
+    width: '7rem',
+    top: '.7rem'
+  }
 })
 
 export const Login = ({ code }) => {
