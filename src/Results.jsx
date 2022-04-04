@@ -2,6 +2,33 @@ import {useState, useEffect} from 'react'
 import SpotifyWebApi from 'spotify-web-api-node'
 import Player from './Player'
 import useAuth from './useAuth'
+import { styled } from '@mui/material/styles'
+import Button from '@mui/material/Button'
+
+const TimelineButton = styled(Button)({
+  border: '1px solid black'
+})
+const TimelineLink = styled('a')({
+  textDecoration: 'none'
+})
+const TrackDiv = styled('div')({
+  display: 'flex',
+  flexDirection: 'row',
+  flexWrap: 'wrap',
+  gap: '10px'
+})
+const AlbumDiv = styled('div')({
+  display: 'flex',
+  flexDirection: 'row',
+  flexWrap: 'wrap',
+  gap: '10px'
+})
+const AlbumTrackDiv = styled('div')({
+  display: 'flex',
+  flexDirection: 'row',
+  flexWrap: 'wrap',
+  gap: '10px'
+})
 
 const spotifyApi = new SpotifyWebApi({
   clientId: 'a45eb12484d24c4199050bdefee6d24b',
@@ -9,7 +36,7 @@ const spotifyApi = new SpotifyWebApi({
 
 const AUTH_URL = 'https://accounts.spotify.com/authorize?client_id=a45eb12484d24c4199050bdefee6d24b&response_type=code&redirect_uri=http://localhost:3000&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state'
 
-export const Results = ({ name, code}) => {
+export const Results = ({ name, code }) => {
   const accessToken = useAuth(code)
 
   const [artistId, setArtistId] = useState([])
@@ -19,7 +46,11 @@ export const Results = ({ name, code}) => {
   const [albumTracks, setAlbumTracks] = useState([])
   const [playingTrack, setPlayingTrack] = useState()
   const [albumImg, setAlbumImg] = useState()
+  const [open, setOpen] = useState(false)
 
+  const handleAlbumClick = () => {
+    setOpen(!open)
+  }
   //set access token
   useEffect(() => {
     if (!accessToken) return
@@ -74,12 +105,14 @@ useEffect(() => {
           return smallest
         }, item.images[0])
       return (
+      <div onClick={handleAlbumClick}>
         <div onClick={() => setAlbumImg(smallestImg.url)}>
          <button onClick={() => setAlbumId(item.id)} key={item.id}>
           <img src={smallestImg.url} />
           <p>{item.name}</p>
         </button>
         </div>
+      </div>
         )
       }))
     })
@@ -94,32 +127,33 @@ useEffect(() => {
     if (cancel) return
     setAlbumTracks(res.body.items.map((track) => {
       return (
-        <div onClick={() => setPlayingTrack(track)}>
+        <button onClick={() => setPlayingTrack(track)}>
           <img src={albumImg} />
           <p>{track.name}</p>
-        </div>
+        </button>
       )
     }))
   })
 }, [albumId, accessToken])
 
 
-
   return (
   <div>
-    <a className='timelineBtn' href={AUTH_URL}>Timeline</a>
-    <div>
-      <h3>Tracks</h3>
+    <TimelineButton><TimelineLink className='timelineBtn' href={AUTH_URL}>Timeline</TimelineLink></TimelineButton>
+    <h3>Tracks</h3>
+    <TrackDiv>
       {tracks}
-    </div>
-    <div>
-      <h3>Albums</h3>
+    </TrackDiv>
+    <h3>Albums</h3>
+    <AlbumDiv>
       {albums}
-    </div>
-    <div>
+    </AlbumDiv>
+    {open && (
       <h3>Album tracks</h3>
+    )}
+    <AlbumTrackDiv>
       {albumTracks}
-    </div>
+    </AlbumTrackDiv>
     <div>
       <Player accessToken={accessToken} trackUri={playingTrack?.uri} />
     </div>
@@ -128,5 +162,4 @@ useEffect(() => {
 }
 
 export default Results;
-
 
