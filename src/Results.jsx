@@ -162,4 +162,3 @@ useEffect(() => {
 }
 
 export default Results;
-

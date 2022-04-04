@@ -4,7 +4,11 @@ const Composer = styled('div')({
     display: 'flex',
     flexDirection: 'row',
     flexWrap: 'wrap',
-    gap: '40px'
+    gap: '40px',
+    alignItems: 'center',
+    position: 'absolute',
+    left: '50px',
+    top: '20px'
 })
 
 export const Timeline = ({composers}) => {
