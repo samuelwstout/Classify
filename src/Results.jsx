@@ -11,30 +11,116 @@ const TimelineButton = styled(Button)({
 const TimelineLink = styled('a')({
   textDecoration: 'none'
 })
+const TracksHeading = styled('h3')({
+  position: 'relative',
+  left: '2rem',
+})
 const TrackDiv = styled('div')({
   display: 'flex',
   flexDirection: 'row',
   flexWrap: 'wrap',
-  gap: '10px'
+  gap: '1rem 7rem',
+  position: 'relative',
+  left: '4rem',
+  border: 'none',
+})
+const Track = styled('button')({
+  whiteSpace: 'hidden',
+  height: '9rem',
+  width: '35rem',
+  overflow: 'hidden',
+  textOverflow: 'clip',
+  border: '1px solid #000',
+  border: 'none',
+  ':hover': {
+    backgroundColor: '#e0e0e0'
+  }
+})
+const TrackImg = styled('img')({
+  width: '7rem',
+  height: '7rem',
+  position: 'relative',
+  right: '13rem',
+  top: '1.1rem'
+})
+const TrackName = styled('h3')({
+  position: 'relative',
+  left: '10rem',
+  bottom: '6rem',
+  textAlign: 'left',
+  textSize: '14px',
+})
+const AlbumsHeading = styled('h3')({
+  position: 'absolute',
+  top: '60rem',
+  left: '2rem',
 })
 const AlbumDiv = styled('div')({
   display: 'flex',
   flexDirection: 'row',
   flexWrap: 'wrap',
-  gap: '10px'
+  alignItems: 'center',
+  gap: '4rem 6rem',
+  position: 'absolute',
+  left: '35rem',
+  top: '100rem',
+})
+const AlbumItem = styled('button')({
+  width: 'min-content',
+  height: 'min-content',
+  border: 'none',
 })
 const AlbumTrackDiv = styled('div')({
   display: 'flex',
   flexDirection: 'row',
   flexWrap: 'wrap',
-  gap: '10px'
+  gap: '10px',
+  position: 'relative',
+  top: '10rem'
 })
+const PlayerDiv = styled('div')({
+  position: 'fixed',
+  bottom: 0,
+  width: '100%'
+})
+const Space = styled('div')({
+  border: 'none',
+  width: '100%',
+  height: '300rem'
+})
+const AlbumTracksHeading = styled('h3')({
+  position: 'relative',
+  top: '10rem'
+})
+const AlbumTrackItem = styled('button')({
+  width: '30rem',
+  height: '6rem',
+})
+const AlbumTrackImg = styled('img')({
+  position: 'relative',
+  right: '190px',
+  top: '10px'
+})
+const AlbumTrackName = styled('p')({
+  position: 'relative',
+  bottom: '45px',
+  left: '10px',
+})
+const AlbumImg = styled('img')({
+  width: '20rem',
+  height: '20rem',
+})
+const AlbumName = styled('h3')({
+
+})
+
 
 const spotifyApi = new SpotifyWebApi({
   clientId: 'a45eb12484d24c4199050bdefee6d24b',
 })
-
 const AUTH_URL = 'https://accounts.spotify.com/authorize?client_id=a45eb12484d24c4199050bdefee6d24b&response_type=code&redirect_uri=http://localhost:3000&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state'
+
+
 
 export const Results = ({ name, code }) => {
   const accessToken = useAuth(code)
@@ -76,16 +162,11 @@ export const Results = ({ name, code }) => {
     spotifyApi.getArtistTopTracks(artistId, 'US').then(res => {
       if (cancel) return
       setTracks(res.body.tracks.map((track) => {
-        const smallestImg = track.album.images.reduce(
-          (smallest, image) => {
-            if (image.height < smallest.height) return image
-            return smallest
-          }, track.album.images[0])
         return (
-          <button onClick={() => setPlayingTrack(track)} key={track.id}>
-            <img src={smallestImg.url}  />
-            <p>{track.name}</p>
-          </button>
+          <Track onClick={() => setPlayingTrack(track)} key={track.id}>
+            <TrackImg src={track.album.images[0].url} />
+            <TrackName>{track.name}</TrackName>
+          </Track>
         )
       }))
     })
@@ -99,18 +180,13 @@ useEffect(() => {
   spotifyApi.getArtistAlbums(artistId).then(res => {
     if (cancel) return
     setAlbums(res.body.items.map((item) => {
-      const smallestImg = item.images.reduce(
-        (smallest, image) => {
-          if (image.height < smallest.height) return image
-          return smallest
-        }, item.images[0])
       return (
       <div onClick={handleAlbumClick}>
-        <div onClick={() => setAlbumImg(smallestImg.url)}>
-         <button onClick={() => setAlbumId(item.id)} key={item.id}>
-          <img src={smallestImg.url} />
-          <p>{item.name}</p>
-        </button>
+        <div onClick={() => setAlbumImg(item.images[2].url)}>
+        <AlbumItem onClick={() => setAlbumId(item.id)} key={item.id}>
+          <AlbumName>{item.name}</AlbumName>
+          <AlbumImg src={item.images[1].url} />
+        </AlbumItem>
         </div>
       </div>
         )
@@ -118,7 +194,6 @@ useEffect(() => {
     })
   }, [artistId, accessToken])
   
-
 useEffect(() => {
   if (!albumId) return setAlbumTracks([])
   if (!accessToken) return
@@ -127,10 +202,10 @@ useEffect(() => {
     if (cancel) return
     setAlbumTracks(res.body.items.map((track) => {
       return (
-        <button onClick={() => setPlayingTrack(track)}>
-          <img src={albumImg} />
-          <p>{track.name}</p>
-        </button>
+        <AlbumTrackItem onClick={() => setPlayingTrack(track)}>
+          <AlbumTrackImg src={albumImg} />
+          <AlbumTrackName>{track.name}</AlbumTrackName>
+        </AlbumTrackItem>
       )
     }))
   })
@@ -140,23 +215,24 @@ useEffect(() => {
   return (
   <div>
     <TimelineButton><TimelineLink className='timelineBtn' href={AUTH_URL}>Timeline</TimelineLink></TimelineButton>
-    <h3>Tracks</h3>
+    <TracksHeading>Top 10 Tracks</TracksHeading>
     <TrackDiv>
       {tracks}
     </TrackDiv>
-    <h3>Albums</h3>
+    <AlbumsHeading>Albums</AlbumsHeading>
     <AlbumDiv>
       {albums}
     </AlbumDiv>
     {open && (
-      <h3>Album tracks</h3>
+      <AlbumTracksHeading>Album tracks</AlbumTracksHeading>
     )}
     <AlbumTrackDiv>
       {albumTracks}
     </AlbumTrackDiv>
-    <div>
+    <Space />
+    <PlayerDiv>
       <Player accessToken={accessToken} trackUri={playingTrack?.uri} />
-    </div>
+    </PlayerDiv>
   </div>
   )
 }
