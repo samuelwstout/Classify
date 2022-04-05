@@ -78,9 +78,10 @@ const AlbumTrackDiv = styled('div')({
   display: 'flex',
   flexDirection: 'row',
   flexWrap: 'wrap',
-  gap: '10px',
+  gap: '1rem 7rem',
   position: 'relative',
-  top: '210rem'
+  top: '210rem',
+  left: '4rem'
 })
 const PlayerDiv = styled('div')({
   position: 'fixed',
@@ -90,25 +91,36 @@ const PlayerDiv = styled('div')({
 const Space = styled('div')({
   border: 'none',
   width: '100%',
-  height: '300rem'
+  height: '220rem'
 })
 const AlbumTracksHeading = styled('h3')({
   position: 'relative',
   top: '210rem'
 })
 const AlbumTrackItem = styled('button')({
-  width: '30rem',
-  height: '6rem',
+  whiteSpace: 'hidden',
+  height: '9rem',
+  width: '35rem',
+  overflow: 'hidden',
+  textOverflow: 'clip',
+  border: 'none',
+  ':hover': {
+    backgroundColor: '#e0e0e0'
+  }
 })
 const AlbumTrackImg = styled('img')({
+  width: '7rem',
+  height: '7rem',
   position: 'relative',
-  right: '190px',
-  top: '10px'
+  right: '13rem',
+  top: '1.1rem'
 })
-const AlbumTrackName = styled('p')({
+const AlbumTrackName = styled('h3')({
   position: 'relative',
-  bottom: '45px',
-  left: '10px',
+  left: '10rem',
+  bottom: '6rem',
+  textAlign: 'left',
+  textSize: '14px',
 })
 const AlbumImg = styled('img')({
   width: '20rem',
