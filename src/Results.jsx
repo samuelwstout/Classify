@@ -30,7 +30,6 @@ const Track = styled('button')({
   width: '35rem',
   overflow: 'hidden',
   textOverflow: 'clip',
-  border: '1px solid #000',
   border: 'none',
   ':hover': {
     backgroundColor: '#e0e0e0'
@@ -62,13 +61,18 @@ const AlbumDiv = styled('div')({
   alignItems: 'center',
   gap: '4rem 6rem',
   position: 'absolute',
-  left: '35rem',
-  top: '100rem',
+  left: '4rem',
+  top: '65rem',
+  border: 'none'
 })
 const AlbumItem = styled('button')({
+  whiteSpace: 'hidden',
   width: 'min-content',
   height: 'min-content',
   border: 'none',
+  ':hover': {
+         backgroundColor: '#e0e0e0'
+      }
 })
 const AlbumTrackDiv = styled('div')({
   display: 'flex',
@@ -76,7 +80,7 @@ const AlbumTrackDiv = styled('div')({
   flexWrap: 'wrap',
   gap: '10px',
   position: 'relative',
-  top: '10rem'
+  top: '210rem'
 })
 const PlayerDiv = styled('div')({
   position: 'fixed',
@@ -90,7 +94,7 @@ const Space = styled('div')({
 })
 const AlbumTracksHeading = styled('h3')({
   position: 'relative',
-  top: '10rem'
+  top: '210rem'
 })
 const AlbumTrackItem = styled('button')({
   width: '30rem',
