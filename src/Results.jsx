@@ -59,7 +59,7 @@ const AlbumDiv = styled('div')({
   flexDirection: 'row',
   flexWrap: 'wrap',
   alignItems: 'center',
-  gap: '4rem 6rem',
+  gap: '4rem 10rem',
   position: 'absolute',
   left: '4rem',
   top: '65rem',
@@ -67,21 +67,12 @@ const AlbumDiv = styled('div')({
 })
 const AlbumItem = styled('button')({
   whiteSpace: 'hidden',
-  width: 'min-content',
+  width: '18rem',
   height: 'min-content',
   border: 'none',
   ':hover': {
          backgroundColor: '#e0e0e0'
       }
-})
-const AlbumTrackDiv = styled('div')({
-  display: 'flex',
-  flexDirection: 'row',
-  flexWrap: 'wrap',
-  gap: '1rem 7rem',
-  position: 'relative',
-  top: '210rem',
-  left: '4rem'
 })
 const PlayerDiv = styled('div')({
   position: 'fixed',
@@ -91,11 +82,27 @@ const PlayerDiv = styled('div')({
 const Space = styled('div')({
   border: 'none',
   width: '100%',
-  height: '220rem'
+  height: '187rem' 
 })
 const AlbumTracksHeading = styled('h3')({
   position: 'relative',
-  top: '210rem'
+  top: '181rem' 
+})
+const AlbumImg = styled('img')({
+  width: '16rem',
+  height: '16rem',
+})
+const AlbumName = styled('h3')({
+
+})
+const AlbumTrackDiv = styled('div')({
+  display: 'flex',
+  flexDirection: 'row',
+  flexWrap: 'wrap',
+  gap: '1rem 7rem',
+  position: 'relative',
+  top: '182rem',
+  left: '4rem'
 })
 const AlbumTrackItem = styled('button')({
   whiteSpace: 'hidden',
@@ -122,14 +129,6 @@ const AlbumTrackName = styled('h3')({
   textAlign: 'left',
   textSize: '14px',
 })
-const AlbumImg = styled('img')({
-  width: '20rem',
-  height: '20rem',
-})
-const AlbumName = styled('h3')({
-
-})
-
 
 const spotifyApi = new SpotifyWebApi({
   clientId: 'a45eb12484d24c4199050bdefee6d24b',
@@ -137,18 +136,22 @@ const spotifyApi = new SpotifyWebApi({
 const AUTH_URL = 'https://accounts.spotify.com/authorize?client_id=a45eb12484d24c4199050bdefee6d24b&response_type=code&redirect_uri=http://localhost:3000&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state'
 
 
-
 export const Results = ({ name, code }) => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   const accessToken = useAuth(code)
 
   const [artistId, setArtistId] = useState([])
   const [tracks, setTracks] = useState([])
   const [albums, setAlbums] = useState([])
   const [albumId, setAlbumId] = useState([])
-  const [albumTracks, setAlbumTracks] = useState([])
   const [playingTrack, setPlayingTrack] = useState()
   const [albumImg, setAlbumImg] = useState()
   const [open, setOpen] = useState(false)
+  const [albumTracks, setAlbumTracks] = useState([])
 
   const handleAlbumClick = () => {
     setOpen(!open)
@@ -209,25 +212,26 @@ useEffect(() => {
       }))
     })
   }, [artistId, accessToken])
+
+  useEffect(() => {
+    if (!albumId) return setAlbumTracks([])
+    if (!accessToken) return
+    let cancel = false
+    spotifyApi.getAlbumTracks(albumId).then(res => {  
+      if (cancel) return
+      setAlbumTracks(res.body.items.map((track) => {
+        return (
+          <div>
+          <AlbumTrackItem onClick={() => setPlayingTrack(track)}> 
+            <AlbumTrackImg src={albumImg} />
+            <AlbumTrackName>{track.name}</AlbumTrackName>
+          </AlbumTrackItem>
+          </div>
+        )
+      }))
+    })
+  }, [albumId, accessToken])
   
-useEffect(() => {
-  if (!albumId) return setAlbumTracks([])
-  if (!accessToken) return
-  let cancel = false
-  spotifyApi.getAlbumTracks(albumId).then(res => {  
-    if (cancel) return
-    setAlbumTracks(res.body.items.map((track) => {
-      return (
-        <AlbumTrackItem onClick={() => setPlayingTrack(track)}>
-          <AlbumTrackImg src={albumImg} />
-          <AlbumTrackName>{track.name}</AlbumTrackName>
-        </AlbumTrackItem>
-      )
-    }))
-  })
-}, [albumId, accessToken])
-
-
   return (
   <div>
     <TimelineButton><TimelineLink className='timelineBtn' href={AUTH_URL}>Timeline</TimelineLink></TimelineButton>
