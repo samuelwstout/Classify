@@ -7,9 +7,3 @@ body {
   position: absolute;
   
 }
-.tracks {
- display: flex;
- flex-direction: column;
- position: relative;
- left: 1rem;
-}

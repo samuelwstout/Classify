@@ -5,6 +5,7 @@ import useAuth from './useAuth'
 import { styled } from '@mui/material/styles'
 import Button from '@mui/material/Button'
 
+
 const TimelineButton = styled(Button)({
   border: '1px solid black'
 })
@@ -59,7 +60,7 @@ const AlbumDiv = styled('div')({
   flexDirection: 'row',
   flexWrap: 'wrap',
   alignItems: 'center',
-  gap: '4rem 10rem',
+  gap: '1rem 10rem',
   position: 'absolute',
   left: '4rem',
   top: '65rem',
@@ -68,7 +69,7 @@ const AlbumDiv = styled('div')({
 const AlbumItem = styled('button')({
   whiteSpace: 'hidden',
   width: '18rem',
-  height: 'min-content',
+  height: '22rem',
   border: 'none',
   ':hover': {
          backgroundColor: '#e0e0e0'
@@ -86,22 +87,25 @@ const Space = styled('div')({
 })
 const AlbumTracksHeading = styled('h3')({
   position: 'relative',
-  top: '181rem' 
+  top: '173rem' 
 })
 const AlbumImg = styled('img')({
   width: '16rem',
   height: '16rem',
+  position: 'relative',
+  bottom: '8px'
 })
 const AlbumName = styled('h3')({
-
+  position: 'relative',
+  bottom: '15px'
 })
 const AlbumTrackDiv = styled('div')({
   display: 'flex',
   flexDirection: 'row',
   flexWrap: 'wrap',
-  gap: '1rem 7rem',
+  gap: '1rem 10rem',
   position: 'relative',
-  top: '182rem',
+  top: '175rem',
   left: '4rem'
 })
 const AlbumTrackItem = styled('button')({
@@ -153,9 +157,7 @@ export const Results = ({ name, code }) => {
   const [open, setOpen] = useState(false)
   const [albumTracks, setAlbumTracks] = useState([])
 
-  const handleAlbumClick = () => {
-    setOpen(!open)
-  }
+
   //set access token
   useEffect(() => {
     if (!accessToken) return
@@ -191,6 +193,12 @@ export const Results = ({ name, code }) => {
     })
   }, [artistId, accessToken])
 
+const handleAlbumClick = () => {
+    setOpen(!open)
+    window.scrollTo(0, 3500)
+  }
+
+
 //if user clicks on album, get album id
 useEffect(() => {
   if (!artistId) return setAlbums([])
@@ -221,17 +229,15 @@ useEffect(() => {
       if (cancel) return
       setAlbumTracks(res.body.items.map((track) => {
         return (
-          <div>
           <AlbumTrackItem onClick={() => setPlayingTrack(track)}> 
             <AlbumTrackImg src={albumImg} />
             <AlbumTrackName>{track.name}</AlbumTrackName>
           </AlbumTrackItem>
-          </div>
         )
       }))
     })
   }, [albumId, accessToken])
-  
+
   return (
   <div>
     <TimelineButton><TimelineLink className='timelineBtn' href={AUTH_URL}>Timeline</TimelineLink></TimelineButton>
