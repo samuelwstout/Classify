@@ -1,4 +1,4 @@
-import {useState, useEffect, useCallback} from 'react'
+import {useState, useEffect} from 'react'
 import SpotifyWebApi from 'spotify-web-api-node'
 import Player from './Player'
 import useAuth from './useAuth'
@@ -134,6 +134,13 @@ const AlbumTrackName = styled('h3')({
   textAlign: 'left',
   textSize: '14px',
 })
+const Play = styled('img')({
+  position: 'relative',
+  right: '31.3rem',
+  bottom: '1.3rem',
+  filter: 'brightness(0.25)'
+})
+
 
 const spotifyApi = new SpotifyWebApi({
   clientId: 'a45eb12484d24c4199050bdefee6d24b',
@@ -187,10 +194,11 @@ export const Results = ({ name, code }) => {
       setTracks(res.body.tracks.map((track) => {
         return (
           <div onClick={() => setPlayingTrack(track)}>
-          <Track onClick= {toggleValue} key={track.id}>
+          <Track onClick={toggleValue} key={track.id}>
             <TrackImg src={track.album.images[0].url} />
             <TrackName>{track.name}</TrackName>
           </Track>
+          <Play src='/icons8-play-30.png'/>
           </div>
         )
       }))
