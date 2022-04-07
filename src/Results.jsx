@@ -186,21 +186,18 @@ export const Results = ({ name, code }) => {
       if (cancel) return
       setTracks(res.body.tracks.map((track) => {
         return (
-          <Track onClick={toggleValue} key={track.id}>
+          <div onClick={() => setPlayingTrack(track)}>
+          <Track onClick = {toggleValue} key={track.id}>
             <TrackImg src={track.album.images[0].url} />
             <TrackName>{track.name}</TrackName>
           </Track>
+          </div>
         )
       }))
     })
+  
   }, [artistId, accessToken])
 
-  if (value === true) {
-    console.log('yes')
-  }
-  if (value === false) {
-    console.log('no')
-  }
 
 const handleAlbumClick = () => {
     setOpen(!open)
@@ -266,7 +263,7 @@ useEffect(() => {
     </AlbumTrackDiv>
     <Space />
     <PlayerDiv>
-      <Player accessToken={accessToken} trackUri={playingTrack?.uri} />
+      <Player accessToken={accessToken} trackUri={value ? playingTrack.uri : null} />
     </PlayerDiv>
   </div>
   )

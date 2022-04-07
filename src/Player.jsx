@@ -5,6 +5,11 @@ const Player = ({ accessToken, trackUri }) => {
   const [play, setPlay] = useState(false)
 
   useEffect(() => setPlay(true), [trackUri])
+  useEffect(() => {
+    if (trackUri === null) {
+      setPlay(false)
+    }
+  }, [trackUri])
 
   if (!accessToken) return null
   return (
@@ -12,7 +17,7 @@ const Player = ({ accessToken, trackUri }) => {
       token={accessToken}
       showSaveIcon
       callback={state => {
-        if (state.isPlaying) setPlay(true)
+        if (!state.isPlaying) setPlay(false)
       }}
       play={play}
       uris={trackUri ? [trackUri] : []}
