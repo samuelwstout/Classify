@@ -187,7 +187,7 @@ export const Results = ({ name, code }) => {
       setTracks(res.body.tracks.map((track) => {
         return (
           <div onClick={() => setPlayingTrack(track)}>
-          <Track onClick = {toggleValue} key={track.id}>
+          <Track onClick= {toggleValue} key={track.id}>
             <TrackImg src={track.album.images[0].url} />
             <TrackName>{track.name}</TrackName>
           </Track>
@@ -235,10 +235,12 @@ useEffect(() => {
       if (cancel) return
       setAlbumTracks(res.body.items.map((track) => {
         return (
-          <AlbumTrackItem onClick={() => setPlayingTrack(track)}> 
+          <div onClick={() => setPlayingTrack(track)}>
+          <AlbumTrackItem onClick={toggleValue} key={track.id}> 
             <AlbumTrackImg src={albumImg} />
             <AlbumTrackName>{track.name}</AlbumTrackName>
           </AlbumTrackItem>
+          </div>
         )
       }))
     }) 
