@@ -12,7 +12,7 @@ const Player = ({ accessToken, trackUri }) => {
       token={accessToken}
       showSaveIcon
       callback={state => {
-        if (!state.isPlaying) setPlay(false)
+        if (state.isPlaying) setPlay(true)
       }}
       play={play}
       uris={trackUri ? [trackUri] : []}

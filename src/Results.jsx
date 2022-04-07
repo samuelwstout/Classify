@@ -1,10 +1,10 @@
-import {useState, useEffect} from 'react'
+import {useState, useEffect, useCallback} from 'react'
 import SpotifyWebApi from 'spotify-web-api-node'
 import Player from './Player'
 import useAuth from './useAuth'
 import { styled } from '@mui/material/styles'
 import Button from '@mui/material/Button'
-
+import useToggle from './useToggle'
 
 const TimelineButton = styled(Button)({
   border: '1px solid black'
@@ -87,7 +87,8 @@ const Space = styled('div')({
 })
 const AlbumTracksHeading = styled('h3')({
   position: 'relative',
-  top: '173rem' 
+  top: '173rem',
+  left: '2rem'
 })
 const AlbumImg = styled('img')({
   width: '16rem',
@@ -139,7 +140,6 @@ const spotifyApi = new SpotifyWebApi({
 })
 const AUTH_URL = 'https://accounts.spotify.com/authorize?client_id=a45eb12484d24c4199050bdefee6d24b&response_type=code&redirect_uri=http://localhost:3000&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state'
 
-
 export const Results = ({ name, code }) => {
 
   useEffect(() => {
@@ -152,11 +152,13 @@ export const Results = ({ name, code }) => {
   const [tracks, setTracks] = useState([])
   const [albums, setAlbums] = useState([])
   const [albumId, setAlbumId] = useState([])
-  const [playingTrack, setPlayingTrack] = useState()
+  const [playingTrack, setPlayingTrack] = useState([])
   const [albumImg, setAlbumImg] = useState()
   const [open, setOpen] = useState(false)
   const [albumTracks, setAlbumTracks] = useState([])
+  const [value, toggleValue] = useToggle(false)
 
+  //if playingTrack and click again, stop playingTrack
 
   //set access token
   useEffect(() => {
@@ -184,7 +186,7 @@ export const Results = ({ name, code }) => {
       if (cancel) return
       setTracks(res.body.tracks.map((track) => {
         return (
-          <Track onClick={() => setPlayingTrack(track)} key={track.id}>
+          <Track onClick={toggleValue} key={track.id}>
             <TrackImg src={track.album.images[0].url} />
             <TrackName>{track.name}</TrackName>
           </Track>
@@ -192,6 +194,13 @@ export const Results = ({ name, code }) => {
       }))
     })
   }, [artistId, accessToken])
+
+  if (value === true) {
+    console.log('yes')
+  }
+  if (value === false) {
+    console.log('no')
+  }
 
 const handleAlbumClick = () => {
     setOpen(!open)
@@ -235,7 +244,7 @@ useEffect(() => {
           </AlbumTrackItem>
         )
       }))
-    })
+    }) 
   }, [albumId, accessToken])
 
   return (
