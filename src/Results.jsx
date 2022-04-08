@@ -6,6 +6,7 @@ import { styled } from '@mui/material/styles'
 import Button from '@mui/material/Button'
 import useToggle from './useToggle'
 
+
 const TimelineButton = styled(Button)({
   border: '1px solid black'
 })
@@ -35,6 +36,12 @@ const Track = styled('button')({
   ':hover': {
     backgroundColor: '#e0e0e0'
   }
+})
+const Play = styled('img')({
+  position: 'relative',
+  visibility: 'visible',
+  left: '17.8rem',
+  top: '.5rem'
 })
 const TrackImg = styled('img')({
   width: '7rem',
@@ -134,13 +141,6 @@ const AlbumTrackName = styled('h3')({
   textAlign: 'left',
   textSize: '14px',
 })
-const Play = styled('img')({
-  position: 'relative',
-  right: '31.3rem',
-  bottom: '1.3rem',
-  filter: 'brightness(0.25)'
-})
-
 
 const spotifyApi = new SpotifyWebApi({
   clientId: 'a45eb12484d24c4199050bdefee6d24b',
@@ -193,12 +193,12 @@ export const Results = ({ name, code }) => {
       if (cancel) return
       setTracks(res.body.tracks.map((track) => {
         return (
-          <div onClick={() => setPlayingTrack(track)}>
+          <div  onClick={() => setPlayingTrack(track)}>
           <Track onClick={toggleValue} key={track.id}>
+            <Play src='/icons8-play-30.png'/>
             <TrackImg src={track.album.images[0].url} />
             <TrackName>{track.name}</TrackName>
           </Track>
-          <Play src='/icons8-play-30.png'/>
           </div>
         )
       }))
