@@ -23,6 +23,7 @@ body {
   top: 1rem;
   visibility: hidden;
 }
+
 .track:hover .icon {
   visibility: visible;
 }

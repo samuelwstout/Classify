@@ -200,7 +200,6 @@ export const Results = ({ name, code }) => {
             <TrackName>{track.name}</TrackName>
           </button>
           </div>
-      
         )
       }))
     })
@@ -239,12 +238,14 @@ useEffect(() => {
     if (!albumId) return setAlbumTracks([])
     if (!accessToken) return
     let cancel = false
-    spotifyApi.getAlbumTracks(albumId).then(res => {  
+    spotifyApi.getAlbumTracks(albumId).then(res => { 
+      let icon = value ? '/icons8-pause-30.png' : '/icons8-play-30.png'
       if (cancel) return
       setAlbumTracks(res.body.items.map((track) => {
         return (
           <div onClick={() => setPlayingTrack(track)}>
-          <AlbumTrackItem onClick={toggleValue} key={track.id}> 
+          <AlbumTrackItem onClick={toggleValue} key={track.id}>
+            <img src={icon} />
             <AlbumTrackImg src={albumImg} />
             <AlbumTrackName>{track.name}</AlbumTrackName>
           </AlbumTrackItem>
@@ -252,7 +253,7 @@ useEffect(() => {
         )
       }))
     }) 
-  }, [albumId, accessToken])
+  }, [albumId, accessToken, value])
 
   return (
   <div>
