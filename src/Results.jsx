@@ -36,13 +36,13 @@ const TrackDiv = styled('div')({
 //   ':hover': {
 //     backgroundColor: '#e0e0e0'
 //   }
-// }) Now in App.css
+// }) IN APP.CSS
 // const Play = styled('img')({
 //   position: 'relative',
 //   visibility: 'hidden',
 //   left: '17.8rem',
 //   top: '.5rem'
-// }) Now in App.css
+// }) IN APP.CSS
 const TrackImg = styled('img')({
   width: '7rem',
   height: '7rem',
@@ -165,8 +165,6 @@ export const Results = ({ name, code }) => {
   const [albumTracks, setAlbumTracks] = useState([])
   const [value, toggleValue] = useToggle(false)
 
-  //if playingTrack and click again, stop playingTrack
-
   //set access token
   useEffect(() => {
     if (!accessToken) return
@@ -184,34 +182,36 @@ export const Results = ({ name, code }) => {
     })
   }, [name, accessToken])
 
+
   //to get top tracks from artist id
   useEffect(() => {
     if (!artistId) return setTracks([])
     if (!accessToken) return
     let cancel = false
     spotifyApi.getArtistTopTracks(artistId, 'US').then(res => {
+      let icon = value ? '/icons8-pause-30.png' : '/icons8-play-30.png'
       if (cancel) return
       setTracks(res.body.tracks.map((track) => {
         return (
-          <div  onClick={() => setPlayingTrack(track)}>
+          <div onClick={() => setPlayingTrack(track)}>
           <button className='track' onClick={toggleValue} key={track.id}>
-            <img className='play' src='/icons8-play-30.png'/>
+            <img className='icon' src={icon} />
             <TrackImg src={track.album.images[0].url} />
             <TrackName>{track.name}</TrackName>
           </button>
           </div>
+      
         )
       }))
     })
-  
-  }, [artistId, accessToken])
+  }, [artistId, accessToken, value])
+
 
 
 const handleAlbumClick = () => {
     setOpen(!open)
     window.scrollTo(0, 3500)
   }
-
 
 //if user clicks on album, get album id
 useEffect(() => {

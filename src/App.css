@@ -17,12 +17,12 @@ body {
 .track:hover {
   background-color: #e0e0e0;
 }
-.play {
+.track .icon {
   position: relative;
+  left: 19rem;
+  top: 1rem;
   visibility: hidden;
-  left: 17.8rem;
-  top: .5rem
 }
-.track:hover .play {
+.track:hover .icon {
   visibility: visible;
 }
