@@ -23,3 +23,6 @@ body {
   left: 17.8rem;
   top: .5rem
 }
+.track:hover .play {
+  visibility: visible;
+}
