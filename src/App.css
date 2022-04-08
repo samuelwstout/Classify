@@ -6,3 +6,20 @@ body {
   width: 100%;
   position: absolute;
 }
+.track {
+  white-space: hidden;
+  height: 9rem;
+  width: 35rem;
+  overflow: hidden;
+  text-overflow: clip;
+  border: none;
+}
+.track:hover {
+  background-color: #e0e0e0;
+}
+.play {
+  position: relative;
+  visibility: hidden;
+  left: 17.8rem;
+  top: .5rem
+}

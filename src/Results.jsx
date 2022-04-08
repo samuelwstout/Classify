@@ -26,23 +26,23 @@ const TrackDiv = styled('div')({
   left: '4rem',
   border: 'none',
 })
-const Track = styled('button')({
-  whiteSpace: 'hidden',
-  height: '9rem',
-  width: '35rem',
-  overflow: 'hidden',
-  textOverflow: 'clip',
-  border: 'none',
-  ':hover': {
-    backgroundColor: '#e0e0e0'
-  }
-})
-const Play = styled('img')({
-  position: 'relative',
-  visibility: 'visible',
-  left: '17.8rem',
-  top: '.5rem'
-})
+// const Track = styled('button')({
+//   whiteSpace: 'hidden',
+//   height: '9rem',
+//   width: '35rem', 
+//   overflow: 'hidden',
+//   textOverflow: 'clip',
+//   border: 'none',
+//   ':hover': {
+//     backgroundColor: '#e0e0e0'
+//   }
+// }) Now in App.css
+// const Play = styled('img')({
+//   position: 'relative',
+//   visibility: 'hidden',
+//   left: '17.8rem',
+//   top: '.5rem'
+// }) Now in App.css
 const TrackImg = styled('img')({
   width: '7rem',
   height: '7rem',
@@ -194,11 +194,11 @@ export const Results = ({ name, code }) => {
       setTracks(res.body.tracks.map((track) => {
         return (
           <div  onClick={() => setPlayingTrack(track)}>
-          <Track onClick={toggleValue} key={track.id}>
-            <Play src='/icons8-play-30.png'/>
+          <button className='track' onClick={toggleValue} key={track.id}>
+            <img className='play' src='/icons8-play-30.png'/>
             <TrackImg src={track.album.images[0].url} />
             <TrackName>{track.name}</TrackName>
-          </Track>
+          </button>
           </div>
         )
       }))
