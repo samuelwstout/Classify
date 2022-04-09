@@ -116,17 +116,17 @@ const AlbumTrackDiv = styled('div')({
   top: '175rem',
   left: '4rem'
 })
-const AlbumTrackItem = styled('button')({
-  whiteSpace: 'hidden',
-  height: '9rem',
-  width: '35rem',
-  overflow: 'hidden',
-  textOverflow: 'clip',
-  border: 'none',
-  ':hover': {
-    backgroundColor: '#e0e0e0'
-  }
-})
+// const AlbumTrackItem = styled('button')({
+//   whiteSpace: 'hidden',
+//   height: '9rem',
+//   width: '35rem',
+//   overflow: 'hidden',
+//   textOverflow: 'clip',
+//   border: 'none',
+//   ':hover': {
+//     backgroundColor: '#e0e0e0'
+//   }
+// })
 const AlbumTrackImg = styled('img')({
   width: '7rem',
   height: '7rem',
@@ -134,6 +134,11 @@ const AlbumTrackImg = styled('img')({
   right: '13rem',
   top: '1.1rem'
 })
+// const AlbumTrackIcon = styled('img')({
+//   position: 'relative',
+//   left: '18.5rem',
+//   top: '1rem'
+// })
 const AlbumTrackName = styled('h3')({
   position: 'relative',
   left: '10rem',
@@ -244,11 +249,11 @@ useEffect(() => {
       setAlbumTracks(res.body.items.map((track) => {
         return (
           <div onClick={() => setPlayingTrack(track)}>
-          <AlbumTrackItem onClick={toggleValue} key={track.id}>
-            <img src={icon} />
+          <button className='albumTrack' onClick={toggleValue} key={track.id}>
+            <img className='icon2' src={icon} />
             <AlbumTrackImg src={albumImg} />
             <AlbumTrackName>{track.name}</AlbumTrackName>
-          </AlbumTrackItem>
+          </button>
           </div>
         )
       }))

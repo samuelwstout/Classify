@@ -27,3 +27,23 @@ body {
 .track:hover .icon {
   visibility: visible;
 }
+.albumTrack {
+  white-space: hidden;
+  height: 9rem;
+  width: 35rem;
+  overflow: hidden;
+  text-overflow: clip;
+  border: none;
+}
+.albumTrack:hover {
+  background-color: #e0e0e0;
+}
+.albumTrack .icon2 {
+  position: relative;
+  left: 18.5rem;
+  top: 1rem;
+  visibility: hidden;
+}
+.albumTrack:hover .icon2 {
+  visibility: visible;
+}
