@@ -17,14 +17,11 @@ const ComposerButton = styled('button')({
     backgroundColor: '#e0e0e0'
   }
 })
-const ComposerName = styled(Link)({
+const ComposerName = styled('h3')({
    position: 'relative',
    left: '2px',
    textDecoration: 'none',
    color: '#000',
-   ':hover': {
-     textDecoration: 'underline'
-   }
 })
 const ComposerImg = styled('img')({
   width: '10rem',
@@ -46,10 +43,12 @@ const App = () => {
      const listofComposers = data.composers.map((composer) => {
   
         return (
-          <ComposerButton  key={composer.id}>
-              <div onClick={() => setName(composer.name)}><ComposerName to='/results'>{composer.name}</ComposerName></div>
+          <Link to='/results'>
+          <ComposerButton onClick={() => setName(composer.name)} key={composer.id}>
+              <ComposerName>{composer.name}</ComposerName>
               <ComposerImg src={composer.img}/>
           </ComposerButton>
+          </Link>
         )
      })
      setComposers(listofComposers);
@@ -58,7 +57,7 @@ const App = () => {
   }, []);
 
   return (
-    <div>
+
       <Router>
         <Routes>
           <Route path='/' element={<Login code={code} />} />
@@ -66,7 +65,7 @@ const App = () => {
           <Route path='/results' element={<Results name={name} code={code}  />} />
         </Routes>
       </Router>
-    </div>
+  
   );
 }
 
