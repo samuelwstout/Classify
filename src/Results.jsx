@@ -263,6 +263,9 @@ useEffect(() => {
   return (
   <div>
     <TimelineButton><TimelineLink className='timelineBtn' href={AUTH_URL}>Timeline</TimelineLink></TimelineButton>
+    <div>
+      <h2>{name}</h2>
+    </div>
     <TracksHeading>Top 10 Tracks</TracksHeading>
     <TrackDiv>
       {tracks}

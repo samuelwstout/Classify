@@ -9,13 +9,17 @@ import { styled } from '@mui/material/styles'
 
 const code = new URLSearchParams(window.location.search).get('code');
 
-const ComposerDiv = styled('div')({
-  width: '14rem',
-  height: 'min-content'
+const ComposerButton = styled('button')({
+  width: '13rem',
+  height: 'min-content',
+  border: 'none',
+  ':hover': {
+    backgroundColor: '#e0e0e0'
+  }
 })
 const ComposerName = styled(Link)({
    position: 'relative',
-   left: '30px',
+   left: '2px',
    textDecoration: 'none',
    color: '#000',
    ':hover': {
@@ -25,8 +29,8 @@ const ComposerName = styled(Link)({
 const ComposerImg = styled('img')({
   width: '10rem',
   position: 'relative',
-  left: '30px',
-  top: '15px'
+  left: '2px',
+  top: '0px'
 })
 
 const App = () => {
@@ -42,10 +46,10 @@ const App = () => {
      const listofComposers = data.composers.map((composer) => {
   
         return (
-          <ComposerDiv  key={composer.id}>
+          <ComposerButton  key={composer.id}>
               <div onClick={() => setName(composer.name)}><ComposerName to='/results'>{composer.name}</ComposerName></div>
               <ComposerImg src={composer.img}/>
-          </ComposerDiv>
+          </ComposerButton>
         )
      })
      setComposers(listofComposers);
