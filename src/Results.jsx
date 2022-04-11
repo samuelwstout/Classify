@@ -194,13 +194,14 @@ export const Results = ({ name, code }) => {
     if (!accessToken) return
     let cancel = false
     spotifyApi.getArtistTopTracks(artistId, 'US').then(res => {
-      let icon = value ? '/icons8-pause-30.png' : '/icons8-play-30.png'
+      // let icon = value ? '/icons8-pause-30.png' : '/icons8-play-30.png'
       if (cancel) return
       setTracks(res.body.tracks.map((track) => {
+        //If value === true, grab that one playingTrack and make its icon '/icons8-pause-30.png'. And for every other track, make the icons remain '/icons8-play-30.png' 
         return (
           <div onClick={() => setPlayingTrack(track)}>
           <button className='track' onClick={toggleValue} key={track.id}>
-            <img className='icon' src={icon} />
+            {/* <img className='icon' src={icon} /> */}
             <TrackImg src={track.album.images[0].url} />
             <TrackName>{track.name}</TrackName>
           </button>
@@ -208,9 +209,10 @@ export const Results = ({ name, code }) => {
         )
       }))
     })
-  }, [artistId, accessToken, value])
+  }, [artistId, accessToken, value, playingTrack])
 
-
+// console.log(tracks.length)
+value ? console.log(playingTrack.name) : console.log('nope')
 
 const handleAlbumClick = () => {
     setOpen(!open)
@@ -244,13 +246,13 @@ useEffect(() => {
     if (!accessToken) return
     let cancel = false
     spotifyApi.getAlbumTracks(albumId).then(res => { 
-      let icon = value ? '/icons8-pause-30.png' : '/icons8-play-30.png'
+      // let icon = value ? '/icons8-pause-30.png' : '/icons8-play-30.png'
       if (cancel) return
       setAlbumTracks(res.body.items.map((track) => {
         return (
           <div onClick={() => setPlayingTrack(track)}>
           <button className='albumTrack' onClick={toggleValue} key={track.id}>
-            <img className='icon2' src={icon} />
+            {/* <img className='icon2' src={icon} /> */}
             <AlbumTrackImg src={albumImg} />
             <AlbumTrackName>{track.name}</AlbumTrackName>
           </button>
@@ -259,6 +261,7 @@ useEffect(() => {
       }))
     }) 
   }, [albumId, accessToken, value])
+
 
   return (
   <div>
