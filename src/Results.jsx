@@ -6,7 +6,14 @@ import { styled } from '@mui/material/styles'
 import Button from '@mui/material/Button'
 import useToggle from './useToggle'
 
-
+const ComposerTitle = styled('h2')({
+  position: 'relative',
+})
+const ComposerImg = styled('img')({
+  width: '8rem',
+  position: 'relative',
+  left: '25rem'
+})
 const TimelineButton = styled(Button)({
   border: '1px solid black'
 })
@@ -169,6 +176,7 @@ export const Results = ({ name, code, img }) => {
   const [open, setOpen] = useState(false)
   const [albumTracks, setAlbumTracks] = useState([])
   const [value, toggleValue] = useToggle(false)
+  const [icon, setIcon] = useState('/icons8-play-30.png')
 
   //set access token
   useEffect(() => {
@@ -194,14 +202,14 @@ export const Results = ({ name, code, img }) => {
     if (!accessToken) return
     let cancel = false
     spotifyApi.getArtistTopTracks(artistId, 'US').then(res => {
-      // let icon = value ? '/icons8-pause-30.png' : '/icons8-play-30.png'
+      setIcon(value ? '/icons8-play-30.png' : '/icons8-pause-30.png')
       if (cancel) return
       setTracks(res.body.tracks.map((track) => {
         //If value === true, grab that one playingTrack and make its icon '/icons8-pause-30.png'. And for every other track, make the icons remain '/icons8-play-30.png' 
         return (
           <div onClick={() => setPlayingTrack(track)}>
           <button className='track' onClick={toggleValue} key={track.id}>
-            {/* <img className='icon' src={icon} /> */}
+            <img className='icon' src={icon} />
             <TrackImg src={track.album.images[0].url} />
             <TrackName>{track.name}</TrackName>
           </button>
@@ -267,8 +275,8 @@ useEffect(() => {
   <div>
     <TimelineButton><TimelineLink className='timelineBtn' href={AUTH_URL}>Timeline</TimelineLink></TimelineButton>
     <div>
-      <h2>{name}</h2>
-      <img src={img} />
+      <ComposerImg src={img} />
+      <ComposerTitle>{name}</ComposerTitle>
     </div>
     <TracksHeading>Top 10 Tracks</TracksHeading>
     <TrackDiv>
