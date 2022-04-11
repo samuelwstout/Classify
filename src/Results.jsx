@@ -152,7 +152,7 @@ const spotifyApi = new SpotifyWebApi({
 })
 const AUTH_URL = 'https://accounts.spotify.com/authorize?client_id=a45eb12484d24c4199050bdefee6d24b&response_type=code&redirect_uri=http://localhost:3000&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state'
 
-export const Results = ({ name, code }) => {
+export const Results = ({ name, code, img }) => {
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -268,6 +268,7 @@ useEffect(() => {
     <TimelineButton><TimelineLink className='timelineBtn' href={AUTH_URL}>Timeline</TimelineLink></TimelineButton>
     <div>
       <h2>{name}</h2>
+      <img src={img} />
     </div>
     <TracksHeading>Top 10 Tracks</TracksHeading>
     <TrackDiv>

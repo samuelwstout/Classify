@@ -34,6 +34,7 @@ const App = () => {
 
   const [name, setName] = useState('');
   const [composers, setComposers] = useState([]);
+  const [img, setImg] = useState('')
 
   useEffect(() => {
     const fetchComposers = async () => {
@@ -44,7 +45,12 @@ const App = () => {
   
         return (
           <Link to='/results'>
-          <ComposerButton onClick={() => setName(composer.name)} key={composer.id}>
+          <ComposerButton 
+          onClick={() => {
+            setName(composer.name) 
+            setImg(composer.img)
+            }} 
+            key={composer.id}>
               <ComposerName>{composer.name}</ComposerName>
               <ComposerImg src={composer.img}/>
           </ComposerButton>
@@ -62,7 +68,7 @@ const App = () => {
         <Routes>
           <Route path='/' element={<Login code={code} />} />
           <Route path='/timeline' element={<Timeline composers={composers}  />} />
-          <Route path='/results' element={<Results name={name} code={code}  />} />
+          <Route path='/results' element={<Results img={img} name={name} code={code}  />} />
         </Routes>
       </Router>
   
