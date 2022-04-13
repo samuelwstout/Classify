@@ -6,14 +6,27 @@ import { styled } from '@mui/material/styles'
 import Button from '@mui/material/Button'
 import useToggle from './useToggle'
 
+const ResultsHeader = styled('div')({
+  border: '1px solid black',
+  height: 'max-height',
+})
+const TracksSection = styled('div')({
+  border: '1px solid red'
+})
+const AlbumSection = styled('div')({
+  border: '1px solid blue',
+  height: '170rem',
+})
 const ComposerTitle = styled('h1')({
-  position: 'absolute',
-  left: '36rem',
-  top: '1rem'
+  position: 'relative',
+  left: '44rem',
+  bottom: '10rem'
 })
 const ComposerImg = styled('img')({
-  width: '8rem',
-  
+    width: '12rem',
+    position: 'relative',
+    left: '28rem',
+    top: '2rem'
 })
 const TimelineButton = styled(Button)({
   border: '1px solid black'
@@ -67,7 +80,7 @@ const TrackName = styled('h3')({
 })
 const AlbumsHeading = styled('h3')({
   position: 'absolute',
-  top: '60rem',
+  top: '75rem',
   left: '2rem',
 })
 const AlbumDiv = styled('div')({
@@ -78,7 +91,7 @@ const AlbumDiv = styled('div')({
   gap: '1rem 10rem',
   position: 'absolute',
   left: '4rem',
-  top: '65rem',
+  top: '80rem',
   border: 'none'
 })
 const AlbumItem = styled('button')({
@@ -275,18 +288,26 @@ useEffect(() => {
   return (
   <div>
     <TimelineButton><TimelineLink className='timelineBtn' href={AUTH_URL}>Timeline</TimelineLink></TimelineButton>
-    <div>
+
+    <ResultsHeader>
       <ComposerImg src={img} />
       <ComposerTitle>{name}</ComposerTitle>
-    </div>
-    <TracksHeading>Top 10 Tracks</TracksHeading>
-    <TrackDiv>
-      {tracks}
-    </TrackDiv>
-    <AlbumsHeading>Albums</AlbumsHeading>
-    <AlbumDiv>
-      {albums}
-    </AlbumDiv>
+    </ResultsHeader>
+
+    <TracksSection>
+      <TracksHeading>Top 10 Tracks</TracksHeading>
+      <TrackDiv>
+        {tracks}
+      </TrackDiv>
+    </TracksSection>
+
+    <AlbumSection>
+      <AlbumsHeading>Albums</AlbumsHeading>
+      <AlbumDiv>
+        {albums}
+      </AlbumDiv>
+    </AlbumSection>
+
     {open && (
       <AlbumTracksHeading>Album tracks</AlbumTracksHeading>
     )}
