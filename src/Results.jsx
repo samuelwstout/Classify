@@ -6,13 +6,14 @@ import { styled } from '@mui/material/styles'
 import Button from '@mui/material/Button'
 import useToggle from './useToggle'
 
-const ComposerTitle = styled('h2')({
-  position: 'relative',
+const ComposerTitle = styled('h1')({
+  position: 'absolute',
+  left: '36rem',
+  top: '1rem'
 })
 const ComposerImg = styled('img')({
   width: '8rem',
-  position: 'relative',
-  left: '25rem'
+  
 })
 const TimelineButton = styled(Button)({
   border: '1px solid black'
@@ -159,7 +160,7 @@ const spotifyApi = new SpotifyWebApi({
 })
 const AUTH_URL = 'https://accounts.spotify.com/authorize?client_id=a45eb12484d24c4199050bdefee6d24b&response_type=code&redirect_uri=http://localhost:3000&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state'
 
-export const Results = ({ name, code, img }) => {
+export const Results = ({ name, code }) => {
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -177,6 +178,7 @@ export const Results = ({ name, code, img }) => {
   const [albumTracks, setAlbumTracks] = useState([])
   const [value, toggleValue] = useToggle(false)
   const [icon, setIcon] = useState('/icons8-play-30.png')
+  const [img, setImg] = useState('')
 
   //set access token
   useEffect(() => {
@@ -190,6 +192,7 @@ export const Results = ({ name, code, img }) => {
     if (!accessToken) return 
     let cancel = false
     spotifyApi.searchArtists(name).then(res => {
+      setImg(res.body.artists.items[0].images[0].url)
       if (cancel) return
       setArtistId(res.body.artists.items[0].id)
     })
@@ -219,8 +222,6 @@ export const Results = ({ name, code, img }) => {
     })
   }, [artistId, accessToken, value, playingTrack])
 
-// console.log(tracks.length)
-value ? console.log(playingTrack.name) : console.log('nope')
 
 const handleAlbumClick = () => {
     setOpen(!open)
