@@ -15,7 +15,11 @@ const TracksSection = styled('div')({
 })
 const AlbumSection = styled('div')({
   border: '1px solid blue',
-  height: '170rem',
+  height: '166rem',
+})
+const AlbumTrackSection = styled('div')({
+  border: '1px solid green',
+  height: 'fit-content'
 })
 const ComposerTitle = styled('h1')({
   position: 'relative',
@@ -80,7 +84,7 @@ const TrackName = styled('h3')({
 })
 const AlbumsHeading = styled('h3')({
   position: 'absolute',
-  top: '75rem',
+  top: '73rem',
   left: '2rem',
 })
 const AlbumDiv = styled('div')({
@@ -91,7 +95,7 @@ const AlbumDiv = styled('div')({
   gap: '1rem 10rem',
   position: 'absolute',
   left: '4rem',
-  top: '80rem',
+  top: '77rem',
   border: 'none'
 })
 const AlbumItem = styled('button')({
@@ -111,11 +115,10 @@ const PlayerDiv = styled('div')({
 const Space = styled('div')({
   border: 'none',
   width: '100%',
-  height: '187rem' 
+  height: '5rem' 
 })
 const AlbumTracksHeading = styled('h3')({
   position: 'relative',
-  top: '173rem',
   left: '2rem'
 })
 const AlbumImg = styled('img')({
@@ -134,7 +137,6 @@ const AlbumTrackDiv = styled('div')({
   flexWrap: 'wrap',
   gap: '1rem 10rem',
   position: 'relative',
-  top: '175rem',
   left: '4rem'
 })
 // const AlbumTrackItem = styled('button')({
@@ -308,12 +310,15 @@ useEffect(() => {
       </AlbumDiv>
     </AlbumSection>
 
-    {open && (
-      <AlbumTracksHeading>Album tracks</AlbumTracksHeading>
-    )}
-    <AlbumTrackDiv>
-      {albumTracks}
-    </AlbumTrackDiv>
+    <AlbumTrackSection>
+      {open && (
+        <AlbumTracksHeading>Album tracks</AlbumTracksHeading>
+      )}
+      <AlbumTrackDiv>
+        {albumTracks}
+      </AlbumTrackDiv>
+    </AlbumTrackSection>
+
     <Space />
     <PlayerDiv>
       <Player accessToken={accessToken} trackUri={value ? playingTrack.uri : null} />
