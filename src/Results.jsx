@@ -7,18 +7,16 @@ import Button from '@mui/material/Button'
 import useToggle from './useToggle'
 
 const ResultsHeader = styled('div')({
-  border: '1px solid black',
   height: 'max-height',
 })
 const TracksSection = styled('div')({
-  border: '1px solid red'
+  
 })
 const AlbumSection = styled('div')({
-  border: '1px solid blue',
   height: '166rem',
 })
 const AlbumTrackSection = styled('div')({
-  border: '1px solid green',
+
   height: 'fit-content'
 })
 const ComposerTitle = styled('h1')({
