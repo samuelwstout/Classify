@@ -177,7 +177,7 @@ export const Results = ({ name, code }) => {
   const [open, setOpen] = useState(false)
   const [albumTracks, setAlbumTracks] = useState([])
   const [value, toggleValue] = useToggle(false)
-  const [icon, setIcon] = useState('/icons8-play-30.png')
+  // const [icon, setIcon] = useState('/icons8-play-30.png')
   const [img, setImg] = useState('')
 
   //set access token
@@ -205,14 +205,14 @@ export const Results = ({ name, code }) => {
     if (!accessToken) return
     let cancel = false
     spotifyApi.getArtistTopTracks(artistId, 'US').then(res => {
-      setIcon(value ? '/icons8-play-30.png' : '/icons8-pause-30.png')
+      // setIcon(value ? '/icons8-play-30.png' : '/icons8-pause-30.png')
       if (cancel) return
       setTracks(res.body.tracks.map((track) => {
         //If value === true, grab that one playingTrack and make its icon '/icons8-pause-30.png'. And for every other track, make the icons remain '/icons8-play-30.png' 
         return (
           <div onClick={() => setPlayingTrack(track)}>
           <button className='track' onClick={toggleValue} key={track.id}>
-            <img className='icon' src={icon} />
+            {/* <img className='icon' src={icon} /> */}
             <TrackImg src={track.album.images[0].url} />
             <TrackName>{track.name}</TrackName>
           </button>
