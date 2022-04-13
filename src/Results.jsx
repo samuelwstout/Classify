@@ -83,8 +83,7 @@ const TrackName = styled('h3')({
   textSize: '14px',
 })
 const AlbumsHeading = styled('h3')({
-  position: 'absolute',
-  top: '73rem',
+  position: 'relative',
   left: '2rem',
 })
 const AlbumDiv = styled('div')({
@@ -93,9 +92,8 @@ const AlbumDiv = styled('div')({
   flexWrap: 'wrap',
   alignItems: 'center',
   gap: '1rem 10rem',
-  position: 'absolute',
-  left: '4rem',
-  top: '77rem',
+  position: 'relative',
+  left: '6rem',
   border: 'none'
 })
 const AlbumItem = styled('button')({
@@ -207,9 +205,9 @@ export const Results = ({ name, code }) => {
     if (!accessToken) return 
     let cancel = false
     spotifyApi.searchArtists(name).then(res => {
-      setImg(res.body.artists.items[0].images[0].url)
       if (cancel) return
       setArtistId(res.body.artists.items[0].id)
+      setImg(res.body.artists.items[0].images[0].url)
     })
   }, [name, accessToken])
 
@@ -223,7 +221,6 @@ export const Results = ({ name, code }) => {
       // setIcon(value ? '/icons8-play-30.png' : '/icons8-pause-30.png')
       if (cancel) return
       setTracks(res.body.tracks.map((track) => {
-        //If value === true, grab that one playingTrack and make its icon '/icons8-pause-30.png'. And for every other track, make the icons remain '/icons8-play-30.png' 
         return (
           <div onClick={() => setPlayingTrack(track)}>
           <button className='track' onClick={toggleValue} key={track.id}>
@@ -286,7 +283,6 @@ useEffect(() => {
     }) 
   }, [albumId, accessToken, value])
 
-
   return (
   <div>
     <TimelineButton><TimelineLink className='timelineBtn' href={AUTH_URL}>Timeline</TimelineLink></TimelineButton>
@@ -320,6 +316,7 @@ useEffect(() => {
     </AlbumTrackSection>
 
     <Space />
+
     <PlayerDiv>
       <Player accessToken={accessToken} trackUri={value ? playingTrack.uri : null} />
     </PlayerDiv>
