@@ -13,47 +13,47 @@ const Heading = styled('p')({
   top: '-8rem',
   left: '3rem',
 })
-const Dot1 = styled('span')({
-height: '25px',
-width: '25px',
-backgroundColor: '#bbb',
-borderRadius: '50%',
-display: 'inline-block',
-position: 'absolute',
-top: '10rem',
-left: '36rem',
-'@keyframes': {
-  '0%': {
-    opacity: 0
-  },
-  '50%': {
-    opacity: 1
-  },
-  '100%': {
-    opacity: 0
-  }
-}
-})
-const Dot2 = styled('span')({
-  height: '25px',
-  width: '25px',
-  backgroundColor: '#bbb',
-  borderRadius: '50%',
-  display: 'inline-block',
-  position: 'absolute',
-  top: '10rem',
-  left: '38rem'
-})
-const Dot3 = styled('span')({
-  height: '25px',
-  width: '25px',
-  backgroundColor: '#bbb',
-  borderRadius: '50%',
-  display: 'inline-block',
-  position: 'absolute',
-  top: '10rem',
-  left: '40rem'
-})
+// const Dot1 = styled('span')({
+// height: '25px',
+// width: '25px',
+// backgroundColor: '#bbb',
+// borderRadius: '50%',
+// display: 'inline-block',
+// position: 'absolute',
+// top: '10rem',
+// left: '36rem',
+// '@keyframes': {
+//   '0%': {
+//     opacity: 0
+//   },
+//   '50%': {
+//     opacity: 1
+//   },
+//   '100%': {
+//     opacity: 0
+//   }
+// }
+// })
+// const Dot2 = styled('span')({
+//   height: '25px',
+//   width: '25px',
+//   backgroundColor: '#bbb',
+//   borderRadius: '50%',
+//   display: 'inline-block',
+//   position: 'absolute',
+//   top: '10rem',
+//   left: '38rem'
+// })
+// const Dot3 = styled('span')({
+//   height: '25px',
+//   width: '25px',
+//   backgroundColor: '#bbb',
+//   borderRadius: '50%',
+//   display: 'inline-block',
+//   position: 'absolute',
+//   top: '10rem',
+//   left: '40rem'
+// })
 const SubHeading = styled('p')({
   fontFamily: 'Baskerville, sans serif',
   fontSize: '40px',
@@ -127,9 +127,9 @@ export const Login = ({ code }) => {
     <div>
     <MainDiv>
       <Heading>Classify</Heading>
-      <Dot1></Dot1>
-      <Dot2></Dot2>
-      <Dot3></Dot3>
+      <span className="dot1"></span>
+      <span className="dot2"></span>
+      <span className="dot3"></span>
       <SubHeading>a friendlier way to discover classical music.</SubHeading>
         <LoginButton variant='contained'>
             <LoginButtonText href={AUTH_URL}>LOGIN WITH<SpotifyLogo src='/spotify-icons-logos/logos/01_RGB/02_PNG/Spotify_Logo_RGB_Green.png'/></LoginButtonText>
