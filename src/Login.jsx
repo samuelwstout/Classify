@@ -54,13 +54,15 @@ const Heading = styled('p')({
 //   top: '10rem',
 //   left: '40rem'
 // })
-const SubHeading = styled('p')({
-  fontFamily: 'Baskerville, sans serif',
-  fontSize: '40px',
-  position: 'absolute',
-  top: '17rem',
-  right: '24rem'
-})
+// const SubHeading = styled('p')({
+//   fontFamily: 'Baskerville, sans serif',
+//   fontSize: '40px',
+//   position: 'absolute',
+//   top: '17rem',
+//   right: '24rem',
+//   animation: 'fadein 2s',
+//   webkitAnimation: 'fadein 2s',
+// })
 const MainDiv = styled('div')({
   display: 'flex',
   justifyContent: 'center',
@@ -130,7 +132,7 @@ export const Login = ({ code }) => {
       <span className="dot1"></span>
       <span className="dot2"></span>
       <span className="dot3"></span>
-      <SubHeading>a friendlier way to discover classical music.</SubHeading>
+      <p className="subheading">a friendlier way to discover classical music.</p>
         <LoginButton variant='contained'>
             <LoginButtonText href={AUTH_URL}>LOGIN WITH<SpotifyLogo src='/spotify-icons-logos/logos/01_RGB/02_PNG/Spotify_Logo_RGB_Green.png'/></LoginButtonText>
         </LoginButton>

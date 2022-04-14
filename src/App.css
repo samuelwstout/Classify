@@ -97,3 +97,15 @@ animation-iteration-count: infinite;
       opacity: 1;
   }
 }
+.subheading {
+  font-family: 'Baskerville, sans serif';
+  font-size: 40px;
+  position: absolute;
+  top: 17rem;
+  right: 24rem;
+  animation: fadein 5s;
+}
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
