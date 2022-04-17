@@ -102,10 +102,8 @@ animation-iteration-count: infinite;
   font-size: 40px;
   position: absolute;
   top: 17rem;
-  right: 24rem;
-  animation: fadein 5s;
+  right: 22.6rem;
 }
-@keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+.composerbtn:hover .composerName {
+  visibility: visible !important;
 }

@@ -21,7 +21,7 @@ const ComposerName = styled('h3')({
    position: 'relative',
    left: '2px',
    textDecoration: 'none',
-   color: '#000',
+   visibility: 'hidden'
 })
 const ComposerImg = styled('img')({
   width: '10rem',
@@ -45,11 +45,12 @@ const App = () => {
         return (
           <Link to='/results'>
           <ComposerButton 
+          className='composerbtn'
           onClick={() => {
             setName(composer.name) 
             }} 
             key={composer.id}>
-              <ComposerName>{composer.name}</ComposerName>
+              <ComposerName className='composerName'>{composer.name}</ComposerName>
               <ComposerImg src={composer.img}/>
           </ComposerButton>
           </Link>
