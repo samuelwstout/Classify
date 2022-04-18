@@ -15,15 +15,15 @@ const ComposerButton = styled('button')({
   left: '2rem',
   height: 'min-content',
   border: 'none',
-  ':hover': {
-    backgroundColor: '#e0e0e0'
-  }
+  backgroundColor: '#1e3264',
+  borderRadius: '25px'
 })
 const ComposerName = styled('h3')({
    position: 'relative',
    left: '2px',
    bottom: '5px',
    textDecoration: 'none',
+   color: '#fff'
   //  visibility: 'hidden'
 })
 const ComposerImg = styled('img')({
