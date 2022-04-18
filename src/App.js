@@ -37,6 +37,7 @@ const App = () => {
 
   const [name, setName] = useState('');
   const [composers, setComposers] = useState([]);
+  const [color, setColor] = useState('#efefef');
 
   useEffect(() => {
     const fetchComposers = async () => {
@@ -70,7 +71,7 @@ const App = () => {
 
       <Router>
         <Routes>
-          <Route path='/' element={<Login code={code} />} />
+          <Route path='/' element={<Login style={{ background: '#008022'}} code={code} />} />
           <Route path='/timeline' element={<Timeline composers={composers}  />} />
           <Route path='/results' element={<Results name={name} code={code}  />} />
         </Routes>

@@ -8,13 +8,30 @@ const Composer = styled('div')({
     alignItems: 'center',
     position: 'absolute',
     left: '50px',
-    top: '20px'
+    top: '14rem',
+})
+const Header = styled('div')({
+    border: '1px solid black',
+    height: '12rem',
+    width: '100vw',
+    backgroundColor: '#000',
+    color: 'white'
+})
+const ComposerDiv = styled('div')({
+    width: '100vw',
+    height: '590rem',
+    backgroundColor: '#121212'
 })
 
 export const Timeline = ({composers}) => {
-
-    return <Composer>{composers}</Composer>
-            
+    return (
+    <div>
+    <Header>hey</Header>
+    <ComposerDiv>
+    <Composer>{composers}</Composer>
+    </ComposerDiv>
+    </div>
+    )    
     }
 
 export default Timeline;
