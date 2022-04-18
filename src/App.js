@@ -10,10 +10,10 @@ import { styled } from '@mui/material/styles'
 const code = new URLSearchParams(window.location.search).get('code');
 
 const ComposerButton = styled('button')({
-  width: '13rem',
+  width: '15rem',
+  height: '17rem',
   position: 'relative',
-  left: '2rem',
-  height: 'min-content',
+  right: '1rem',
   border: 'none',
   backgroundColor: '#1e3264',
   borderRadius: '25px'
@@ -56,7 +56,7 @@ const App = () => {
             }} 
             key={composer.id}>
               <ComposerName className='composerName'>{composer.name}</ComposerName>
-              <ComposerImg src={composer.img}/>
+              {/* <ComposerImg src={composer.img}/> */}
           </ComposerButton>
           </Link>
         
