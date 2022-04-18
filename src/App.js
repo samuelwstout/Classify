@@ -11,6 +11,8 @@ const code = new URLSearchParams(window.location.search).get('code');
 
 const ComposerButton = styled('button')({
   width: '13rem',
+  position: 'relative',
+  left: '2rem',
   height: 'min-content',
   border: 'none',
   ':hover': {
@@ -20,14 +22,15 @@ const ComposerButton = styled('button')({
 const ComposerName = styled('h3')({
    position: 'relative',
    left: '2px',
+   bottom: '5px',
    textDecoration: 'none',
-   visibility: 'hidden'
+  //  visibility: 'hidden'
 })
 const ComposerImg = styled('img')({
   width: '10rem',
   position: 'relative',
   left: '2px',
-  top: '0px'
+  bottom: '10px'
 })
 
 const App = () => {
@@ -43,6 +46,7 @@ const App = () => {
      const listofComposers = data.composers.map((composer) => {
   
         return (
+
           <Link to='/results'>
           <ComposerButton 
           className='composerbtn'
@@ -54,6 +58,7 @@ const App = () => {
               <ComposerImg src={composer.img}/>
           </ComposerButton>
           </Link>
+        
         )
      })
      setComposers(listofComposers);

@@ -104,6 +104,7 @@ animation-iteration-count: infinite;
   top: 17rem;
   right: 22.6rem;
 }
-.composerbtn:hover .composerName {
+/* .composerbtn:hover .composerName {
   visibility: visible !important;
-}
+} */
+
