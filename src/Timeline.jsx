@@ -40,6 +40,8 @@ export const Timeline = ({composers}) => {
         if (e.target.value === '') {
             setColor('white')
         }
+        // console.log(e.target.value)
+        composers.map(composer => console.log(composer.props.children.props.children.props.children)) //These are all the composer names
     }
     const handleClick = (e) => {
         if (e) {
