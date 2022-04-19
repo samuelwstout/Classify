@@ -152,133 +152,59 @@ animation-iteration-count: infinite;
   height: 0px;
 }
 
-.timeline {
-  position: relative;
-  top: 22px;
-}
-.timeline > .vl {
-  border-left: 3px solid #fff;
-  height: 682rem;
-  position: absolute;
-  left: 13%;
-}
 .timeline > .date1400 {
   color: #fff;
   position: absolute;
   top: -2rem;
-  left: 3rem;
+  left: 1rem;
   font-family: 'Apple Chancery', cursive;
   font-size: 2rem;
-}
-.timeline > .hl1 {
-  border-top: 3px solid #fff;
-  width: 2rem;
-  position: relative;
-  left: 9.8rem;
-  top: 4.7rem;
 }
 .timeline > .date1500 {
   color: #fff;
   font-family: 'Apple Chancery', cursive;
   font-size: 2rem;
   position: absolute;
-  left: 775px;
-  top: 63rem;
-  left: 3rem;
-}
-.timeline > .hl2 {
-  border-top: 3px solid #fff;
-  width: 2rem;
-  position: relative;
-  left: 225px;
-  top: 450px;
-  left: 9.8rem;
-  top: 29.4rem;
+  top: 58rem;
+  left: 1rem;
 }
 .timeline > .date1600 {
   color: #fff;
   font-family: 'Apple Chancery', cursive;
   font-size: 2rem;
   position: absolute;
-  top: 141rem;
-  left: 3rem;
-}
-.timeline > .hl3 {
-  border-top: 3px solid #fff;
-  width: 2rem;
-  position: relative;
-  top: 1300px;
-  right: 55px;
-  left: 9.8rem;
-  top: 54.3rem;
+  top: 135.5rem;
+  left: 1rem;
 }
 .timeline > .date1700 {
   color: #fff;
   font-family: 'Apple Chancery', cursive;
   font-size: 2rem;
   position: absolute;
-  top: 220rem;
-  left: 3rem;
-}
-.timeline > .hl4 {
-  border-top: 3px solid #fff;
-  width: 2rem;
-  position: relative;
-  top: 1900px;
-  right: 182px;
-  left: 9.8rem;
-  top: 79.1rem;
+  top: 214rem;
+  left: 1rem;
 }
 .timeline > .date1800 {
   color: #fff;
   font-family: 'Apple Chancery', cursive;
   font-size: 2rem;
   position: absolute;
-  top: 298rem;
-  left: 3rem;
-}
-.timeline > .hl5 {
-  border-top: 3px solid #fff;
-  width: 2rem;
-  position: relative;
-  width: 210px;
-  height: 240px;
-  top: 1355px;
-  right: 683px;
-  left: 9.8rem;
-  top: 103.9rem;
+  top: 292rem;
+  left: 1rem;
 }
 .timeline > .date1900 {
   color: #fff;
   font-family: 'Apple Chancery', cursive;
   font-size: 2rem;
   position: absolute;
-  top: 551rem;
-  left: 3rem;
-}
-.timeline > .hl6 {
-  border-top: 3px solid #fff;
-  width: 2rem;
-  position: relative;
-  text-align: center;
-  top: 30px;
-  left: 9.8rem;
-  top: 128.7rem;
+  top: 545rem;
+  left: 1rem;
 }
 .timeline > .date2000 {
   color: #fff;
   font-family: 'Apple Chancery', cursive;
   font-size: 2rem;
   position: absolute;
-  top: 676rem;
-  left: 3rem;
-}
-.timeline > .hl7 {
-  border-top: 3px solid #fff;
-  width: 2rem;
-  position: relative;
-  top: 1700px;
-  right: 250px;
-  left: 9.8rem;
-  top: 153.7rem;
+  top: 678rem;
+  left: 1rem;
 }
