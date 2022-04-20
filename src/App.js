@@ -38,17 +38,19 @@ const App = () => {
   const [name, setName] = useState('');
   const [composers, setComposers] = useState([]);
 
-
   useEffect(() => {
     const fetchComposers = async () => {
       const response = await fetch('composers.json');
       const data = await response.json();
-      
      const listofComposers = data.composers.map((composer) => {
-  
+      if (composer.era === 'Renaissance') {
+        console.log(composer)
+      }
         return (
-
           <Link to='/results'>
+          {/* <Renaissance>
+
+          </Renaissance> */}
           <ComposerButton 
           className='composerbtn'
           onClick={() => {

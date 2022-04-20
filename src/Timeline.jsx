@@ -30,7 +30,7 @@ const TimelineDiv = styled('div')({
 })
 
 export const Timeline = ({composers}) => {
-
+    
     // const [color, setColor] = useState('white')
 
     // const handleInput = (e) => {
@@ -63,11 +63,17 @@ export const Timeline = ({composers}) => {
     <TimelineDiv>
         <div className='timeline'>
             <h3 className='date1400'>1400</h3>
+            <h3 className='date1450'>1450</h3>
             <h3 className='date1500'>1500</h3>
+            <h3 className='date1550'>1550</h3>
             <h3 className='date1600'>1600</h3>
+            <h3 className='date1650'>1650</h3>
             <h3 className='date1700'>1700</h3>
+            <h3 className='date1750'>1750</h3>
             <h3 className='date1800'>1800</h3>
+            <h3 className='date1850'>1850</h3>
             <h3 className='date1900'>1900</h3>
+            <h3 className='date1950'>1950</h3>
             <h3 className='date2000'>2000</h3>
         </div>
     </TimelineDiv>

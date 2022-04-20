@@ -3,11 +3,13 @@
     {
         "name": "Guillaume Dufay",
         "img": "/composerImgs/DufayBinchois.jpg",
+        "era": "Renaissance",
         "id": 1
     },
     {
         "name": "Gilles Binchois",
         "img": "/composerImgs/DufayBinchois.jpg",
+        "era": "Renaissance",
         "id": 2
     },
     {

@@ -160,12 +160,28 @@ animation-iteration-count: infinite;
   font-family: 'Apple Chancery', cursive;
   font-size: 2rem;
 }
+.timeline > .date1450 {
+  color: #fff;
+  position: absolute;
+  top: 24rem;
+  left: 1rem;
+  font-family: 'Apple Chancery', cursive;
+  font-size: 2rem;
+}
 .timeline > .date1500 {
   color: #fff;
   font-family: 'Apple Chancery', cursive;
   font-size: 2rem;
   position: absolute;
   top: 58rem;
+  left: 1rem;
+}
+.timeline > .date1550 {
+  color: #fff;
+  font-family: 'Apple Chancery', cursive;
+  font-size: 2rem;
+  position: absolute;
+  top: 103rem;
   left: 1rem;
 }
 .timeline > .date1600 {
@@ -176,12 +192,28 @@ animation-iteration-count: infinite;
   top: 135.5rem;
   left: 1rem;
 }
+.timeline > .date1650 {
+  color: #fff;
+  font-family: 'Apple Chancery', cursive;
+  font-size: 2rem;
+  position: absolute;
+  top: 161rem;
+  left: 1rem;
+}
 .timeline > .date1700 {
   color: #fff;
   font-family: 'Apple Chancery', cursive;
   font-size: 2rem;
   position: absolute;
   top: 214rem;
+  left: 1rem;
+}
+.timeline > .date1750 {
+  color: #fff;
+  font-family: 'Apple Chancery', cursive;
+  font-size: 2rem;
+  position: absolute;
+  top: 264rem;
   left: 1rem;
 }
 .timeline > .date1800 {
@@ -192,12 +224,28 @@ animation-iteration-count: infinite;
   top: 292rem;
   left: 1rem;
 }
+.timeline > .date1850 {
+  color: #fff;
+  font-family: 'Apple Chancery', cursive;
+  font-size: 2rem;
+  position: absolute;
+  top: 368rem;
+  left: 1rem;
+}
 .timeline > .date1900 {
   color: #fff;
   font-family: 'Apple Chancery', cursive;
   font-size: 2rem;
   position: absolute;
-  top: 545rem;
+  top: 460rem;
+  left: 1rem;
+}
+.timeline > .date1950 {
+  color: #fff;
+  font-family: 'Apple Chancery', cursive;
+  font-size: 2rem;
+  position: absolute;
+  top: 546rem;
   left: 1rem;
 }
 .timeline > .date2000 {
