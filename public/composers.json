@@ -297,16 +297,19 @@
     {
         "name": "Christoph Willibald Gluck",
         "img": "/composerImgs/Gluck.jpeg",
+        "era": "Classical",
         "id": 50
     },
     {
         "name": "Carl Philipp Emanuel Bach",
         "img": "/composerImgs/CPEBach.jpeg",
+        "era": "Classical",
         "id": 51
     },
     {
         "name": "Johann Stamitz",
         "img": "/composerImgs/Stamitz.jpeg",
+        "era": "Classical",
         "id": 52
     },
     {
@@ -318,281 +321,337 @@
     {
         "name": "Joseph Haydn",
         "img": "/composerImgs/Haydn.jpeg",
+        "era": "Classical",
         "id": 54
     },
     {
         "name": "Johann Christian Bach",
         "img": "/composerImgs/JCBach.jpeg",
+        "era": "Classical",
         "id": 55
     },
     {
         "name": "Antonio Salieri",
         "img": "/composerImgs/Salieri.jpeg",
+        "era": "Classical",
         "id": 56
     },
     {
         "name": "Dmitry Bortniansky",
         "img": "/composerImgs/Bortniansky.jpeg",
+        "era": "Classical",
         "id": 57
     },
     {
         "name": "Muzio Clementi",
         "img": "/composerImgs/Clementi.jpeg",
+        "era": "Classical",
         "id": 58
     },
     {
         "name": "Wolfgang Amadeus Mozart",
         "img": "/composerImgs/Mozart.jpeg",
+        "era": "Classical",
         "id": 59
     },
     {
         "name": "Luigi Cherubini",
         "img": "/composerImgs/Cherubini.jpeg",
+        "era": "Classical",
         "id": 60
     },
     {
         "name": "Ludwig van Beethoven",
         "img": "/composerImgs/Beethoven.jpeg",
+        "era": "Classical",
         "id": 61
     },
     {
         "name": "John Field",
         "img": "/composerImgs/Field.jpeg",
+        "era": "Romantic",
         "id": 62
     },
     {
         "name": "Niccolò Paganini",
         "img": "/composerImgs/Paganini.jpeg",
+        "era": "Romantic",
         "id": 63
     },
     {
         "name": "Carl Maria von Weber",
         "img": "/composerImgs/Weber.jpeg",
+        "era": "Romantic",
         "id": 64
     },
     {
         "name": "Carl Czerny",
         "img": "/composerImgs/Czerny.jpeg",
+        "era": "Romantic",
         "id": 65
     },
     {
         "name": "Gioachino Rossini",
         "img": "/composerImgs/Rossini.jpeg",
+        "era": "Romantic",
         "id": 66
     },
     {
         "name": "Franz Schubert",
         "img": "/composerImgs/Schubert.png",
+        "era": "Romantic",
         "id": 67
     },
     {
         "name": "Gaetano Donizetti",
         "img": "/composerImgs/Donizetti.jpeg",
+        "era": "Romantic",
         "id": 68
     },
     {
         "name": "Hector Berlioz",
         "img": "/composerImgs/Berlioz.png",
+        "era": "Romantic",
         "id": 69
     },
     {
         "name": "Felix Mendelssohn",
         "img": "/composerImgs/Mendelssohn.jpeg",
+        "era": "Romantic",
         "id": 70
     },
     {
         "name": "Frédéric Chopin",
         "img": "/composerImgs/Chopin.jpeg",
+        "era": "Romantic",
         "id": 71
     },
     {
         "name": "Robert Schumann",
         "img": "/composerImgs/Schumann.jpeg",
+        "era": "Romantic",
         "id": 72
     },
     {
         "name": "Franz Liszt",
         "img": "/composerImgs/Liszt.jpeg",
+        "era": "Romantic",
         "id": 73
     },
     {
         "name": "Richard Wagner",
         "img": "/composerImgs/Wagner.jpeg",
+        "era": "Romantic",
         "id": 74
     },
     {
         "name": "Giuseppe Verdi",
         "img": "/composerImgs/Verdi.jpeg",
+        "era": "Romantic",
         "id": 75
     },
     {
         "name": "Jacques Offenbach",
         "img": "/composerImgs/Offenbach.jpeg",
+        "era": "Romantic",
         "id": 76
     },
     {
         "name": "César Franck",
         "img": "/composerImgs/Franck.jpeg",
+        "era": "Romantic",
         "id": 77
     },
     {
         "name": "Bedřich Smetana",
         "img": "/composerImgs/Smetana.jpeg",
+        "era": "Romantic",
         "id": 78
     },
     {
         "name": "Anton Bruckner",
         "img": "/composerImgs/Bruckner.jpeg",
+        "era": "Romantic",
         "id": 79
     },
     {
         "name": "Johann Strauss II",
         "img": "/composerImgs/StraussJr.jpeg",
+        "era": "Romantic",
         "id": 80
     },
     {
         "name": "Johannes Brahms",
         "img": "/composerImgs/Brahms.jpeg",
+        "era": "Romantic",
         "id": 81
     },
     {
         "name": "Alexander Borodin",
         "img": "/composerImgs/Borodin.jpeg",
+        "era": "Romantic",
         "id": 82
     },
     {
         "name": "Camille Saint-Saëns",
         "img": "/composerImgs/Saint-Saens.jpeg",
+        "era": "Romantic",
         "id": 83
     },
     {
         "name": "Georges Bizet",
         "img": "/composerImgs/Bizet.jpeg",
+        "era": "Romantic",
         "id": 84
     },
     {
         "name": "Modest Mussorgsky",
         "img": "/composerImgs/Mussorgsky.jpeg",
+        "era": "Romantic",
         "id": 85
     },
     {
         "name": "Pyotr Ilyich Tchaikovsky",
         "img": "/composerImgs/Tchaikovsky.jpeg",
+        "era": "Romantic",
         "id": 86
     },
     {
         "name": "Antonín Dvořák",
         "img": "/composerImgs/Dvorak.jpeg",
+        "era": "Romantic",
         "id": 87
     },
     {
         "name": "Edvard Grieg",
         "img": "/composerImgs/Grieg.jpeg",
+        "era": "Romantic",
         "id": 88
     },
     {
         "name": "Nikolai Rimsky-Korsakov",
         "img": "/composerImgs/Rimsky-Korsakov.png",
+        "era": "Romantic",
         "id": 89
     },
     {
         "name": "Gabriel Fauré",
         "img": "/composerImgs/Faure.jpeg",
+        "era": "Romantic",
         "id": 90
     },
     {
         "name": "Edward Elgar",
         "img": "/composerImgs/Elgar.jpeg",
+        "era": "Romantic",
         "id": 91
     },
     {
         "name": "Eugène Ysaÿe",
         "img": "/composerImgs/Ysaye.jpeg",
+        "era": "Romantic",
         "id": 92
     },
     {
         "name": "Giacomo Puccini",
         "img": "/composerImgs/Puccini.jpeg",
+        "era": "Romantic",
         "id": 93
     },
     {
         "name": "Gustav Mahler",
         "img": "/composerImgs/Mahler.jpeg",
+        "era": "Romantic",
         "id": 94
     },
     {
         "name": "Frederick Delius",
         "img": "/composerImgs/Delius.jpeg",
+        "era": "Romantic",
         "id": 95
     },
     {
         "name": "Claude Debussy",
         "img": "/composerImgs/Debussy.jpeg",
+        "era": "Modernist",
         "id": 96
     },
     {
         "name": "Richard Strauss",
         "img": "/composerImgs/Strauss.jpeg",
+        "era": "Romantic",
         "id": 97
     },
     {
         "name": "Jean Sibelius",
         "img": "/composerImgs/Sibelius.jpeg",
+        "era": "Modernist",
         "id": 98
     },
     {
         "name": "Enrique Granados",
         "img": "/composerImgs/Granados.jpeg",
+        "era": "Romantic",
         "id": 99
     },
     {
         "name": "Ralph Vaughan Williams",
         "img": "/composerImgs/Williams.jpeg",
+        "era": "Romantic",
         "id": 100
     },
     {
         "name": "Sergei Rachmaninoff",
         "img": "/composerImgs/Rachmaninoff.jpg",
+        "era": "Romantic",
         "id": 101
     },
     {
         "name": "Arnold Schoenberg",
         "img": "/composerImgs/Schoenberg.jpeg",
+        "era": "Modernist",
         "id": 102
     },
     {
         "name": "Gustav Holst",
         "img": "/composerImgs/Holst.jpeg",
+        "era": "Modernist",
         "id": 103
     },
     {
         "name": "Charles Ives",
         "img": "/composerImgs/Ives.jpeg",
+        "era": "Modernist",
         "id": 104
     },
     {
         "name": "Maurice Ravel",
         "img": "/composerImgs/Ravel.jpeg",
+        "era": "Modernist",
         "id": 105
     },
     {
         "name": "Manuel de Falla",
         "img": "/composerImgs/Falla.jpeg",
+        "era": "Modernist",
         "id": 106
     },
     {
         "name": "Béla Bartók",
         "img": "/composerImgs/Bartok.jpeg",
+        "era": "Modernist",
         "id": 107
     },
     {
         "name": "Igor Stravinsky",
         "img": "/composerImgs/Stravinsky.jpeg",
+        "era": "Modernist",
         "id": 108
     },
     {
         "name": "Edgard Varèse",
         "img": "/composerImgs/Varese.gif",
+        "era": "Avant-garde",
         "id": 109
     },
     {
