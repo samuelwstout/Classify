@@ -37,6 +37,7 @@ const App = () => {
 
   const [name, setName] = useState('');
   const [composers, setComposers] = useState([]);
+  const [renaissanceComposers, setRenaissanceComposers] = useState([]);
 
   useEffect(() => {
     const fetchComposers = async () => {
@@ -44,7 +45,7 @@ const App = () => {
       const data = await response.json();
      const listofComposers = data.composers.map((composer) => {
       if (composer.era === 'Renaissance') {
-        console.log(composer)
+        setRenaissanceComposers(composer)
       }
         return (
           <Link to='/results'>

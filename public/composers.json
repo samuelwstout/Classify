@@ -15,236 +15,283 @@
     {
         "name": "Johannes Ockeghem",
         "img": "/composerImgs/Johannes+Ockeghem.png",
+        "era": "Renaissance",
         "id": 3
     },
     {
         "name": "Antoine Busnois",
         "img": "/composerImgs/Busnois_mass.jpg",
+        "era": "Renaissance",
         "id": 4
     },
     {
         "name": "Johannes Tinctoris",
         "img": "/composerImgs/Tinctoris.jpg",
+        "era": "Renaissance",
         "id": 5
     },
     {
         "name": "Alexander Agricola",
         "img": "/composerImgs/Agricola.jpeg",
+        "era": "Renaissance",
         "id": 6
     },
     {
         "name": "Josquin des Prez",
         "img": "/composerImgs/Prez.jpeg",
+        "era": "Renaissance",
         "id": 7
     },
     {
         "name": "Heinrich Isaac",
         "img": "/composerImgs/Isaac.jpeg",
+        "era": "Renaissance",
         "id": 8
     },
     {
         "name": "Pierre de la Rue",
         "img": "/composerImgs/Rue.jpeg",
+        "era": "Renaissance",
         "id": 9
     },
     {
         "name": "Jacob Obrecht",
         "img": "/composerImgs/Obrecht.jpeg",
+        "era": "Renaissance",
         "id": 10
     },
     {
         "name": "Clément Janequin",
         "img": "/composerImgs/janequin.jpeg",
+        "era": "Renaissance",
         "id": 11
     },
     {
         "name": "John Taverner",
         "img": "/composerImgs/Taverner.jpeg",
+        "era": "Renaissance",
         "id": 12
     },
     {
         "name": "Adrian Willaert",
         "img": "/composerImgs/Willaert.jpeg",
+        "era": "Renaissance",
         "id": 13
     },
     {
         "name": "Nicolas Gombert",
         "img": "/composerImgs/",
+        "era": "Renaissance",
         "id": 14
     },
     {
         "name": "Cristóbal de Morales",
         "img": "/composerImgs/Morales.jpeg",
+        "era": "Renaissance",
         "id": 15
     },
     {
         "name": "Luis de Milán",
         "img": "/composerImgs/Milan.jpeg",
+        "era": "Renaissance",
         "id": 16
     },
     {
         "name": "Thomas Tallis",
         "img": "/composerImgs/Tallis.png",
+        "era": "Renaissance",
         "id": 17
     },
     {
         "name": "Jacques Arcadelt",
         "img": "/composerImgs/Arcadelt.jpeg",
+        "era": "Renaissance",
         "id": 18
     },
     {
         "name": "Giovanni Pierluigi da Palestrina",
         "img": "/composerImgs/Palestrina.jpeg",
+        "era": "Renaissance",
         "id": 19
     },
     {
         "name": "Orlande de Lassus",
         "img": "/composerImgs/Lassus.jpeg",
+        "era": "Renaissance",
         "id": 20
     },
     {
         "name": "William Byrd",
         "img": "/composerImgs/Byrd.jpeg",
+        "era": "Renaissance",
         "id": 21
     },
     {
         "name": "Tomás Luis de Victoria",
         "img": "/composerImgs/Victoria.jpeg",
+        "era": "Renaissance",
         "id": 22
     },
     {
         "name": "Giulio Caccini",
         "img": "/composerImgs/Caccini.jpeg",
+        "era": "Baroque",
         "id": 23
     },
     {
         "name": "Giovanni Gabrieli",
         "img": "/composerImgs/Gabrieli.jpeg",
+        "era": "Renaissance",
         "id": 24
     },
     {
         "name": "Jan Pieterszoon Sweelinck",
         "img": "/composerImgs/Sweelinck.jpeg",
+        "era": "Baroque",
         "id": 25
     },
     {
         "name": "John Dowland",
         "img": "/composerImgs/Dowland.gif",
+        "era": "Renaissance",
         "id": 26
     },
     {
         "name": "Carlo Gesualdo",
         "img": "/composerImgs/Gesualdo.jpeg",
+        "era": "Renaissance",
         "id": 27
     },
     {
         "name": "Claudio Monteverdi",
         "img": "/composerImgs/Monteverdi.jpeg",
+        "era": "Baroque",
         "id": 28
     },
     {
         "name": "Michael Praetorius",
         "img": "/composerImgs/Praetorius.jpeg",
+        "era": "Baroque",
         "id": 29
     },
     {
         "name": "Heinrich Schütz",
         "img": "/composerImgs/Schutz.jpeg",
+        "era": "Baroque",
         "id": 30
     },
     {
         "name": "Francesco Cavalli",
         "img": "/composerImgs/Cavalli.png",
+        "era": "Baroque",
         "id": 31
     },
     {
         "name": "Johann Jakob Froberger",
         "img": "/composerImgs/",
+        "era": "Baroque",
         "id": 32
     },
     {
         "name": "Jean-Baptiste Lully",
         "img": "/composerImgs/Lully.jpeg",
+        "era": "Baroque",
         "id": 33
     },
     {
         "name": "Dieterich Buxtehude",
         "img": "/composerImgs/Buxtehude.jpeg",
+        "era": "Baroque",
         "id": 34
     },
     {
         "name": "Marc-Antoine Charpentier",
         "img": "/composerImgs/Charpentier.gif",
+        "era": "Baroque",
         "id": 35
     },
     {
         "name": "Arcangelo Corelli",
         "img": "/composerImgs/Corelli.jpeg",
+        "era": "Baroque",
         "id": 36
     },
     {
         "name": "Johann Pachelbel",
         "img": "/composerImgs/",
+        "era": "Baroque",
         "id": 37
     },
     {
         "name": "Henry Purcell",
         "img": "/composerImgs/Purcell.jpeg",
+        "era": "Baroque",
         "id": 38
     },
     {
         "name": "Alessandro Scarlatti",
         "img": "/composerImgs/Scarlatti.jpeg",
+        "era": "Baroque",
         "id": 39
     },
     {
         "name": "François Couperin",
         "img": "/composerImgs/Couperin.jpeg",
+        "era": "Baroque",
         "id": 40
     },
     {
         "name": "Tomaso Albinoni",
         "img": "/composerImgs/Albinoni.jpeg",
+        "era": "Baroque",
         "id": 41
     },
     {
         "name": "Antonio Vivaldi",
         "img": "/composerImgs/Vivaldi.jpeg",
+        "era": "Baroque",
         "id": 42
     },
     {
         "name": "Georg Philipp Telemann",
         "img": "/composerImgs/Telmann.jpeg",
+        "era": "Baroque",
         "id": 43
     },
     {
         "name": "Jean-Philippe Rameau",
         "img": "/composerImgs/Rameau.jpeg",
+        "era": "Baroque",
         "id": 44
     },
     {
         "name": "Johann Sebastian Bach",
         "img": "/composerImgs/JSBach.jpeg",
+        "era": "Baroque",
         "id": 45
     },
     {
         "name": "Domenico Scarlatti",
         "img": "/composerImgs/DScarlatti.jpeg",
+        "era": "Baroque",
         "id": 46
     },
     {
         "name": "George Frideric Handel",
         "img": "/composerImgs/Handel.jpeg",
+        "era": "Baroque",
         "id": 47
     },
     {
         "name": "Johann Adolf Hasse",
         "img": "/composerImgs/Hasse.jpeg",
+        "era": "Baroque",
         "id": 48
     },
     {
         "name": "Giovanni Battista Pergolesi",
         "img": "/composerImgs/Pergolesi.jpeg",
+        "era": "Baroque",
         "id": 49
     },
     {
@@ -265,6 +312,7 @@
     {
         "name": "Antonio Soler",
         "img": "/composerImgs/",
+        "era": "Baroque",
         "id": 53
     },
     {
