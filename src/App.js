@@ -49,49 +49,22 @@ const App = () => {
     const fetchComposers = async () => {
       const response = await fetch('composers.json');
       const data = await response.json();
-     const listofComposers = data.composers.map((composer) => {
+      const renaissance = data.composers.filter(r => r.era === 'Renaissance')
+      const baroque = data.composers.filter(r => r.era === 'Baroque')
+      const classical = data.composers.filter(r => r.era === 'Classical')
+      const romantic = data.composers.filter(r => r.era === 'Romantic')
+      const modernist = data.composers.filter(r => r.era === 'Modernist')
+      const avantGarde = data.composers.filter(r => r.era === 'Avant-garde')
+      const minimalist = data.composers.filter(r => r.era === 'Minimalist')
 
-      if (composer.era === 'Renaissance') {
-        setRComposer(composer)
-      }
-      if (composer.era === 'Baroque') {
-        setBComposer(composer)
-      }
-      if (composer.era === 'Classical') {
-        setCComposer(composer)
-      }
-      if (composer.era === 'Romantic') {
-        setRoComposer(composer)
-      }
-      if (composer.era === 'Modernist') {
-        setMComposer(composer)
-      }
-      if (composer.era === 'Avant-garde') {
-        setAComposer(composer)
-      }
-      if (composer.era === 'Minimalist') {
-        setMiComposer(composer)
-      }
-      
-        return (
-          <Link to='/results'>
-          {/* <Renaissance>
-
-          </Renaissance> */}
-          <ComposerButton 
-          className='composerbtn'
-          onClick={() => {
-            setName(composer.name) 
-            }} 
-            key={composer.id}>
-              <ComposerName className='composerName'>{composer.name}</ComposerName>
-              {/* <ComposerImg src={composer.img}/> */}
-          </ComposerButton>
-          </Link>
-        
-        )
-     })
-     setComposers(listofComposers);
+      const renaissanceList = renaissance.map(r => r)
+      const baroqueList = baroque.map(r => r)
+      const classicalList = classical.map(r => r)
+      const romanticList = romantic.map(r => r)
+      const modernistList = modernist.map(r => r)
+      const avantGardeList = avantGarde.map(r => r)
+      const minimalistList = minimalist.map(r => r)
+    
     }
     fetchComposers();
   }, []);
