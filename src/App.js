@@ -37,16 +37,42 @@ const App = () => {
 
   const [name, setName] = useState('');
   const [composers, setComposers] = useState([]);
-  const [renaissanceComposers, setRenaissanceComposers] = useState([]);
-
+  const [rComposer, setRComposer] = useState([]);
+  const [bComposer, setBComposer] = useState([]);
+  const [cComposer, setCComposer] = useState([]);
+  const [roComposer, setRoComposer] = useState([]);
+  const [mComposer, setMComposer] = useState([]);
+  const [aComposer, setAComposer] = useState([]);
+  const [miComposer, setMiComposer] = useState([]);
+  
   useEffect(() => {
     const fetchComposers = async () => {
       const response = await fetch('composers.json');
       const data = await response.json();
      const listofComposers = data.composers.map((composer) => {
+
       if (composer.era === 'Renaissance') {
-        setRenaissanceComposers(composer)
+        setRComposer(composer)
       }
+      if (composer.era === 'Baroque') {
+        setBComposer(composer)
+      }
+      if (composer.era === 'Classical') {
+        setCComposer(composer)
+      }
+      if (composer.era === 'Romantic') {
+        setRoComposer(composer)
+      }
+      if (composer.era === 'Modernist') {
+        setMComposer(composer)
+      }
+      if (composer.era === 'Avant-garde') {
+        setAComposer(composer)
+      }
+      if (composer.era === 'Minimalist') {
+        setMiComposer(composer)
+      }
+      
         return (
           <Link to='/results'>
           {/* <Renaissance>

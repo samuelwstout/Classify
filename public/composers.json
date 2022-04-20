@@ -657,141 +657,169 @@
     {
         "name": "Sergei Prokofiev",
         "img": "/composerImgs/Prokofiev.jpeg",
+        "era": "Modernist",
         "id": 110
     },
     {
         "name": "Paul Hindemith",
         "img": "/composerImgs/Hindemith.jpeg",
+        "era": "Modernist",
         "id": 111
     },
     {
         "name": "Francis Poulenc",
         "img": "/composerImgs/Poulenc.jpeg",
+        "era": "Modernist",
         "id": 112
     },
     {
         "name": "Aaron Copland",
         "img": "/composerImgs/Copland.jpeg",
+        "era": "Modernist",
         "id": 113
     },
     {
         "name": "Harry Partch",
         "img": "/composerImgs/Partch.jpeg",
+        "era": "Avant-garde",
         "id": 114
     },
     {
         "name": "Dmitri Shostakovich",
         "img": "/composerImgs/Shostakovich.jpeg",
+        "era": "Modernist",
         "id": 115
     },
     {
         "name": "Olivier Messiaen",
         "img": "/composerImgs/Messiaen.jpeg",
+        "era": "Modernist",
         "id": 116
     },
     {
         "name": "Samuel Barber",
         "img": "/composerImgs/Barber.jpeg",
+        "era": "Modernist",
         "id": 117
     },
     {
         "name": "John Cage",
         "img": "/composerImgs/Cage.jpeg",
+        "era": "Avant-garde",
         "id": 118
     },
     {
         "name": "Witold Lutosławski",
         "img": "/composerImgs/Lutoslawski.jpeg",
+        "era": "Modernist",
         "id": 119
     },
     {
         "name": "Benjamin Britten",
         "img": "/composerImgs/Britten.jpeg",
+        "era": "Modernist",
         "id": 120
     },
     {
         "name": "Moondog",
         "img": "/composerImgs/Moondog.jpeg",
+        "era": "Avant-garde",
         "id": 121
     },
     {
         "name": "Iannis Xenakis",
         "img": "/composerImgs/Xenakis.jpeg",
+        "era": "Avant-garde",
         "id": 122
     },
     {
         "name": "György Ligeti",
         "img": "/composerImgs/Ligeti.jpeg",
+        "era": "Avant-garde",
         "id": 123
     },
     {
         "name": "Pierre Boulez",
         "img": "/composerImgs/Boulez.jpeg",
+        "era": "Avant-garde",
         "id": 124
     },
     {
         "name": "Karlheinz Stockhausen",
         "img": "/composerImgs/Stockhausen.jpeg",
+        "era": "Avant-garde",
         "id": 125
     },
     {
         "name": "Einojuhani Rautavaara",
         "img": "/composerImgs/Rautavaara.jpeg",
+        "era": "Modernist",
         "id": 126
     },
     {
         "name": "George Crumb",
         "img": "/composerImgs/Crumb.jpeg",
+        "era": "Avant-garde",
         "id": 127
     },
     {
         "name": "Sofia Gubaidulina",
         "img": "/composerImgs/Gubaidulina.jpeg",
+        "era": "Avant-garde",
         "id": 128
     },
     {
         "name": "Rodion Shchedrin",
         "img": "/composerImgs/Shchedrin.jpeg",
+        "era": "Modernist",
         "id": 129
     },
     {
         "name": "Alfred Schnittke",
         "img": "/composerImgs/Schnittke.jpeg",
+        "era": "Avant-garde",
         "id": 130
     },
     {
         "name": "Harrison Birtwistle",
         "img": "/composerImgs/Birtwistle.jpeg",
+        "era": "Modernist",
         "id": 131
     },
     {
         "name": "Terry Riley",
         "img": "/composerImgs/Riley.jpeg",
+        "era": "Minimalist",
         "id": 132
     },
     {
         "name": "La Monte Young",
         "img": "/composerImgs/",
+        "era": "Minimalist",
         "id": 133
     },
     {
         "name": "Arvo Pärt",
         "img": "/composerImgs/Part",
+        "era": "Minimalist",
         "id": 134
     },
     {
         "name": "Steve Reich",
         "img": "/composerImgs/Reich.jpeg",
+        "era": "Minimalist",
         "id": 135
     },
     {
         "name": "Philip Glass",
         "img": "/composerImgs/Glass.jpeg",
+        "era": "Minimalist",
         "id": 136
     },
     {
         "name": "John Adams",
         "img": "/composerImgs/Adams.jpeg",
+        "era": "Minimalist",
         "id": 137
     }
  ]
