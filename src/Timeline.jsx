@@ -1,7 +1,7 @@
 import {useState} from 'react'
 import { styled } from '@mui/material/styles'
 
-const Composer = styled('div')({
+const RComposer = styled('div')({
     display: 'flex',
     flexDirection: 'row',
     flexWrap: 'wrap',
@@ -29,7 +29,7 @@ const TimelineDiv = styled('div')({
     position: 'absolute'
 })
 
-export const Timeline = ({composers}) => {
+export const Timeline = ({rComposer}) => {
     
     // const [color, setColor] = useState('white')
 
@@ -78,7 +78,7 @@ export const Timeline = ({composers}) => {
         </div>
     </TimelineDiv>
     <ComposerDiv>
-    <Composer>{composers}</Composer>
+    <RComposer>{rComposer}</RComposer>
     </ComposerDiv>
     </div>
     )    

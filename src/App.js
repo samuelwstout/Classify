@@ -9,7 +9,7 @@ import { styled } from '@mui/material/styles'
 
 const code = new URLSearchParams(window.location.search).get('code');
 
-const ComposerButton = styled('button')({
+const RenaissanceButtons = styled('button')({
   width: '15rem',
   height: '17rem',
   position: 'relative',
@@ -57,7 +57,16 @@ const App = () => {
       const avantGarde = data.composers.filter(r => r.era === 'Avant-garde')
       const minimalist = data.composers.filter(r => r.era === 'Minimalist')
 
-      const renaissanceList = renaissance.map(r => r)
+      const renaissanceList = renaissance.map(r => {
+        return (
+          <Link to='/results'>
+          <RenaissanceButtons onClick={() => setName(r.name)} key={r.id}>
+          <ComposerName>{r.name}</ComposerName>
+          </RenaissanceButtons>
+          </Link>
+        )
+        })
+        setRComposer(renaissanceList)
       const baroqueList = baroque.map(r => r)
       const classicalList = classical.map(r => r)
       const romanticList = romantic.map(r => r)
@@ -74,7 +83,7 @@ const App = () => {
       <Router>
         <Routes>
           <Route path='/' element={<Login code={code} />} />
-          <Route path='/timeline' element={<Timeline composers={composers}  />} />
+          <Route path='/timeline' element={<Timeline rComposer={rComposer} />} />
           <Route path='/results' element={<Results name={name} code={code}  />} />
         </Routes>
       </Router>
