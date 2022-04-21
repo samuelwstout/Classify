@@ -48,6 +48,16 @@ const RomanticButtons = styled('button')({
   backgroundColor: '#1072ec',
   borderRadius: '25px'
 })
+const ModernistButtons = styled('button')({
+  width: '15rem',
+  height: '17rem',
+  position: 'relative',
+  right: '1rem',
+  top: '400rem',
+  border: 'none',
+  backgroundColor: '#a56752',
+  borderRadius: '25px'
+})
 const ComposerName = styled('h3')({
    position: 'relative',
    left: '2px',
@@ -131,7 +141,16 @@ const App = () => {
       })
       setRoComposer(romanticList)
 
-      const modernistList = modernist.map(r => r)
+      const modernistList = modernist.map(r => {
+        return (
+          <Link to='/results'>
+          <ModernistButtons onClick={() => setName(r.name)} key={r.id}>
+          <ComposerName>{r.name}</ComposerName>
+          </ModernistButtons>
+          </Link>
+        )
+      })
+      setMComposer(modernistList)
 
       const avantGardeList = avantGarde.map(r => r)
 
@@ -146,7 +165,7 @@ const App = () => {
       <Router>
         <Routes>
           <Route path='/' element={<Login code={code} />} />
-          <Route path='/timeline' element={<Timeline rComposer={rComposer} bComposer={bComposer} cComposer={cComposer} roComposer={roComposer} />} />
+          <Route path='/timeline' element={<Timeline rComposer={rComposer} bComposer={bComposer} cComposer={cComposer} roComposer={roComposer} mComposer={mComposer} />} />
           <Route path='/results' element={<Results name={name} code={code}  />} />
         </Routes>
       </Router>
