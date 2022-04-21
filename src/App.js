@@ -10,8 +10,8 @@ import { styled } from '@mui/material/styles'
 const code = new URLSearchParams(window.location.search).get('code');
 
 const RenaissanceButtons = styled('button')({
-  width: '15rem',
-  height: '17rem',
+  width: '12rem',
+  height: '12rem',
   position: 'relative',
   right: '1rem',
   border: 'none',
@@ -19,43 +19,53 @@ const RenaissanceButtons = styled('button')({
   borderRadius: '25px'
 })
 const BaroqueButtons = styled('button')({
-  width: '15rem',
-  height: '17rem',
+  width: '12rem',
+  height: '12rem',
   position: 'relative',
   right: '1rem',
-  top: '100rem',
+  top: '38rem',
   border: 'none',
   backgroundColor: '#1e3264',
   borderRadius: '25px'
 })
 const ClassicalButtons = styled('button')({
-  width: '15rem',
-  height: '17rem',
+  width: '12rem',
+  height: '12rem',
   position: 'relative',
   right: '1rem',
-  top: '200rem',
+  top: '78rem',
   border: 'none',
   backgroundColor: '#8d67ab',
   borderRadius: '25px'
 })
 const RomanticButtons = styled('button')({
-  width: '15rem',
-  height: '17rem',
+  width: '12rem',
+  height: '12rem',
   position: 'relative',
   right: '1rem',
-  top: '300rem',
+  top: '165rem',
   border: 'none',
   backgroundColor: '#1072ec',
   borderRadius: '25px'
 })
 const ModernistButtons = styled('button')({
-  width: '15rem',
-  height: '17rem',
+  width: '12rem',
+  height: '12rem',
   position: 'relative',
   right: '1rem',
-  top: '400rem',
+  top: '320rem',
   border: 'none',
   backgroundColor: '#a56752',
+  borderRadius: '25px'
+})
+const AvantButtons = styled('button')({
+  width: '12rem',
+  height: '12rem',
+  position: 'relative',
+  right: '1rem',
+  top: '140rem',
+  border: 'none',
+  backgroundColor: '#509bf5',
   borderRadius: '25px'
 })
 const ComposerName = styled('h3')({
@@ -152,7 +162,16 @@ const App = () => {
       })
       setMComposer(modernistList)
 
-      const avantGardeList = avantGarde.map(r => r)
+      const avantGardeList = avantGarde.map(r => {
+        return (
+          <Link to='/results'>
+          <AvantButtons onClick={() => setName(r.name)} key={r.id}>
+          <ComposerName>{r.name}</ComposerName>
+          </AvantButtons>
+          </Link>
+        )
+      })
+      setAComposer(avantGardeList)
 
       const minimalistList = minimalist.map(r => r)
     
@@ -165,7 +184,7 @@ const App = () => {
       <Router>
         <Routes>
           <Route path='/' element={<Login code={code} />} />
-          <Route path='/timeline' element={<Timeline rComposer={rComposer} bComposer={bComposer} cComposer={cComposer} roComposer={roComposer} mComposer={mComposer} />} />
+          <Route path='/timeline' element={<Timeline rComposer={rComposer} bComposer={bComposer} cComposer={cComposer} roComposer={roComposer} mComposer={mComposer} aComposer={aComposer} />} />
           <Route path='/results' element={<Results name={name} code={code}  />} />
         </Routes>
       </Router>

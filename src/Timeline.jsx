@@ -49,7 +49,17 @@ const MComposer = styled('div')({
     alignItems: 'center',
     position: 'absolute',
     left: '20rem',
-    top: '135rem',
+    
+})
+const AComposer = styled('div')({
+    display: 'flex',
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: '40px',
+    alignItems: 'center',
+    position: 'absolute',
+    left: '20rem',
+    top: '254rem',
 })
 const Header = styled('div')({
     height: '6rem',
@@ -69,7 +79,7 @@ const TimelineDiv = styled('div')({
     position: 'absolute'
 })
 
-export const Timeline = ({rComposer, bComposer, cComposer, roComposer, mComposer}) => {
+export const Timeline = ({rComposer, bComposer, cComposer, roComposer, mComposer, aComposer}) => {
     
     // const [color, setColor] = useState('white')
 
@@ -123,6 +133,7 @@ export const Timeline = ({rComposer, bComposer, cComposer, roComposer, mComposer
     <CComposer>{cComposer}</CComposer>
     <RoComposer>{roComposer}</RoComposer>
     <MComposer>{mComposer}</MComposer>
+    <AComposer>{aComposer}</AComposer>
     </ComposerDiv>
     </div>
     )    
