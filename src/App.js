@@ -15,7 +15,37 @@ const RenaissanceButtons = styled('button')({
   position: 'relative',
   right: '1rem',
   border: 'none',
+  backgroundColor: '#27856a',
+  borderRadius: '25px'
+})
+const BaroqueButtons = styled('button')({
+  width: '15rem',
+  height: '17rem',
+  position: 'relative',
+  right: '1rem',
+  top: '100rem',
+  border: 'none',
   backgroundColor: '#1e3264',
+  borderRadius: '25px'
+})
+const ClassicalButtons = styled('button')({
+  width: '15rem',
+  height: '17rem',
+  position: 'relative',
+  right: '1rem',
+  top: '200rem',
+  border: 'none',
+  backgroundColor: '#8d67ab',
+  borderRadius: '25px'
+})
+const RomanticButtons = styled('button')({
+  width: '15rem',
+  height: '17rem',
+  position: 'relative',
+  right: '1rem',
+  top: '300rem',
+  border: 'none',
+  backgroundColor: '#1072ec',
   borderRadius: '25px'
 })
 const ComposerName = styled('h3')({
@@ -67,11 +97,44 @@ const App = () => {
         )
         })
         setRComposer(renaissanceList)
-      const baroqueList = baroque.map(r => r)
-      const classicalList = classical.map(r => r)
-      const romanticList = romantic.map(r => r)
+
+      const baroqueList = baroque.map(r => {
+        return (
+          <Link to='/results'>
+          <BaroqueButtons onClick={() => setName(r.name)} key={r.id}>
+          <ComposerName>{r.name}</ComposerName>
+          </BaroqueButtons>
+          </Link>
+        )
+      })
+      setBComposer(baroqueList)
+
+      const classicalList = classical.map(r => {
+        return (
+          <Link to='/results'>
+          <ClassicalButtons onClick={() => setName(r.name)} key={r.id}>
+          <ComposerName>{r.name}</ComposerName>
+          </ClassicalButtons>
+          </Link>
+        )
+      })
+      setCComposer(classicalList)
+
+      const romanticList = romantic.map(r => {
+        return (
+          <Link to='/results'>
+          <RomanticButtons onClick={() => setName(r.name)} key={r.id}>
+          <ComposerName>{r.name}</ComposerName>
+          </RomanticButtons>
+          </Link>
+        )
+      })
+      setRoComposer(romanticList)
+
       const modernistList = modernist.map(r => r)
+
       const avantGardeList = avantGarde.map(r => r)
+
       const minimalistList = minimalist.map(r => r)
     
     }
@@ -83,7 +146,7 @@ const App = () => {
       <Router>
         <Routes>
           <Route path='/' element={<Login code={code} />} />
-          <Route path='/timeline' element={<Timeline rComposer={rComposer} />} />
+          <Route path='/timeline' element={<Timeline rComposer={rComposer} bComposer={bComposer} cComposer={cComposer} roComposer={roComposer} />} />
           <Route path='/results' element={<Results name={name} code={code}  />} />
         </Routes>
       </Router>
