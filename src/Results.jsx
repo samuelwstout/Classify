@@ -7,38 +7,53 @@ import Button from '@mui/material/Button'
 import useToggle from './useToggle'
 
 const ResultsHeader = styled('div')({
-  height: 'max-height',
+  height: '15rem',
+  backgroundColor: '#000'
 })
 const TracksSection = styled('div')({
-  
+  backgroundColor: '#121212',
+  marginTop: '-1.2rem',
 })
 const AlbumSection = styled('div')({
   height: '166rem',
+  backgroundColor: '#121212',
+  marginTop: '-1.2rem',
 })
 const AlbumTrackSection = styled('div')({
-
-  height: 'fit-content'
+  height: 'fit-content',
+  backgroundColor: '#121212',
+  marginTop: '-1.2rem',
 })
 const ComposerTitle = styled('h1')({
   position: 'relative',
-  left: '44rem',
-  bottom: '10rem'
+  left: '5rem',
+  top: '5.5rem',
+  color: '#fff'
 })
 const ComposerImg = styled('img')({
     width: '12rem',
+    height: '12rem',
     position: 'relative',
-    left: '28rem',
-    top: '2rem'
+    left: '6rem',
+    top: '10rem'
+})
+const TopHeader = styled('div')({
+  height: '2.7rem',
+  marginBottom: '-1.5rem',
+  backgroundColor: '#000'
 })
 const TimelineButton = styled(Button)({
-  border: '1px solid black'
+  border: '1px solid white',
 })
 const TimelineLink = styled('a')({
-  textDecoration: 'none'
+  textDecoration: 'none',
+  color: '#fff'
 })
 const TracksHeading = styled('h3')({
   position: 'relative',
   left: '2rem',
+  top: '.5rem',
+  color: '#fff',
 })
 const TrackDiv = styled('div')({
   display: 'flex',
@@ -79,10 +94,13 @@ const TrackName = styled('h3')({
   bottom: '6rem',
   textAlign: 'left',
   textSize: '14px',
+  color: '#fff'
 })
 const AlbumsHeading = styled('h3')({
   position: 'relative',
   left: '2rem',
+  top: '1rem',
+  color: '#fff'
 })
 const AlbumDiv = styled('div')({
   display: 'flex',
@@ -92,6 +110,7 @@ const AlbumDiv = styled('div')({
   gap: '1rem 10rem',
   position: 'relative',
   left: '6rem',
+  top: '1rem',
   border: 'none'
 })
 const AlbumItem = styled('button')({
@@ -99,8 +118,15 @@ const AlbumItem = styled('button')({
   width: '18rem',
   height: '22rem',
   border: 'none',
+  backgroundColor: '#121212',
   ':hover': {
-         backgroundColor: '#e0e0e0'
+         backgroundColor: '#1f1f1f'
+      }
+})
+const AlbumTrackItem = styled('button')({
+  backgroundColor: '#121212',
+  ':hover': {
+         backgroundColor: '#1f1f1f'
       }
 })
 const PlayerDiv = styled('div')({
@@ -111,11 +137,12 @@ const PlayerDiv = styled('div')({
 const Space = styled('div')({
   border: 'none',
   width: '100%',
-  height: '5rem' 
+  height: '3rem' 
 })
 const AlbumTracksHeading = styled('h3')({
   position: 'relative',
-  left: '2rem'
+  left: '2rem',
+  color: '#fff'
 })
 const AlbumImg = styled('img')({
   width: '16rem',
@@ -125,7 +152,8 @@ const AlbumImg = styled('img')({
 })
 const AlbumName = styled('h3')({
   position: 'relative',
-  bottom: '15px'
+  bottom: '15px',
+  color: '#fff'
 })
 const AlbumTrackDiv = styled('div')({
   display: 'flex',
@@ -133,7 +161,7 @@ const AlbumTrackDiv = styled('div')({
   flexWrap: 'wrap',
   gap: '1rem 10rem',
   position: 'relative',
-  left: '4rem'
+  left: '4rem',
 })
 // const AlbumTrackItem = styled('button')({
 //   whiteSpace: 'hidden',
@@ -164,6 +192,13 @@ const AlbumTrackName = styled('h3')({
   bottom: '6rem',
   textAlign: 'left',
   textSize: '14px',
+  color: '#fff'
+})
+const TrackSpace = styled('div')({
+  height: '1rem'
+})
+const AlbumTrackSpace = styled('div')({
+  height: '1rem'
 })
 
 const spotifyApi = new SpotifyWebApi({
@@ -270,11 +305,11 @@ useEffect(() => {
       setAlbumTracks(res.body.items.map((track) => {
         return (
           <div onClick={() => setPlayingTrack(track)}>
-          <button className='albumTrack' onClick={toggleValue} key={track.id}>
+          <AlbumTrackItem className='albumTrack' onClick={toggleValue} key={track.id}>
             {/* <img className='icon2' src={icon} /> */}
             <AlbumTrackImg src={albumImg} />
             <AlbumTrackName>{track.name}</AlbumTrackName>
-          </button>
+          </AlbumTrackItem>
           </div>
         )
       }))
@@ -283,18 +318,21 @@ useEffect(() => {
 
   return (
   <div>
+    <TopHeader>
     <TimelineButton><TimelineLink className='timelineBtn' href={AUTH_URL}>Timeline</TimelineLink></TimelineButton>
+    </TopHeader>
 
     <ResultsHeader>
-      <ComposerImg src={img} />
+      {/* <ComposerImg src={img} /> */}
       <ComposerTitle>{name}</ComposerTitle>
     </ResultsHeader>
 
     <TracksSection>
-      <TracksHeading>Top 10 Tracks</TracksHeading>
+      <TracksHeading>Tracks</TracksHeading>
       <TrackDiv>
         {tracks}
       </TrackDiv>
+      <TrackSpace />
     </TracksSection>
 
     <AlbumSection>
@@ -311,6 +349,7 @@ useEffect(() => {
       <AlbumTrackDiv>
         {albumTracks}
       </AlbumTrackDiv>
+      <AlbumTrackSpace />
     </AlbumTrackSection>
 
     <Space />
