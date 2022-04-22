@@ -106,7 +106,7 @@ animation-iteration-count: infinite;
 }
 .search-bar {
   position: absolute;
-  top: 2rem;
+  top: 1.5rem;
   right: 2rem;
 }
 #textsearch {
