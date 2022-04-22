@@ -10,85 +10,21 @@ import { styled } from '@mui/material/styles'
 const code = new URLSearchParams(window.location.search).get('code');
 
 const ComposerButton = styled('button')({
-  width: '12rem',
-  height: '12rem',
+  width: '10rem',
+  height: 'min-content',
   position: 'relative',
   right: '1rem',
   border: 'none',
-  borderRadius: '25px'
-})
-const RenaissanceButtons = styled('button')({
-  width: '12rem',
-  height: '12rem',
-  position: 'relative',
-  right: '1rem',
-  border: 'none',
-  backgroundColor: '#27856a',
-  borderRadius: '25px'
-})
-const BaroqueButtons = styled('button')({
-  width: '12rem',
-  height: '12rem',
-  position: 'relative',
-  right: '1rem',
-  top: '38rem',
-  border: 'none',
-  backgroundColor: '#1e3264',
-  borderRadius: '25px'
-})
-const ClassicalButtons = styled('button')({
-  width: '12rem',
-  height: '12rem',
-  position: 'relative',
-  right: '1rem',
-  top: '78rem',
-  border: 'none',
-  backgroundColor: '#8d67ab',
-  borderRadius: '25px'
-})
-const RomanticButtons = styled('button')({
-  width: '12rem',
-  height: '12rem',
-  position: 'relative',
-  right: '1rem',
-  top: '165rem',
-  border: 'none',
-  backgroundColor: '#1072ec',
-  borderRadius: '25px'
-})
-const ModernistButtons = styled('button')({
-  width: '12rem',
-  height: '12rem',
-  position: 'relative',
-  right: '1rem',
-  top: '320rem',
-  border: 'none',
-  backgroundColor: '#a56752',
-  borderRadius: '25px'
-})
-const AvantButtons = styled('button')({
-  width: '12rem',
-  height: '12rem',
-  position: 'relative',
-  right: '1rem',
-  top: '140rem',
-  border: 'none',
-  backgroundColor: '#509bf5',
   borderRadius: '25px'
 })
 const ComposerName = styled('h3')({
+   textAlign: 'center',
    position: 'relative',
-   left: '2px',
-   bottom: '5px',
+   bottom: '10px',
    textDecoration: 'none',
-   color: '#fff'
+   color: '#fff',
+   letterSpacing: '1px'
   //  visibility: 'hidden'
-})
-const ComposerImg = styled('img')({
-  width: '10rem',
-  position: 'relative',
-  left: '2px',
-  bottom: '10px'
 })
 
 const App = () => {
@@ -104,12 +40,11 @@ const App = () => {
       const data = await response.json();
       
       const listofComposers = data.composers.map((composer) => {
-      const customColor = {'Renaissance': '#27856a', 'Baroque': '#1e3264', 'Classical': '#8d67ab', 'Romantic': '#1072ec', 'Modernist': '#a56752', 'Avant-garde': '#509bf5', 'Minimalist': '#a56752'}
+      const customColor = {'Renaissance': '#27856a', 'Baroque': '#1e3264', 'Classical': '#8d67ab', 'Romantic': '#1072ec', 'Modernist': '#a56752', 'Avant-garde': '#509bf5', 'Minimalist': '#e13400'}
         return (
           <Link to='/results'>
           <ComposerButton style={{backgroundColor: customColor[composer.era]}} onClick={() => setName(composer.name)} key={composer.id}>
               <ComposerName>{composer.name}</ComposerName>
-              {/* <ComposerImg src={composer.img}/> */}
           </ComposerButton>
           </Link>
         )

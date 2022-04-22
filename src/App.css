@@ -153,7 +153,7 @@ animation-iteration-count: infinite;
   color: #fff;
   position: absolute;
   top: -2rem;
-  left: 1rem;
+  left: 1.6rem;
   font-family: 'Apple Chancery', cursive;
   font-size: 2rem;
 }
@@ -161,7 +161,7 @@ animation-iteration-count: infinite;
   color: #fff;
   position: absolute;
   top: 24rem;
-  left: 1rem;
+  left: 1.6rem;
   font-family: 'Apple Chancery', cursive;
   font-size: 2rem;
 }
@@ -171,7 +171,7 @@ animation-iteration-count: infinite;
   font-size: 2rem;
   position: absolute;
   top: 58rem;
-  left: 1rem;
+  left: 1.6rem;
 }
 .timeline > .date1550 {
   color: #fff;
@@ -179,7 +179,7 @@ animation-iteration-count: infinite;
   font-size: 2rem;
   position: absolute;
   top: 103rem;
-  left: 1rem;
+  left: 1.6rem;
 }
 .timeline > .date1600 {
   color: #fff;
@@ -187,7 +187,7 @@ animation-iteration-count: infinite;
   font-size: 2rem;
   position: absolute;
   top: 135.5rem;
-  left: 1rem;
+  left: 1.6rem;
 }
 .timeline > .date1650 {
   color: #fff;
@@ -195,7 +195,7 @@ animation-iteration-count: infinite;
   font-size: 2rem;
   position: absolute;
   top: 161rem;
-  left: 1rem;
+  left: 1.6rem;
 }
 .timeline > .date1700 {
   color: #fff;
@@ -203,7 +203,7 @@ animation-iteration-count: infinite;
   font-size: 2rem;
   position: absolute;
   top: 214rem;
-  left: 1rem;
+  left: 1.6rem;
 }
 .timeline > .date1750 {
   color: #fff;
@@ -211,7 +211,7 @@ animation-iteration-count: infinite;
   font-size: 2rem;
   position: absolute;
   top: 264rem;
-  left: 1rem;
+  left: 1.6rem;
 }
 .timeline > .date1800 {
   color: #fff;
@@ -219,7 +219,7 @@ animation-iteration-count: infinite;
   font-size: 2rem;
   position: absolute;
   top: 292rem;
-  left: 1rem;
+  left: 1.6rem;
 }
 .timeline > .date1850 {
   color: #fff;
@@ -227,7 +227,7 @@ animation-iteration-count: infinite;
   font-size: 2rem;
   position: absolute;
   top: 368rem;
-  left: 1rem;
+  left: 1.6rem;
 }
 .timeline > .date1900 {
   color: #fff;
@@ -235,7 +235,7 @@ animation-iteration-count: infinite;
   font-size: 2rem;
   position: absolute;
   top: 460rem;
-  left: 1rem;
+  left: 1.6rem;
 }
 .timeline > .date1950 {
   color: #fff;
@@ -243,7 +243,7 @@ animation-iteration-count: infinite;
   font-size: 2rem;
   position: absolute;
   top: 546rem;
-  left: 1rem;
+  left: 1.6rem;
 }
 .timeline > .date2000 {
   color: #fff;
@@ -251,5 +251,5 @@ animation-iteration-count: infinite;
   font-size: 2rem;
   position: absolute;
   top: 678rem;
-  left: 1rem;
+  left: 1.6rem;
 }

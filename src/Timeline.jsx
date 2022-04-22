@@ -9,14 +9,16 @@ const Composer = styled('div')({
     alignItems: 'center',
     position: 'absolute',
     left: '12rem',
-    top: '1rem',
+    top: '7rem',
 })
-
 const Header = styled('div')({
     height: '6rem',
     width: '100vw',
     backgroundColor: '#070707',
-    color: 'white'
+    color: 'white',
+    display: 'flex',
+    flexDirection: 'row',
+    gap: '2rem'
 })
 const ComposerDiv = styled('div')({
     width: '100vw',
@@ -28,6 +30,67 @@ const TimelineDiv = styled('div')({
     width: '8rem',
     backgroundColor: '#000',
     position: 'absolute'
+})
+const Renaissance = styled('div')({
+    width: '10rem',
+    height: '5rem',
+    position: 'relative',
+    top: '7px',
+    left: '2.5rem',
+    backgroundColor: '#27856a'
+})
+const Baroque = styled('div')({
+    width: '10rem',
+    height: '5rem',
+    position: 'relative',
+    top: '7px',
+    left: '2.5rem',
+    backgroundColor: '#1e3264'
+})
+const Classical = styled('div')({
+    width: '10rem',
+    height: '5rem',
+    position: 'relative',
+    top: '7px',
+    left: '2.5rem',
+    backgroundColor: '#8d67ab'
+})
+const Romantic = styled('div')({
+    width: '10rem',
+    height: '5rem',
+    position: 'relative',
+    top: '7px',
+    left: '2.5rem',
+    backgroundColor: '#1072ec'
+})
+const Modernist = styled('div')({
+    width: '10rem',
+    height: '5rem',
+    position: 'relative',
+    top: '7px',
+    left: '2.5rem',
+    backgroundColor: '#a56752'
+})
+const AvantGarde = styled('div')({
+    width: '10rem',
+    height: '5rem',
+    position: 'relative',
+    top: '7px',
+    left: '2.5rem',
+    backgroundColor: '#509bf5'
+})
+const Minimalist = styled('div')({
+    width: '10rem',
+    height: '5rem',
+    position: 'relative',
+    top: '7px',
+    left: '2.5rem',
+    backgroundColor: '#e13400'
+})
+const EraText = styled('h3')({
+    textAlign: 'center',
+    position: 'relative',
+    top: '7px'
 })
 
 export const Timeline = ({composers}) => {
@@ -52,7 +115,7 @@ export const Timeline = ({composers}) => {
     // }
     return (
     <div>
-    {/* <Header> */}
+    <Header>
         {/* <form className="search-bar">
                 <input onInput={handleInput} id="textsearch" type='text' title="Search"></input>
                 <img className="search-icon" src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/30/000000/external-search-logistic-delivery-kiranshastry-lineal-kiranshastry.png"></img>
@@ -60,7 +123,30 @@ export const Timeline = ({composers}) => {
                 <input onClick={handleClick} style={{backgroundColor: color}} id="resetbutton" type="reset" value=""></input>
                 <input className="searchbutton" type="submit" value="Search"></input>
         </form> */}
-    {/* </Header> */}
+
+        <Renaissance>
+            <EraText>Renaissance</EraText>
+        </Renaissance>
+        <Baroque>
+            <EraText>Baroque</EraText>
+        </Baroque>
+        <Classical>
+            <EraText>Classical</EraText>
+        </Classical>
+        <Romantic>
+            <EraText>Romantic</EraText>
+        </Romantic>
+        <Modernist>
+            <EraText>Modernist</EraText>
+        </Modernist>
+        <AvantGarde>
+            <EraText>Avant-garde</EraText>
+        </AvantGarde>
+        <Minimalist>
+            <EraText>Minimalist</EraText>
+        </Minimalist>
+
+     </Header>
     <TimelineDiv>
         <div className='timeline'>
             <h3 className='date1400'>1400</h3>
