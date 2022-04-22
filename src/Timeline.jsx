@@ -1,6 +1,16 @@
 import {useState} from 'react'
 import { styled } from '@mui/material/styles'
 
+const Composer = styled('div')({
+    display: 'flex',
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: '40px',
+    alignItems: 'center',
+    position: 'absolute',
+    left: '20rem',
+    top: '1rem',
+})
 const RComposer = styled('div')({
     display: 'flex',
     flexDirection: 'row',
@@ -79,8 +89,8 @@ const TimelineDiv = styled('div')({
     position: 'absolute'
 })
 
-export const Timeline = ({rComposer, bComposer, cComposer, roComposer, mComposer, aComposer}) => {
-    
+export const Timeline = ({composers}) => {
+   
     // const [color, setColor] = useState('white')
 
     // const handleInput = (e) => {
@@ -128,12 +138,7 @@ export const Timeline = ({rComposer, bComposer, cComposer, roComposer, mComposer
         </div>
     </TimelineDiv>
     <ComposerDiv>
-    <RComposer>{rComposer}</RComposer>
-    <BComposer>{bComposer}</BComposer>
-    <CComposer>{cComposer}</CComposer>
-    <RoComposer>{roComposer}</RoComposer>
-    <MComposer>{mComposer}</MComposer>
-    <AComposer>{aComposer}</AComposer>
+        <Composer>{composers}</Composer>
     </ComposerDiv>
     </div>
     )    

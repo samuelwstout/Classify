@@ -9,6 +9,14 @@ import { styled } from '@mui/material/styles'
 
 const code = new URLSearchParams(window.location.search).get('code');
 
+const ComposerButton = styled('button')({
+  width: '12rem',
+  height: '12rem',
+  position: 'relative',
+  right: '1rem',
+  border: 'none',
+  borderRadius: '25px'
+})
 const RenaissanceButtons = styled('button')({
   width: '12rem',
   height: '12rem',
@@ -87,95 +95,28 @@ const App = () => {
 
   const [name, setName] = useState('');
   const [composers, setComposers] = useState([]);
-  const [rComposer, setRComposer] = useState([]);
-  const [bComposer, setBComposer] = useState([]);
-  const [cComposer, setCComposer] = useState([]);
-  const [roComposer, setRoComposer] = useState([]);
-  const [mComposer, setMComposer] = useState([]);
-  const [aComposer, setAComposer] = useState([]);
-  const [miComposer, setMiComposer] = useState([]);
+
+  // Please try this and share feedback: const customColor = Object.fromEntries(data.composer.map((composer) => ([composer.era, getCustomColorFor(composer.era)]))); where function getCustomColorFor(era) { switch (era) { case "Renaissance": return 'red'; case "Baroque": return 'blue'; case "SomeOtherEra": return 'someOtherColor"; default: return 'black';}};
   
   useEffect(() => {
     const fetchComposers = async () => {
       const response = await fetch('composers.json');
       const data = await response.json();
-      const renaissance = data.composers.filter(r => r.era === 'Renaissance')
-      const baroque = data.composers.filter(r => r.era === 'Baroque')
-      const classical = data.composers.filter(r => r.era === 'Classical')
-      const romantic = data.composers.filter(r => r.era === 'Romantic')
-      const modernist = data.composers.filter(r => r.era === 'Modernist')
-      const avantGarde = data.composers.filter(r => r.era === 'Avant-garde')
-      const minimalist = data.composers.filter(r => r.era === 'Minimalist')
-
-      const renaissanceList = renaissance.map(r => {
+      
+      const listofComposers = data.composers.map((composer) => {
+      const customColor = {'Renaissance': '#27856a', 'Baroque': '#1e3264', 'Classical': '#8d67ab', 'Romantic': '#1072ec', 'Modernist': '#a56752', 'Avant-garde': '#509bf5', 'Minimalist': '#a56752'}
         return (
           <Link to='/results'>
-          <RenaissanceButtons onClick={() => setName(r.name)} key={r.id}>
-          <ComposerName>{r.name}</ComposerName>
-          </RenaissanceButtons>
+          <ComposerButton style={{backgroundColor: customColor[composer.era]}} onClick={() => setName(composer.name)} key={composer.id}>
+              <ComposerName>{composer.name}</ComposerName>
+              {/* <ComposerImg src={composer.img}/> */}
+          </ComposerButton>
           </Link>
         )
-        })
-        setRComposer(renaissanceList)
-
-      const baroqueList = baroque.map(r => {
-        return (
-          <Link to='/results'>
-          <BaroqueButtons onClick={() => setName(r.name)} key={r.id}>
-          <ComposerName>{r.name}</ComposerName>
-          </BaroqueButtons>
-          </Link>
-        )
-      })
-      setBComposer(baroqueList)
-
-      const classicalList = classical.map(r => {
-        return (
-          <Link to='/results'>
-          <ClassicalButtons onClick={() => setName(r.name)} key={r.id}>
-          <ComposerName>{r.name}</ComposerName>
-          </ClassicalButtons>
-          </Link>
-        )
-      })
-      setCComposer(classicalList)
-
-      const romanticList = romantic.map(r => {
-        return (
-          <Link to='/results'>
-          <RomanticButtons onClick={() => setName(r.name)} key={r.id}>
-          <ComposerName>{r.name}</ComposerName>
-          </RomanticButtons>
-          </Link>
-        )
-      })
-      setRoComposer(romanticList)
-
-      const modernistList = modernist.map(r => {
-        return (
-          <Link to='/results'>
-          <ModernistButtons onClick={() => setName(r.name)} key={r.id}>
-          <ComposerName>{r.name}</ComposerName>
-          </ModernistButtons>
-          </Link>
-        )
-      })
-      setMComposer(modernistList)
-
-      const avantGardeList = avantGarde.map(r => {
-        return (
-          <Link to='/results'>
-          <AvantButtons onClick={() => setName(r.name)} key={r.id}>
-          <ComposerName>{r.name}</ComposerName>
-          </AvantButtons>
-          </Link>
-        )
-      })
-      setAComposer(avantGardeList)
-
-      const minimalistList = minimalist.map(r => r)
-    
+     })
+     setComposers(listofComposers);
     }
+
     fetchComposers();
   }, []);
 
@@ -184,7 +125,7 @@ const App = () => {
       <Router>
         <Routes>
           <Route path='/' element={<Login code={code} />} />
-          <Route path='/timeline' element={<Timeline rComposer={rComposer} bComposer={bComposer} cComposer={cComposer} roComposer={roComposer} mComposer={mComposer} aComposer={aComposer} />} />
+          <Route path='/timeline' element={<Timeline composers={composers} />} />
           <Route path='/results' element={<Results name={name} code={code}  />} />
         </Routes>
       </Router>
