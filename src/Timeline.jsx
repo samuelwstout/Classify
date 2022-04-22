@@ -8,69 +8,10 @@ const Composer = styled('div')({
     gap: '40px',
     alignItems: 'center',
     position: 'absolute',
-    left: '20rem',
+    left: '12rem',
     top: '1rem',
 })
-const RComposer = styled('div')({
-    display: 'flex',
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    gap: '40px',
-    alignItems: 'center',
-    position: 'absolute',
-    left: '20rem',
-    top: '1rem',
-})
-const BComposer = styled('div')({
-    display: 'flex',
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    gap: '40px',
-    alignItems: 'center',
-    position: 'absolute',
-    left: '20rem',
-    top: '38rem',
-})
-const CComposer = styled('div')({
-    display: 'flex',
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    gap: '40px',
-    alignItems: 'center',
-    position: 'absolute',
-    left: '20rem',
-    top: '76rem',
-})
-const RoComposer = styled('div')({
-    display: 'flex',
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    gap: '40px',
-    alignItems: 'center',
-    position: 'absolute',
-    left: '20rem',
-    top: '36rem',
-})
-const MComposer = styled('div')({
-    display: 'flex',
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    gap: '40px',
-    alignItems: 'center',
-    position: 'absolute',
-    left: '20rem',
-    
-})
-const AComposer = styled('div')({
-    display: 'flex',
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    gap: '40px',
-    alignItems: 'center',
-    position: 'absolute',
-    left: '20rem',
-    top: '254rem',
-})
+
 const Header = styled('div')({
     height: '6rem',
     width: '100vw',
@@ -84,7 +25,7 @@ const ComposerDiv = styled('div')({
 })
 const TimelineDiv = styled('div')({
     height: '684rem',
-    width: '17.4rem',
+    width: '8rem',
     backgroundColor: '#000',
     position: 'absolute'
 })
