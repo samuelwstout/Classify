@@ -26,8 +26,8 @@ const AlbumTrackSection = styled('div')({
 })
 const ComposerTitle = styled('h1')({
   position: 'absolute',
-  left: '15rem',
-  top: '6rem',
+  left: '45%',
+  top: '6.5rem',
   color: '#fff',
   letterSpacing: '2px',
   fontSize: '30px'
@@ -37,7 +37,7 @@ const ComposerImg = styled('img')({
     height: '10rem',
     position: 'absolute',
     top: '4rem',
-    left: '1rem',
+    left: '27.5rem',
     borderRadius: '25px'
 })
 const TopHeader = styled('div')({
