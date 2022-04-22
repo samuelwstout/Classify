@@ -98,8 +98,7 @@ const Eras = styled('div')({
     position: 'relative',
     display: 'flex',
     flexDirection: 'row',
-    gap: '3rem',
-    left: '-1rem'
+    gap: '6.4rem',
 })
 
 export const Timeline = ({composers}) => {

@@ -10,8 +10,9 @@ const Heading = styled('p')({
   fontSize: '160px',
   letterSpacing: '5px',
   position: 'absolute',
-  top: '-8rem',
-  left: '3rem',
+  top: '-4rem',
+  left: '28.4rem',
+  color: '#000'
 })
 // const Dot1 = styled('span')({
 // height: '25px',
@@ -132,7 +133,7 @@ export const Login = ({ code }) => {
       <span className="dot1"></span>
       <span className="dot2"></span>
       <span className="dot3"></span>
-      <p className="subheading">a friendlier way to discover classical music.</p>
+      <p className="subheading">a guide to find and listen to classical music.</p>
         <LoginButton variant='contained'>
             <LoginButtonText href={AUTH_URL}>LOGIN WITH<SpotifyLogo src='/spotify-icons-logos/logos/01_RGB/02_PNG/Spotify_Logo_RGB_Green.png'/></LoginButtonText>
         </LoginButton>
