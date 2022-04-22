@@ -5,7 +5,7 @@ const Composer = styled('div')({
     display: 'flex',
     flexDirection: 'row',
     flexWrap: 'wrap',
-    gap: '45px',
+    gap: '40px',
     alignItems: 'center',
     position: 'absolute',
     left: '12rem',
@@ -24,11 +24,11 @@ const Header = styled('div')({
 })
 const ComposerDiv = styled('div')({
     width: '100vw',
-    height: '684rem',
+    height: '218rem',
     backgroundColor: '#121212'
 })
 const TimelineDiv = styled('div')({
-    height: '684rem',
+    height: '218rem',
     width: '8rem',
     backgroundColor: '#000',
     position: 'absolute'
@@ -149,17 +149,11 @@ export const Timeline = ({composers}) => {
     <TimelineDiv>
         <div className='timeline'>
             <h3 className='date1400'>1400</h3>
-            <h3 className='date1450'>1450</h3>
             <h3 className='date1500'>1500</h3>
-            <h3 className='date1550'>1550</h3>
             <h3 className='date1600'>1600</h3>
-            <h3 className='date1650'>1650</h3>
             <h3 className='date1700'>1700</h3>
-            <h3 className='date1750'>1750</h3>
             <h3 className='date1800'>1800</h3>
-            <h3 className='date1850'>1850</h3>
             <h3 className='date1900'>1900</h3>
-            <h3 className='date1950'>1950</h3>
             <h3 className='date2000'>2000</h3>
         </div>
     </TimelineDiv>

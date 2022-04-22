@@ -10,8 +10,8 @@ import { styled } from '@mui/material/styles'
 const code = new URLSearchParams(window.location.search).get('code');
 
 const ComposerButton = styled('button')({
-  width: '10rem',
-  height: 'min-content',
+  width: '12rem',
+  height: '5rem',
   position: 'relative',
   right: '1rem',
   border: 'none',
@@ -20,11 +20,9 @@ const ComposerButton = styled('button')({
 const ComposerName = styled('h3')({
    textAlign: 'center',
    position: 'relative',
-   bottom: '10px',
    textDecoration: 'none',
    color: '#fff',
    letterSpacing: '1px'
-  //  visibility: 'hidden'
 })
 
 const App = () => {

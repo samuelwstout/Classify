@@ -152,104 +152,49 @@ animation-iteration-count: infinite;
 .timeline > .date1400 {
   color: #fff;
   position: absolute;
-  top: -2rem;
+  top: 6rem;
   left: 1.6rem;
-  font-family: 'Apple Chancery', cursive;
-  font-size: 2rem;
-}
-.timeline > .date1450 {
-  color: #fff;
-  position: absolute;
-  top: 24rem;
-  left: 1.6rem;
-  font-family: 'Apple Chancery', cursive;
-  font-size: 2rem;
+  font-size: 23px;
 }
 .timeline > .date1500 {
   color: #fff;
-  font-family: 'Apple Chancery', cursive;
-  font-size: 2rem;
+  font-size: 23px;
   position: absolute;
-  top: 58rem;
-  left: 1.6rem;
-}
-.timeline > .date1550 {
-  color: #fff;
-  font-family: 'Apple Chancery', cursive;
-  font-size: 2rem;
-  position: absolute;
-  top: 103rem;
+  top: 29.5rem;
   left: 1.6rem;
 }
 .timeline > .date1600 {
   color: #fff;
-  font-family: 'Apple Chancery', cursive;
-  font-size: 2rem;
+  font-size: 23px;
   position: absolute;
-  top: 135.5rem;
-  left: 1.6rem;
-}
-.timeline > .date1650 {
-  color: #fff;
-  font-family: 'Apple Chancery', cursive;
-  font-size: 2rem;
-  position: absolute;
-  top: 161rem;
+  top: 50rem;
   left: 1.6rem;
 }
 .timeline > .date1700 {
   color: #fff;
-  font-family: 'Apple Chancery', cursive;
-  font-size: 2rem;
+  font-size: 23px;
   position: absolute;
-  top: 214rem;
-  left: 1.6rem;
-}
-.timeline > .date1750 {
-  color: #fff;
-  font-family: 'Apple Chancery', cursive;
-  font-size: 2rem;
-  position: absolute;
-  top: 264rem;
+  top: 75rem;
   left: 1.6rem;
 }
 .timeline > .date1800 {
   color: #fff;
-  font-family: 'Apple Chancery', cursive;
-  font-size: 2rem;
+  font-size: 23px;
   position: absolute;
-  top: 292rem;
-  left: 1.6rem;
-}
-.timeline > .date1850 {
-  color: #fff;
-  font-family: 'Apple Chancery', cursive;
-  font-size: 2rem;
-  position: absolute;
-  top: 368rem;
+  top: 105rem;
   left: 1.6rem;
 }
 .timeline > .date1900 {
   color: #fff;
-  font-family: 'Apple Chancery', cursive;
-  font-size: 2rem;
+  font-size: 23px;
   position: absolute;
-  top: 460rem;
-  left: 1.6rem;
-}
-.timeline > .date1950 {
-  color: #fff;
-  font-family: 'Apple Chancery', cursive;
-  font-size: 2rem;
-  position: absolute;
-  top: 546rem;
+  top: 172rem;
   left: 1.6rem;
 }
 .timeline > .date2000 {
   color: #fff;
-  font-family: 'Apple Chancery', cursive;
-  font-size: 2rem;
+  font-size: 23px;
   position: absolute;
-  top: 678rem;
+  top: 212rem;
   left: 1.6rem;
 }
