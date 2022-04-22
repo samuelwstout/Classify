@@ -15,7 +15,7 @@ const TracksSection = styled('div')({
   marginTop: '-1.2rem',
 })
 const AlbumSection = styled('div')({
-  height: '166rem',
+  height: '80rem',
   backgroundColor: '#121212',
   marginTop: '-1.2rem',
 })
@@ -25,17 +25,20 @@ const AlbumTrackSection = styled('div')({
   marginTop: '-1.2rem',
 })
 const ComposerTitle = styled('h1')({
-  position: 'relative',
-  left: '5rem',
-  top: '5.5rem',
-  color: '#fff'
+  position: 'absolute',
+  left: '15rem',
+  top: '6rem',
+  color: '#fff',
+  letterSpacing: '2px',
+  fontSize: '30px'
 })
 const ComposerImg = styled('img')({
-    width: '12rem',
-    height: '12rem',
-    position: 'relative',
-    left: '6rem',
-    top: '10rem'
+    width: '10rem',
+    height: '10rem',
+    position: 'absolute',
+    top: '4rem',
+    left: '1rem',
+    borderRadius: '25px'
 })
 const TopHeader = styled('div')({
   height: '2.7rem',
@@ -51,7 +54,7 @@ const TimelineLink = styled('a')({
 })
 const TracksHeading = styled('h3')({
   position: 'relative',
-  left: '2rem',
+  left: '1rem',
   top: '.5rem',
   color: '#fff',
 })
@@ -59,9 +62,9 @@ const TrackDiv = styled('div')({
   display: 'flex',
   flexDirection: 'row',
   flexWrap: 'wrap',
-  gap: '1rem 7rem',
+  gap: '1rem 10rem',
   position: 'relative',
-  left: '4rem',
+  left: '1rem',
   border: 'none',
 })
 // const Track = styled('button')({
@@ -82,8 +85,8 @@ const TrackDiv = styled('div')({
 //   top: '.5rem'
 // }) IN APP.CSS
 const TrackImg = styled('img')({
-  width: '7rem',
-  height: '7rem',
+  width: '5rem',
+  height: '5rem',
   position: 'relative',
   right: '13rem',
   top: '1.1rem'
@@ -91,14 +94,14 @@ const TrackImg = styled('img')({
 const TrackName = styled('h3')({
   position: 'relative',
   left: '10rem',
-  bottom: '6rem',
+  bottom: '3.5rem',
   textAlign: 'left',
   textSize: '14px',
   color: '#fff'
 })
 const AlbumsHeading = styled('h3')({
   position: 'relative',
-  left: '2rem',
+  left: '1rem',
   top: '1rem',
   color: '#fff'
 })
@@ -107,16 +110,16 @@ const AlbumDiv = styled('div')({
   flexDirection: 'row',
   flexWrap: 'wrap',
   alignItems: 'center',
-  gap: '1rem 10rem',
+  gap: '1rem 1rem',
   position: 'relative',
-  left: '6rem',
+  left: '1rem',
   top: '1rem',
   border: 'none'
 })
 const AlbumItem = styled('button')({
   whiteSpace: 'hidden',
-  width: '18rem',
-  height: '22rem',
+  width: '16rem',
+  height: '18rem',
   border: 'none',
   backgroundColor: '#121212',
   ':hover': {
@@ -142,11 +145,12 @@ const Space = styled('div')({
 const AlbumTracksHeading = styled('h3')({
   position: 'relative',
   left: '2rem',
+  bottom: '-1rem',
   color: '#fff'
 })
 const AlbumImg = styled('img')({
-  width: '16rem',
-  height: '16rem',
+  width: '11rem',
+  height: '11rem',
   position: 'relative',
   bottom: '8px'
 })
@@ -161,7 +165,8 @@ const AlbumTrackDiv = styled('div')({
   flexWrap: 'wrap',
   gap: '1rem 10rem',
   position: 'relative',
-  left: '4rem',
+  left: '1rem',
+  top: '1rem'
 })
 // const AlbumTrackItem = styled('button')({
 //   whiteSpace: 'hidden',
@@ -175,8 +180,8 @@ const AlbumTrackDiv = styled('div')({
 //   }
 // })
 const AlbumTrackImg = styled('img')({
-  width: '7rem',
-  height: '7rem',
+  width: '5rem',
+  height: '5rem',
   position: 'relative',
   right: '13rem',
   top: '1.1rem'
@@ -189,7 +194,7 @@ const AlbumTrackImg = styled('img')({
 const AlbumTrackName = styled('h3')({
   position: 'relative',
   left: '10rem',
-  bottom: '6rem',
+  bottom: '3.5rem',
   textAlign: 'left',
   textSize: '14px',
   color: '#fff'
@@ -270,7 +275,7 @@ export const Results = ({ name, code }) => {
 
 const handleAlbumClick = () => {
     setOpen(!open)
-    window.scrollTo(0, 3500)
+    window.scrollTo(0, 2000)
   }
 
 //if user clicks on album, get album id
@@ -323,7 +328,7 @@ useEffect(() => {
     </TopHeader>
 
     <ResultsHeader>
-      {/* <ComposerImg src={img} /> */}
+      <ComposerImg src={img} />
       <ComposerTitle>{name}</ComposerTitle>
     </ResultsHeader>
 

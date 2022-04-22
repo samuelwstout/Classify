@@ -8,7 +8,7 @@ body {
 }
 .track {
   white-space: hidden;
-  height: 9rem;
+  height: 7rem;
   width: 35rem;
   overflow: hidden;
   text-overflow: clip;
@@ -30,7 +30,7 @@ body {
 }
 .albumTrack {
   white-space: hidden;
-  height: 9rem;
+  height: 7rem;
   width: 35rem;
   overflow: hidden;
   text-overflow: clip;

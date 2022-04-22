@@ -38,7 +38,7 @@ const Renaissance = styled('div')({
     height: '5rem',
     position: 'relative',
     top: '7px',
-    left: '.5rem',
+    left: '3rem',
     backgroundColor: '#27856a'
 })
 const Baroque = styled('div')({
@@ -46,7 +46,7 @@ const Baroque = styled('div')({
     height: '5rem',
     position: 'relative',
     top: '7px',
-    right: '1.5rem',
+    left: '1rem',
     backgroundColor: '#1e3264'
 })
 const Classical = styled('div')({
@@ -54,7 +54,7 @@ const Classical = styled('div')({
     height: '5rem',
     position: 'relative',
     top: '7px',
-    right: '3.5rem',
+    left: '-1rem',
     backgroundColor: '#8d67ab'
 })
 const Romantic = styled('div')({
@@ -62,7 +62,7 @@ const Romantic = styled('div')({
     height: '5rem',
     position: 'relative',
     top: '7px',
-    right: '5.5rem',
+    left: '-3rem',
     backgroundColor: '#1072ec'
 })
 const Modernist = styled('div')({
@@ -70,7 +70,7 @@ const Modernist = styled('div')({
     height: '5rem',
     position: 'relative',
     top: '7px',
-    right: '7.5rem',
+    left: '-5rem',
     backgroundColor: '#a56752'
 })
 const AvantGarde = styled('div')({
@@ -78,7 +78,7 @@ const AvantGarde = styled('div')({
     height: '5rem',
     position: 'relative',
     top: '7px',
-    right: '9.5rem',
+    left: '-7rem',
     backgroundColor: '#509bf5'
 })
 const Minimalist = styled('div')({
@@ -86,7 +86,7 @@ const Minimalist = styled('div')({
     height: '5rem',
     position: 'relative',
     top: '7px',
-    right: '11.5rem',
+    left: '-9rem',
     backgroundColor: '#e13400'
 })
 const EraText = styled('h3')({
@@ -94,35 +94,42 @@ const EraText = styled('h3')({
     position: 'relative',
     top: '7px'
 })
+const Eras = styled('div')({
+    position: 'relative',
+    display: 'flex',
+    flexDirection: 'row',
+    gap: '3rem',
+    left: '-1rem'
+})
 
 export const Timeline = ({composers}) => {
    
-    const [color, setColor] = useState('white')
+    // const [color, setColor] = useState('white')
 
-    const handleInput = (e) => {
-        if (e) {
-           setColor('transparent')
-        }
-        if (e.target.value === '') {
-            setColor('white')
-        }  
-    }
-    const handleClick = (e) => {
-        if (e) {
-            setColor('white')
-        }
-    }
+    // const handleInput = (e) => {
+    //     if (e) {
+    //        setColor('transparent')
+    //     }
+    //     if (e.target.value === '') {
+    //         setColor('white')
+    //     }  
+    // }
+    // const handleClick = (e) => {
+    //     if (e) {
+    //         setColor('white')
+    //     }
+    // }
     return (
     <div>
     <Header>
-        <form className="search-bar">
+        {/* <form className="search-bar">
                 <input onInput={handleInput} id="textsearch" type='text' title="Search"></input>
                 <img className="search-icon" src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/30/000000/external-search-logistic-delivery-kiranshastry-lineal-kiranshastry.png"></img>
                 <svg id="close-icon" role="button" height="24" width="24" viewBox="0 0 24 24"><path d="M3.293 3.293a1 1 0 011.414 0L12 10.586l7.293-7.293a1 1 0 111.414 1.414L13.414 12l7.293 7.293a1 1 0 01-1.414 1.414L12 13.414l-7.293 7.293a1 1 0 01-1.414-1.414L10.586 12 3.293 4.707a1 1 0 010-1.414z"></path></svg>
                 <input onClick={handleClick} style={{backgroundColor: color}} id="resetbutton" type="reset" value=""></input>
                 <input className="searchbutton" type="submit" value="Search"></input>
-        </form>
-
+        </form> */}
+    <Eras>
         <Renaissance>
             <EraText>Renaissance</EraText>
         </Renaissance>
@@ -144,7 +151,7 @@ export const Timeline = ({composers}) => {
         <Minimalist>
             <EraText>Minimalist</EraText>
         </Minimalist>
-
+    </Eras>
      </Header>
     <TimelineDiv>
         <div className='timeline'>
