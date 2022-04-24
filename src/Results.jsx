@@ -7,7 +7,7 @@ import Button from '@mui/material/Button'
 import useToggle from './useToggle'
 
 const ResultsHeader = styled('div')({
-  height: '15rem',
+  height: '14rem',
   backgroundColor: '#000'
 })
 const TracksSection = styled('div')({
@@ -26,11 +26,13 @@ const AlbumTrackSection = styled('div')({
 })
 const ComposerTitle = styled('h1')({
   position: 'absolute',
-  left: '45%',
-  top: '6.5rem',
+  top: '3rem',
   color: '#fff',
   letterSpacing: '2px',
-  fontSize: '30px'
+  fontFamily: 'Inter',
+  fontStyle: 'normal',
+  fontWeight: 400,
+  fontSize: '50px'
 })
 const ComposerImg = styled('img')({
     width: '10rem',
@@ -41,7 +43,7 @@ const ComposerImg = styled('img')({
     borderRadius: '25px'
 })
 const TopHeader = styled('div')({
-  height: '2.7rem',
+  height: '1rem',
   marginBottom: '-1.5rem',
   backgroundColor: '#000'
 })
@@ -328,7 +330,6 @@ useEffect(() => {
     </TopHeader>
 
     <ResultsHeader>
-      <ComposerImg src={img} />
       <ComposerTitle>{name}</ComposerTitle>
     </ResultsHeader>
 
