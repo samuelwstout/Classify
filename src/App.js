@@ -18,7 +18,6 @@ const ComposerButton = styled('button')({
   borderRadius: '25px'
 })
 const ComposerName = styled('h3')({
-   textAlign: 'center',
    position: 'relative',
    textDecoration: 'none',
    color: '#fff',

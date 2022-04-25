@@ -57,16 +57,17 @@ const TimelineLink = styled('a')({
 const TracksHeading = styled('h3')({
   position: 'relative',
   left: '1rem',
-  top: '.5rem',
+  top: '1rem',
   color: '#fff',
 })
 const TrackDiv = styled('div')({
   display: 'flex',
   flexDirection: 'row',
   flexWrap: 'wrap',
-  gap: '1rem 10rem',
+  gap: '1rem 6rem',
   position: 'relative',
   left: '1rem',
+  top: '1.3rem',
   border: 'none',
 })
 // const Track = styled('button')({
@@ -87,16 +88,16 @@ const TrackDiv = styled('div')({
 //   top: '.5rem'
 // }) IN APP.CSS
 const TrackImg = styled('img')({
-  width: '5rem',
-  height: '5rem',
+  width: '3rem',
+  height: '3rem',
   position: 'relative',
-  right: '13rem',
-  top: '1.1rem'
+  right: '17.5rem', 
+  top: '.5rem'
 })
 const TrackName = styled('h3')({
   position: 'relative',
-  left: '10rem',
-  bottom: '3.5rem',
+  left: '5rem',
+  bottom: '2.9rem',
   textAlign: 'left',
   textSize: '14px',
   color: '#fff'
@@ -104,7 +105,7 @@ const TrackName = styled('h3')({
 const AlbumsHeading = styled('h3')({
   position: 'relative',
   left: '1rem',
-  top: '1rem',
+  top: '2rem',
   color: '#fff'
 })
 const AlbumDiv = styled('div')({
@@ -112,16 +113,16 @@ const AlbumDiv = styled('div')({
   flexDirection: 'row',
   flexWrap: 'wrap',
   alignItems: 'center',
-  gap: '1rem 1rem',
+  gap: '4rem',
   position: 'relative',
   left: '1rem',
-  top: '1rem',
+  top: '3rem',
   border: 'none'
 })
 const AlbumItem = styled('button')({
   whiteSpace: 'hidden',
-  width: '16rem',
-  height: '18rem',
+  width: '14rem',
+  height: '16rem',
   border: 'none',
   backgroundColor: '#121212',
   ':hover': {
@@ -142,33 +143,32 @@ const PlayerDiv = styled('div')({
 const Space = styled('div')({
   border: 'none',
   width: '100%',
-  height: '3rem' 
+  height: '7rem',
+  backgroundColor: '#121212'
 })
 const AlbumTracksHeading = styled('h3')({
   position: 'relative',
-  left: '2rem',
-  bottom: '-1rem',
+  left: '1rem',
+  top: '2.5rem',
   color: '#fff'
 })
 const AlbumImg = styled('img')({
   width: '11rem',
   height: '11rem',
   position: 'relative',
-  bottom: '8px'
 })
 const AlbumName = styled('h3')({
   position: 'relative',
-  bottom: '15px',
   color: '#fff'
 })
 const AlbumTrackDiv = styled('div')({
   display: 'flex',
   flexDirection: 'row',
   flexWrap: 'wrap',
-  gap: '1rem 10rem',
+  gap: '1rem 6rem',
   position: 'relative',
   left: '1rem',
-  top: '1rem'
+  top: '3rem'
 })
 // const AlbumTrackItem = styled('button')({
 //   whiteSpace: 'hidden',
@@ -182,11 +182,11 @@ const AlbumTrackDiv = styled('div')({
 //   }
 // })
 const AlbumTrackImg = styled('img')({
-  width: '5rem',
-  height: '5rem',
+  width: '3rem',
+  height: '3rem',
   position: 'relative',
-  right: '13rem',
-  top: '1.1rem'
+  right: '17.5rem', 
+  top: '.5rem'
 })
 // const AlbumTrackIcon = styled('img')({
 //   position: 'relative',
@@ -195,8 +195,8 @@ const AlbumTrackImg = styled('img')({
 // })
 const AlbumTrackName = styled('h3')({
   position: 'relative',
-  left: '10rem',
-  bottom: '3.5rem',
+  left: '5rem',
+  bottom: '2.9rem',
   textAlign: 'left',
   textSize: '14px',
   color: '#fff'
@@ -230,8 +230,8 @@ export const Results = ({ name, code }) => {
   const [open, setOpen] = useState(false)
   const [albumTracks, setAlbumTracks] = useState([])
   const [value, toggleValue] = useToggle(false)
-  // const [icon, setIcon] = useState('/icons8-play-30.png')
   const [img, setImg] = useState('')
+  const [albumName, setAlbumName] = useState('')
 
   //set access token
   useEffect(() => {
@@ -258,13 +258,11 @@ export const Results = ({ name, code }) => {
     if (!accessToken) return
     let cancel = false
     spotifyApi.getArtistTopTracks(artistId, 'US').then(res => {
-      // setIcon(value ? '/icons8-play-30.png' : '/icons8-pause-30.png')
       if (cancel) return
       setTracks(res.body.tracks.map((track) => {
         return (
           <div onClick={() => setPlayingTrack(track)}>
           <button className='track' onClick={toggleValue} key={track.id}>
-            {/* <img className='icon' src={icon} /> */}
             <TrackImg src={track.album.images[0].url} />
             <TrackName>{track.name}</TrackName>
           </button>
@@ -289,14 +287,16 @@ useEffect(() => {
     if (cancel) return
     setAlbums(res.body.items.map((item) => {
       return (
-      <div onClick={handleAlbumClick}>
-        <div onClick={() => setAlbumImg(item.images[2].url)}>
-        <AlbumItem onClick={() => setAlbumId(item.id)} key={item.id}>
-          <AlbumName>{item.name}</AlbumName>
-          <AlbumImg src={item.images[1].url} />
-        </AlbumItem>
+        <div onClick={() => setAlbumName(item.name)}>
+          <div onClick={handleAlbumClick}>
+            <div onClick={() => setAlbumImg(item.images[2].url)}>
+            <AlbumItem onClick={() => setAlbumId(item.id)} key={item.id}>
+              <AlbumImg src={item.images[1].url} />
+              <AlbumName>{item.name}</AlbumName>
+            </AlbumItem>
+            </div>
+          </div>
         </div>
-      </div>
         )
       }))
     })
@@ -306,14 +306,12 @@ useEffect(() => {
     if (!albumId) return setAlbumTracks([])
     if (!accessToken) return
     let cancel = false
-    spotifyApi.getAlbumTracks(albumId).then(res => { 
-      // let icon = value ? '/icons8-pause-30.png' : '/icons8-play-30.png'
+    spotifyApi.getAlbumTracks(albumId).then(res => {
       if (cancel) return
       setAlbumTracks(res.body.items.map((track) => {
         return (
           <div onClick={() => setPlayingTrack(track)}>
           <AlbumTrackItem className='albumTrack' onClick={toggleValue} key={track.id}>
-            {/* <img className='icon2' src={icon} /> */}
             <AlbumTrackImg src={albumImg} />
             <AlbumTrackName>{track.name}</AlbumTrackName>
           </AlbumTrackItem>
@@ -334,7 +332,7 @@ useEffect(() => {
     </ResultsHeader>
 
     <TracksSection>
-      <TracksHeading>Tracks</TracksHeading>
+      <TracksHeading>Popular</TracksHeading>
       <TrackDiv>
         {tracks}
       </TrackDiv>
@@ -350,7 +348,7 @@ useEffect(() => {
 
     <AlbumTrackSection>
       {open && (
-        <AlbumTracksHeading>Album tracks</AlbumTracksHeading>
+        <AlbumTracksHeading>{albumName}</AlbumTracksHeading>
       )}
       <AlbumTrackDiv>
         {albumTracks}

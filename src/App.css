@@ -8,8 +8,8 @@ body {
 }
 .track {
   white-space: hidden;
-  height: 7rem;
-  width: 35rem;
+  height: 4rem;
+  width: 40rem;
   overflow: hidden;
   text-overflow: clip;
   border: none;
@@ -30,8 +30,8 @@ body {
 }
 .albumTrack {
   white-space: hidden;
-  height: 7rem;
-  width: 35rem;
+  height: 4rem;
+  width: 40rem;
   overflow: hidden;
   text-overflow: clip;
   border: none;
@@ -105,7 +105,6 @@ body {
   width: 0px;
   height: 0px;
 }
-
 .timeline > .date1400 {
   color: #fff;
   position: absolute;
