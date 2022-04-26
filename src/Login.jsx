@@ -5,65 +5,14 @@ import {useNavigate} from 'react-router-dom'
 
 const AUTH_URL = 'https://accounts.spotify.com/authorize?client_id=a45eb12484d24c4199050bdefee6d24b&response_type=code&redirect_uri=http://localhost:3000&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state'
 
-const Heading = styled('p')({
-  fontFamily: 'Baskerville, sans serif',
-  fontSize: '160px',
-  letterSpacing: '5px',
-  position: 'absolute',
-  top: '-4rem',
-  left: '28.4rem',
-  color: '#000'
-})
-// const Dot1 = styled('span')({
-// height: '25px',
-// width: '25px',
-// backgroundColor: '#bbb',
-// borderRadius: '50%',
-// display: 'inline-block',
-// position: 'absolute',
-// top: '10rem',
-// left: '36rem',
-// '@keyframes': {
-//   '0%': {
-//     opacity: 0
-//   },
-//   '50%': {
-//     opacity: 1
-//   },
-//   '100%': {
-//     opacity: 0
-//   }
-// }
-// })
-// const Dot2 = styled('span')({
-//   height: '25px',
-//   width: '25px',
-//   backgroundColor: '#bbb',
-//   borderRadius: '50%',
-//   display: 'inline-block',
-//   position: 'absolute',
-//   top: '10rem',
-//   left: '38rem'
-// })
-// const Dot3 = styled('span')({
-//   height: '25px',
-//   width: '25px',
-//   backgroundColor: '#bbb',
-//   borderRadius: '50%',
-//   display: 'inline-block',
-//   position: 'absolute',
-//   top: '10rem',
-//   left: '40rem'
-// })
-// const SubHeading = styled('p')({
-//   fontFamily: 'Baskerville, sans serif',
-//   fontSize: '40px',
-//   position: 'absolute',
-//   top: '17rem',
-//   right: '24rem',
-//   animation: 'fadein 2s',
-//   webkitAnimation: 'fadein 2s',
-// })
+const SubHeading = styled('p')({
+   fontFamily: 'Baskerville, sans serif',
+   fontSize: '40px',
+   color: '#000',
+   position: 'absolute',
+   top: '18.5rem',
+   right: '22.7rem',
+ })
 const MainDiv = styled('div')({
   display: 'flex',
   justifyContent: 'center',
@@ -74,14 +23,6 @@ const LoginButton = styled(Button)({
   backgroundColor: '#000',
   ':hover': {
     backgroundColor: '#000'
-  },
-  '@media (max-width: 400px)': {
-    width: '18rem',
-    height: '6rem'
-  },
-  '@media (max-width: 315px)': {
-    width: '15rem',
-    height: '5rem'
   },
   width: '21rem',
   height: '7rem',
@@ -129,7 +70,7 @@ export const Login = ({ code }) => {
   return (
     <div>
     <MainDiv>
-      <Heading>Classify</Heading>
+      <p className="heading">Classify</p>
       <span className="dot1"></span>
       <span className="dot2"></span>
       <span className="dot3"></span>

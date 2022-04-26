@@ -48,14 +48,6 @@ body {
 .albumTrack:hover .icon2 {
   visibility: visible;
 }
-.subheading {
-  font-family: 'Baskerville, sans serif';
-  font-size: 40px;
-  color: #000;
-  position: absolute;
-  top: 18.5rem;
-  right: 22.7rem;
-}
 .search-bar {
   position: absolute;
   top: 1.5rem;
@@ -148,4 +140,22 @@ body {
   position: absolute;
   top: 245rem;
   left: 1.6rem;
+}
+/* const Heading = styled('p')({
+  fontFamily: 'Baskerville, sans serif',
+  fontSize: '160px',
+  letterSpacing: '5px',
+  position: 'absolute',
+  top: '-4rem',
+  left: '28.4rem',
+  color: '#000'
+}) */
+.heading {
+  font-family: 'Baskerville, sans serif';
+  font-size: clamp(3rem, 1rem + 10vw, 10rem);
+  position: absolute;
+  margin: 0 auto;
+  top: 5rem;
+  letter-spacing: 10px;
+
 }
