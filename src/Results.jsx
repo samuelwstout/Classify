@@ -122,7 +122,8 @@ const AlbumDiv = styled('div')({
 const AlbumItem = styled('button')({
   whiteSpace: 'hidden',
   width: '14rem',
-  height: 'min-content',
+  height: '16rem',
+  textOverflow: 'clip',
   border: 'none',
   backgroundColor: '#121212',
   ':hover': {
@@ -143,13 +144,13 @@ const PlayerDiv = styled('div')({
 const Space = styled('div')({
   border: 'none',
   width: '100%',
-  height: '16rem',
+  height: '14rem',
   backgroundColor: '#121212'
 })
 const AlbumTracksHeading = styled('h3')({
   position: 'relative',
   left: '1rem',
-  top: '8rem',
+  top: '5rem',
   color: '#fff'
 })
 const AlbumImg = styled('img')({
@@ -168,7 +169,7 @@ const AlbumTrackDiv = styled('div')({
   gap: '1rem 6rem',
   position: 'relative',
   left: '1rem',
-  top: '9rem'
+  top: '7rem'
 })
 // const AlbumTrackItem = styled('button')({
 //   whiteSpace: 'hidden',
@@ -286,13 +287,16 @@ useEffect(() => {
   spotifyApi.getArtistAlbums(artistId).then(res => {
     if (cancel) return
     setAlbums(res.body.items.map((item) => {
+      let albumName = item.name
+      let length = 70
+      let trimmedString = albumName.substring(0, length)
       return (
         <div onClick={() => setAlbumName(item.name)}>
           <div onClick={handleAlbumClick}>
             <div onClick={() => setAlbumImg(item.images[2].url)}>
             <AlbumItem onClick={() => setAlbumId(item.id)} key={item.id}>
               <AlbumImg src={item.images[1].url} />
-              <AlbumName>{item.name}</AlbumName>
+              <AlbumName>{trimmedString}</AlbumName>
             </AlbumItem>
             </div>
           </div>
