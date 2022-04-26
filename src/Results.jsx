@@ -143,13 +143,13 @@ const PlayerDiv = styled('div')({
 const Space = styled('div')({
   border: 'none',
   width: '100%',
-  height: '7rem',
+  height: '16rem',
   backgroundColor: '#121212'
 })
 const AlbumTracksHeading = styled('h3')({
   position: 'relative',
   left: '1rem',
-  top: '2.5rem',
+  top: '8rem',
   color: '#fff'
 })
 const AlbumImg = styled('img')({
@@ -168,7 +168,7 @@ const AlbumTrackDiv = styled('div')({
   gap: '1rem 6rem',
   position: 'relative',
   left: '1rem',
-  top: '3rem'
+  top: '9rem'
 })
 // const AlbumTrackItem = styled('button')({
 //   whiteSpace: 'hidden',
