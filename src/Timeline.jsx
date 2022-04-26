@@ -5,10 +5,10 @@ const Composer = styled('div')({
     display: 'flex',
     flexDirection: 'row',
     flexWrap: 'wrap',
-    gap: '40px',
+    gap: '60px',
     alignItems: 'center',
     position: 'absolute',
-    left: '12rem',
+    left: '11rem',
     top: '7rem',
 })
 const Header = styled('div')({
@@ -24,11 +24,11 @@ const Header = styled('div')({
 })
 const ComposerDiv = styled('div')({
     width: '100vw',
-    height: '218rem',
+    height: '250rem',
     backgroundColor: '#121212'
 })
 const TimelineDiv = styled('div')({
-    height: '218rem',
+    height: '250rem', 
     width: '8rem',
     backgroundColor: '#000',
     position: 'absolute'
