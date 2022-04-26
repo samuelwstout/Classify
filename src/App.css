@@ -55,11 +55,6 @@ body {
   position: absolute;
   top: 18.5rem;
   right: 22.7rem;
-  animation: fadein 5s;
-}
-@keyframes fadein {
-  from { opacity: 0;}
-  to { opacity: 1; }
 }
 .search-bar {
   position: absolute;

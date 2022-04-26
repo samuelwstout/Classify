@@ -28,8 +28,6 @@ const App = () => {
 
   const [name, setName] = useState('');
   const [composers, setComposers] = useState([]);
-
-  // Please try this and share feedback: const customColor = Object.fromEntries(data.composer.map((composer) => ([composer.era, getCustomColorFor(composer.era)]))); where function getCustomColorFor(era) { switch (era) { case "Renaissance": return 'red'; case "Baroque": return 'blue'; case "SomeOtherEra": return 'someOtherColor"; default: return 'black';}};
   
   useEffect(() => {
     const fetchComposers = async () => {
