@@ -141,21 +141,3 @@ body {
   top: 245rem;
   left: 1.6rem;
 }
-/* const Heading = styled('p')({
-  fontFamily: 'Baskerville, sans serif',
-  fontSize: '160px',
-  letterSpacing: '5px',
-  position: 'absolute',
-  top: '-4rem',
-  left: '28.4rem',
-  color: '#000'
-}) */
-.heading {
-  font-family: 'Baskerville, sans serif';
-  font-size: clamp(3rem, 1rem + 10vw, 10rem);
-  position: absolute;
-  margin: 0 auto;
-  top: 5rem;
-  letter-spacing: 10px;
-
-}
