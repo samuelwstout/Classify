@@ -25,6 +25,9 @@ const Heading = styled('p')({
   },
   '@media only screen and (min-width: 769px) and (max-width: 1024px)': {
     left: '14rem',
+  },
+  '@media only screen and (min-width: 1025px) and (max-width: 1200px)': {
+    left: '18rem'
   }
 })
 const SubHeading = styled('p')({
@@ -50,6 +53,10 @@ const SubHeading = styled('p')({
   '@media only screen and (min-width: 769px) and (max-width: 1024px)': {
     right: '9rem',
     marginLeft: '12rem'
+  },
+  '@media only screen and (min-width: 1025px) and (max-width: 1200px)': {
+    right: '16rem',
+    marginLeft: '18rem',
   }
 })
 const MainDiv = styled('div')({
@@ -77,6 +84,10 @@ const LoginButton = styled(Button)({
   },
   '@media only screen and (min-width: 769px) and (max-width: 1024px)': {
     left: '20rem',
+    top: '30rem'
+  },
+  '@media only screen and (min-width: 1025px) and (max-width: 1200px)': {
+    left: '23rem',
     top: '30rem'
   }
 })
