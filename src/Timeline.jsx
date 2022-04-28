@@ -1,5 +1,5 @@
-import {useState} from 'react'
 import { styled } from '@mui/material/styles'
+import useState from 'react';
 
 const Composer = styled('div')({
     display: 'flex',
@@ -10,6 +10,9 @@ const Composer = styled('div')({
     position: 'absolute',
     left: '11rem',
     top: '7rem',
+    '@media (max-width: 1024px)': {
+        gap: '20px',
+    }
 })
 const Header = styled('div')({
     height: '6rem',
@@ -25,13 +28,19 @@ const Header = styled('div')({
 const ComposerDiv = styled('div')({
     width: '100vw',
     height: '250rem',
-    backgroundColor: '#121212'
+    backgroundColor: '#121212',
+    '@media (max-width: 1024px)': {
+        height: '227rem'
+    }
 })
 const TimelineDiv = styled('div')({
     height: '250rem', 
     width: '8rem',
     backgroundColor: '#000',
-    position: 'absolute'
+    position: 'absolute',
+    '@media (max-width: 1024px)': {
+        height: '227rem'
+    }
 })
 const Renaissance = styled('div')({
     width: '8rem',
@@ -39,7 +48,10 @@ const Renaissance = styled('div')({
     position: 'relative',
     top: '7px',
     left: '3rem',
-    backgroundColor: '#27856a'
+    backgroundColor: '#27856a',
+    '@media (max-width: 1024px)': {
+        left: '1rem'
+    }
 })
 const Baroque = styled('div')({
     width: '8rem',
@@ -47,7 +59,10 @@ const Baroque = styled('div')({
     position: 'relative',
     top: '7px',
     left: '1rem',
-    backgroundColor: '#1e3264'
+    backgroundColor: '#1e3264',
+    '@media (max-width: 1024px)': {
+        left: '-4.5rem'
+    }
 })
 const Classical = styled('div')({
     width: '8rem',
@@ -55,7 +70,10 @@ const Classical = styled('div')({
     position: 'relative',
     top: '7px',
     left: '-1rem',
-    backgroundColor: '#8d67ab'
+    backgroundColor: '#8d67ab',
+    '@media (max-width: 1024px)': {
+        left: '-10rem'
+    }
 })
 const Romantic = styled('div')({
     width: '8rem',
@@ -63,7 +81,10 @@ const Romantic = styled('div')({
     position: 'relative',
     top: '7px',
     left: '-3rem',
-    backgroundColor: '#1072ec'
+    backgroundColor: '#1072ec',
+    '@media (max-width: 1024px)': {
+        left: '-15.5rem'
+    }
 })
 const Modernist = styled('div')({
     width: '8rem',
@@ -71,7 +92,10 @@ const Modernist = styled('div')({
     position: 'relative',
     top: '7px',
     left: '-5rem',
-    backgroundColor: '#a56752'
+    backgroundColor: '#a56752',
+    '@media (max-width: 1024px)': {
+        left: '-21rem'
+    }
 })
 const AvantGarde = styled('div')({
     width: '8rem',
@@ -79,7 +103,10 @@ const AvantGarde = styled('div')({
     position: 'relative',
     top: '7px',
     left: '-7rem',
-    backgroundColor: '#509bf5'
+    backgroundColor: '#509bf5',
+    '@media (max-width: 1024px)': {
+        left: '-26.5rem'
+    },
 })
 const Minimalist = styled('div')({
     width: '8rem',
@@ -99,6 +126,58 @@ const Eras = styled('div')({
     display: 'flex',
     flexDirection: 'row',
     gap: '6.4rem',
+})
+const Era2000 = styled('h3')({
+    color: '#fff',
+    fontSize: '23px',
+    position: 'absolute',
+    top: '245rem',
+    left: '1.6rem',
+    '@media (max-width: 1024px)': {
+        top: '222rem'
+    }
+})
+const Era1400 = styled('h3')({
+    color: '#fff',
+    position: 'absolute',
+    top: '6rem',
+    left: '1.6rem',
+    fontSize: '23px',
+})
+const Era1500 = styled('h3')({
+    color: '#fff',
+    fontSize: '23px',
+    position: 'absolute',
+    top: '29.5rem',
+    left: '1.6rem',
+})
+const Era1600 = styled('h3')({
+    color: '#fff',
+    fontSize: '23px',
+    position: 'absolute',
+    top: '53rem',
+    left: '1.6rem',
+})
+const Era1700 = styled('h3')({
+    color: '#fff',
+    fontSize: '23px',
+    position: 'absolute',
+    top: '87rem',
+    left: '1.6rem',
+})
+const Era1800 = styled('h3')({
+    color: '#fff',
+    fontSize: '23px',
+    position: 'absolute',
+    top: '121rem',
+    left: '1.6rem',
+})
+const Era1900 = styled('h3')({
+    color: '#fff',
+    fontSize: '23px',
+    position: 'absolute',
+    top: '200rem',
+    left: '1.6rem',
 })
 
 export const Timeline = ({composers}) => {
@@ -154,13 +233,13 @@ export const Timeline = ({composers}) => {
      </Header>
     <TimelineDiv>
         <div className='timeline'>
-            <h3 className='date1400'>1400</h3>
-            <h3 className='date1500'>1500</h3>
-            <h3 className='date1600'>1600</h3>
-            <h3 className='date1700'>1700</h3>
-            <h3 className='date1800'>1800</h3>
-            <h3 className='date1900'>1900</h3>
-            <h3 className='date2000'>2000</h3>
+            <Era1400 className='date1400'>1400</Era1400>
+            <Era1500 className='date1500'>1500</Era1500>
+            <Era1600 className='date1600'>1600</Era1600>
+            <Era1700 className='date1700'>1700</Era1700>
+            <Era1800 className='date1800'>1800</Era1800>
+            <Era1900 className='date1900'>1900</Era1900>
+            <Era2000 className='date2000'>2000</Era2000>
         </div>
     </TimelineDiv>
     <ComposerDiv>

@@ -12,27 +12,13 @@ const Heading = styled('p')({
   position: 'absolute',
   top: '-3rem',
   left: '28.5rem',
-  '@media (max-width: 1042px)': {
-    left: '15rem',
+  '@media only screen and (min-width: 320px) and (max-width: 480px)': {
+    left: '50px',
+    top: '30px',
+    fontSize: '110px',
+    paddingRight: '50px'
   },
-  '@media (max-width: 768px)': {
-    left: '9.5rem',
-    top: '-3rem',
-    fontSize: '140px'
-  },
-  '@media (max-width: 425px)': {
-    top: '5rem'
-  },
-  '@media (max-width: 375px)': {
-    left: '9rem'
-  },
-  '@media (max-width: 375px)': {
-    left: '8rem'
-  },
-  '@media (max-width: 320px)': {
-    left: '5.5rem',
-    top: '1rem'
-  }
+  // '@media only screen and (min-width: 481) and (max-width: 768)'
 })
 const SubHeading = styled('p')({
   fontFamily: 'Baskerville, sans serif',
@@ -41,25 +27,11 @@ const SubHeading = styled('p')({
   position: 'absolute',
   top: '18rem',
   right: '23rem',
-  '@media (max-width: 1042px)': {
-    right: '11rem',
-  },
-  '@media (max-width: 768px)': {
-    right: '0rem',
-    top: '16rem',
-    width: '40rem',
-    fontSize: '30px'
-  },
-  '@media (max-width: 425px)': {
-    top: '24rem',
-    right: '-21rem'
-  },
-  '@media (max-width: 375px)': {
-    right: '-23rem'
-  },
-  '@media (max-width: 320px)': {
-    top: '20rem',
-    right: '-23.5rem'
+  '@media only screen and (min-width: 320px) and (max-width: 480px)': {
+    fontSize: '30px',
+    left: '60px',
+    right: '-10px',
+    top: '265px',
   } 
 })
 const MainDiv = styled('div')({
@@ -72,28 +44,15 @@ const LoginButton = styled(Button)({
   ':hover': {
     backgroundColor: '#000'
   },
-  '@media (max-width: 1024px)': {
-    left: '21rem'
-  },
-  '@media (max-width: 768px)': {
-    left: '14rem',
-    top: '24rem'
-  },
-  '@media (max-width: 425px)': {
-    top: '32rem'
-  },
-  '@media (max-width: 375px)': {
-    left: '12rem'
-  },
-  '@media (max-width: 320px)': {
-    left: '9.5rem',
-    top: '28rem'
-  },
   width: '21rem',
   height: '7rem',
   position: 'absolute',
   top: '27rem',
-  left: '34.6rem'
+  left: '34.6rem',
+  '@media only screen and (min-width: 320px) and (max-width: 480px)': {
+    left: '5rem',
+    top: '28rem',
+  },
 })
 const LoginButtonText = styled('a')({
   color: '#fff',
