@@ -14,16 +14,18 @@ const Heading = styled('p')({
   left: '28.5rem',
   '@media only screen and (min-width: 320px) and (max-width: 480px)': {
     left: '50px',
-    top: '30px',
+    top: '-20px',
     fontSize: '110px',
-    paddingRight: '50px'
+    paddingRight: '50px',
   },
   '@media only screen and (min-width: 481px) and (max-width: 768px)': {
     left: '118px',
     top: '-15px',
     fontSize: '130px',
-    paddingRight: '100px'
   },
+  '@media only screen and (min-width: 769px) and (max-width: 1024px)': {
+    left: '14rem',
+  }
 })
 const SubHeading = styled('p')({
   fontFamily: 'Baskerville, sans serif',
@@ -36,7 +38,7 @@ const SubHeading = styled('p')({
     fontSize: '30px',
     left: '60px',
     right: '-10px',
-    top: '265px',
+    top: '200px',
   },
   '@media only screen and (min-width: 481px) and (max-width: 768px)': {
     fontSize: '35px',
@@ -45,6 +47,10 @@ const SubHeading = styled('p')({
     right: '-20px',
     paddingRight: '20px',
   },
+  '@media only screen and (min-width: 769px) and (max-width: 1024px)': {
+    right: '9rem',
+    marginLeft: '12rem'
+  }
 })
 const MainDiv = styled('div')({
   display: 'flex',
@@ -62,15 +68,17 @@ const LoginButton = styled(Button)({
   top: '27rem',
   left: '34.6rem',
   '@media only screen and (min-width: 320px) and (max-width: 480px)': {
-    left: '5rem',
-    top: '28rem',
+    left: '4rem',
+    top: '22rem',
   },
   '@media only screen and (min-width: 481px) and (max-width: 768px)': {
     left: '135px',
     top: '410px',
-    
   },
-  
+  '@media only screen and (min-width: 769px) and (max-width: 1024px)': {
+    left: '20rem',
+    top: '30rem'
+  }
 })
 const LoginButtonText = styled('a')({
   color: '#fff',
