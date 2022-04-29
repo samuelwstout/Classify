@@ -7,8 +7,8 @@ import Button from '@mui/material/Button'
 import useToggle from './useToggle'
 
 const ResultsHeader = styled('div')({
-  height: '14rem',
-  backgroundColor: '#000'
+  height: '12rem',
+  backgroundColor: '#121212'
 })
 const TracksSection = styled('div')({
   backgroundColor: '#121212',
@@ -45,7 +45,7 @@ const ComposerImg = styled('img')({
 const TopHeader = styled('div')({
   height: '1rem',
   marginBottom: '-1.5rem',
-  backgroundColor: '#000'
+  backgroundColor: '#121212'
 })
 const TimelineButton = styled(Button)({
   border: '1px solid white',
