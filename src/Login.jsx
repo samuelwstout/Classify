@@ -5,31 +5,33 @@ import {useNavigate} from 'react-router-dom'
 
 const AUTH_URL = 'https://accounts.spotify.com/authorize?client_id=a45eb12484d24c4199050bdefee6d24b&response_type=code&redirect_uri=http://localhost:3000&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state'
 
+const MainDiv = styled('div')({
+  position: 'relative',
+  width: '100vw',
+  height: '100vh',
+})
 const Heading = styled('p')({
   fontFamily: 'Baskerville, sans serif',
   color: '#fff',
-  fontSize: '160px',
-  letterSpacing: '5px',
+  fontSize: '13rem',
   position: 'absolute',
-  top: '-3rem',
-  left: '28.5rem',
-  '@media (min-width: 300px) and (max-width: 319px)': {
-    fontSize: '70px'
-  },
+  top: '-10rem',
+  textAlign: 'center',
+  width: '100%',
 })
 const SubHeading = styled('p')({
   fontFamily: 'Baskerville, sans serif',
   color: '#fff',
-  fontSize: '40px',
+  fontSize: '3rem',
   position: 'absolute',
+  width: '100%',
+  textAlign: 'center',
   top: '18rem',
-  right: '23rem',
-
 })
-const MainDiv = styled('div')({
-  display: 'flex',
-  justifyContent: 'center',
-  height: '100vh'
+const ButtonContainer = styled('div')({
+  textAlign: 'center',
+  position: 'relative',
+  top: '30rem'
 })
 const LoginButton = styled(Button)({
   backgroundColor: '#000',
@@ -38,10 +40,6 @@ const LoginButton = styled(Button)({
   },
   width: '21rem',
   height: '7rem',
-  position: 'absolute',
-  top: '27rem',
-  left: '34.6rem',
-
 })
 const LoginButtonText = styled('a')({
   color: '#fff',
@@ -72,9 +70,11 @@ export const Login = ({ code }) => {
     <MainDiv>
       <Heading>Classify</Heading>
       <SubHeading>a guide to find and listen to classical music.</SubHeading>
+      <ButtonContainer>
         <LoginButton variant='contained'>
             <LoginButtonText href={AUTH_URL}>LOGIN WITH<SpotifyLogo src='/spotify-icons-logos/logos/01_RGB/02_PNG/Spotify_Logo_RGB_Green.png'/></LoginButtonText>
         </LoginButton>
+      </ButtonContainer>
     </MainDiv>
     </div>
   )
