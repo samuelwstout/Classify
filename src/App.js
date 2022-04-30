@@ -38,9 +38,9 @@ const App = () => {
       const customColor = {'Renaissance': '#27856a', 'Baroque': '#1e3264', 'Classical': '#8d67ab', 'Romantic': '#1072ec', 'Modernist': '#a56752', 'Avant-garde': '#509bf5', 'Minimalist': '#e13400'}
         return (
           <Link to='/results'>
-          <ComposerButton style={{backgroundColor: customColor[composer.era]}} onClick={() => setName(composer.name)} key={composer.id}>
-              <ComposerName>{composer.name}</ComposerName>
-          </ComposerButton>
+            <ComposerButton style={{backgroundColor: customColor[composer.era]}} onClick={() => setName(composer.name)} key={composer.id}>
+                <ComposerName>{composer.name}</ComposerName>
+            </ComposerButton>
           </Link>
         )
      })
