@@ -17,6 +17,21 @@ const Heading = styled('p')({
   top: '-6rem',
   textAlign: 'center',
   width: '100%',
+  color: '#eaeaea',
+  '@media screen and (max-width: 936px)': {
+    top: '-8rem'
+  },
+  '@media screen and (max-width: 651px)': {
+    fontSize: '9rem',
+    top: '-4rem'
+  },
+  '@media screen and (max-width: 538px)': {
+    fontSize: '7rem',
+    top: '-1rem'
+  },
+  '@media screen and (max-width: 394px)': {
+    fontSize: '6rem'
+  }
 })
 const SubHeading = styled('p')({
   color: '#fff',
@@ -25,11 +40,25 @@ const SubHeading = styled('p')({
   width: '100%',
   textAlign: 'center',
   top: '18rem',
+  color: '#eaeaea',
+  marginLeft: 'auto',
+  marginRight: 'auto',
+  '@media screen and (max-width: 936px)': {
+    fontSize: '2rem',
+    top: '17rem'
+  },
+  '@media screen and (max-width: 394px)': {
+    fontSize: '1.3rem',
+    top: '13rem'
+  }
 })
 const ButtonContainer = styled('div')({
   textAlign: 'center',
   position: 'relative',
-  top: '30rem'
+  top: '28rem',
+  '@media screen and (max-width: 394px)': {
+    top: '21rem'
+  }
 })
 const LoginButton = styled(Button)({
   backgroundColor: '#000',
@@ -38,6 +67,10 @@ const LoginButton = styled(Button)({
   },
   width: '21rem',
   height: '7rem',
+  '@media (max-width: 490px)': {
+    width: '16rem',
+    height: '6rem',
+  }
 })
 const LoginButtonText = styled('a')({
   color: '#fff',
@@ -45,6 +78,9 @@ const LoginButtonText = styled('a')({
   position: 'relative',
   bottom: '1rem',
   right: '.4rem',
+  '@media (max-width: 490px)': {
+    bottom: '.5rem'
+  }
 })
 
 const SpotifyLogo = styled('img')({
@@ -52,6 +88,10 @@ const SpotifyLogo = styled('img')({
   position: 'relative',
   top: '1.35rem',
   left: '.8rem',
+  '@media (max-width: 490px)': {
+    width: '8rem',
+    top: '.8rem',
+  }
 })
 
 export const Login = ({ code }) => {
