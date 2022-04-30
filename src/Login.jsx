@@ -11,16 +11,14 @@ const MainDiv = styled('div')({
   height: '100vh',
 })
 const Heading = styled('p')({
-  fontFamily: 'Baskerville, sans serif',
   color: '#fff',
-  fontSize: '13rem',
+  fontSize: '11rem',
   position: 'absolute',
-  top: '-10rem',
+  top: '-6rem',
   textAlign: 'center',
   width: '100%',
 })
 const SubHeading = styled('p')({
-  fontFamily: 'Baskerville, sans serif',
   color: '#fff',
   fontSize: '3rem',
   position: 'absolute',
