@@ -5,11 +5,18 @@ const SearchDiv = styled('div')({
     textAlign: 'center',
     position: 'relative',
     top: '5rem',
-    right: '12rem'
+    right: '11.5rem',
+    '@media (max-width: 819px)': {
+        top: '5.3rem',
+        right: '12.1rem',
+    },
+    '@media (max-width: 460px)': {
+        right: '8.8rem'
+    }
 })
 const SearchForm = styled('form')({
     position: 'absolute',
-    display: 'inline-block'
+    display: 'inline-block',
 })
 const TextInput = styled('input')({
     boxSizing: 'border-box',
@@ -19,16 +26,37 @@ const TextInput = styled('input')({
     width: '23.75rem',
     padding: '.5rem 3.25rem',
     border: 'none',
+    '@media (max-width: 460px)': {
+        width: '17rem'
+    }
 })
 const SearchIcon = styled('img')({
     position: 'relative',
     top: '.6875rem',
     right: '23.125rem',
+    '@media (max-width: 819px)': {
+        top: '-2.1rem',
+        right: '10.4rem'
+    },
+    '@media (max-width: 460px)': {
+        right: '7rem'
+    }
 })
 const CloseIcon = styled('svg')({
     position: 'absolute',
     right: '3rem',
     top: '.8125rem',
+    '@media (max-width: 819px)': {
+        right: '1.8rem',
+        top: '.6rem'
+    },
+    '@media (max-width: 787px)': {
+        right: '1.35rem'
+    },
+    '@media (max-width: 750px)': {
+        right: '1.1rem'
+    }
+    
 })
 const ResetButton = styled('input')({
     backgroundColor: '#fff',
@@ -39,6 +67,16 @@ const ResetButton = styled('input')({
     right: '2.7rem',
     top: '.4375rem',
     borderRadius: '.625rem',
+    '@media (max-width: 819px)': {
+        right: '1.4rem',
+        top: '.15rem',
+    },
+    '@media (max-width: 787px)': {
+        right: '1rem'
+    },
+    '@media (max-width: 750px)': {
+        right: '.8rem'
+    },
 })
 const SearchButton = styled('input')({
     position: 'absolute',
