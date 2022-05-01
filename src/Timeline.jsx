@@ -5,7 +5,7 @@ const SearchDiv = styled('div')({
     textAlign: 'center',
     position: 'relative',
     top: '5rem',
-    right: '11.5rem',
+    right: '13rem',
     '@media (max-width: 819px)': {
         top: '5.3rem',
         right: '12.1rem',
