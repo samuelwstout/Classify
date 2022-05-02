@@ -37,7 +37,7 @@ const Heading = styled('p')({
 })
 const SubHeading = styled('p')({
   color: '#fff',
-  fontSize: '3rem',
+  fontSize: '2.5rem',
   position: 'absolute',
   width: '100%',
   textAlign: 'center',
@@ -46,11 +46,11 @@ const SubHeading = styled('p')({
   marginLeft: 'auto',
   marginRight: 'auto',
   '@media screen and (max-width: 936px)': {
-    fontSize: '2rem',
+    fontSize: '1rem',
     top: '17rem'
   },
   '@media screen and (max-width: 394px)': {
-    fontSize: '1.3rem',
+    fontSize: '1rem',
     top: '13rem'
   }
 })
@@ -59,7 +59,7 @@ const ButtonContainer = styled('div')({
   position: 'relative',
   top: '28rem',
   '@media screen and (max-width: 394px)': {
-    top: '21rem'
+    top: '19rem'
   }
 })
 const LoginButton = styled(Button)({
@@ -112,7 +112,7 @@ export const Login = ({ code }) => {
       <SubHeading>a guide to find and listen to classical music.</SubHeading>
       <ButtonContainer>
         <LoginButton variant='contained'>
-            <LoginButtonText href={AUTH_URL_DEPLOY}>LOGIN WITH<SpotifyLogo src='/spotify-icons-logos/logos/01_RGB/02_PNG/Spotify_Logo_RGB_Green.png'/></LoginButtonText>
+            <LoginButtonText href={AUTH_URL_DEPLOY && AUTH_URL_LOCAL}>LOGIN WITH<SpotifyLogo src='/spotify-icons-logos/logos/01_RGB/02_PNG/Spotify_Logo_RGB_Green.png'/></LoginButtonText>
         </LoginButton>
       </ButtonContainer>
     </MainDiv>

@@ -85,6 +85,58 @@ const SearchButton = styled('input')({
     width: '0px',
     height: '0px',
 })
+const EraContainer1 = styled('div')({
+    display: 'flex',
+    flexDirection: 'column',
+    position: 'relative',
+    left: '40%'
+})
+const EraContainer2 = styled('div')({
+    display: 'flex',
+    flexDirection: 'column',
+    position: 'relative',
+    left: '80%'
+})
+const All = styled('div')({
+    width: '5rem',
+    height: '5rem',
+    border: '1px solid white',
+})
+const Renaissance = styled('div')({
+    width: '5rem',
+    height: '5rem',
+    border: '1px solid white',
+})
+const Baroque = styled('div')({
+    width: '5rem',
+    height: '5rem',
+    border: '1px solid white',
+})
+const Classical = styled('div')({
+    width: '5rem',
+    height: '5rem',
+    border: '1px solid white',
+})
+const Romantic = styled('div')({
+    width: '5rem',
+    height: '5rem',
+    border: '1px solid white',
+})
+const Modernist = styled('div')({
+    width: '5rem',
+    height: '5rem',
+    border: '1px solid white',
+})
+const AvantGarde = styled('div')({
+    width: '5rem',
+    height: '5rem',
+    border: '1px solid white',
+})
+const Minimalist = styled('div')({
+    width: '5rem',
+    height: '5rem',
+    border: '1px solid white',
+})
 
 export const Timeline = () => {
    
@@ -114,6 +166,19 @@ export const Timeline = () => {
                     <ResetButton onClick={handleClick} style={{backgroundColor: color}} type="reset" value=""></ResetButton>
                     <SearchButton type="submit" value="Search"></SearchButton>
             </SearchForm>
+            <EraContainer1>
+                <All>Browse All</All>
+                <Renaissance>Renaissance</Renaissance>
+                <Baroque>Baroque</Baroque>
+                <Classical>Classical</Classical>
+            </EraContainer1>
+
+            <EraContainer2>
+                <Romantic>Romantic</Romantic>
+                <Modernist>Modernist</Modernist>
+                <AvantGarde>Avant-garde</AvantGarde>
+                <Minimalist>Minimalist</Minimalist>
+            </EraContainer2>
         </SearchDiv>
     </div>
 
