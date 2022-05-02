@@ -5,7 +5,7 @@ const SearchDiv = styled('div')({
     textAlign: 'center',
     position: 'relative',
     top: '5rem',
-    right: '13rem',
+    right: '15.5rem',
     '@media (max-width: 819px)': {
         top: '5.3rem',
         right: '12.1rem',
@@ -89,52 +89,56 @@ const EraContainer1 = styled('div')({
     display: 'flex',
     flexDirection: 'column',
     position: 'relative',
-    left: '40%'
+    left: '31.2rem',
+    top: '6rem',
+    gap: '1rem',
+})
+const All = styled('div')({
+    width: '25rem',
+    height: '10rem',
+    border: '1px solid white',
+})
+const Renaissance = styled('div')({
+    width: '25rem',
+    height: '10rem',
+    border: '1px solid white',
+})
+const Baroque = styled('div')({
+    width: '25rem',
+    height: '10rem',
+    border: '1px solid white',
+})
+const Classical = styled('div')({
+    width: '25rem',
+    height: '10rem',
+    border: '1px solid white',
 })
 const EraContainer2 = styled('div')({
     display: 'flex',
     flexDirection: 'column',
     position: 'relative',
-    left: '80%'
-})
-const All = styled('div')({
-    width: '5rem',
-    height: '5rem',
-    border: '1px solid white',
-})
-const Renaissance = styled('div')({
-    width: '5rem',
-    height: '5rem',
-    border: '1px solid white',
-})
-const Baroque = styled('div')({
-    width: '5rem',
-    height: '5rem',
-    border: '1px solid white',
-})
-const Classical = styled('div')({
-    width: '5rem',
-    height: '5rem',
-    border: '1px solid white',
+    left: '57.5rem',
+    bottom: '37.5rem',
+    gap: '1rem',
 })
 const Romantic = styled('div')({
-    width: '5rem',
-    height: '5rem',
+    width: '25rem',
+    height: '10rem',
     border: '1px solid white',
 })
 const Modernist = styled('div')({
-    width: '5rem',
-    height: '5rem',
+    width: '25rem',
+    height: '10rem',
     border: '1px solid white',
 })
 const AvantGarde = styled('div')({
-    width: '5rem',
-    height: '5rem',
+    width: '25rem',
+    height: '10rem',
     border: '1px solid white',
 })
 const Minimalist = styled('div')({
-    width: '5rem',
-    height: '5rem',
+    width: '25rem',
+    height: '10rem',
     border: '1px solid white',
 })
 
