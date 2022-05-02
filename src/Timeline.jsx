@@ -5,10 +5,11 @@ const SearchDiv = styled('div')({
     textAlign: 'center',
     position: 'relative',
     top: '5rem',
-    right: '15.5rem',
+    right: '12rem',
+    margin: 'auto',
     '@media (max-width: 819px)': {
         top: '5.3rem',
-        right: '12.1rem',
+        right: '1.5rem',
     },
     '@media (max-width: 460px)': {
         right: '8.8rem'
@@ -89,57 +90,113 @@ const EraContainer1 = styled('div')({
     display: 'flex',
     flexDirection: 'column',
     position: 'relative',
-    left: '31.2rem',
-    top: '6rem',
+    left: '18rem',
+    top: '12rem',
     gap: '1rem',
 })
 const All = styled('div')({
     width: '25rem',
     height: '10rem',
-    border: '1px solid white',
+    backgroundColor: '#690202',
+    borderRadius: '1rem',
 })
 const Renaissance = styled('div')({
     width: '25rem',
     height: '10rem',
-    border: '1px solid white',
+    backgroundColor: '#27856a',
+    borderRadius: '1rem',
 })
 const Baroque = styled('div')({
     width: '25rem',
     height: '10rem',
-    border: '1px solid white',
+    backgroundColor: '#1e3264',
+    borderRadius: '1rem',
 })
 const Classical = styled('div')({
     width: '25rem',
     height: '10rem',
-    border: '1px solid white',
+    backgroundColor: '#8d67ab',
+    borderRadius: '1rem',
 })
 const EraContainer2 = styled('div')({
     display: 'flex',
     flexDirection: 'column',
     position: 'relative',
-    left: '57.5rem',
-    bottom: '37.5rem',
+    left: '45rem',
+    bottom: '31rem',
     gap: '1rem',
 })
 const Romantic = styled('div')({
     width: '25rem',
     height: '10rem',
-    border: '1px solid white',
+    backgroundColor: '#1072ec',
+    borderRadius: '1rem',
 })
 const Modernist = styled('div')({
     width: '25rem',
     height: '10rem',
-    border: '1px solid white',
+    backgroundColor: '#a56752',
+    borderRadius: '1rem',
 })
 const AvantGarde = styled('div')({
     width: '25rem',
     height: '10rem',
-    border: '1px solid white',
+    backgroundColor: '#509bf5',
+    borderRadius: '1rem',
 })
 const Minimalist = styled('div')({
     width: '25rem',
     height: '10rem',
-    border: '1px solid white',
+    backgroundColor: '#e13400',
+    borderRadius: '1rem',
+})
+const AllText = styled('h2')({
+    color: '#fff',
+    position: 'relative',
+    top: '-.5rem',
+    left: '1rem',
+})
+const RenaissanceText = styled('h2')({
+    color: '#fff',
+    position: 'relative',
+    top: '-.5rem',
+    left: '1rem',
+})
+const BaroqueText = styled('h2')({
+    color: '#fff',
+    position: 'relative',
+    top: '-.5rem',
+    left: '1rem',
+})
+const ClassicalText = styled('h2')({
+    color: '#fff',
+    position: 'relative',
+    top: '-.5rem',
+    left: '1rem',
+})
+const RomanticText = styled('h2')({
+    color: '#fff',
+    position: 'relative',
+    top: '-.5rem',
+    left: '1rem',
+})
+const ModernistText = styled('h2')({
+    color: '#fff',
+    position: 'relative',
+    top: '-.5rem',
+    left: '1rem',
+})
+const AvantGardeText = styled('h2')({
+    color: '#fff',
+    position: 'relative',
+    top: '-.5rem',
+    left: '1rem',
+})
+const MinimalistText = styled('h2')({
+    color: '#fff',
+    position: 'relative',
+    top: '-.5rem',
+    left: '1rem',
 })
 
 export const Timeline = () => {
@@ -170,20 +227,36 @@ export const Timeline = () => {
                     <ResetButton onClick={handleClick} style={{backgroundColor: color}} type="reset" value=""></ResetButton>
                     <SearchButton type="submit" value="Search"></SearchButton>
             </SearchForm>
+        </SearchDiv>
             <EraContainer1>
-                <All>Browse All</All>
-                <Renaissance>Renaissance</Renaissance>
-                <Baroque>Baroque</Baroque>
-                <Classical>Classical</Classical>
+                <All>
+                    <AllText>Browse All</AllText>
+                </All>
+                <Renaissance>
+                    <RenaissanceText>Renaissance</RenaissanceText>
+                </Renaissance>
+                <Baroque>
+                   <BaroqueText>Baroque</BaroqueText>
+                </Baroque>
+                <Classical>
+                    <ClassicalText>Classical</ClassicalText>
+                </Classical>
             </EraContainer1>
 
             <EraContainer2>
-                <Romantic>Romantic</Romantic>
-                <Modernist>Modernist</Modernist>
-                <AvantGarde>Avant-garde</AvantGarde>
-                <Minimalist>Minimalist</Minimalist>
+                <Romantic>
+                    <RomanticText>Romantic</RomanticText>
+                </Romantic>
+                <Modernist>
+                    <ModernistText>Modernist</ModernistText>
+                </Modernist>
+                <AvantGarde>
+                    <AvantGardeText>Avant-garde</AvantGardeText>
+                </AvantGarde>
+                <Minimalist>
+                    <MinimalistText>Minimalist</MinimalistText>
+                </Minimalist>
             </EraContainer2>
-        </SearchDiv>
     </div>
 
     )    
