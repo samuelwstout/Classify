@@ -1,5 +1,6 @@
 body {
   background-color: #1a1a1a;
+  /* background-color: lightgray; */
   overflow-y: scroll;
   overflow-x: hidden;
   height: 100vh;
@@ -48,8 +49,13 @@ body {
 .albumTrack:hover .icon2 {
   visibility: visible;
 }
-
 #textsearch:focus {
   outline: none;
 }
-
+.eraText {
+  color: #fff;
+  position: relative;
+  top: -.5rem;
+  left: 1rem;
+  font-size: 1rem;
+}
