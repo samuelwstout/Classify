@@ -35,9 +35,10 @@ const App = () => {
       const data = await response.json();
       
       const listofComposers = data.composers.map((composer) => {
+        const customColor = {'Renaissance': '#27856a', 'Baroque': '#1e3264', 'Classical': '#8d67ab', 'Romantic': '#1072ec', 'Modernist': '#a56752', 'Avant-garde': '#509bf5', 'Minimalist': '#e13400'}
         return (
           <Link to='/results'>
-            <ComposerButton onClick={() => setName(composer.name)} key={composer.id}>
+            <ComposerButton style={{backgroundColor: customColor[composer.era]}} onClick={() => setName(composer.name)} key={composer.id}>
                 <ComposerName>{composer.name}</ComposerName>
             </ComposerButton>
           </Link>
