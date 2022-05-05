@@ -11,13 +11,15 @@ const SearchDiv = styled('div')({
     display: 'block',
     position: 'relative',
     top: '2rem',
-    left: '1.9rem',
+    '@media (min-width: 320px)': {
+        left: '1.5rem'
+    },
     '@media (min-width: 329px)': {
         left: '3.8rem',
         top: '1rem'
     },
     '@media (min-width: 345px)': {
-        left: '4rem'
+        left: '4.2rem'
     },
 })
 const SearchForm = styled('form')({
@@ -137,11 +139,14 @@ const Minimalist = styled('div')({
 })
 const Space = styled('div')({
     width: '100vw',
-    height: '5rem'
+    height: '5rem',
 })
-
-export const Timeline = () => {
-   
+const ComposerDiv = styled('div')({
+    display: 'flex',
+    flexDirection: 'column',
+})
+export const Timeline = ({composers}) => {
+    console.log(composers)
     const [color, setColor] = useState('white')
 
     const handleInput = (e) => {
@@ -169,6 +174,8 @@ export const Timeline = () => {
                     <SearchButton type="submit" value="Search"></SearchButton>
             </SearchForm>
         </SearchDiv>
+        
+        <ComposerDiv>{composers}</ComposerDiv>
 
         <ErasContainer>
             <EraContainer1>
