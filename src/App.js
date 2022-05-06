@@ -16,7 +16,7 @@ const App = () => {
     const fetchComposers = async () => {
       const response = await fetch('composers.json');
       const data = await response.json();
-      const listofComposers = data.composers.map((composer) => composer.name)
+      const listofComposers = data.composers.map((composer) => composer)
       setComposers(listofComposers);
     }
     fetchComposers();

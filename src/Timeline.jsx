@@ -146,14 +146,26 @@ const ComposerDiv = styled('div')({
     display: 'flex',
     flexDirection: 'column',
     position: 'relative',
-    left: '.5rem',
+    left: '5rem',
     gap: '.5rem',
 })
-const ComposerResult = styled('li')({
-    color: 'white',
-})
-export const Timeline = ({composerData}) => {
+const ComposerButton = styled('button')({
+    width: '12rem',
+    height: '5rem',
+    position: 'relative',
+    right: '1rem',
+    border: 'none',
+    borderRadius: '25px'
+  })
+  const ComposerName = styled('h3')({
+     position: 'relative',
+     textDecoration: 'none',
+     color: '#fff',
+     letterSpacing: '1px'
+  })
 
+export const Timeline = ({composerData}) => {
+  
     const [color, setColor] = useState('white');
     const [userInput, setUserInput] = useState('');
 
@@ -169,18 +181,20 @@ export const Timeline = ({composerData}) => {
     }
     
     const filteredData = composerData.filter((item) => {
+        const names = item.name
         if (userInput === '') {
             return null;
         }
         else {
-            return item.toLowerCase().includes(userInput)
+            return names.toLowerCase().includes(userInput)
         }
     })
     const mappedData = filteredData.map((item) => {
+        const customColor = {'Renaissance': '#27856a', 'Baroque': '#1e3264', 'Classical': '#8d67ab', 'Romantic': '#1072ec', 'Modernist': '#a56752', 'Avant-garde': '#509bf5', 'Minimalist': '#e13400'}
         return (
-            <ul>
-                <li>{item}</li>
-            </ul>
+            <ComposerButton style={{backgroundColor: customColor[item.era]}}>
+                <ComposerName>{item.name}</ComposerName>
+            </ComposerButton>
         )
     })
     
@@ -189,7 +203,7 @@ export const Timeline = ({composerData}) => {
             setColor('white')
         }
     }
-    const customColor = {'Renaissance': '#27856a', 'Baroque': '#1e3264', 'Classical': '#8d67ab', 'Romantic': '#1072ec', 'Modernist': '#a56752', 'Avant-garde': '#509bf5', 'Minimalist': '#e13400'}
+   
     return (
 
     <EverythingDiv>
@@ -203,13 +217,8 @@ export const Timeline = ({composerData}) => {
             </SearchForm>
         </SearchDiv>
 
+        <ComposerDiv>{mappedData}</ComposerDiv>
     
-        <ComposerDiv>
-            {mappedData}
-        </ComposerDiv>
-    
-
-
         <ErasContainer>
             <EraContainer1>
                 <All className='all'>
