@@ -72,7 +72,7 @@ const ErasContainer = styled('div')({
     justifyContent: 'center',
     gap: '.5rem',
     position: 'relative',
-    top: '1.4rem',
+    top: '2.5rem',
     '@media (min-width: 329px)': {
         left: '1rem'
     },
@@ -144,13 +144,15 @@ const Space = styled('div')({
 })
 const ComposerDiv = styled('div')({
     display: 'flex',
-    flexDirection: 'column',
+    flexDirection: 'row',
+    flexWrap: 'wrap',
     position: 'relative',
-    left: '5rem',
+    left: '2.4rem',
+    top: '1rem',
     gap: '.5rem',
 })
 const ComposerButton = styled('button')({
-    width: '12rem',
+    width: '8rem',
     height: '5rem',
     position: 'relative',
     right: '1rem',
@@ -197,7 +199,8 @@ export const Timeline = ({composerData}) => {
             </ComposerButton>
         )
     })
-    
+    const slicedResults = mappedData.slice(0, 4)
+
     const handleClick = (e) => {
         if (e) {
             setColor('white')
@@ -217,7 +220,7 @@ export const Timeline = ({composerData}) => {
             </SearchForm>
         </SearchDiv>
 
-        <ComposerDiv>{mappedData}</ComposerDiv>
+        <ComposerDiv>{slicedResults}</ComposerDiv>
     
         <ErasContainer>
             <EraContainer1>
