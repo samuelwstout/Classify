@@ -146,8 +146,11 @@ const ComposerDiv = styled('div')({
     display: 'flex',
     flexDirection: 'column',
     position: 'relative',
-    left: '5rem',
+    left: '.5rem',
     gap: '.5rem',
+})
+const ComposerResult = styled('li')({
+    color: 'white',
 })
 export const Timeline = ({composerData}) => {
 
@@ -155,7 +158,6 @@ export const Timeline = ({composerData}) => {
     const [userInput, setUserInput] = useState('');
 
     const handleInput = (e) => {
-     
         const input = e.target.value.toLowerCase();
         setUserInput(input)
         if (e) {
@@ -174,13 +176,19 @@ export const Timeline = ({composerData}) => {
             return item.toLowerCase().includes(userInput)
         }
     })
-
+    const mappedData = filteredData.map((item) => {
+        return (
+            <ul>
+                <li>{item}</li>
+            </ul>
+        )
+    })
+    
     const handleClick = (e) => {
         if (e) {
             setColor('white')
         }
     }
-
     const customColor = {'Renaissance': '#27856a', 'Baroque': '#1e3264', 'Classical': '#8d67ab', 'Romantic': '#1072ec', 'Modernist': '#a56752', 'Avant-garde': '#509bf5', 'Minimalist': '#e13400'}
     return (
 
@@ -197,7 +205,7 @@ export const Timeline = ({composerData}) => {
 
     
         <ComposerDiv>
-            <p>{filteredData}</p>
+            {mappedData}
         </ComposerDiv>
     
 
