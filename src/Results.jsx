@@ -330,7 +330,7 @@ useEffect(() => {
   return (
   <div>
     <TopHeader>
-    <TimelineButton><TimelineLink className='timelineBtn' href={AUTH_URL_DEPLOY && AUTH_URL_LOCAL}>Timeline</TimelineLink></TimelineButton>
+    <TimelineButton><TimelineLink className='timelineBtn' href={AUTH_URL_DEPLOY}>Timeline</TimelineLink></TimelineButton>
     </TopHeader>
 
     <ResultsHeader>
