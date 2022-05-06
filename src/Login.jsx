@@ -73,7 +73,7 @@ export const Login = ({ code }) => {
       <SubHeading>a guide to find and listen to classical music.</SubHeading>
       <ButtonContainer>
         <LoginButton variant='contained'>
-            <LoginButtonText href={AUTH_URL_DEPLOY || AUTH_URL_LOCAL}>Login with<SpotifyLogo src='/spotify-icons-logos/logos/01_RGB/02_PNG/Spotify_Logo_RGB_Green.png'/></LoginButtonText>
+            <LoginButtonText href={AUTH_URL_LOCAL}>Login with<SpotifyLogo src='/spotify-icons-logos/logos/01_RGB/02_PNG/Spotify_Logo_RGB_Green.png'/></LoginButtonText>
         </LoginButton>
       </ButtonContainer>
     </EverythingDiv>

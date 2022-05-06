@@ -1,5 +1,6 @@
-import { styled } from '@mui/material/styles'
+import { styled } from '@mui/material/styles';
 import {useState} from 'react';
+import { Link } from "react-router-dom";
 
 const EverythingDiv = styled('div')({
     '@media (min-width: 1200px)': {
@@ -144,12 +145,32 @@ const Space = styled('div')({
 const ComposerDiv = styled('div')({
     display: 'flex',
     flexDirection: 'column',
+    position: 'relative',
+    left: '5rem',
+    gap: '.5rem',
 })
-export const Timeline = ({composers}) => {
-    console.log(composers)
-    const [color, setColor] = useState('white')
+const ComposerButton = styled('button')({
+    width: '12rem',
+    height: '5rem',
+    position: 'relative',
+    right: '1rem',
+    border: 'none',
+    borderRadius: '25px'
+  })
+  const ComposerName = styled('h3')({
+     position: 'relative',
+     textDecoration: 'none',
+     color: '#fff',
+     letterSpacing: '1px'
+  })
+export const Timeline = ({composerData}) => {
+
+    const [color, setColor] = useState('white');
+    const [userInput, setUserInput] = useState('');
 
     const handleInput = (e) => {
+        const input = e.target.value.toLowerCase();
+        setUserInput(input)
         if (e) {
            setColor('transparent')
         }
@@ -157,17 +178,28 @@ export const Timeline = ({composers}) => {
             setColor('white')
         }  
     }
+    
+    const filteredData = composerData.filter((item) => {
+        if (userInput === '') {
+            return item;
+        }
+        else {
+            return item.toLowerCase().includes(userInput)
+        }
+    })
+
     const handleClick = (e) => {
         if (e) {
             setColor('white')
         }
     }
+    const customColor = {'Renaissance': '#27856a', 'Baroque': '#1e3264', 'Classical': '#8d67ab', 'Romantic': '#1072ec', 'Modernist': '#a56752', 'Avant-garde': '#509bf5', 'Minimalist': '#e13400'}
     return (
 
     <EverythingDiv>
         <SearchDiv align="center">
             <SearchForm>
-                    <TextInput onInput={handleInput} id="textsearch" type='text' title="Search"></TextInput>
+                    <TextInput onChange={handleInput} id="textsearch" type='text' title="Search"></TextInput>
                     <SearchIcon src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/30/000000/external-search-logistic-delivery-kiranshastry-lineal-kiranshastry.png"></SearchIcon>
                     <CloseIcon role="button" height="24" width="24" viewBox="0 0 24 24"><path d="M3.293 3.293a1 1 0 011.414 0L12 10.586l7.293-7.293a1 1 0 111.414 1.414L13.414 12l7.293 7.293a1 1 0 01-1.414 1.414L12 13.414l-7.293 7.293a1 1 0 01-1.414-1.414L10.586 12 3.293 4.707a1 1 0 010-1.414z"></path></CloseIcon>
                     <ResetButton onClick={handleClick} style={{backgroundColor: color}} type="reset" value=""></ResetButton>
@@ -175,7 +207,23 @@ export const Timeline = ({composers}) => {
             </SearchForm>
         </SearchDiv>
         
-        <ComposerDiv>{composers}</ComposerDiv>
+        <ComposerDiv>
+            <Link to='/results'>
+                <ComposerButton>
+                    <ComposerName>{filteredData}</ComposerName>
+                </ComposerButton>
+            </Link>
+        </ComposerDiv>
+
+        {/* const customColor = {'Renaissance': '#27856a', 'Baroque': '#1e3264', 'Classical': '#8d67ab', 'Romantic': '#1072ec', 'Modernist': '#a56752', 'Avant-garde': '#509bf5', 'Minimalist': '#e13400'}
+     return (
+      <Link to='/results'>
+         <ComposerButton style={{backgroundColor: customColor[composer.era]}} onClick={() => setName(composer.name)} key={composer.id}>
+          <ComposerName>{composer.name}</ComposerName>
+       </ComposerButton>
+      </Link>
+     ) */}
+
 
         <ErasContainer>
             <EraContainer1>
