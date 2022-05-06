@@ -149,26 +149,13 @@ const ComposerDiv = styled('div')({
     left: '5rem',
     gap: '.5rem',
 })
-const ComposerButton = styled('button')({
-    width: '12rem',
-    height: '5rem',
-    position: 'relative',
-    right: '1rem',
-    border: 'none',
-    borderRadius: '25px'
-  })
-  const ComposerName = styled('h3')({
-     position: 'relative',
-     textDecoration: 'none',
-     color: '#fff',
-     letterSpacing: '1px'
-  })
 export const Timeline = ({composerData}) => {
 
     const [color, setColor] = useState('white');
     const [userInput, setUserInput] = useState('');
 
     const handleInput = (e) => {
+     
         const input = e.target.value.toLowerCase();
         setUserInput(input)
         if (e) {
@@ -181,7 +168,7 @@ export const Timeline = ({composerData}) => {
     
     const filteredData = composerData.filter((item) => {
         if (userInput === '') {
-            return item;
+            return null;
         }
         else {
             return item.toLowerCase().includes(userInput)
@@ -193,6 +180,7 @@ export const Timeline = ({composerData}) => {
             setColor('white')
         }
     }
+
     const customColor = {'Renaissance': '#27856a', 'Baroque': '#1e3264', 'Classical': '#8d67ab', 'Romantic': '#1072ec', 'Modernist': '#a56752', 'Avant-garde': '#509bf5', 'Minimalist': '#e13400'}
     return (
 
@@ -206,23 +194,12 @@ export const Timeline = ({composerData}) => {
                     <SearchButton type="submit" value="Search"></SearchButton>
             </SearchForm>
         </SearchDiv>
-        
-        <ComposerDiv>
-            <Link to='/results'>
-                <ComposerButton>
-                    <ComposerName>{filteredData}</ComposerName>
-                </ComposerButton>
-            </Link>
-        </ComposerDiv>
 
-        {/* const customColor = {'Renaissance': '#27856a', 'Baroque': '#1e3264', 'Classical': '#8d67ab', 'Romantic': '#1072ec', 'Modernist': '#a56752', 'Avant-garde': '#509bf5', 'Minimalist': '#e13400'}
-     return (
-      <Link to='/results'>
-         <ComposerButton style={{backgroundColor: customColor[composer.era]}} onClick={() => setName(composer.name)} key={composer.id}>
-          <ComposerName>{composer.name}</ComposerName>
-       </ComposerButton>
-      </Link>
-     ) */}
+    
+        <ComposerDiv>
+            <p>{filteredData}</p>
+        </ComposerDiv>
+    
 
 
         <ErasContainer>
