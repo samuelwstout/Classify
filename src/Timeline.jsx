@@ -1,6 +1,8 @@
 import { styled } from '@mui/material/styles';
 import {useState} from 'react';
 import { Link } from "react-router-dom";
+import { useDispatch } from 'react-redux';
+import { setComposerName } from './features/composerName/composerNameSlice'
 
 const EverythingDiv = styled('div')({
     '@media (min-width: 1200px)': {
@@ -17,10 +19,10 @@ const SearchDiv = styled('div')({
     },
     '@media (min-width: 329px)': {
         left: '3.8rem',
-        top: '1rem'
+        top: '1rem',
     },
     '@media (min-width: 345px)': {
-        left: '4.2rem'
+        left: '4.2rem',
     },
 })
 const SearchForm = styled('form')({
@@ -72,7 +74,7 @@ const ErasContainer = styled('div')({
     justifyContent: 'center',
     gap: '.5rem',
     position: 'relative',
-    top: '2.5rem',
+    top: '4rem',
     '@media (min-width: 329px)': {
         left: '1rem'
     },
@@ -147,9 +149,10 @@ const ComposerDiv = styled('div')({
     flexDirection: 'row',
     flexWrap: 'wrap',
     position: 'relative',
-    left: '2.4rem',
-    top: '1rem',
+    left: '2rem',
+    top: '2rem',
     gap: '.5rem',
+    justifyContent: 'center',
 })
 const ComposerButton = styled('button')({
     width: '8rem',
@@ -157,7 +160,7 @@ const ComposerButton = styled('button')({
     position: 'relative',
     right: '1rem',
     border: 'none',
-    borderRadius: '25px'
+    borderRadius: '25px',
   })
   const ComposerName = styled('h3')({
      position: 'relative',
@@ -167,6 +170,8 @@ const ComposerButton = styled('button')({
   })
 
 export const Timeline = ({composerData}) => {
+
+    const dispatch = useDispatch();
   
     const [color, setColor] = useState('white');
     const [userInput, setUserInput] = useState('');
@@ -181,8 +186,9 @@ export const Timeline = ({composerData}) => {
             setColor('white')
         }  
     }
-    
+  
     const filteredData = composerData.filter((item) => {
+        
         const names = item.name
         if (userInput === '') {
             return null;
@@ -194,9 +200,11 @@ export const Timeline = ({composerData}) => {
     const mappedData = filteredData.map((item) => {
         const customColor = {'Renaissance': '#27856a', 'Baroque': '#1e3264', 'Classical': '#8d67ab', 'Romantic': '#1072ec', 'Modernist': '#a56752', 'Avant-garde': '#509bf5', 'Minimalist': '#e13400'}
         return (
-            <ComposerButton style={{backgroundColor: customColor[item.era]}}>
+            // <Link to='/results'>
+            <ComposerButton style={{backgroundColor: customColor[item.era]}} onClick={() => dispatch(setComposerName(item.name))} key={item.id}>
                 <ComposerName>{item.name}</ComposerName>
             </ComposerButton>
+            // {/* </Link> */}
         )
     })
     const slicedResults = mappedData.slice(0, 4)
