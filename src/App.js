@@ -11,7 +11,7 @@ const code = new URLSearchParams(window.location.search).get('code');
 const App = () => {
 
   const [composers, setComposers] = useState([]);
-  
+
   useEffect(() => {
     const fetchComposers = async () => {
       const response = await fetch('composers.json');

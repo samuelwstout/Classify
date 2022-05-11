@@ -5,8 +5,8 @@ import useAuth from './useAuth'
 import { styled } from '@mui/material/styles'
 import Button from '@mui/material/Button'
 import useToggle from './useToggle'
-// import { useSelector } from 'react-redux'
-// import { selectName } from './features/composerName/composerNameSlice'
+import { useSelector } from 'react-redux'
+import { selectName } from './features/composerName/composerNameSlice'
 
 const ResultsHeader = styled('div')({
   height: '12rem',
@@ -218,16 +218,16 @@ const AUTH_URL_LOCAL = 'https://accounts.spotify.com/authorize?client_id=a45eb12
 
 const AUTH_URL_DEPLOY = 'https://accounts.spotify.com/authorize?client_id=a45eb12484d24c4199050bdefee6d24b&response_type=code&redirect_uri=https://classify-57a6e.web.app/&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state'
 
-export const Results = ({ name, code }) => {
+export const Results = ({ code }) => {
 
-  // const composerName = useSelector(selectName)
+  const composerName = useSelector(selectName)
 
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
 
   const accessToken = useAuth(code)
-
+  console.log(accessToken)
   const [artistId, setArtistId] = useState([])
   const [tracks, setTracks] = useState([])
   const [albums, setAlbums] = useState([])
@@ -248,16 +248,15 @@ export const Results = ({ name, code }) => {
 
   //to get artist id
   useEffect(() => {
-    if (!name) return setArtistId([])
+    if (!composerName) return setArtistId([])
     if (!accessToken) return 
     let cancel = false
-    spotifyApi.searchArtists(name).then(res => {
+    spotifyApi.searchArtists(composerName).then(res => {
       if (cancel) return
       setArtistId(res.body.artists.items[0].id)
       setImg(res.body.artists.items[0].images[0].url)
     })
-  }, [name, accessToken])
-
+  }, [composerName, accessToken])
 
   //to get top tracks from artist id
   useEffect(() => {
@@ -338,7 +337,7 @@ useEffect(() => {
     </TopHeader>
 
     <ResultsHeader>
-      <ComposerTitle>{name}</ComposerTitle>
+      <ComposerTitle>{composerName}</ComposerTitle>
     </ResultsHeader>
 
     <TracksSection>

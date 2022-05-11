@@ -1,6 +1,6 @@
 import { styled } from '@mui/material/styles';
-import {useState} from 'react';
-// import { Link } from "react-router-dom";
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { setComposerName, selectName } from './features/composerName/composerNameSlice';
 
@@ -170,13 +170,14 @@ const ComposerButton = styled('button')({
   })
 
 export const Timeline = ({composerData}) => {
-
+    
+    let navigate = useNavigate();
     const composerName = useSelector(selectName)
     const dispatch = useDispatch();
   
     const [color, setColor] = useState('white');
     const [userInput, setUserInput] = useState('');
-
+    
     const handleInput = (e) => {
         const input = e.target.value.toLowerCase();
         setUserInput(input)
@@ -201,11 +202,11 @@ export const Timeline = ({composerData}) => {
     const mappedData = filteredData.map((item) => {
         const customColor = {'Renaissance': '#27856a', 'Baroque': '#1e3264', 'Classical': '#8d67ab', 'Romantic': '#1072ec', 'Modernist': '#a56752', 'Avant-garde': '#509bf5', 'Minimalist': '#e13400'}
         return (
-            // <Link to='/results'>
-            <ComposerButton style={{backgroundColor: customColor[item.era]}} onClick={() => dispatch(setComposerName(item.name))} key={item.id}>
+           <div onClick={() => navigate('../results')} key={item.id}>
+            <ComposerButton style={{backgroundColor: customColor[item.era]}} onClick={() => dispatch(setComposerName(item.name))}>
                 <ComposerName>{item.name}</ComposerName>
             </ComposerButton>
-            // </Link>
+            </div>
         )
     })
     const slicedResults = mappedData.slice(0, 4)
