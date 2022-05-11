@@ -5,6 +5,8 @@ import useAuth from './useAuth'
 import { styled } from '@mui/material/styles'
 import Button from '@mui/material/Button'
 import useToggle from './useToggle'
+// import { useSelector } from 'react-redux'
+// import { selectName } from './features/composerName/composerNameSlice'
 
 const ResultsHeader = styled('div')({
   height: '12rem',
@@ -217,6 +219,8 @@ const AUTH_URL_LOCAL = 'https://accounts.spotify.com/authorize?client_id=a45eb12
 const AUTH_URL_DEPLOY = 'https://accounts.spotify.com/authorize?client_id=a45eb12484d24c4199050bdefee6d24b&response_type=code&redirect_uri=https://classify-57a6e.web.app/&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state'
 
 export const Results = ({ name, code }) => {
+
+  // const composerName = useSelector(selectName)
 
   useEffect(() => {
     window.scrollTo(0, 0)

@@ -12,5 +12,7 @@ export const composerNameSlice = createSlice({
 
 export const { setComposerName } = composerNameSlice.actions
 
+export const selectName = (state) => state.name.name
+
 export default composerNameSlice.reducer
 

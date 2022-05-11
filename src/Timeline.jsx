@@ -1,8 +1,8 @@
 import { styled } from '@mui/material/styles';
 import {useState} from 'react';
-import { Link } from "react-router-dom";
-import { useDispatch } from 'react-redux';
-import { setComposerName } from './features/composerName/composerNameSlice'
+// import { Link } from "react-router-dom";
+import { useSelector, useDispatch } from 'react-redux';
+import { setComposerName, selectName } from './features/composerName/composerNameSlice';
 
 const EverythingDiv = styled('div')({
     '@media (min-width: 1200px)': {
@@ -166,11 +166,12 @@ const ComposerButton = styled('button')({
      position: 'relative',
      textDecoration: 'none',
      color: '#fff',
-     letterSpacing: '1px'
+     letterSpacing: '1px',
   })
 
 export const Timeline = ({composerData}) => {
 
+    const composerName = useSelector(selectName)
     const dispatch = useDispatch();
   
     const [color, setColor] = useState('white');
@@ -204,7 +205,7 @@ export const Timeline = ({composerData}) => {
             <ComposerButton style={{backgroundColor: customColor[item.era]}} onClick={() => dispatch(setComposerName(item.name))} key={item.id}>
                 <ComposerName>{item.name}</ComposerName>
             </ComposerButton>
-            // {/* </Link> */}
+            // </Link>
         )
     })
     const slicedResults = mappedData.slice(0, 4)
@@ -261,6 +262,7 @@ export const Timeline = ({composerData}) => {
                 </Minimalist>
             </EraContainer2>
         </ErasContainer>
+        <h1 style={{color: 'white'}}>{composerName}</h1>
         <Space></Space>
     </EverythingDiv>
 
