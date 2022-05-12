@@ -228,6 +228,8 @@ export const Results = ({ code }) => {
 
   const accessToken = useAuth(code)
   console.log(accessToken)
+
+  
   const [artistId, setArtistId] = useState([])
   const [tracks, setTracks] = useState([])
   const [albums, setAlbums] = useState([])
@@ -333,7 +335,7 @@ useEffect(() => {
   return (
   <div>
     <TopHeader>
-    <TimelineButton><TimelineLink className='timelineBtn' href={AUTH_URL_DEPLOY}>Timeline</TimelineLink></TimelineButton>
+    <TimelineButton><TimelineLink className='timelineBtn' href={AUTH_URL_LOCAL}>Timeline</TimelineLink></TimelineButton>
     </TopHeader>
 
     <ResultsHeader>
