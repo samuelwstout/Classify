@@ -74,7 +74,8 @@ const ErasContainer = styled('div')({
     justifyContent: 'center',
     gap: '.5rem',
     position: 'relative',
-    top: '4rem',
+    top: '2.6rem',
+    left: '.2rem',
     '@media (min-width: 329px)': {
         left: '1rem'
     },
@@ -149,8 +150,8 @@ const ComposerDiv = styled('div')({
     flexDirection: 'row',
     flexWrap: 'wrap',
     position: 'relative',
-    left: '2rem',
-    top: '2rem',
+    left: '1rem',
+    top: '1.2rem',
     gap: '.5rem',
     justifyContent: 'center',
 })
