@@ -108,29 +108,32 @@ const TrackName = styled('h3')({
   bottom: '2.1rem',
   textAlign: 'left',
   fontSize: '.7rem',
-  color: '#fff',
+  fontWeight: '400',
+  color: '#eaeaea',
 })
 const AlbumsHeading = styled('h3')({
   position: 'relative',
-  left: '1rem',
-  top: '2rem',
-  color: '#fff'
+  left: '.15rem',
+  top: '-7rem',
+  color: '#fff',
+  fontSize: '.7rem',
+  fontWeight: '200',
 })
 const AlbumDiv = styled('div')({
   display: 'flex',
   flexDirection: 'row',
   flexWrap: 'wrap',
-  alignItems: 'center',
-  gap: '4rem',
+  alignItems: 'left',
+  gap: '1.2rem',
   position: 'relative',
   left: '1rem',
-  top: '3rem',
+  top: '-6.5rem',
   border: 'none'
 })
 const AlbumItem = styled('button')({
   whiteSpace: 'hidden',
-  width: '14rem',
-  height: '16rem',
+  width: '8rem',
+  height: '9rem',
   textOverflow: 'clip',
   border: 'none',
   backgroundColor: '#242323',
@@ -152,7 +155,7 @@ const PlayerDiv = styled('div')({
 const Space = styled('div')({
   border: 'none',
   width: '100%',
-  height: '14rem',
+  height: '22rem',
   backgroundColor: '#242323'
 })
 const AlbumTracksHeading = styled('h3')({
@@ -160,15 +163,17 @@ const AlbumTracksHeading = styled('h3')({
   left: '1rem',
   top: '5rem',
   color: '#fff'
-})
+}) 
 const AlbumImg = styled('img')({
-  width: '11rem',
-  height: '11rem',
+  width: '5.5rem',
+  height: '5.5rem',
   position: 'relative',
 })
 const AlbumName = styled('h3')({
   position: 'relative',
-  color: '#fff'
+  color: '#fff',
+  fontSize: '.6rem',
+  fontWeight: '400',
 })
 const AlbumTrackDiv = styled('div')({
   display: 'flex',
@@ -357,6 +362,8 @@ useEffect(() => {
       </AlbumDiv>
     </AlbumSection>
 
+    <Space />
+
     <AlbumTrackSection>
       {open && (
         <AlbumTracksHeading>{albumName}</AlbumTracksHeading>
@@ -367,7 +374,7 @@ useEffect(() => {
       <AlbumTrackSpace />
     </AlbumTrackSection>
 
-    <Space />
+
 
     <PlayerDiv>
       <Player accessToken={accessToken} trackUri={value ? playingTrack.uri : null} />
