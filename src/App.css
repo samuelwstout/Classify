@@ -7,18 +7,7 @@ body {
   width: 100vw;
   position: absolute;
 }
-.track {
-  white-space: hidden;
-  height: 4rem;
-  width: 40rem;
-  overflow: hidden;
-  text-overflow: clip;
-  border: none;
-  background-color: #121212;
-}
-.track:hover {
-  background-color: #1f1f1f;
-}
+
 .track .icon {
   position: relative;
   left: 19rem;

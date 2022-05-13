@@ -10,31 +10,31 @@ import { selectName } from './features/composerName/composerNameSlice'
 
 const ResultsHeader = styled('div')({
   height: '12rem',
-  backgroundColor: '#121212'
+  backgroundColor: '#242323',
+
 })
 const TracksSection = styled('div')({
-  backgroundColor: '#121212',
+  backgroundColor: '#242323',
   marginTop: '-1.2rem',
 })
 const AlbumSection = styled('div')({
   height: '80rem',
-  backgroundColor: '#121212',
+  backgroundColor: '#242323',
   marginTop: '-1.2rem',
 })
 const AlbumTrackSection = styled('div')({
   height: 'fit-content',
-  backgroundColor: '#121212',
+  backgroundColor: '#242323',
   marginTop: '-1.2rem',
 })
 const ComposerTitle = styled('h1')({
-  position: 'absolute',
-  top: '3rem',
+  textAlign: 'center',
+  position: 'relative',
+  top: '.61rem',
   color: '#fff',
   letterSpacing: '2px',
-  fontFamily: 'Inter',
-  fontStyle: 'normal',
   fontWeight: 400,
-  fontSize: '50px'
+  fontSize: '1rem'
 })
 const ComposerImg = styled('img')({
     width: '10rem',
@@ -42,15 +42,17 @@ const ComposerImg = styled('img')({
     position: 'absolute',
     top: '4rem',
     left: '27.5rem',
-    borderRadius: '25px'
+    borderRadius: '25px',
 })
 const TopHeader = styled('div')({
   height: '1rem',
   marginBottom: '-1.5rem',
-  backgroundColor: '#121212'
+  backgroundColor: '#242323',
 })
 const TimelineButton = styled(Button)({
-  border: '1px solid white',
+  border: 'none',
+  position: 'relative',
+  right: '.4rem'
 })
 const TimelineLink = styled('a')({
   textDecoration: 'none',
@@ -58,31 +60,35 @@ const TimelineLink = styled('a')({
 })
 const TracksHeading = styled('h3')({
   position: 'relative',
-  left: '1rem',
-  top: '1rem',
+  top: '-8.9rem',
+  left: '.15rem',
+  textAlign: 'left',
   color: '#fff',
+  fontWeight: '200',
+  fontSize: '.7rem'
 })
 const TrackDiv = styled('div')({
   display: 'flex',
   flexDirection: 'row',
   flexWrap: 'wrap',
   gap: '1rem 6rem',
-  position: 'relative',
-  left: '1rem',
-  top: '1.3rem',
+  justifyContent: 'center',
   border: 'none',
+  position: 'relative',
+  bottom: '8.8rem',
 })
-// const Track = styled('button')({
-//   whiteSpace: 'hidden',
-//   height: '9rem',
-//   width: '35rem', 
-//   overflow: 'hidden',
-//   textOverflow: 'clip',
-//   border: 'none',
-//   ':hover': {
-//     backgroundColor: '#e0e0e0'
-//   }
-// }) IN APP.CSS
+const Track = styled('button')({
+  whiteSpace: 'hidden',
+  height: '3rem',
+  width: '17rem', 
+  overflow: 'hidden',
+  textOverflow: 'clip',
+  border: 'none',
+  backgroundColor: '#242323',
+  ':hover': {
+    backgroundColor: '#1f1f1f'
+  }
+})
 // const Play = styled('img')({
 //   position: 'relative',
 //   visibility: 'hidden',
@@ -90,19 +96,19 @@ const TrackDiv = styled('div')({
 //   top: '.5rem'
 // }) IN APP.CSS
 const TrackImg = styled('img')({
-  width: '3rem',
-  height: '3rem',
+  width: '2.2rem',
+  height: '2.2rem',
   position: 'relative',
-  right: '17.5rem', 
-  top: '.5rem'
+  right: '6.7rem',
+  top: '.45rem'
 })
 const TrackName = styled('h3')({
   position: 'relative',
-  left: '5rem',
-  bottom: '2.9rem',
+  left: '3.25rem',
+  bottom: '2.1rem',
   textAlign: 'left',
-  textSize: '14px',
-  color: '#fff'
+  fontSize: '.7rem',
+  color: '#fff',
 })
 const AlbumsHeading = styled('h3')({
   position: 'relative',
@@ -127,13 +133,13 @@ const AlbumItem = styled('button')({
   height: '16rem',
   textOverflow: 'clip',
   border: 'none',
-  backgroundColor: '#121212',
+  backgroundColor: '#242323',
   ':hover': {
          backgroundColor: '#1f1f1f'
       }
 })
 const AlbumTrackItem = styled('button')({
-  backgroundColor: '#121212',
+  backgroundColor: '#242323',
   ':hover': {
          backgroundColor: '#1f1f1f'
       }
@@ -147,7 +153,7 @@ const Space = styled('div')({
   border: 'none',
   width: '100%',
   height: '14rem',
-  backgroundColor: '#121212'
+  backgroundColor: '#242323'
 })
 const AlbumTracksHeading = styled('h3')({
   position: 'relative',
@@ -204,9 +210,6 @@ const AlbumTrackName = styled('h3')({
   textSize: '14px',
   color: '#fff'
 })
-const TrackSpace = styled('div')({
-  height: '1rem'
-})
 const AlbumTrackSpace = styled('div')({
   height: '1rem'
 })
@@ -227,8 +230,6 @@ export const Results = ({ code }) => {
   }, [])
 
   const accessToken = useAuth(code)
-  console.log(accessToken)
-
   
   const [artistId, setArtistId] = useState([])
   const [tracks, setTracks] = useState([])
@@ -270,10 +271,10 @@ export const Results = ({ code }) => {
       setTracks(res.body.tracks.map((track) => {
         return (
           <div onClick={() => setPlayingTrack(track)}>
-          <button className='track' onClick={toggleValue} key={track.id}>
+          <Track className='track' onClick={toggleValue} key={track.id}>
             <TrackImg src={track.album.images[0].url} />
             <TrackName>{track.name}</TrackName>
-          </button>
+          </Track>
           </div>
         )
       }))
@@ -335,7 +336,7 @@ useEffect(() => {
   return (
   <div>
     <TopHeader>
-    <TimelineButton><TimelineLink className='timelineBtn' href={AUTH_URL_LOCAL}>Timeline</TimelineLink></TimelineButton>
+    <TimelineButton><TimelineLink className='timelineBtn' href={AUTH_URL_LOCAL}><img src='/icons8-back-arrow-30.png'/></TimelineLink></TimelineButton>
     </TopHeader>
 
     <ResultsHeader>
@@ -343,11 +344,10 @@ useEffect(() => {
     </ResultsHeader>
 
     <TracksSection>
-      <TracksHeading>Popular</TracksHeading>
+      <TracksHeading>Top Tracks</TracksHeading>
       <TrackDiv>
         {tracks}
       </TrackDiv>
-      <TrackSpace />
     </TracksSection>
 
     <AlbumSection>
