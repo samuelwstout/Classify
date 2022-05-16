@@ -3,7 +3,7 @@ import { styled } from '@mui/material/styles'
 import Button from '@mui/material/Button'
 import {useNavigate} from 'react-router-dom'
 
-const AUTH_URL_LOCAL = 'https://accounts.spotify.com/authorize?client_id=a45eb12484d24c4199050bdefee6d24b&response_type=code&redirect_uri=http://localhost:3000/&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state'
+// const AUTH_URL_LOCAL = 'https://accounts.spotify.com/authorize?client_id=a45eb12484d24c4199050bdefee6d24b&response_type=code&redirect_uri=http://localhost:3000/&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state'
 
 const AUTH_URL_DEPLOY = 'https://accounts.spotify.com/authorize?client_id=a45eb12484d24c4199050bdefee6d24b&response_type=code&redirect_uri=https://classify-57a6e.web.app/&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state'
 
@@ -73,7 +73,7 @@ export const Login = ({ code }) => {
       <SubHeading>a guide to find and listen to classical music.</SubHeading>
       <ButtonContainer>
         <LoginButton variant='contained'>
-            <LoginButtonText href={AUTH_URL_LOCAL}>Login with<SpotifyLogo src='/spotify-icons-logos/logos/01_RGB/02_PNG/Spotify_Logo_RGB_Green.png'/></LoginButtonText>
+            <LoginButtonText href={AUTH_URL_DEPLOY}>Login with<SpotifyLogo src='/spotify-icons-logos/logos/01_RGB/02_PNG/Spotify_Logo_RGB_Green.png'/></LoginButtonText>
         </LoginButton>
       </ButtonContainer>
     </EverythingDiv>

@@ -11,7 +11,6 @@ import { selectName } from './features/composerName/composerNameSlice'
 const ResultsHeader = styled('div')({
   height: '12rem',
   backgroundColor: '#242323',
-
 })
 const TracksSection = styled('div')({
   backgroundColor: '#242323',
@@ -19,11 +18,6 @@ const TracksSection = styled('div')({
 })
 const AlbumSection = styled('div')({
   height: '80rem',
-  backgroundColor: '#242323',
-  marginTop: '-1.2rem',
-})
-const AlbumTrackSection = styled('div')({
-  height: 'fit-content',
   backgroundColor: '#242323',
   marginTop: '-1.2rem',
 })
@@ -36,14 +30,6 @@ const ComposerTitle = styled('h1')({
   fontWeight: 400,
   fontSize: '1rem'
 })
-const ComposerImg = styled('img')({
-    width: '10rem',
-    height: '10rem',
-    position: 'absolute',
-    top: '4rem',
-    left: '27.5rem',
-    borderRadius: '25px',
-})
 const TopHeader = styled('div')({
   height: '1rem',
   marginBottom: '-1.5rem',
@@ -52,7 +38,7 @@ const TopHeader = styled('div')({
 const TimelineButton = styled(Button)({
   border: 'none',
   position: 'relative',
-  right: '.4rem'
+  right: '.9rem'
 })
 const TimelineLink = styled('a')({
   textDecoration: 'none',
@@ -89,12 +75,6 @@ const Track = styled('button')({
     backgroundColor: '#1f1f1f'
   }
 })
-// const Play = styled('img')({
-//   position: 'relative',
-//   visibility: 'hidden',
-//   left: '17.8rem',
-//   top: '.5rem'
-// }) IN APP.CSS
 const TrackImg = styled('img')({
   width: '2.2rem',
   height: '2.2rem',
@@ -141,16 +121,10 @@ const AlbumItem = styled('button')({
          backgroundColor: '#1f1f1f'
       }
 })
-const AlbumTrackItem = styled('button')({
-  backgroundColor: '#242323',
-  ':hover': {
-         backgroundColor: '#1f1f1f'
-      }
-})
 const PlayerDiv = styled('div')({
   position: 'fixed',
   bottom: 0,
-  width: '100%'
+  width: '96%'
 })
 const Space = styled('div')({
   border: 'none',
@@ -158,12 +132,6 @@ const Space = styled('div')({
   height: '22rem',
   backgroundColor: '#242323'
 })
-const AlbumTracksHeading = styled('h3')({
-  position: 'relative',
-  left: '1rem',
-  top: '5rem',
-  color: '#fff'
-}) 
 const AlbumImg = styled('img')({
   width: '5.5rem',
   height: '5.5rem',
@@ -175,54 +143,11 @@ const AlbumName = styled('h3')({
   fontSize: '.6rem',
   fontWeight: '400',
 })
-const AlbumTrackDiv = styled('div')({
-  display: 'flex',
-  flexDirection: 'row',
-  flexWrap: 'wrap',
-  gap: '1rem 6rem',
-  position: 'relative',
-  left: '1rem',
-  top: '7rem'
-})
-// const AlbumTrackItem = styled('button')({
-//   whiteSpace: 'hidden',
-//   height: '9rem',
-//   width: '35rem',
-//   overflow: 'hidden',
-//   textOverflow: 'clip',
-//   border: 'none',
-//   ':hover': {
-//     backgroundColor: '#e0e0e0'
-//   }
-// })
-const AlbumTrackImg = styled('img')({
-  width: '3rem',
-  height: '3rem',
-  position: 'relative',
-  right: '17.5rem', 
-  top: '.5rem'
-})
-// const AlbumTrackIcon = styled('img')({
-//   position: 'relative',
-//   left: '18.5rem',
-//   top: '1rem'
-// })
-const AlbumTrackName = styled('h3')({
-  position: 'relative',
-  left: '5rem',
-  bottom: '2.9rem',
-  textAlign: 'left',
-  textSize: '14px',
-  color: '#fff'
-})
-const AlbumTrackSpace = styled('div')({
-  height: '1rem'
-})
 
 const spotifyApi = new SpotifyWebApi({
   clientId: 'a45eb12484d24c4199050bdefee6d24b',
 })
-const AUTH_URL_LOCAL = 'https://accounts.spotify.com/authorize?client_id=a45eb12484d24c4199050bdefee6d24b&response_type=code&redirect_uri=http://localhost:3000/&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state'
+// const AUTH_URL_LOCAL = 'https://accounts.spotify.com/authorize?client_id=a45eb12484d24c4199050bdefee6d24b&response_type=code&redirect_uri=http://localhost:3000/&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state'
 
 const AUTH_URL_DEPLOY = 'https://accounts.spotify.com/authorize?client_id=a45eb12484d24c4199050bdefee6d24b&response_type=code&redirect_uri=https://classify-57a6e.web.app/&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state'
 
@@ -257,7 +182,7 @@ export const Results = ({ code }) => {
   //to get artist id
   useEffect(() => {
     if (!composerName) return setArtistId([])
-    if (!accessToken) return 
+    if (!accessToken) return
     let cancel = false
     spotifyApi.searchArtists(composerName).then(res => {
       if (cancel) return
@@ -287,12 +212,8 @@ export const Results = ({ code }) => {
   }, [artistId, accessToken, value, playingTrack])
 
 
-const handleAlbumClick = () => {
-    setOpen(!open)
-    window.scrollTo(0, 2000)
-  }
 
-//if user clicks on album, get album id
+//Albums
 useEffect(() => {
   if (!artistId) return setAlbums([])
   if (!accessToken) return
@@ -304,8 +225,8 @@ useEffect(() => {
       let length = 70
       let trimmedString = albumName.substring(0, length)
       return (
-        <div onClick={() => setAlbumName(item.name)}>
-          <div onClick={handleAlbumClick}>
+        <div>
+          <div onClick={() => setAlbumName(item.name)}>
             <div onClick={() => setAlbumImg(item.images[2].url)}>
             <AlbumItem onClick={() => setAlbumId(item.id)} key={item.id}>
               <AlbumImg src={item.images[1].url} />
@@ -319,29 +240,10 @@ useEffect(() => {
     })
   }, [artistId, accessToken])
 
-  useEffect(() => {
-    if (!albumId) return setAlbumTracks([])
-    if (!accessToken) return
-    let cancel = false
-    spotifyApi.getAlbumTracks(albumId).then(res => {
-      if (cancel) return
-      setAlbumTracks(res.body.items.map((track) => {
-        return (
-          <div onClick={() => setPlayingTrack(track)}>
-          <AlbumTrackItem className='albumTrack' onClick={toggleValue} key={track.id}>
-            <AlbumTrackImg src={albumImg} />
-            <AlbumTrackName>{track.name}</AlbumTrackName>
-          </AlbumTrackItem>
-          </div>
-        )
-      }))
-    }) 
-  }, [albumId, accessToken, value])
-
   return (
   <div>
     <TopHeader>
-    <TimelineButton><TimelineLink className='timelineBtn' href={AUTH_URL_LOCAL}><img src='/icons8-back-arrow-30.png'/></TimelineLink></TimelineButton>
+    <TimelineButton><TimelineLink className='timelineBtn' href={AUTH_URL_DEPLOY}><img src='/icons8-back-arrow-30.png'/></TimelineLink></TimelineButton>
     </TopHeader>
 
     <ResultsHeader>
@@ -363,18 +265,6 @@ useEffect(() => {
     </AlbumSection>
 
     <Space />
-
-    <AlbumTrackSection>
-      {open && (
-        <AlbumTracksHeading>{albumName}</AlbumTracksHeading>
-      )}
-      <AlbumTrackDiv>
-        {albumTracks}
-      </AlbumTrackDiv>
-      <AlbumTrackSpace />
-    </AlbumTrackSection>
-
-
 
     <PlayerDiv>
       <Player accessToken={accessToken} trackUri={value ? playingTrack.uri : null} />
