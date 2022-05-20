@@ -5,25 +5,12 @@ import { useSelector, useDispatch } from 'react-redux';
 import { setComposerName, selectName } from './features/composerName/composerNameSlice';
 
 const EverythingDiv = styled('div')({
-    '@media (min-width: 1200px)': {
-        position: 'relative',
-        right: '3rem',
-    }
+ 
 })
 const SearchDiv = styled('div')({
     display: 'block',
     position: 'relative',
     top: '2rem',
-    '@media (min-width: 320px)': {
-        left: '1.5rem'
-    },
-    '@media (min-width: 329px)': {
-        left: '3.8rem',
-        top: '1rem',
-    },
-    '@media (min-width: 345px)': {
-        left: '4.2rem',
-    },
 })
 const SearchForm = styled('form')({
     display: 'inline-block',
@@ -33,14 +20,14 @@ const TextInput = styled('input')({
     fontSize: '1rem',
     borderRadius: '5rem',
     height: '2.5rem',
-    width: '15rem',
+    width: '20rem',
     padding: '.5rem 3.25rem',
     border: 'none',
 })
 const SearchIcon = styled('img')({
     position: 'relative',
     top: '.6rem',
-    right: '14.5rem',
+    right: '19.3rem',
 })
 const CloseIcon = styled('svg')({
     position: 'relative',
@@ -54,13 +41,8 @@ const ResetButton = styled('input')({
     height: '2.25rem',
     borderRadius: '.625rem',
     position: 'relative',
-    right: '-4.7rem',
-    top: '-2.4rem',
-    // border: '1px solid blue',
-    '@media (min-width: 329px)': {
-        right: '6rem',
-        top: '.8rem'
-    }
+    right: '6rem',
+    top: '0.8rem',
 })
 const SearchButton = styled('input')({
     position: 'relative',
@@ -74,14 +56,8 @@ const ErasContainer = styled('div')({
     justifyContent: 'center',
     gap: '.5rem',
     position: 'relative',
-    top: '2.6rem',
-    left: '.2rem',
-    '@media (min-width: 329px)': {
-        left: '1rem'
-    },
-    '@media (min-width: 345px)': {
-        top: '3rem'
-    },
+    top: '5rem',
+    left: '-3rem',
 })
 const EraContainer1 = styled('div')({
     display: 'flex',
@@ -150,8 +126,8 @@ const ComposerDiv = styled('div')({
     flexDirection: 'row',
     flexWrap: 'wrap',
     position: 'relative',
-    left: '1rem',
-    top: '1.2rem',
+    left: '-2rem',
+    top: '3.5rem',
     gap: '.5rem',
     justifyContent: 'center',
 })
