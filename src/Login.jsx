@@ -6,14 +6,13 @@ import {useNavigate} from 'react-router-dom'
 const AUTH_URL_LOCAL = 'https://accounts.spotify.com/authorize?client_id=a45eb12484d24c4199050bdefee6d24b&response_type=code&redirect_uri=http://localhost:3000/&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state'
 
 const EverythingDiv = styled('div')({
-  '@media (min-width: 1200px)': {
-    position: 'relative',
-    right: '2rem',
-}
+  position: 'relative',
+  bottom: '2rem',
 })
 const Heading = styled('p')({
   color: '#fff',
-  fontSize: '4rem',
+  fontSize: '8rem',
+  fontWeight: '200',
   textAlign: 'center',
   letterSpacing: '.05rem',
   width: '100%',
@@ -21,36 +20,39 @@ const Heading = styled('p')({
 })
 const SubHeading = styled('p')({
   color: '#fff',
-  fontSize: '.85rem',
+  fontSize: '2rem',
   width: '100%',
   textAlign: 'center',
   color: '#eaeaea',
   position: 'relative',
-  bottom: '2rem',
+  bottom: '5rem',
+  fontWeight: '150',
 })
 const ButtonContainer = styled('div')({
   textAlign: 'center',
   position: 'relative',
-  bottom: '.5rem',
+  bottom: '2.5rem',
 })
 const LoginButton = styled(Button)({
   backgroundColor: '#000',
   ':hover': {
     backgroundColor: '#000'
   },
-  width: '13rem',
-  height: '5rem',
+  width: '15rem',
+  height: '6rem',
 })
 const LoginButtonText = styled('a')({
   color: '#eaeaea',
   fontSize: '.7rem',
+  fontWeight: '400',
   textDecoration: 'none',
   position: 'relative',
   bottom: '.4rem',
   right: '.4rem',
+  color: '#eaeaea',
 })
 const SpotifyLogo = styled('img')({
-  width: '5.5rem',
+  width: '7rem',
   position: 'relative',
   top: '.6rem',
   left: '.7rem',
