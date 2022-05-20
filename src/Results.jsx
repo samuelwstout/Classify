@@ -1,12 +1,12 @@
 import {useState, useEffect} from 'react'
 import SpotifyWebApi from 'spotify-web-api-node'
 import Player from './Player'
-import useAuth from './useAuth'
 import { styled } from '@mui/material/styles'
 import Button from '@mui/material/Button'
 import useToggle from './useToggle'
 import { useSelector } from 'react-redux'
 import { selectName } from './features/composerName/composerNameSlice'
+import useAuth from './useAuth'
 
 const ResultsHeader = styled('div')({
   height: '12rem',
@@ -147,11 +147,11 @@ const AlbumName = styled('h3')({
 const spotifyApi = new SpotifyWebApi({
   clientId: 'a45eb12484d24c4199050bdefee6d24b',
 })
-// const AUTH_URL_LOCAL = 'https://accounts.spotify.com/authorize?client_id=a45eb12484d24c4199050bdefee6d24b&response_type=code&redirect_uri=http://localhost:3000/&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state'
-
-const AUTH_URL_DEPLOY = 'https://accounts.spotify.com/authorize?client_id=a45eb12484d24c4199050bdefee6d24b&response_type=code&redirect_uri=https://classify-57a6e.web.app/&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state'
+const AUTH_URL_LOCAL = 'https://accounts.spotify.com/authorize?client_id=a45eb12484d24c4199050bdefee6d24b&response_type=code&redirect_uri=http://localhost:3000/&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state'
 
 export const Results = ({ code }) => {
+
+  const accessToken = useAuth(code)
 
   const composerName = useSelector(selectName)
 
@@ -159,7 +159,7 @@ export const Results = ({ code }) => {
     window.scrollTo(0, 0)
   }, [])
 
-  const accessToken = useAuth(code)
+
   
   const [artistId, setArtistId] = useState([])
   const [tracks, setTracks] = useState([])
@@ -243,7 +243,7 @@ useEffect(() => {
   return (
   <div>
     <TopHeader>
-    <TimelineButton><TimelineLink className='timelineBtn' href={AUTH_URL_DEPLOY}><img src='/icons8-back-arrow-30.png'/></TimelineLink></TimelineButton>
+    <TimelineButton><TimelineLink className='timelineBtn' href={AUTH_URL_LOCAL}><img src='/icons8-back-arrow-30.png'/></TimelineLink></TimelineButton>
     </TopHeader>
 
     <ResultsHeader>

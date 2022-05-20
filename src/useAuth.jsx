@@ -16,7 +16,7 @@ const useAuth = (code) => {
         window.history.pushState({}, null, '/')
     }).catch((err) => {
         // window.location = '/'
-        
+        console.log(err.message)
     })
  }, [code])
 
