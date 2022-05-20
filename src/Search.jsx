@@ -170,7 +170,7 @@ const ComposerButton = styled('button')({
      letterSpacing: '1px',
   })
 
-export const Timeline = ({composerData}) => {
+export const Search = ({composerData}) => {
     
     let navigate = useNavigate();
     const composerName = useSelector(selectName)
@@ -271,5 +271,5 @@ export const Timeline = ({composerData}) => {
     )    
     }
 
-export default Timeline;
+export default Search;
  

@@ -63,7 +63,7 @@ export const Login = ({ code }) => {
 
   useEffect(() => {
   if (code) {
-    navigate('../timeline')
+    navigate('../search')
   }
   }, [])
 

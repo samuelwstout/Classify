@@ -1,6 +1,6 @@
 import {useState, useEffect} from 'react'
 import { Login } from './Login'
-import { Timeline } from './Timeline'
+import { Search } from './Search'
 import { Results } from './Results'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
@@ -27,7 +27,7 @@ const App = () => {
       <Router>
         <Routes>
           <Route path='/' element={<Login code={code} />} />
-          <Route path='/timeline' element={<Timeline composerData={composers} />} />
+          <Route path='/search' element={<Search composerData={composers} />} />
           <Route path='/results' element={<Results code={code}  />} />
         </Routes>
       </Router>
