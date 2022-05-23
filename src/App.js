@@ -1,12 +1,12 @@
 import {useState, useEffect} from 'react'
 import { Login } from './Login'
-import { Search } from './Search'
+import { Search } from './search/Search'
 import { Results } from './Results'
+import { AlbumResult } from './AlbumResult'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
 
-const code = new URLSearchParams(window.location.search).get('code');
-
+const code = new URLSearchParams(window.location.search).get('code'); 
 
 const App = () => {
 
@@ -29,6 +29,7 @@ const App = () => {
           <Route path='/' element={<Login code={code} />} />
           <Route path='/search' element={<Search composerData={composers} />} />
           <Route path='/results' element={<Results code={code}  />} />
+          <Route path='/album' element={<AlbumResult />} />
         </Routes>
       </Router>
   

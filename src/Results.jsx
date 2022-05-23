@@ -4,21 +4,23 @@ import Player from './Player'
 import { styled } from '@mui/material/styles'
 import Button from '@mui/material/Button'
 import useToggle from './useToggle'
-import { useSelector } from 'react-redux'
 import { selectName } from './features/composerName/composerNameSlice'
 import useAuth from './useAuth'
+import { useNavigate } from 'react-router-dom'
+import { useSelector, useDispatch } from 'react-redux'
+import { setAlbum, selectAlbum } from './features/album/albumSlice'
 
 const ResultsHeader = styled('div')({
-  height: '12rem',
-  backgroundColor: '#242323',
+  height: '1rem',
+  backgroundColor: '#1a1a1a',
 })
 const TracksSection = styled('div')({
-  backgroundColor: '#242323',
+  backgroundColor: '#1a1a1a',
   marginTop: '-1.2rem',
 })
 const AlbumSection = styled('div')({
   height: '80rem',
-  backgroundColor: '#242323',
+  backgroundColor: '#1a1a1a',
   marginTop: '-1.2rem',
 })
 const ComposerTitle = styled('h1')({
@@ -28,12 +30,12 @@ const ComposerTitle = styled('h1')({
   color: '#fff',
   letterSpacing: '2px',
   fontWeight: 400,
-  fontSize: '1rem'
+  fontSize: '2rem'
 })
 const TopHeader = styled('div')({
   height: '1rem',
   marginBottom: '-1.5rem',
-  backgroundColor: '#242323',
+  backgroundColor: '#1a1a1a',
 })
 const TimelineButton = styled(Button)({
   border: 'none',
@@ -46,57 +48,57 @@ const TimelineLink = styled('a')({
 })
 const TracksHeading = styled('h3')({
   position: 'relative',
-  top: '-8.9rem',
-  left: '.15rem',
+  top: '3rem',
+  left: '.5rem',
   textAlign: 'left',
   color: '#fff',
   fontWeight: '200',
-  fontSize: '.7rem'
+  fontSize: '1rem'
 })
 const TrackDiv = styled('div')({
   display: 'flex',
   flexDirection: 'row',
   flexWrap: 'wrap',
-  gap: '1rem 6rem',
+  gap: '1rem 1rem',
   justifyContent: 'center',
   border: 'none',
   position: 'relative',
-  bottom: '8.8rem',
+  top: '4rem',
 })
 const Track = styled('button')({
-  whiteSpace: 'hidden',
-  height: '3rem',
-  width: '17rem', 
+  whiteSpace: 'nowrap',
+  height: '5rem',
+  width: '40rem', 
   overflow: 'hidden',
   textOverflow: 'clip',
   border: 'none',
-  backgroundColor: '#242323',
+  backgroundColor: '#1a1a1a',
   ':hover': {
     backgroundColor: '#1f1f1f'
   }
 })
 const TrackImg = styled('img')({
-  width: '2.2rem',
-  height: '2.2rem',
+  width: '4rem',
+  height: '4rem',
   position: 'relative',
-  right: '6.7rem',
-  top: '.45rem'
+  right: '17.3rem',
+  top: '.3rem',
 })
 const TrackName = styled('h3')({
   position: 'relative',
-  left: '3.25rem',
-  bottom: '2.1rem',
+  left: '5rem',
+  bottom: '3.1rem',
   textAlign: 'left',
-  fontSize: '.7rem',
+  fontSize: '.8rem',
   fontWeight: '400',
   color: '#eaeaea',
 })
 const AlbumsHeading = styled('h3')({
   position: 'relative',
-  left: '.15rem',
-  top: '-7rem',
+  left: '.5rem',
+  top: '9rem',
   color: '#fff',
-  fontSize: '.7rem',
+  fontSize: '1rem',
   fontWeight: '200',
 })
 const AlbumDiv = styled('div')({
@@ -104,19 +106,19 @@ const AlbumDiv = styled('div')({
   flexDirection: 'row',
   flexWrap: 'wrap',
   alignItems: 'left',
-  gap: '1.2rem',
+  gap: '2rem',
   position: 'relative',
-  left: '1rem',
-  top: '-6.5rem',
+  left: '2rem',
+  top: '10rem',
   border: 'none'
 })
 const AlbumItem = styled('button')({
   whiteSpace: 'hidden',
-  width: '8rem',
-  height: '9rem',
+  width: '13rem',
+  height: '14rem',
   textOverflow: 'clip',
   border: 'none',
-  backgroundColor: '#242323',
+  backgroundColor: '#1a1a1a',
   ':hover': {
          backgroundColor: '#1f1f1f'
       }
@@ -124,24 +126,45 @@ const AlbumItem = styled('button')({
 const PlayerDiv = styled('div')({
   position: 'fixed',
   bottom: 0,
-  width: '96%'
+  width: '100%'
 })
 const Space = styled('div')({
   border: 'none',
   width: '100%',
   height: '22rem',
-  backgroundColor: '#242323'
+  backgroundColor: '#1a1a1a',
 })
 const AlbumImg = styled('img')({
-  width: '5.5rem',
-  height: '5.5rem',
+  width: '10rem',
+  height: '10rem',
   position: 'relative',
 })
 const AlbumName = styled('h3')({
   position: 'relative',
   color: '#fff',
-  fontSize: '.6rem',
+  fontSize: '.8rem',
   fontWeight: '400',
+})
+const AlbumTrackItem = styled('button')({
+  backgroundColor: '#121212',
+  ':hover': {
+         backgroundColor: '#1f1f1f'
+      }
+})
+const AlbumTrackImg = styled('img')({
+  width: '3rem',
+  height: '3rem',
+  position: 'relative',
+  right: '17.5rem', 
+  top: '.5rem'
+})
+const AlbumTrackName = styled('h3')({
+  position: 'relative',
+  left: '5rem',
+  bottom: '2.9rem',
+  textAlign: 'left',
+  textSize: '14px',
+  color: '#fff'
 })
 
 const spotifyApi = new SpotifyWebApi({
@@ -150,6 +173,9 @@ const spotifyApi = new SpotifyWebApi({
 const AUTH_URL_LOCAL = 'https://accounts.spotify.com/authorize?client_id=a45eb12484d24c4199050bdefee6d24b&response_type=code&redirect_uri=http://localhost:3000/&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state'
 
 export const Results = ({ code }) => {
+  const dispatch = useDispatch()
+
+  let navigate = useNavigate();
 
   const accessToken = useAuth(code)
 
@@ -159,15 +185,12 @@ export const Results = ({ code }) => {
     window.scrollTo(0, 0)
   }, [])
 
-
-  
   const [artistId, setArtistId] = useState([])
   const [tracks, setTracks] = useState([])
   const [albums, setAlbums] = useState([])
   const [albumId, setAlbumId] = useState([])
   const [playingTrack, setPlayingTrack] = useState([])
   const [albumImg, setAlbumImg] = useState()
-  const [open, setOpen] = useState(false)
   const [albumTracks, setAlbumTracks] = useState([])
   const [value, toggleValue] = useToggle(false)
   const [img, setImg] = useState('')
@@ -225,7 +248,8 @@ useEffect(() => {
       let length = 70
       let trimmedString = albumName.substring(0, length)
       return (
-        <div>
+      <div onClick={() => console.log(albumTracks)}>
+         <div onClick={() => console.log('hi')}>
           <div onClick={() => setAlbumName(item.name)}>
             <div onClick={() => setAlbumImg(item.images[2].url)}>
             <AlbumItem onClick={() => setAlbumId(item.id)} key={item.id}>
@@ -235,10 +259,33 @@ useEffect(() => {
             </div>
           </div>
         </div>
+      </div>
         )
       }))
     })
-  }, [artistId, accessToken])
+  }, [artistId, accessToken, albumTracks])
+
+  useEffect(() => {
+    if (!albumId) return setAlbumTracks([])
+    if (!accessToken) return
+    let cancel = false
+    spotifyApi.getAlbumTracks(albumId).then(res => {
+      if (cancel) return
+      setAlbumTracks(res.body.items.map((track) => {
+        return (
+          <div onClick={() => setPlayingTrack(track)}>
+          <AlbumTrackItem className='albumTrack' onClick={toggleValue} key={track.id}>
+            <AlbumTrackImg src={albumImg} />
+            <AlbumTrackName>{track.name}</AlbumTrackName>
+          </AlbumTrackItem>
+          </div>
+        )
+      }))
+    }) 
+  }, [albumId, accessToken, value])
+
+  dispatch(setAlbum(albumTracks))
+  useSelector(selectAlbum)
 
   return (
   <div>
@@ -265,6 +312,7 @@ useEffect(() => {
     </AlbumSection>
 
     <Space />
+
 
     <PlayerDiv>
       <Player accessToken={accessToken} trackUri={value ? playingTrack.uri : null} />

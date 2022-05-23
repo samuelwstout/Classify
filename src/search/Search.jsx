@@ -2,7 +2,8 @@ import { styled } from '@mui/material/styles';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { setComposerName, selectName } from './features/composerName/composerNameSlice';
+import { setComposerName, selectName } from '../features/composerName/composerNameSlice';
+import './search.scss'
 
 const EverythingDiv = styled('div')({
  
@@ -145,11 +146,12 @@ const ComposerButton = styled('button')({
      color: '#fff',
      letterSpacing: '1px',
   })
+  
 
 export const Search = ({composerData}) => {
     
     let navigate = useNavigate();
-    const composerName = useSelector(selectName)
+    useSelector(selectName);
     const dispatch = useDispatch();
   
     const [color, setColor] = useState('white');
@@ -167,7 +169,6 @@ export const Search = ({composerData}) => {
     }
   
     const filteredData = composerData.filter((item) => {
-        
         const names = item.name
         if (userInput === '') {
             return null;
@@ -186,7 +187,7 @@ export const Search = ({composerData}) => {
             </div>
         )
     })
-    const slicedResults = mappedData.slice(0, 4)
+
 
     const handleClick = (e) => {
         if (e) {
@@ -207,40 +208,32 @@ export const Search = ({composerData}) => {
             </SearchForm>
         </SearchDiv>
 
-        <ComposerDiv>{slicedResults}</ComposerDiv>
-    
-        <ErasContainer>
-            <EraContainer1>
-                <All className='all'>
-                    <h2 className='eraText'>Browse All</h2>
-                </All>
-                <Renaissance className='renaissance'>
-                    <h2 className='eraText'>Renaissance</h2>
-                </Renaissance>
-                <Baroque className='baroque'>
-                   <h2 className='eraText'>Baroque</h2>
-                </Baroque>
-                <Classical className='classical'>
-                    <h2 className='eraText'>Classical</h2>
-                </Classical>
-            </EraContainer1>
+        <ComposerDiv>{mappedData}</ComposerDiv>
 
-            <EraContainer2>
-                <Romantic className='romantic'>
-                    <h2 className='eraText'>Romantic</h2>
-                </Romantic>
-                <Modernist className='modernist'>
-                    <h2 className='eraText'>Modernist</h2>
-                </Modernist>
-                <AvantGarde className='avantGarde'>
-                    <h2 className='eraText'>Avant-garde</h2>
-                </AvantGarde>
-                <Minimalist className='minimalist'>
-                    <h2 className='eraText'>Minimalist</h2>
-                </Minimalist>
-            </EraContainer2>
-        </ErasContainer>
-        <h1 style={{color: 'white'}}>{composerName}</h1>
+        <dl>
+            <dd className="percentage percentage-11"></dd>
+            <dd className="percentage percentage-49"></dd>
+            <dd className="percentage percentage-16"></dd>
+            <dd className="percentage percentage-5"></dd>
+            <dd className="percentage percentage-2"></dd>
+            <dd className="percentage percentage-2"></dd>
+        <div className="dates">
+            <span className="text">1400</span>
+            <span className="text">1450</span>
+            <span className="text">1500</span>
+            <span className="text">1550</span>
+            <span className="text">1600</span>
+            <span className="text">1650</span>
+            <span className="text">1700</span>
+            <span className="text">1750</span>
+            <span className="text">1800</span>
+            <span className="text">1850</span>
+            <span className="text">1900</span>
+            <span className="text">1950</span>
+            <span className="text">2000</span>
+        </div>
+        </dl>
+    
         <Space></Space>
     </EverythingDiv>
 
