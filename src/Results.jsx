@@ -8,7 +8,6 @@ import { selectName } from './features/composerName/composerNameSlice'
 import useAuth from './useAuth'
 import { useNavigate } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
-import { setAlbum, selectAlbum } from './features/album/albumSlice'
 
 const ResultsHeader = styled('div')({
   height: '1rem',
@@ -284,8 +283,6 @@ useEffect(() => {
     }) 
   }, [albumId, accessToken, value])
 
-  dispatch(setAlbum(albumTracks))
-  useSelector(selectAlbum)
 
   return (
   <div>
@@ -311,8 +308,9 @@ useEffect(() => {
       </AlbumDiv>
     </AlbumSection>
 
-    <Space />
+    <div>{albumTracks}</div>
 
+    <Space />
 
     <PlayerDiv>
       <Player accessToken={accessToken} trackUri={value ? playingTrack.uri : null} />

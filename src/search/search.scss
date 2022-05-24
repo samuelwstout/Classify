@@ -12,13 +12,14 @@ dl {
   .dates {
     display: flex;
     flex-direction: row;
-    gap: 3.98rem;
+    gap: 4rem;
     position: relative;
     left: 2rem;
     top: .6rem;
   }
   .text {
     color: #000;
+
   }
   
   .percentage {
@@ -33,7 +34,7 @@ dl {
     #a0a0a0,
     #a0a0a0 1px,
     #fff 1px,
-    #fff 8%
+    #fff 8.15%
   );
     
     &:after {
@@ -57,12 +58,15 @@ dl {
     }
   }
   
-  @for $i from 1 through 100 {
-    .percentage-#{$i} {
+    .dufay {
       &:after {
-        $value: ($i * 1%);
-        width: $value;
+        background-color: purple;
       }
     }
-  }
+.dufayP {
+  position: relative;
+  color: white;
+  bottom: 13.8rem;
+  left: 7.3rem;
+}
   

@@ -6,12 +6,13 @@ import { setComposerName, selectName } from '../features/composerName/composerNa
 import './search.scss'
 
 const EverythingDiv = styled('div')({
- 
+
 })
 const SearchDiv = styled('div')({
     display: 'block',
     position: 'relative',
     top: '2rem',
+    left: '2.5rem'
 })
 const SearchForm = styled('form')({
     display: 'inline-block',
@@ -211,12 +212,145 @@ export const Search = ({composerData}) => {
         <ComposerDiv>{mappedData}</ComposerDiv>
 
         <dl>
-            <dd className="percentage percentage-11"></dd>
-            <dd className="percentage percentage-49"></dd>
-            <dd className="percentage percentage-16"></dd>
-            <dd className="percentage percentage-5"></dd>
-            <dd className="percentage percentage-2"></dd>
-            <dd className="percentage percentage-2"></dd>
+            <dd className="percentage dufay"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+            <dd className="percentage"></dd>
+
         <div className="dates">
             <span className="text">1400</span>
             <span className="text">1450</span>
@@ -233,7 +367,7 @@ export const Search = ({composerData}) => {
             <span className="text">2000</span>
         </div>
         </dl>
-    
+        <p className="dufayP">Dufay</p>
         <Space></Space>
     </EverythingDiv>
 
