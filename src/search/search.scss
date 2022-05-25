@@ -321,8 +321,72 @@ dl {
     .scarlatti {
       &:after {
         background-color: #1e3264;
-        width: 9rem;
+        width: 8.6rem;
         left: 32.5rem;
+        margin-top: -59.5rem;
+      }
+    }
+    .couperin {
+      &:after {
+        background-color: #1e3264;
+        width: 8.8rem;
+        left: 33.5rem;
+        margin-top: -59.5rem;
+      }
+    }
+    .albinoni {
+      &:after {
+        background-color: #1e3264;
+        width: 10.25rem;
+        left: 34.1rem;
+        margin-top: -59.5rem;
+      }
+    }
+    .vivaldi {
+      &:after {
+        background-color: #1e3264;
+        width: 8rem;
+        left: 35.3rem;
+        margin-top: -59.5rem;
+      }
+    }
+    .telemann {
+      &:after {
+        background-color: #1e3264;
+        width: 10.7rem;
+        left: 36rem;
+        margin-top: -59.5rem;
+      }
+    }
+    .rameau {
+      &:after {
+        background-color: #1e3264;
+        width: 9.5rem;
+        left: 36.4rem;
+        margin-top: -59.5rem;
+      }
+    }
+    .jsbach {
+      &:after {
+        background-color: #1e3264;
+        width: 8.3rem;
+        left: 36.7rem;
+        margin-top: -59.5rem;
+      }
+    }
+    .dscarlatti {
+      &:after {
+        background-color: #1e3264;
+        width: 8.7rem;
+        left: 36.7rem;
+        margin-top: -59.5rem;
+      }
+    }
+    .handel {
+      &:after {
+        background-color: #1e3264;
+        width: 8.9rem;
+        left: 36.7rem;
         margin-top: -59.5rem;
       }
     }
@@ -637,7 +701,63 @@ dl {
   position: relative;
   color: white;
   bottom: 289.5rem;
-  left: 38rem;
+  left: 37.8rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.couperinP {
+  position: relative;
+  color: white;
+  bottom: 289.95rem;
+  left: 38.9rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.albinoniP {
+  position: relative;
+  color: white;
+  bottom: 290.25rem;
+  left: 39.4rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.vivaldiP {
+  position: relative;
+  color: white;
+  bottom: 290.7rem;
+  left: 40.7rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.telemannP {
+  position: relative;
+  color: white;
+  bottom: 291.1rem;
+  left: 41.4rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.rameauP {
+  position: relative;
+  color: white;
+  bottom: 291.5rem;
+  left: 41.8rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.jsbachP {
+  position: relative;
+  color: white;
+  bottom: 291.9rem;
+  left: 42rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.dscarlattiP {
+  position: relative;
+  color: white;
+  bottom: 294.4rem;
+  left: 42rem;
   font-weight: 600;
   font-size: .9rem;
 }
