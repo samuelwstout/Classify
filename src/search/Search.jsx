@@ -179,7 +179,7 @@ export const Search = ({composerData}) => {
         }
     })
     const mappedData = filteredData.map((item) => {
-        const customColor = {'Renaissance': '#27856a', 'Baroque': '#1e3264', 'Classical': '#8d67ab', 'Romantic': '#1072ec', 'Modernist': '#a56752', 'Avant-garde': '#509bf5', 'Minimalist': '#e13400'}
+        const customColor = {'Renaissance': '#27856a', 'Baroque': '#1e3264', 'Classical': '#8d67ab', 'Romantic': '#1072ec', 'Modernist': '#a56752', 'Avant-garde': '#e86718', 'Minimalist': '#e13400'}
         return (
            <div onClick={() => navigate('../results')} key={item.id}>
             <ComposerButton style={{backgroundColor: customColor[item.era]}} onClick={() => dispatch(setComposerName(item.name))}>
@@ -281,7 +281,7 @@ export const Search = ({composerData}) => {
             <dd className="percentage schubert"></dd>
             <dd className="percentage donizetti"></dd>
             <dd className="percentage berlioz"></dd>
-            <dd className="percentage medelssohn"></dd>
+            <dd className="percentage mendelssohn"></dd>
             <dd className="percentage chopin"></dd>
             <dd className="percentage schumann"></dd>
             <dd className="percentage liszt"></dd>

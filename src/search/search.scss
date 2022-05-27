@@ -8,6 +8,7 @@ dl {
     top: 4rem;
     left: 3rem;
     padding: 20px;
+    border-radius: 1rem;
   }
   .dates {
     display: flex;
@@ -390,8 +391,734 @@ dl {
         margin-top: -59.5rem;
       }
     }
-
-
+    .hasse {
+      &:after {
+        background-color: #1e3264;
+        width: 10.1rem;
+        left: 37.8rem;
+        margin-top: -59.5rem;
+      }
+    }
+    .pergolesi {
+      &:after {
+        background-color: #1e3264;
+        width: 4rem;
+        left: 39.4rem;
+        margin-top: -59.5rem;
+      }
+    }
+    .gluck {
+      &:after {
+        background-color: #8d67ab;
+        width: 8.6rem;
+        left: 39.8rem;
+        margin-top: -59.5rem;
+      }
+    }
+    .cpebach {
+      &:after {
+        background-color: #8d67ab;
+        width: 9rem;
+        left: 39.8rem;
+        margin-top: -59.5rem;
+      }
+    }
+    .stamitz {
+      &:after {
+        background-color: #8d67ab;
+        width: 5.4rem;
+        left: 40.3rem;
+        margin-top: -59.5rem;
+      }
+    }
+    .soler {
+      &:after {
+        background-color: #1e3264;
+        width: 7.5rem;
+        left: 40.3rem;
+        margin-top: -59.5rem;
+      }
+    }
+    .haydn {
+      &:after {
+        background-color: #8d67ab;
+        width: 11.5rem;
+        left: 40.7rem;
+        margin-top: -59.5rem;
+      }
+    }
+    .jcbach {
+      &:after {
+        background-color: #8d67ab;
+        width: 6.2rem;
+        left: 41.5rem;
+        margin-top: -59.5rem;
+      }
+    }
+    .salieri {
+      &:after {
+        background-color: #8d67ab;
+        width: 9.2rem;
+        left: 44rem;
+        margin-top: -59.5rem;
+      }
+    }
+    .bortniansky {
+      &:after {
+        background-color: #8d67ab;
+        width: 9rem;
+        left: 44.25rem;
+        margin-top: -59.5rem;
+      }
+    }
+    .clementi {
+      &:after {
+        background-color: #8d67ab;
+        width: 9.8rem;
+        left: 44.5rem;
+        margin-top: -59.5rem;
+      }
+    }
+    .mozart {
+      &:after {
+        background-color: #8d67ab;
+        width: 4.4rem;
+        left: 45rem;
+        margin-top: -59.5rem;
+      }
+    }
+    .cherubini {
+      &:after {
+        background-color: #8d67ab;
+        width: 9.8rem;
+        left: 45.8rem;
+        margin-top: -59.5rem;
+      }
+    }
+    .beethoven {
+      &:after {
+        background-color: #8d67ab;
+        width: 7rem;
+        left: 47rem;
+        margin-top: -59.5rem;
+      }
+    }
+    .field {
+      &:after {
+        background-color: #1072ec;
+        width: 6.5rem;
+        left: 48.5rem;
+        margin-top: -59.5rem;
+      }
+    }
+    .paganini {
+      &:after {
+        background-color: #1072ec;
+        width: 7.2rem;
+        left: 48.5rem;
+        margin-top: -59.5rem;
+      }
+    }
+    .weber {
+      &:after {
+        background-color: #1072ec;
+        width: 5rem;
+        left: 49.3rem;
+        margin-top: -59.5rem;
+      }
+    }
+    .czemy {
+      &:after {
+        background-color: #1072ec;
+        width: 8rem;
+        left: 49.7rem;
+        margin-top: -59.5rem;
+      }
+    }
+    .rossini {
+      &:after {
+        background-color: #1072ec;
+        width: 9.7rem;
+        left: 49.7rem;
+        margin-top: -59.5rem;
+      }
+    }
+    .schubert {
+      &:after {
+        background-color: #1072ec;
+        width: 4rem;
+        left: 50rem;
+        margin-top: -59.5rem;
+      }
+    }
+    .donizetti {
+      &:after {
+        background-color: #1072ec;
+        width: 6.3rem;
+        left: 50rem;
+        margin-top: -59.5rem;
+      }
+    }
+    .berlioz {
+      &:after {
+        background-color: #1072ec;
+        width: 8.8rem;
+        left: 50.6rem;
+        margin-top: -59.5rem;
+      }
+    }
+    .mendelssohn {
+      &:after {
+        background-color: #1072ec;
+        width: 4.9rem;
+        left: 51.2rem;
+        margin-top: -59.5rem;
+      }
+    }
+    .chopin {
+      &:after {
+        background-color: #1072ec;
+        width: 5.05rem;
+        left: 51.4rem;
+        margin-top: -59.5rem;
+      }
+    }
+    .schumann {
+      &:after {
+        background-color: #1072ec;
+        width: 6.2rem;
+        left: 51.4rem;
+        margin-top: -59.5rem;
+      }
+    }
+    .liszt {
+      &:after {
+        background-color: #1072ec;
+        width: 9.5rem;
+        left: 51.8rem;
+        margin-top: -59.5rem;
+      }
+    }
+    .wagner {
+      &:after {
+        background-color: #1072ec;
+        width: 8.5rem;
+        left: 52.2rem;
+        margin-top: -59.5rem;
+      }
+    }
+    .verdi {
+      &:after {
+        background-color: #1072ec;
+        width: 10.6rem;
+        left: 52.2rem;
+        margin-top: -59.5rem;
+      }
+    }
+    .offenbach {
+      &:after {
+        background-color: #1072ec;
+        width: 7rem;
+        left: 53.2rem;
+        margin-top: -59.5rem;
+      }
+    }
+    .franck {
+      &:after {
+        background-color: #1072ec;
+        width: 8rem;
+        left: 53rem;
+        margin-top: -118.85rem;
+      }
+    }
+    .smetana {
+      &:after {
+        background-color: #1072ec;
+        width: 6.4rem;
+        left: 53.8rem;
+        margin-top: -118.85rem;
+      }
+    }
+    .bruckner {
+      &:after {
+        background-color: #1072ec;
+        width: 8.5rem;
+        left: 53.8rem;
+        margin-top: -118.85rem;
+      }
+    }
+    .strauss2 {
+      &:after {
+        background-color: #1072ec;
+        width: 8.5rem;
+        left: 54.2rem;
+        margin-top: -118.85rem;
+      }
+    }
+    .brahms {
+      &:after {
+        background-color: #1072ec;
+        width: 7.5rem;
+        left: 55rem;
+        margin-top: -118.85rem;
+      }
+    }
+    .borodin {
+      &:after {
+        background-color: #1072ec;
+        width: 6.2rem;
+        left: 55rem;
+        margin-top: -118.85rem;
+      }
+    }
+    .saintsaens {
+      &:after {
+        background-color: #1072ec;
+        width: 12rem;
+        left: 55.4rem;
+        margin-top: -118.85rem;
+      }
+    }
+    .bizet {
+      &:after {
+        background-color: #1072ec;
+        width: 5rem;
+        left: 55.8rem;
+        margin-top: -118.85rem;
+      }
+    }
+    .mussorgsky {
+      &:after {
+        background-color: #1072ec;
+        width: 5.4rem;
+        left: 55.8rem;
+        margin-top: -118.85rem;
+      }
+    }
+    .tchaikovsky {
+      &:after {
+        background-color: #1072ec;
+        width: 5.8rem;
+        left: 56rem;
+        margin-top: -118.85rem;
+      }
+    }
+    .dvorak {
+      &:after {
+        background-color: #1072ec;
+        width: 7.2rem;
+        left: 56.2rem;
+        margin-top: -118.85rem;
+      }
+    }
+    .grieg {
+      &:after {
+        background-color: #1072ec;
+        width: 7.5rem;
+        left: 56.2rem;
+        margin-top: -118.85rem;
+      }
+    }
+    .rimsky {
+      &:after {
+        background-color: #1072ec;
+        width: 7.5rem;
+        left: 56.3rem;
+        margin-top: -118.85rem;
+      }
+    }
+    .faure {
+      &:after {
+        background-color: #1072ec;
+        width: 9.4rem;
+        left: 56.4rem;
+        margin-top: -118.85rem;
+      }
+    }
+    .elgar {
+      &:after {
+        background-color: #1072ec;
+        width: 11rem;
+        left: 57.5rem;
+        margin-top: -118.85rem;
+      }
+    }
+    .ysaye {
+      &:after {
+        background-color: #1072ec;
+        width: 10rem;
+        left: 57.5rem;
+        margin-top: -118.85rem;
+      }
+    }
+    .puccini {
+      &:after {
+        background-color: #1072ec;
+        width: 9rem;
+        left: 57.5rem;
+        margin-top: -118.85rem;
+      }
+    }
+    .mahler {
+      &:after {
+        background-color: #1072ec;
+        width: 7.5rem;
+        left: 57.7rem;
+        margin-top: -118.85rem;
+      }
+    }
+    .delius {
+      &:after {
+        background-color: #1072ec;
+        width: 10rem;
+        left: 58rem;
+        margin-top: -118.85rem;
+      }
+    }
+    .debussy {
+      &:after {
+        background-color: #a56752;
+        width: 8rem;
+        left: 58rem;
+        margin-top: -118.85rem;
+      }
+    }
+    .strauss {
+      &:after {
+        background-color: #1072ec;
+        width: 9.6rem;
+        left: 58.4rem;
+        margin-top: -118.85rem;
+      }
+    }
+    .sibelius {
+      &:after {
+        background-color: #a56752;
+        width: 9.6rem;
+        left: 58.7rem;
+        margin-top: -118.85rem;
+      }
+    }
+    .granados {
+      &:after {
+        background-color: #1072ec;
+        width: 7rem;
+        left: 59rem;
+        margin-top: -118.85rem;
+      }
+    }
+    .vwilliams {
+      &:after {
+        background-color: #1072ec;
+        width: 10.8rem;
+        left: 59.8rem;
+        margin-top: -118.85rem;
+      }
+    }
+    .rachmaninoff {
+      &:after {
+        background-color: #1072ec;
+        width: 8.2rem;
+        left: 60rem;
+        margin-top: -118.85rem;
+      }
+    }
+    .schoenberg {
+      &:after {
+        background-color: #a56752;
+        width: 9.3rem;
+        left: 60.3rem;
+        margin-top: -118.85rem;
+      }
+    }
+    .holst {
+      &:after {
+        background-color: #a56752;
+        width: 7rem;
+        left: 60.3rem;
+        margin-top: -118.85rem;
+      }
+    }
+    .ives {
+      &:after {
+        background-color: #a56752;
+        width: 9.8rem;
+        left: 60.3rem;
+        margin-top: -118.85rem;
+      }
+    }
+    .ravel {
+      &:after {
+        background-color: #a56752;
+        width: 7.1rem;
+        left: 60.55rem;
+        margin-top: -118.85rem;
+      }
+    }
+    .falla {
+      &:after {
+        background-color: #a56752;
+        width: 7.8rem;
+        left: 60.8rem;
+        margin-top: -118.85rem;
+      }
+    }
+    .bartok {
+      &:after {
+        background-color: #a56752;
+        width: 7.25rem;
+        left: 61.3rem;
+        margin-top: -118.85rem;
+      }
+    }
+    .stravinsky {
+      &:after {
+        background-color: #a56752;
+        width: 10.3rem;
+        left: 61.5rem;
+        margin-top: -118.85rem;
+      }
+    }
+    .varese {
+      &:after {
+        background-color: #e86718;
+        width: 9.5rem;
+        left: 61.5rem;
+        margin-top: -118.85rem;
+      }
+    }
+    .prokofiev {
+      &:after {
+        background-color: #a56752;
+        width: 8rem;
+        left: 62.2rem;
+        margin-top: -118.85rem;
+      }
+    }
+    .hindemith {
+      &:after {
+        background-color: #a56752;
+        width: 8.2rem;
+        left: 62.4rem;
+        margin-top: -118.85rem;
+      }
+    }
+    .poulenc {
+      &:after {
+        background-color: #a56752;
+        width: 7.8rem;
+        left: 62.8rem;
+        margin-top: -118.85rem;
+      }
+    }
+    .copland {
+      &:after {
+        background-color: #a56752;
+        width: 11rem;
+        left: 62.8rem;
+        margin-top: -118.85rem;
+      }
+    }
+    .partch {
+      &:after {
+        background-color: #e86718;
+        width: 9.4rem;
+        left: 62.85rem;
+        margin-top: -118.85rem;
+      }
+    }
+    .shostakovich {
+      &:after {
+        background-color: #a56752;
+        width: 8.5rem;
+        left: 64rem;
+        margin-top: -178.28rem;
+      }
+    }
+    .messiaen {
+      &:after {
+        background-color: #a56752;
+        width: 10rem;
+        left: 64.4rem;
+        margin-top: -178.28rem;
+      }
+    }
+    .barber {
+      &:after {
+        background-color: #a56752;
+        width: 8.5rem;
+        left: 65rem;
+        margin-top: -178.28rem;
+      }
+    }
+    .cage {
+      &:after {
+        background-color: #e86718;
+        width: 9rem;
+        left: 65.5rem;
+        margin-top: -178.28rem;
+      }
+    }
+    .lutoslawski {
+      &:after {
+        background-color: #a56752;
+        width: 9rem;
+        left: 66rem;
+        margin-top: -178.28rem;
+      }
+    }
+    .britten {
+      &:after {
+        background-color: #a56752;
+        width: 7rem;
+        left: 66rem;
+        margin-top: -178.28rem;
+      }
+    }
+    .britten {
+      &:after {
+        background-color: #a56752;
+        width: 7rem;
+        left: 66rem;
+        margin-top: -178.28rem;
+      }
+    }
+    .moondog {
+      &:after {
+        background-color: #e86718;
+        width: 9.1rem;
+        left: 66.4rem;
+        margin-top: -178.28rem;
+      }
+    }
+    .xenakis {
+      &:after {
+        background-color: #e86718;
+        width: 8.8rem;
+        left: 67rem;
+        margin-top: -178.28rem;
+      }
+    }
+    .ligeti {
+      &:after {
+        background-color: #e86718;
+        width: 9.2rem;
+        left: 67.2rem;
+        margin-top: -178.28rem;
+      }
+    }
+    .boulez {
+      &:after {
+        background-color: #e86718;
+        width: 10rem;
+        left: 67.6rem;
+        margin-top: -178.28rem;
+      }
+    }
+    .stockhausen {
+      &:after {
+        background-color: #e86718;
+        width: 8.6rem;
+        left: 68rem;
+        margin-top: -178.28rem;
+      }
+    }
+    .rautavaara {
+      &:after {
+        background-color: #a56752;
+        width: 9.5rem;
+        left: 68rem;
+        margin-top: -178.28rem;
+      }
+    }
+    .crumb {
+      &:after {
+        background-color: #e86718;
+        width: 9.8rem;
+        left: 68.3rem;
+        margin-top: -178.28rem;
+      }
+    }
+    .gubaidulina {
+      &:after {
+        background-color: #e86718;
+        width: 9.7rem;
+        left: 68.4rem;
+        margin-top: -178.28rem;
+      }
+    }
+    .shchedrin {
+      &:after {
+        background-color: #a56752;
+        width: 9.7rem;
+        left: 68.4rem;
+        margin-top: -178.28rem;
+      }
+    }
+    .schnittke {
+      &:after {
+        background-color: #e86718;
+        width: 7rem;
+        left: 68.4rem;
+        margin-top: -178.28rem;
+      }
+    }
+    .birtwistle {
+      &:after {
+        background-color: #a56752;
+        width: 9.7rem;
+        left: 68.4rem;
+        margin-top: -178.28rem;
+      }
+    }
+    .riley {
+      &:after {
+        background-color: #e13400;
+        width: 9.6rem;
+        left: 68.5rem;
+        margin-top: -178.28rem;
+      }
+    }
+    .young {
+      &:after {
+        background-color: #e13400;
+        width: 9.6rem;
+        left: 68.5rem;
+        margin-top: -178.28rem;
+      }
+    }
+    .part {
+      &:after {
+        background-color: #e13400;
+        width: 9.6rem;
+        left: 68.5rem;
+        margin-top: -178.28rem;
+      }
+    }
+    .reich {
+      &:after {
+        background-color: #e13400;
+        width: 9.48rem;
+        left: 68.7rem;
+        margin-top: -178.28rem;
+      }
+    }
+    .glass {
+      &:after {
+        background-color: #e13400;
+        width: 9.48rem;
+        left: 68.7rem;
+        margin-top: -178.28rem;
+      }
+    }
+    .adams {
+      &:after {
+        background-color: #e13400;
+        width: 9.2rem;
+        left: 69rem;
+        margin-top: -178.28rem;
+      }
+    }
 
 .dufayP {
   position: relative;
@@ -699,7 +1426,7 @@ dl {
 }
 .scarlattiP {
   position: relative;
-  color: white;
+  color: red;
   bottom: 289.5rem;
   left: 37.8rem;
   font-weight: 600;
