@@ -9,18 +9,17 @@ dl {
     left: 3rem;
     padding: 20px;
     border-radius: 1rem;
+    height: 215rem;
   }
   .dates {
     display: flex;
     flex-direction: row;
     gap: 4rem;
     position: relative;
-    left: 2rem;
     top: .6rem;
   }
   .text {
     color: #000;
-
   }
   
   .percentage {
@@ -59,12 +58,14 @@ dl {
       &:after {
         background-color: #27856a;
         width: 9.7rem;
+        height: 1.3rem;
       }
     }
     .binchois {
       &:after {
         background-color: #27856a;
         width: 8rem;
+        height: 1.3rem;
       }
     }
     .ockeghem {
@@ -72,6 +73,7 @@ dl {
         background-color: #27856a;
         width: 10.4rem;
         margin-left: 1.9rem;
+        height: 1.3rem;
       }
     }
     .busnois {
@@ -79,6 +81,7 @@ dl {
         background-color: #27856a;
         width: 7.8rem;
         margin-left: 4rem;
+        height: 1.3rem;
       }
     }
     .tinctoris {
@@ -86,6 +89,7 @@ dl {
         background-color: #27856a;
         width: 9rem;
         margin-left: 4.8rem;
+        height: 1.3rem;
       }
     }
     .agricola {
@@ -93,6 +97,7 @@ dl {
         background-color: #27856a;
         width: 7.7rem;
         margin-left: 5.6rem;
+        height: 1.3rem;
       }
     }
     .prez {
@@ -100,6 +105,7 @@ dl {
         background-color: #27856a;
         width: 8.9rem;
         margin-left: 6.2rem;
+        height: 1.3rem;
       }
     }
     .isaac {
@@ -107,6 +113,7 @@ dl {
         background-color: #27856a;
         width: 8.2rem;
         margin-left: 6.2rem;
+        height: 1.3rem;
       }
     }
     .rue {
@@ -114,6 +121,7 @@ dl {
         background-color: #27856a;
         width: 8.2rem;
         margin-left: 6.7rem;
+        height: 1.3rem;
       }
     }
     .obrecht {
@@ -121,6 +129,7 @@ dl {
         background-color: #27856a;
         width: 6.3rem;
         margin-left: 7.5rem;
+        height: 1.3rem;
       }
     }
     .janequin {
@@ -128,6 +137,7 @@ dl {
         background-color: #27856a;
         width: 10rem;
         margin-left: 10.2rem;
+        height: 1.3rem;
       }
     }
     .taverner {
@@ -135,6 +145,7 @@ dl {
         background-color: #27856a;
         width: 6.8rem;
         margin-left: 11.5rem;
+        height: 1.3rem;
       }
     }
     .willaert {
@@ -142,6 +153,7 @@ dl {
         background-color: #27856a;
         width: 9.3rem;
         margin-left: 11.5rem;
+        height: 1.3rem;
       }
     }
     .gombert {
@@ -149,6 +161,7 @@ dl {
         background-color: #27856a;
         width: 8.6rem;
         margin-left: 11.9rem;
+        height: 1.3rem;
       }
     }
     .morales {
@@ -156,6 +169,7 @@ dl {
         background-color: #27856a;
         width: 7.2rem;
         margin-left: 12.75rem;
+        height: 1.3rem;
       }
     }
     .milan {
@@ -163,6 +177,7 @@ dl {
         background-color: #27856a;
         width: 7.9rem;
         margin-left: 12.75rem;
+        height: 1.3rem;
       }
     }
     .tallis {
@@ -170,6 +185,7 @@ dl {
         background-color: #27856a;
         width: 10rem;
         margin-left: 13.3rem;
+        height: 1.3rem;
       }
     }
     .arcadelt {
@@ -177,6 +193,7 @@ dl {
         background-color: #27856a;
         width: 7.5rem;
         margin-left: 13.6rem;
+        height: 1.3rem;
       }
     }
     .palestrina {
@@ -184,6 +201,7 @@ dl {
         background-color: #27856a;
         width: 8.2rem;
         margin-left: 16rem;
+        height: 1.3rem;
       }
     }
     .lassus {
@@ -191,6 +209,7 @@ dl {
         background-color: #27856a;
         width: 7.5rem;
         margin-left: 16.7rem;
+        height: 1.3rem;
       }
     }
     .byrd {
@@ -198,6 +217,7 @@ dl {
         background-color: #27856a;
         width: 11.5rem;
         margin-left: 17.8rem;
+        height: 1.3rem;
       }
     }
     .victoria {
@@ -205,6 +225,7 @@ dl {
         background-color: #27856a;
         width: 8rem;
         margin-left: 18.7rem;
+        height: 1.3rem;
       }
     }
     .caccini {
@@ -212,6 +233,7 @@ dl {
         background-color: #1e3264;
         width: 9.5rem;
         margin-left: 18.8rem;
+        height: 1.3rem;
       }
     }
     .gabrieli {
@@ -219,6 +241,7 @@ dl {
         background-color: #27856a;
         width: 7.4rem;
         margin-left: 19.4rem;
+        height: 1.3rem;
       }
     }
     .sweelinck {
@@ -226,6 +249,7 @@ dl {
         background-color: #1e3264;
         width: 8.4rem;
         margin-left: 20.5rem;
+        height: 1.3rem;
       }
     }
     .dowland {
@@ -233,6 +257,7 @@ dl {
         background-color: #27856a;
         width: 8.8rem;
         margin-left: 20.9rem;
+        height: 1.3rem;
       }
     }
     .gesualdo {
@@ -240,6 +265,7 @@ dl {
         background-color: #27856a;
         width: 6.5rem;
         margin-left: 21.3rem;
+        height: 1.3rem;
       }
     }
     .monteverdi {
@@ -247,6 +273,7 @@ dl {
         background-color: #1e3264;
         width: 8.8rem;
         margin-left: 21.65rem;
+        height: 1.3rem;
       }
     }
     .praetorius {
@@ -254,6 +281,7 @@ dl {
         background-color: #1e3264;
         width: 6.5rem;
         margin-left: 22.4rem;
+        height: 1.3rem;
       }
     }
     .schutz {
@@ -261,6 +289,7 @@ dl {
         background-color: #1e3264;
         width: 11rem;
         margin-left: 23.5rem;
+        height: 1.3rem;
       }
     }
     .cavalli {
@@ -268,6 +297,7 @@ dl {
         background-color: #1e3264;
         width: 10rem;
         margin-left: 25.25rem;
+        height: 1.3rem;
       }
     }
     .froberger {
@@ -275,6 +305,7 @@ dl {
         background-color: #1e3264;
         width: 6.5rem;
         margin-left: 27.5rem;
+        height: 1.3rem;
       }
     }
     .lully {
@@ -282,6 +313,7 @@ dl {
         background-color: #1e3264;
         width: 7.5rem;
         margin-left: 29rem;
+        height: 1.3rem;
       }
     }
     .buxtehude {
@@ -289,6 +321,7 @@ dl {
         background-color: #1e3264;
         width: 9.5rem;
         margin-left: 29.7rem;
+        height: 1.3rem;
       }
     }
     .charpentier {
@@ -296,6 +329,7 @@ dl {
         background-color: #1e3264;
         width: 8rem;
         margin-left: 30.5rem;
+        height: 1.3rem;
       }
     }
     .corelli {
@@ -303,6 +337,7 @@ dl {
         background-color: #1e3264;
         width: 7.7rem;
         margin-left: 32rem;
+        height: 1.3rem;
       }
     }
     .pachelbel {
@@ -310,6 +345,7 @@ dl {
         background-color: #1e3264;
         width: 7rem;
         margin-left: 32rem;
+        height: 1.3rem;
       }
     }
     .purcell {
@@ -317,14 +353,15 @@ dl {
         background-color: #1e3264;
         width: 4.5rem;
         margin-left: 32.7rem;
+        height: 1.3rem;
       }
     }
     .scarlatti {
       &:after {
         background-color: #1e3264;
-        width: 8.6rem;
-        left: 32.5rem;
-        margin-top: -59.5rem;
+        width: 8.8rem;
+        left: 33rem;
+        height: 1.3rem;
       }
     }
     .couperin {
@@ -332,7 +369,7 @@ dl {
         background-color: #1e3264;
         width: 8.8rem;
         left: 33.5rem;
-        margin-top: -59.5rem;
+        height: 1.3rem;
       }
     }
     .albinoni {
@@ -340,7 +377,7 @@ dl {
         background-color: #1e3264;
         width: 10.25rem;
         left: 34.1rem;
-        margin-top: -59.5rem;
+        height: 1.3rem;
       }
     }
     .vivaldi {
@@ -348,7 +385,7 @@ dl {
         background-color: #1e3264;
         width: 8rem;
         left: 35.3rem;
-        margin-top: -59.5rem;
+        height: 1.3rem;
       }
     }
     .telemann {
@@ -356,7 +393,7 @@ dl {
         background-color: #1e3264;
         width: 10.7rem;
         left: 36rem;
-        margin-top: -59.5rem;
+        height: 1.3rem;
       }
     }
     .rameau {
@@ -364,7 +401,7 @@ dl {
         background-color: #1e3264;
         width: 9.5rem;
         left: 36.4rem;
-        margin-top: -59.5rem;
+        height: 1.3rem;
       }
     }
     .jsbach {
@@ -372,7 +409,7 @@ dl {
         background-color: #1e3264;
         width: 8.3rem;
         left: 36.7rem;
-        margin-top: -59.5rem;
+        height: 1.3rem;
       }
     }
     .dscarlatti {
@@ -380,7 +417,7 @@ dl {
         background-color: #1e3264;
         width: 8.7rem;
         left: 36.7rem;
-        margin-top: -59.5rem;
+        height: 1.3rem;
       }
     }
     .handel {
@@ -388,7 +425,7 @@ dl {
         background-color: #1e3264;
         width: 8.9rem;
         left: 36.7rem;
-        margin-top: -59.5rem;
+        height: 1.3rem;
       }
     }
     .hasse {
@@ -396,15 +433,15 @@ dl {
         background-color: #1e3264;
         width: 10.1rem;
         left: 37.8rem;
-        margin-top: -59.5rem;
+        height: 1.3rem;
       }
     }
     .pergolesi {
       &:after {
         background-color: #1e3264;
-        width: 4rem;
+        width: 4.4rem;
         left: 39.4rem;
-        margin-top: -59.5rem;
+        height: 1.3rem;
       }
     }
     .gluck {
@@ -412,7 +449,7 @@ dl {
         background-color: #8d67ab;
         width: 8.6rem;
         left: 39.8rem;
-        margin-top: -59.5rem;
+        height: 1.3rem;
       }
     }
     .cpebach {
@@ -420,7 +457,7 @@ dl {
         background-color: #8d67ab;
         width: 9rem;
         left: 39.8rem;
-        margin-top: -59.5rem;
+        height: 1.3rem;
       }
     }
     .stamitz {
@@ -428,7 +465,7 @@ dl {
         background-color: #8d67ab;
         width: 5.4rem;
         left: 40.3rem;
-        margin-top: -59.5rem;
+        height: 1.3rem;
       }
     }
     .soler {
@@ -436,7 +473,7 @@ dl {
         background-color: #1e3264;
         width: 7.5rem;
         left: 40.3rem;
-        margin-top: -59.5rem;
+        height: 1.3rem;
       }
     }
     .haydn {
@@ -444,7 +481,7 @@ dl {
         background-color: #8d67ab;
         width: 11.5rem;
         left: 40.7rem;
-        margin-top: -59.5rem;
+        height: 1.3rem;
       }
     }
     .jcbach {
@@ -452,7 +489,7 @@ dl {
         background-color: #8d67ab;
         width: 6.2rem;
         left: 41.5rem;
-        margin-top: -59.5rem;
+        height: 1.3rem;
       }
     }
     .salieri {
@@ -460,7 +497,7 @@ dl {
         background-color: #8d67ab;
         width: 9.2rem;
         left: 44rem;
-        margin-top: -59.5rem;
+        height: 1.3rem;
       }
     }
     .bortniansky {
@@ -468,7 +505,7 @@ dl {
         background-color: #8d67ab;
         width: 9rem;
         left: 44.25rem;
-        margin-top: -59.5rem;
+        height: 1.3rem;
       }
     }
     .clementi {
@@ -476,7 +513,7 @@ dl {
         background-color: #8d67ab;
         width: 9.8rem;
         left: 44.5rem;
-        margin-top: -59.5rem;
+        height: 1.3rem;
       }
     }
     .mozart {
@@ -484,7 +521,7 @@ dl {
         background-color: #8d67ab;
         width: 4.4rem;
         left: 45rem;
-        margin-top: -59.5rem;
+        height: 1.3rem;
       }
     }
     .cherubini {
@@ -492,7 +529,7 @@ dl {
         background-color: #8d67ab;
         width: 9.8rem;
         left: 45.8rem;
-        margin-top: -59.5rem;
+        height: 1.3rem;
       }
     }
     .beethoven {
@@ -500,7 +537,7 @@ dl {
         background-color: #8d67ab;
         width: 7rem;
         left: 47rem;
-        margin-top: -59.5rem;
+        height: 1.3rem;
       }
     }
     .field {
@@ -508,7 +545,7 @@ dl {
         background-color: #1072ec;
         width: 6.5rem;
         left: 48.5rem;
-        margin-top: -59.5rem;
+        height: 1.3rem;
       }
     }
     .paganini {
@@ -516,7 +553,7 @@ dl {
         background-color: #1072ec;
         width: 7.2rem;
         left: 48.5rem;
-        margin-top: -59.5rem;
+        height: 1.3rem;
       }
     }
     .weber {
@@ -524,7 +561,7 @@ dl {
         background-color: #1072ec;
         width: 5rem;
         left: 49.3rem;
-        margin-top: -59.5rem;
+        height: 1.3rem;
       }
     }
     .czemy {
@@ -532,7 +569,7 @@ dl {
         background-color: #1072ec;
         width: 8rem;
         left: 49.7rem;
-        margin-top: -59.5rem;
+        height: 1.3rem;
       }
     }
     .rossini {
@@ -540,15 +577,15 @@ dl {
         background-color: #1072ec;
         width: 9.7rem;
         left: 49.7rem;
-        margin-top: -59.5rem;
+        height: 1.3rem;
       }
     }
     .schubert {
       &:after {
         background-color: #1072ec;
-        width: 4rem;
+        width: 4.2rem;
         left: 50rem;
-        margin-top: -59.5rem;
+        height: 1.3rem;
       }
     }
     .donizetti {
@@ -556,7 +593,7 @@ dl {
         background-color: #1072ec;
         width: 6.3rem;
         left: 50rem;
-        margin-top: -59.5rem;
+        height: 1.3rem;
       }
     }
     .berlioz {
@@ -564,15 +601,15 @@ dl {
         background-color: #1072ec;
         width: 8.8rem;
         left: 50.6rem;
-        margin-top: -59.5rem;
+        height: 1.3rem;
       }
     }
     .mendelssohn {
       &:after {
         background-color: #1072ec;
-        width: 4.9rem;
+        width: 6rem;
         left: 51.2rem;
-        margin-top: -59.5rem;
+        height: 1.3rem;
       }
     }
     .chopin {
@@ -580,7 +617,7 @@ dl {
         background-color: #1072ec;
         width: 5.05rem;
         left: 51.4rem;
-        margin-top: -59.5rem;
+        height: 1.3rem;
       }
     }
     .schumann {
@@ -588,7 +625,7 @@ dl {
         background-color: #1072ec;
         width: 6.2rem;
         left: 51.4rem;
-        margin-top: -59.5rem;
+        height: 1.3rem;
       }
     }
     .liszt {
@@ -596,15 +633,15 @@ dl {
         background-color: #1072ec;
         width: 9.5rem;
         left: 51.8rem;
-        margin-top: -59.5rem;
+        height: 1.3rem;
       }
     }
     .wagner {
       &:after {
         background-color: #1072ec;
-        width: 8.5rem;
+        width: 8.6rem;
         left: 52.2rem;
-        margin-top: -59.5rem;
+        height: 1.3rem;
       }
     }
     .verdi {
@@ -612,15 +649,15 @@ dl {
         background-color: #1072ec;
         width: 10.6rem;
         left: 52.2rem;
-        margin-top: -59.5rem;
+        height: 1.4rem;
       }
     }
     .offenbach {
       &:after {
         background-color: #1072ec;
-        width: 7rem;
+        width: 7.2rem;
         left: 53.2rem;
-        margin-top: -59.5rem;
+        height: 1.3rem;
       }
     }
     .franck {
@@ -628,15 +665,15 @@ dl {
         background-color: #1072ec;
         width: 8rem;
         left: 53rem;
-        margin-top: -118.85rem;
+        height: 1.3rem;
       }
     }
     .smetana {
       &:after {
         background-color: #1072ec;
-        width: 6.4rem;
+        width: 6.5rem;
         left: 53.8rem;
-        margin-top: -118.85rem;
+        height: 1.3rem;
       }
     }
     .bruckner {
@@ -644,7 +681,7 @@ dl {
         background-color: #1072ec;
         width: 8.5rem;
         left: 53.8rem;
-        margin-top: -118.85rem;
+        height: 1.3rem;
       }
     }
     .strauss2 {
@@ -652,7 +689,7 @@ dl {
         background-color: #1072ec;
         width: 8.5rem;
         left: 54.2rem;
-        margin-top: -118.85rem;
+        height: 1.3rem;
       }
     }
     .brahms {
@@ -660,7 +697,7 @@ dl {
         background-color: #1072ec;
         width: 7.5rem;
         left: 55rem;
-        margin-top: -118.85rem;
+        height: 1.3rem;
       }
     }
     .borodin {
@@ -668,7 +705,7 @@ dl {
         background-color: #1072ec;
         width: 6.2rem;
         left: 55rem;
-        margin-top: -118.85rem;
+        height: 1.3rem;
       }
     }
     .saintsaens {
@@ -676,7 +713,7 @@ dl {
         background-color: #1072ec;
         width: 12rem;
         left: 55.4rem;
-        margin-top: -118.85rem;
+        height: 1.3rem;
       }
     }
     .bizet {
@@ -684,7 +721,7 @@ dl {
         background-color: #1072ec;
         width: 5rem;
         left: 55.8rem;
-        margin-top: -118.85rem;
+        height: 1.3rem;
       }
     }
     .mussorgsky {
@@ -692,7 +729,7 @@ dl {
         background-color: #1072ec;
         width: 5.4rem;
         left: 55.8rem;
-        margin-top: -118.85rem;
+        height: 1.3rem;
       }
     }
     .tchaikovsky {
@@ -700,7 +737,7 @@ dl {
         background-color: #1072ec;
         width: 5.8rem;
         left: 56rem;
-        margin-top: -118.85rem;
+        height: 1.3rem;
       }
     }
     .dvorak {
@@ -708,7 +745,7 @@ dl {
         background-color: #1072ec;
         width: 7.2rem;
         left: 56.2rem;
-        margin-top: -118.85rem;
+        height: 1.3rem;
       }
     }
     .grieg {
@@ -716,15 +753,15 @@ dl {
         background-color: #1072ec;
         width: 7.5rem;
         left: 56.2rem;
-        margin-top: -118.85rem;
+        height: 1.3rem;
       }
     }
     .rimsky {
       &:after {
         background-color: #1072ec;
-        width: 7.5rem;
+        width: 7.8rem;
         left: 56.3rem;
-        margin-top: -118.85rem;
+        height: 1.3rem;
       }
     }
     .faure {
@@ -732,7 +769,7 @@ dl {
         background-color: #1072ec;
         width: 9.4rem;
         left: 56.4rem;
-        margin-top: -118.85rem;
+        height: 1.3rem;
       }
     }
     .elgar {
@@ -740,7 +777,7 @@ dl {
         background-color: #1072ec;
         width: 11rem;
         left: 57.5rem;
-        margin-top: -118.85rem;
+        height: 1.3rem;
       }
     }
     .ysaye {
@@ -748,7 +785,7 @@ dl {
         background-color: #1072ec;
         width: 10rem;
         left: 57.5rem;
-        margin-top: -118.85rem;
+        height: 1.3rem;
       }
     }
     .puccini {
@@ -756,7 +793,7 @@ dl {
         background-color: #1072ec;
         width: 9rem;
         left: 57.5rem;
-        margin-top: -118.85rem;
+        height: 1.3rem;
       }
     }
     .mahler {
@@ -764,7 +801,7 @@ dl {
         background-color: #1072ec;
         width: 7.5rem;
         left: 57.7rem;
-        margin-top: -118.85rem;
+        height: 1.3rem;
       }
     }
     .delius {
@@ -772,7 +809,7 @@ dl {
         background-color: #1072ec;
         width: 10rem;
         left: 58rem;
-        margin-top: -118.85rem;
+        
       }
     }
     .debussy {
@@ -780,7 +817,7 @@ dl {
         background-color: #a56752;
         width: 8rem;
         left: 58rem;
-        margin-top: -118.85rem;
+        height: 1.3rem;
       }
     }
     .strauss {
@@ -788,7 +825,7 @@ dl {
         background-color: #1072ec;
         width: 9.6rem;
         left: 58.4rem;
-        margin-top: -118.85rem;
+        height: 1.3rem;
       }
     }
     .sibelius {
@@ -796,7 +833,7 @@ dl {
         background-color: #a56752;
         width: 9.6rem;
         left: 58.7rem;
-        margin-top: -118.85rem;
+        height: 1.3rem;
       }
     }
     .granados {
@@ -804,7 +841,7 @@ dl {
         background-color: #1072ec;
         width: 7rem;
         left: 59rem;
-        margin-top: -118.85rem;
+        height: 1.3rem;
       }
     }
     .vwilliams {
@@ -812,7 +849,7 @@ dl {
         background-color: #1072ec;
         width: 10.8rem;
         left: 59.8rem;
-        margin-top: -118.85rem;
+        height: 1.3rem;
       }
     }
     .rachmaninoff {
@@ -820,7 +857,7 @@ dl {
         background-color: #1072ec;
         width: 8.2rem;
         left: 60rem;
-        margin-top: -118.85rem;
+        height: 1.3rem;
       }
     }
     .schoenberg {
@@ -828,7 +865,7 @@ dl {
         background-color: #a56752;
         width: 9.3rem;
         left: 60.3rem;
-        margin-top: -118.85rem;
+        height: 1.3rem;
       }
     }
     .holst {
@@ -836,7 +873,7 @@ dl {
         background-color: #a56752;
         width: 7rem;
         left: 60.3rem;
-        margin-top: -118.85rem;
+        height: 1.3rem;
       }
     }
     .ives {
@@ -844,7 +881,7 @@ dl {
         background-color: #a56752;
         width: 9.8rem;
         left: 60.3rem;
-        margin-top: -118.85rem;
+        height: 1.3rem;
       }
     }
     .ravel {
@@ -852,7 +889,7 @@ dl {
         background-color: #a56752;
         width: 7.1rem;
         left: 60.55rem;
-        margin-top: -118.85rem;
+        height: 1.3rem;
       }
     }
     .falla {
@@ -860,7 +897,7 @@ dl {
         background-color: #a56752;
         width: 7.8rem;
         left: 60.8rem;
-        margin-top: -118.85rem;
+        height: 1.3rem;
       }
     }
     .bartok {
@@ -868,7 +905,7 @@ dl {
         background-color: #a56752;
         width: 7.25rem;
         left: 61.3rem;
-        margin-top: -118.85rem;
+        height: 1.3rem;
       }
     }
     .stravinsky {
@@ -876,7 +913,7 @@ dl {
         background-color: #a56752;
         width: 10.3rem;
         left: 61.5rem;
-        margin-top: -118.85rem;
+        height: 1.3rem;
       }
     }
     .varese {
@@ -884,7 +921,7 @@ dl {
         background-color: #e86718;
         width: 9.5rem;
         left: 61.5rem;
-        margin-top: -118.85rem;
+        height: 1.3rem;
       }
     }
     .prokofiev {
@@ -892,7 +929,7 @@ dl {
         background-color: #a56752;
         width: 8rem;
         left: 62.2rem;
-        margin-top: -118.85rem;
+        height: 1.3rem;
       }
     }
     .hindemith {
@@ -900,7 +937,7 @@ dl {
         background-color: #a56752;
         width: 8.2rem;
         left: 62.4rem;
-        margin-top: -118.85rem;
+        height: 1.3rem;
       }
     }
     .poulenc {
@@ -908,7 +945,7 @@ dl {
         background-color: #a56752;
         width: 7.8rem;
         left: 62.8rem;
-        margin-top: -118.85rem;
+        height: 1.3rem;
       }
     }
     .copland {
@@ -916,7 +953,7 @@ dl {
         background-color: #a56752;
         width: 11rem;
         left: 62.8rem;
-        margin-top: -118.85rem;
+        height: 1.3rem;
       }
     }
     .partch {
@@ -924,7 +961,7 @@ dl {
         background-color: #e86718;
         width: 9.4rem;
         left: 62.85rem;
-        margin-top: -118.85rem;
+        height: 1.3rem;
       }
     }
     .shostakovich {
@@ -932,7 +969,7 @@ dl {
         background-color: #a56752;
         width: 8.5rem;
         left: 64rem;
-        margin-top: -178.28rem;
+        height: 1.3rem;
       }
     }
     .messiaen {
@@ -940,7 +977,7 @@ dl {
         background-color: #a56752;
         width: 10rem;
         left: 64.4rem;
-        margin-top: -178.28rem;
+        height: 1.3rem;
       }
     }
     .barber {
@@ -948,7 +985,7 @@ dl {
         background-color: #a56752;
         width: 8.5rem;
         left: 65rem;
-        margin-top: -178.28rem;
+        height: 1.3rem;
       }
     }
     .cage {
@@ -956,7 +993,7 @@ dl {
         background-color: #e86718;
         width: 9rem;
         left: 65.5rem;
-        margin-top: -178.28rem;
+        height: 1.3rem;
       }
     }
     .lutoslawski {
@@ -964,7 +1001,7 @@ dl {
         background-color: #a56752;
         width: 9rem;
         left: 66rem;
-        margin-top: -178.28rem;
+        height: 1.3rem;
       }
     }
     .britten {
@@ -972,7 +1009,7 @@ dl {
         background-color: #a56752;
         width: 7rem;
         left: 66rem;
-        margin-top: -178.28rem;
+        height: 1.3rem;
       }
     }
     .britten {
@@ -980,7 +1017,7 @@ dl {
         background-color: #a56752;
         width: 7rem;
         left: 66rem;
-        margin-top: -178.28rem;
+        height: 1.3rem;
       }
     }
     .moondog {
@@ -988,7 +1025,7 @@ dl {
         background-color: #e86718;
         width: 9.1rem;
         left: 66.4rem;
-        margin-top: -178.28rem;
+        height: 1.3rem;
       }
     }
     .xenakis {
@@ -996,7 +1033,7 @@ dl {
         background-color: #e86718;
         width: 8.8rem;
         left: 67rem;
-        margin-top: -178.28rem;
+        height: 1.3rem;
       }
     }
     .ligeti {
@@ -1004,7 +1041,7 @@ dl {
         background-color: #e86718;
         width: 9.2rem;
         left: 67.2rem;
-        margin-top: -178.28rem;
+        height: 1.3rem;
       }
     }
     .boulez {
@@ -1012,7 +1049,7 @@ dl {
         background-color: #e86718;
         width: 10rem;
         left: 67.6rem;
-        margin-top: -178.28rem;
+        height: 1.3rem;
       }
     }
     .stockhausen {
@@ -1020,7 +1057,7 @@ dl {
         background-color: #e86718;
         width: 8.6rem;
         left: 68rem;
-        margin-top: -178.28rem;
+        height: 1.3rem;
       }
     }
     .rautavaara {
@@ -1028,7 +1065,7 @@ dl {
         background-color: #a56752;
         width: 9.5rem;
         left: 68rem;
-        margin-top: -178.28rem;
+        height: 1.3rem;
       }
     }
     .crumb {
@@ -1036,7 +1073,7 @@ dl {
         background-color: #e86718;
         width: 9.8rem;
         left: 68.3rem;
-        margin-top: -178.28rem;
+        height: 1.3rem;
       }
     }
     .gubaidulina {
@@ -1044,7 +1081,7 @@ dl {
         background-color: #e86718;
         width: 9.7rem;
         left: 68.4rem;
-        margin-top: -178.28rem;
+        height: 1.3rem;
       }
     }
     .shchedrin {
@@ -1052,7 +1089,7 @@ dl {
         background-color: #a56752;
         width: 9.7rem;
         left: 68.4rem;
-        margin-top: -178.28rem;
+        height: 1.3rem;
       }
     }
     .schnittke {
@@ -1060,7 +1097,7 @@ dl {
         background-color: #e86718;
         width: 7rem;
         left: 68.4rem;
-        margin-top: -178.28rem;
+        height: 1.3rem;
       }
     }
     .birtwistle {
@@ -1068,7 +1105,7 @@ dl {
         background-color: #a56752;
         width: 9.7rem;
         left: 68.4rem;
-        margin-top: -178.28rem;
+        height: 1.3rem;
       }
     }
     .riley {
@@ -1076,7 +1113,7 @@ dl {
         background-color: #e13400;
         width: 9.6rem;
         left: 68.5rem;
-        margin-top: -178.28rem;
+        height: 1.3rem;
       }
     }
     .young {
@@ -1084,7 +1121,7 @@ dl {
         background-color: #e13400;
         width: 9.6rem;
         left: 68.5rem;
-        margin-top: -178.28rem;
+        height: 1.3rem;
       }
     }
     .part {
@@ -1092,7 +1129,7 @@ dl {
         background-color: #e13400;
         width: 9.6rem;
         left: 68.5rem;
-        margin-top: -178.28rem;
+        height: 1.3rem;
       }
     }
     .reich {
@@ -1100,7 +1137,7 @@ dl {
         background-color: #e13400;
         width: 9.48rem;
         left: 68.7rem;
-        margin-top: -178.28rem;
+        height: 1.3rem;
       }
     }
     .glass {
@@ -1108,7 +1145,7 @@ dl {
         background-color: #e13400;
         width: 9.48rem;
         left: 68.7rem;
-        margin-top: -178.28rem;
+        height: 1.3rem;
       }
     }
     .adams {
@@ -1116,38 +1153,38 @@ dl {
         background-color: #e13400;
         width: 9.2rem;
         left: 69rem;
-        margin-top: -178.28rem;
+        height: 1.3rem;
       }
     }
 
 .dufayP {
   position: relative;
   color: white;
-  bottom: 214.8rem;
-  left: 5.5rem;
+  bottom: 213.05rem;
+  left: 5.3rem;
   font-weight: 600;
   font-size: .9rem;
 }
 .binchoisP {
   position: relative;
   color: white;
-  bottom: 215.2rem;
-  left: 5.6rem;
+  bottom: 213.45rem;
+  left: 5.4rem;
   font-weight: 600;
   font-size: .9rem;
 }
 .ockeghemP {
   position: relative;
   color: white;
-  bottom: 215.7rem;
-  left: 7.4rem;
+  bottom: 213.9rem;
+  left: 7.3rem;
   font-weight: 600;
   font-size: .9rem;
 }
 .busnoisP {
   position: relative;
   color: white;
-  bottom: 216.05rem;
+  bottom: 214.3rem;
   left: 9.4rem;
   font-weight: 600;
   font-size: .9rem;
@@ -1155,39 +1192,39 @@ dl {
 .tinctorisP {
   position: relative;
   color: white;
-  bottom: 216.4rem;
-  left: 10.2rem;
+  bottom: 214.65rem;
+  left: 10.15rem;
   font-weight: 600;
   font-size: .9rem;
 }
 .agricolaP {
   position: relative;
   color: white;
-  bottom: 216.85rem;
-  left: 11rem;
+  bottom: 215.05rem;
+  left: 10.95rem;
   font-weight: 600;
   font-size: .9rem;
 }
 .prezP {
   position: relative;
   color: white;
-  bottom: 217.2rem;
-  left: 11.6rem;
+  bottom: 215.5rem;
+  left: 11.5rem;
   font-weight: 600;
   font-size: .9rem;
 }
 .isaacP {
   position: relative;
   color: white;
-  bottom: 217.65rem;
-  left: 11.7rem;
+  bottom: 215.9rem;
+  left: 11.6rem;
   font-weight: 600;
   font-size: .9rem;
 }
 .rueP {
   position: relative;
   color: white;
-  bottom: 218rem;
+  bottom: 216.3rem;
   left: 12rem;
   font-weight: 600;
   font-size: .9rem;
@@ -1195,7 +1232,7 @@ dl {
 .obrechtP {
   position: relative;
   color: white;
-  bottom: 218.4rem;
+  bottom: 216.65rem;
   left: 12.9rem;
   font-weight: 600;
   font-size: .9rem;
@@ -1203,71 +1240,71 @@ dl {
 .janequinP {
   position: relative;
   color: white;
-  bottom: 218.9rem;
-  left: 15.5rem;
+  bottom: 217.1rem;
+  left: 15.6rem;
   font-weight: 600;
   font-size: .9rem;
 }
 .tavernerP {
   position: relative;
   color: white;
-  bottom: 219.2rem;
-  left: 17rem;
+  bottom: 217.48rem;
+  left: 16.9rem;
   font-weight: 600;
   font-size: .9rem;
 }
 .willaertP {
   position: relative;
   color: white;
-  bottom: 219.6rem;
-  left: 17rem;
+  bottom: 217.85rem;
+  left: 16.95rem;
   font-weight: 600;
   font-size: .9rem;
 }
 .gombertP {
   position: relative;
   color: white;
-  bottom: 220.1rem;
-  left: 17.3rem;
+  bottom: 218.25rem;
+  left: 17.25rem;
   font-weight: 600;
   font-size: .9rem;
 }
 .moralesP {
   position: relative;
   color: white;
-  bottom: 220.4rem;
-  left: 18.2rem;
+  bottom: 218.7rem;
+  left: 18.1rem;
   font-weight: 600;
   font-size: .9rem;
 }
 .milanP {
   position: relative;
   color: white;
-  bottom: 220.8rem;
-  left: 18.2rem;
+  bottom: 219.05rem;
+  left: 18.15rem;
   font-weight: 600;
   font-size: .9rem;
 }
 .tallisP {
   position: relative;
   color: white;
-  bottom: 221.2rem;
-  left: 18.8rem;
+  bottom: 219.45rem;
+  left: 18.6rem;
   font-weight: 600;
   font-size: .9rem;
 }
 .arcadeltP {
   position: relative;
   color: white;
-  bottom: 221.6rem;
-  left: 19rem;
+  bottom: 219.86rem;
+  left: 18.9rem;
   font-weight: 600;
   font-size: .9rem;
 }
 .palestrinaP {
   position: relative;
   color: white;
-  bottom: 222rem;
+  bottom: 220.25rem;
   left: 21.4rem;
   font-weight: 600;
   font-size: .9rem;
@@ -1275,15 +1312,15 @@ dl {
 .lassusP {
   position: relative;
   color: white;
-  bottom: 222.4rem;
-  left: 22.2rem;
+  bottom: 220.7rem;
+  left: 22.15rem;
   font-weight: 600;
   font-size: .9rem;
 }
 .byrdP {
   position: relative;
   color: white;
-  bottom: 222.8rem;
+  bottom: 221.05rem;
   left: 23.2rem;
   font-weight: 600;
   font-size: .9rem;
@@ -1291,7 +1328,7 @@ dl {
 .victoriaP {
   position: relative;
   color: white;
-  bottom: 223.2rem;
+  bottom: 221.45rem;
   left: 24.1rem;
   font-weight: 600;
   font-size: .9rem;
@@ -1299,23 +1336,23 @@ dl {
 .cacciniP {
   position: relative;
   color: white;
-  bottom: 223.65rem;
-  left: 24.2rem;
+  bottom: 221.9rem;
+  left: 24.1rem;
   font-weight: 600;
   font-size: .9rem;
 }
 .gabrieliP {
   position: relative;
   color: white;
-  bottom: 224rem;
-  left: 24.9rem;
+  bottom: 222.25rem;
+  left: 24.8rem;
   font-weight: 600;
   font-size: .9rem;
 }
 .sweelinckP {
   position: relative;
   color: white;
-  bottom: 224.4rem;
+  bottom: 222.7rem;
   left: 26rem;
   font-weight: 600;
   font-size: .9rem;
@@ -1323,7 +1360,7 @@ dl {
 .dowlandP {
   position: relative;
   color: white;
-  bottom: 224.8rem;
+  bottom: 223.05rem;
   left: 26.3rem;
   font-weight: 600;
   font-size: .9rem;
@@ -1331,7 +1368,7 @@ dl {
 .gesualdoP {
   position: relative;
   color: white;
-  bottom: 225.2rem;
+  bottom: 223.45rem;
   left: 26.7rem;
   font-weight: 600;
   font-size: .9rem;
@@ -1339,7 +1376,7 @@ dl {
 .monteverdiP {
   position: relative;
   color: white;
-  bottom: 225.6rem;
+  bottom: 223.9rem;
   left: 27rem;
   font-weight: 600;
   font-size: .9rem;
@@ -1347,15 +1384,15 @@ dl {
 .praetoriusP {
   position: relative;
   color: white;
-  bottom: 226rem;
-  left: 27.8rem;
+  bottom: 224.25rem;
+  left: 27.7rem;
   font-weight: 600;
   font-size: .9rem;
 }
 .schutzP {
   position: relative;
   color: white;
-  bottom: 226.5rem;
+  bottom: 224.65rem;
   left: 29rem;
   font-weight: 600;
   font-size: .9rem;
@@ -1363,7 +1400,7 @@ dl {
 .cavalliP {
   position: relative;
   color: white;
-  bottom: 226.8rem;
+  bottom: 225.05rem;
   left: 30.7rem;
   font-weight: 600;
   font-size: .9rem;
@@ -1371,7 +1408,7 @@ dl {
 .frobergerP {
   position: relative;
   color: white;
-  bottom: 227.2rem;
+  bottom: 225.5rem;
   left: 33rem;
   font-weight: 600;
   font-size: .9rem;
@@ -1379,7 +1416,7 @@ dl {
 .lullyP {
   position: relative;
   color: white;
-  bottom: 227.6rem;
+  bottom: 225.9rem;
   left: 34.45rem;
   font-weight: 600;
   font-size: .9rem;
@@ -1387,7 +1424,7 @@ dl {
 .buxtehudeP {
   position: relative;
   color: white;
-  bottom: 228rem;
+  bottom: 226.3rem;
   left: 35.2rem;
   font-weight: 600;
   font-size: .9rem;
@@ -1395,23 +1432,23 @@ dl {
 .charpentierP {
   position: relative;
   color: white;
-  bottom: 228.4rem;
-  left: 36rem;
+  bottom: 226.7rem;
+  left: 35.9rem;
   font-weight: 600;
   font-size: .9rem;
 }
 .corelliP {
   position: relative;
   color: white;
-  bottom: 228.8rem;
-  left: 37.4rem;
+  bottom: 227.05rem;
+  left: 37.3rem;
   font-weight: 600;
   font-size: .9rem;
 }
 .pachelbelP {
   position: relative;
   color: white;
-  bottom: 229.2rem;
+  bottom: 227.45rem;
   left: 37.4rem;
   font-weight: 600;
   font-size: .9rem;
@@ -1419,23 +1456,23 @@ dl {
 .purcellP {
   position: relative;
   color: white;
-  bottom: 229.6rem;
-  left: 38.1rem;
+  bottom: 227.8rem;
+  left: 38.05rem;
   font-weight: 600;
   font-size: .9rem;
 }
 .scarlattiP {
   position: relative;
-  color: red;
-  bottom: 289.5rem;
-  left: 37.8rem;
+  color: white;
+  bottom: 228.2rem;
+  left: 38.4rem;
   font-weight: 600;
   font-size: .9rem;
 }
 .couperinP {
   position: relative;
   color: white;
-  bottom: 289.95rem;
+  bottom: 228.6rem;
   left: 38.9rem;
   font-weight: 600;
   font-size: .9rem;
@@ -1443,7 +1480,7 @@ dl {
 .albinoniP {
   position: relative;
   color: white;
-  bottom: 290.25rem;
+  bottom: 229rem;
   left: 39.4rem;
   font-weight: 600;
   font-size: .9rem;
@@ -1451,23 +1488,23 @@ dl {
 .vivaldiP {
   position: relative;
   color: white;
-  bottom: 290.7rem;
-  left: 40.7rem;
+  bottom: 229.4rem;
+  left: 40.6rem;
   font-weight: 600;
   font-size: .9rem;
 }
 .telemannP {
   position: relative;
   color: white;
-  bottom: 291.1rem;
-  left: 41.4rem;
+  bottom: 229.8rem;
+  left: 41.3rem;
   font-weight: 600;
   font-size: .9rem;
 }
 .rameauP {
   position: relative;
   color: white;
-  bottom: 291.5rem;
+  bottom: 230.2rem;
   left: 41.8rem;
   font-weight: 600;
   font-size: .9rem;
@@ -1475,7 +1512,7 @@ dl {
 .jsbachP {
   position: relative;
   color: white;
-  bottom: 291.9rem;
+  bottom: 230.6rem;
   left: 42rem;
   font-weight: 600;
   font-size: .9rem;
@@ -1483,8 +1520,736 @@ dl {
 .dscarlattiP {
   position: relative;
   color: white;
-  bottom: 294.4rem;
+  bottom: 231rem;
   left: 42rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.handelP {
+  position: relative;
+  color: white;
+  bottom: 231.4rem;
+  left: 42rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.hasseP {
+  position: relative;
+  color: white;
+  bottom: 231.8rem;
+  left: 43.1rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.pergolesiP {
+  position: relative;
+  color: white;
+  bottom: 232.2rem;
+  left: 44.6rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.gluckP {
+  position: relative;
+  color: white;
+  bottom: 232.6rem;
+  left: 45.1rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.cpebachP {
+  position: relative;
+  color: white;
+  bottom: 233rem;
+  left: 45.1rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.stamitzP {
+  position: relative;
+  color: white;
+  bottom: 233.4rem;
+  left: 45.6rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.solerP {
+  position: relative;
+  color: white;
+  bottom: 233.8rem;
+  left: 45.6rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.haydnP {
+  position: relative;
+  color: white;
+  bottom: 234.2rem;
+  left: 46rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.jcbachP {
+  position: relative;
+  color: white;
+  bottom: 234.6rem;
+  left: 46.8rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.salieriP {
+  position: relative;
+  color: white;
+  bottom: 235rem;
+  left: 49.4rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.bortnianskyP {
+  position: relative;
+  color: white;
+  bottom: 235.4rem;
+  left: 49.6rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.clementiP {
+  position: relative;
+  color: white;
+  bottom: 235.8rem;
+  left: 49.8rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.mozartP {
+  position: relative;
+  color: white;
+  bottom: 236.2rem;
+  left: 50.3rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.cherubiniP {
+  position: relative;
+  color: white;
+  bottom: 236.6rem;
+  left: 51.1rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.beethovenP {
+  position: relative;
+  color: white;
+  bottom: 237rem;
+  left: 52.3rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.fieldP {
+  position: relative;
+  color: white;
+  bottom: 237.36rem;
+  left: 53.8rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.paganiniP {
+  position: relative;
+  color: white;
+  bottom: 237.8rem;
+  left: 53.8rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.weberP {
+  position: relative;
+  color: white;
+  bottom: 238.18rem;
+  left: 54.55rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.czemyP {
+  position: relative;
+  color: white;
+  bottom: 238.6rem;
+  left: 55.05rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.rossiniP {
+  position: relative;
+  color: white;
+  bottom: 239rem;
+  left: 55rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.schubertP {
+  position: relative;
+  color: white;
+  bottom: 239.3rem;
+  left: 55.1rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.donizettiP {
+  position: relative;
+  color: white;
+  bottom: 239.75rem;
+  left: 55.2rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.berliozP {
+  position: relative;
+  color: white;
+  bottom: 240.2rem;
+  left: 55.8rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.mendelssohnP {
+  position: relative;
+  color: white;
+  bottom: 240.5rem;
+  left: 56.4rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.chopinP {
+  position: relative;
+  color: white;
+  bottom: 241rem;
+  left: 56.6rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.schumannP {
+  position: relative;
+  color: white;
+  bottom: 241.4rem;
+  left: 56.6rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.lisztP {
+  position: relative;
+  color: white;
+  bottom: 241.8rem;
+  left: 57.1rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.wagnerP {
+  position: relative;
+  color: white;
+  bottom: 242.2rem;
+  left: 57.4rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.verdiP {
+  position: relative;
+  color: white;
+  bottom: 242.6rem;
+  left: 57.5rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.offenbachP {
+  position: relative;
+  color: white;
+  bottom: 242.95rem;
+  left: 58.5rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.franckP {
+  position: relative;
+  color: white;
+  bottom: 243.4rem;
+  left: 58.3rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.smetanaP {
+  position: relative;
+  color: white;
+  bottom: 243.8rem;
+  left: 59.1rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.brucknerP {
+  position: relative;
+  color: white;
+  bottom: 244.25rem;
+  left: 59.1rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.strauss2P {
+  position: relative;
+  color: white;
+  bottom: 244.6rem;
+  left: 59.45rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.brahmsP {
+  position: relative;
+  color: white;
+  bottom: 245rem;
+  left: 60.4rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.borodinP {
+  position: relative;
+  color: white;
+  bottom: 245.4rem;
+  left: 60.4rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.saintsaensP {
+  position: relative;
+  color: white;
+  bottom: 245.8rem;
+  left: 60.7rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.bizetP {
+  position: relative;
+  color: white;
+  bottom: 246.1rem;
+  left: 61rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.mussorgskyP {
+  position: relative;
+  color: white;
+  bottom: 246.6rem;
+  left: 61rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.tchaikovskyP {
+  position: relative;
+  color: white;
+  bottom: 247rem;
+  left: 61.2rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.dvorakP {
+  position: relative;
+  color: white;
+  bottom: 247.35rem;
+  left: 61.4rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.griegP {
+  position: relative;
+  color: white;
+  bottom: 247.8rem;
+  left: 61.5rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.rimskyP {
+  position: relative;
+  color: white;
+  bottom: 248.2rem;
+  left: 61.5rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.faureP {
+  position: relative;
+  color: white;
+  bottom: 248.6rem;
+  left: 61.7rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.elgarP {
+  position: relative;
+  color: white;
+  bottom: 249rem;
+  left: 62.9rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.ysayeP {
+  position: relative;
+  color: white;
+  bottom: 249.4rem;
+  left: 62.8rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.pucciniP {
+  position: relative;
+  color: white;
+  bottom: 249.8rem;
+  left: 62.8rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.mahlerP {
+  position: relative;
+  color: white;
+  bottom: 250.2rem;
+  left: 63rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.deliusP {
+  position: relative;
+  color: white;
+  bottom: 250.75rem;
+  left: 63.3rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.debussyP {
+  position: relative;
+  color: white;
+  bottom: 251.3rem;
+  left: 63.3rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.straussP {
+  position: relative;
+  color: white;
+  bottom: 251.7rem;
+  left: 63.7rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.sibeliusP {
+  position: relative;
+  color: white;
+  bottom: 252rem;
+  left: 64rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.granadosP {
+  position: relative;
+  color: white;
+  bottom: 252.5rem;
+  left: 64.2rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.vwilliamsP {
+  position: relative;
+  color: white;
+  bottom: 252.85rem;
+  left: 65.1rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.rachmaninoffP {
+  position: relative;
+  color: white;
+  bottom: 253.25rem;
+  left: 65.3rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.schoenbergP {
+  position: relative;
+  color: white;
+  bottom: 253.7rem;
+  left: 65.5rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.holstP {
+  position: relative;
+  color: white;
+  bottom: 254rem;
+  left: 65.5rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.ivesP {
+  position: relative;
+  color: white;
+  bottom: 254.45rem;
+  left: 65.6rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.ravelP {
+  position: relative;
+  color: white;
+  bottom: 254.9rem;
+  left: 65.8rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.fallaP {
+  position: relative;
+  color: white;
+  bottom: 255.25rem;
+  left: 66.1rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.bartokP {
+  position: relative;
+  color: white;
+  bottom: 255.65rem;
+  left: 66.6rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.stravinskyP {
+  position: relative;
+  color: white;
+  bottom: 256.1rem;
+  left: 66.75rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.vareseP {
+  position: relative;
+  color: white;
+  bottom: 256.45rem;
+  left: 66.75rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.prokofievP {
+  position: relative;
+  color: white;
+  bottom: 256.8rem;
+  left: 67.5rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.hindemithP {
+  position: relative;
+  color: white;
+  bottom: 257.25rem;
+  left: 67.6rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.poulencP {
+  position: relative;
+  color: white;
+  bottom: 257.65rem;
+  left: 68rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.coplandP {
+  position: relative;
+  color: white;
+  bottom: 258.05rem;
+  left: 68rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.partchP {
+  position: relative;
+  color: white;
+  bottom: 258.45rem;
+  left: 68.1rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.shostakovichP {
+  position: relative;
+  color: white;
+  bottom: 258.8rem;
+  left: 69.3rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.messiaenP {
+  position: relative;
+  color: white;
+  bottom: 259.2rem;
+  left: 69.7rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.barberP {
+  position: relative;
+  color: white;
+  bottom: 259.65rem;
+  left: 70.3rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.cageP {
+  position: relative;
+  color: white;
+  bottom: 260.1rem;
+  left: 70.75rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.lutoslawskiP {
+  position: relative;
+  color: white;
+  bottom: 260.45rem;
+  left: 71.25rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.brittenP {
+  position: relative;
+  color: white;
+  bottom: 260.85rem;
+  left: 71.25rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.moondogP {
+  position: relative;
+  color: white;
+  bottom: 261.3rem;
+  left: 71.6rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.xenakisP {
+  position: relative;
+  color: white;
+  bottom: 261.6rem;
+  left: 72.3rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.ligetiP {
+  position: relative;
+  color: white;
+  bottom: 262rem;
+  left: 72.4rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.boulezP {
+  position: relative;
+  color: white;
+  bottom: 262.5rem;
+  left: 72.8rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.stockhausenP {
+  position: relative;
+  color: white;
+  bottom: 262.8rem;
+  left: 73.3rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.rautavaaraP {
+  position: relative;
+  color: white;
+  bottom: 263.25rem;
+  left: 73.3rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.crumbP {
+  position: relative;
+  color: white;
+  bottom: 263.65rem;
+  left: 73.5rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.gubaidulinaP {
+  position: relative;
+  color: white;
+  bottom: 264rem;
+  left: 73.6rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.shchedrinP {
+  position: relative;
+  color: white;
+  bottom: 264.5rem;
+  left: 73.6rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.schnittkeP {
+  position: relative;
+  color: white;
+  bottom: 264.8rem;
+  left: 73.6rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.birtwistleP {
+  position: relative;
+  color: white;
+  bottom: 265.2rem;
+  left: 73.6rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.rileyP {
+  position: relative;
+  color: white;
+  bottom: 265.65rem;
+  left: 73.7rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.youngP {
+  position: relative;
+  color: white;
+  bottom: 266.1rem;
+  left: 73.7rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.partP {
+  position: relative;
+  color: white;
+  bottom: 266.4rem;
+  left: 73.7rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.reichP {
+  position: relative;
+  color: white;
+  bottom: 266.8rem;
+  left: 74rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.glassP {
+  position: relative;
+  color: white;
+  bottom: 267.2rem;
+  left: 74rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.adamsP {
+  position: relative;
+  color: white;
+  bottom: 267.65rem;
+  left: 74.2rem;
   font-weight: 600;
   font-size: .9rem;
 }

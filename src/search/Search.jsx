@@ -128,7 +128,6 @@ const ComposerDiv = styled('div')({
     flexDirection: 'row',
     flexWrap: 'wrap',
     position: 'relative',
-    left: '-2rem',
     top: '3.5rem',
     gap: '.5rem',
     justifyContent: 'center',
@@ -366,148 +365,423 @@ export const Search = ({composerData}) => {
             <span className="text">2000</span>
         </div>
         </dl>
-        <p className="dufayP">Dufay</p>
-        <p className="binchoisP">Binchois</p>
-        <p className="ockeghemP">Ockeghem</p>
-        <p className="busnoisP">Busnois</p>
-        <p className="tinctorisP">Tinctoris</p>
-        <p className="agricolaP">Agricola</p>
-        <p className="prezP">Josquin des Prez</p>
-        <p className="isaacP">Isaac</p>
-        <p className="rueP">de la Rue</p>
-        <p className="obrechtP">Obrecht</p>
-        <p className="janequinP">Janequin</p>
-        <p className="tavernerP">Taverner</p>
-        <p className="willaertP">Willaert</p>
-        <p className="gombertP">Gombert</p>
-        <p className="moralesP">Morales</p>
-        <p className="milanP">de Milan</p>
-        <p className="tallisP">Tallis</p>
-        <p className="arcadeltP">Acradelt</p>
-        <p className="palestrinaP">Palestrina</p>
-        <p className="lassusP">Lassus</p>
-        <p className="byrdP">Byrd</p>
-        <p className="victoriaP">Victoria</p>
-        <p className="cacciniP">Caccini</p>
-        <p className="gabrieliP">Gabrieli</p>
-        <p className="sweelinckP">Sweelinck</p>
-        <p className="dowlandP">Dowland</p>
-        <p className="gesualdoP">Gesualdo</p> 
-        <p className="monteverdiP">Monteverdi</p> 
-        <p className="praetoriusP">Praetorius</p> 
-        <p className="schutzP">Schütz</p> 
-        <p className="cavalliP">Cavalli</p>
-        <p className="frobergerP">Froberger</p>
-        <p className="lullyP">Lully</p>
-        <p className="buxtehudeP">Buxtehude</p>
-        <p className="charpentierP">Charpentier</p>
-        <p className="corelliP">Corelli</p>
-        <p className="pachelbelP">Pachelbel</p>
-        <p className="purcellP">Purcell</p>
-        <p className="scarlattiP">Scarlatti</p> 
-        <p className="couperinP">Couperin</p> 
-        <p className="albinoniP">Albinoni</p>
-        <p className="vivaldiP">Vivaldi</p>
-        <p className="telemannP">Telemann</p>
-        <p className="rameauP">Rameau</p>
-        <p className="jsbachP">JS Bach</p> dscarlatti
-        <p className="dscarlattiP">D Scarlatti</p>
-        <p className="handelP">Handel</p>
-        <p className="hasseP">Hasse</p>
-        <p className="pergolesiP">Pergolesi</p>
-        <p className="gluckP">Gluck</p>
-        <p className="cpebachP">CPE Bach</p>
-        <p className="stamitzP">Stamitz</p>
-        <p className="solerP">Soler</p>
-        <p className="haydnP">Haydn</p>
-        <p className="jcbachP">JC Bach</p>
-        <p className="salieriP">Salieri</p>
-        <p className="bortnianskyP">Bortniansky</p>
-        <p className="clementiP">Clementi</p>
-        <p className="mozartP">Mozart</p>
-        <p className="cherubiniP">Cherubini</p>
-        <p className="beethovenP">Beethoven</p>
-        <p className="fieldP">Field</p>
-        <p className="paganiniP">Paganini</p>
-        <p className="weberP">Weber</p>
-        <p className="czemyP">Czemy</p>
-        <p className="rossiniP">Rossini</p>
-        <p className="schubertP">Schubert</p>
-        <p className="donizettiP">Donizetti</p>
-        <p className="berliozP">Berlioz</p>
-        <p className="mendelssohnP">Mendelssohn</p>
-        <p className="chopinP">Chopin</p>
-        <p className="schumannP">Schumann</p>
-        <p className="lisztP">Liszt</p>
-        <p className="wagnerP">Wagner</p>
-        <p className="verdiP">Verdi</p>
-        <p className="offenbachP">Offenbach</p>
-        <p className="franckP">Franck</p>
-        <p className="smentanaP">Smetana</p>
-        <p className="brucknerP">Bruckner</p>
-        <p className="strauss2P">Johann Strauss II</p>
-        <p className="brahmsP">Brahms</p>
-        <p className="borodinP">Borodin</p>
-        <p className="saintsaensP">Saint-Saëns</p>
-        <p className="bizetP">Bizet</p>
-        <p className="mussorgskyP">Mussorgsky</p>
-        <p className="tchaikovskyP">Tchaikovsky</p>
-        <p className="dvorakP">Dvořák</p>
-        <p className="griegP">Grieg</p>
-        <p className="rimskyP">Rimsky-Korsakov</p>
-        <p className="faureP">Fauré</p>
-        <p className="elgarP">Elgar</p>
-        <p className="ysayeP">Ysaÿe</p>
-        <p className="pucciniP">Puccini</p>
-        <p className="mahlerP">Mahler</p>
-        <p className="deliusP">Delius</p>
-        <p className="debussyP">Debussy</p>
-        <p className="straussP">Richard Strauss</p>
-        <p className="sibeliusP">Sibelius</p>
-        <p className="granadosP">Granados</p>
-        <p className="vwilliamsP">Vaughan Williams</p>
-        <p className="rachmaninoffP">Rachmaninoff</p>
-        <p className="schoenbergP">Schoenberg</p>
-        <p className="holstP">Holst</p>
-        <p className="ivesP">Ives</p>
-        <p className="ravelP">Ravel</p>
-        <p className="fallaP">de Falla</p>
-        <p className="bartokP">Bartók</p>
-        <p className="stravinskyP">Stravinsky</p>
-        <p className="vareseP">Varèse</p>
-        <p className="prokofievP">Prokofiev</p>
-        <p className="hindemithP">Hindemith</p>
-        <p className="poulencP">Poulenc</p>
-        <p className="coplandP">Copland</p>
-        <p className="partchP">Partch</p>
-        <p className="shostakovichP">Shostakovich</p>
-        <p className="messiaenP">Messiaen</p>
-        <p className="barberP">Barber</p>
-        <p className="lutoslawskiP">Lutoslawski</p>
-        <p className="brittenP">Britten</p>
-        <p className="moondogP">Moondog</p>
-        <p className="xenakisP">Xenakis</p>
-        <p className="ligetiP">Ligeti</p>
-        <p className="boulezP">Boulez</p>
-        <p className="stockhausenP">Stockhausen</p>
-        <p className="rautavaaraP">Rautavaara</p>
-        <p className="crumbP">Crumb</p>
-        <p className="gubaidulinaP">Gubaidulina</p>
-        <p className="shchedrinP">Shchedrin</p>
-        <p className="schnittkeP">Schnittke</p>
-        <p className="birtwistleP">Birtwistle</p>
-        <p className="rileyP">Riley</p>
-        <p className="youngP">Young</p>
-        <p className="partP">Pärt</p>
-        <p className="reichP">Reich</p>
-        <p className="glassP">Glass</p>
-        <p className="adamsP">Adams</p>
+        <div onClick={() => navigate('../results')}>
+        <p className="dufayP" onClick={() => dispatch(setComposerName('Guillaume Dufay'))}>Dufay</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p className="binchoisP" onClick={() => dispatch(setComposerName('Gilles Binchois'))}>Binchois</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p className="ockeghemP" onClick={() => dispatch(setComposerName('Johannes Ockeghem'))}>Ockeghem</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p className="busnoisP" onClick={() => dispatch(setComposerName('Antoine Busnois'))}>Busnois</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p className="tinctorisP" onClick={() => dispatch(setComposerName('Johannes Tinctoris'))}>Tinctoris</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p className="agricolaP" onClick={() => dispatch(setComposerName('Alexander Agricola'))}>Agricola</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p className="prezP" onClick={() => dispatch(setComposerName('Josquin des Prez'))}>Josquin des Prez</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p className="isaacP" onClick={() => dispatch(setComposerName('Heinrich Isaac'))}>Isaac</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p className="rueP" onClick={() => dispatch(setComposerName('Pierre de la Rue'))}>de la Rue</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p className="obrechtP" onClick={() => dispatch(setComposerName('Jacob Obrecht'))}>Obrecht</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p className="janequinP" onClick={() => dispatch(setComposerName('Clément Janequin'))}>Janequin</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p className="tavernerP" onClick={() => dispatch(setComposerName('John Taverner'))}>Taverner</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p className="willaertP" onClick={() => dispatch(setComposerName('Adrian Willaert'))}>Willaert</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p className="gombertP" onClick={() => dispatch(setComposerName('Nicolas Gombert'))}>Gombert</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p className="moralesP" onClick={() => dispatch(setComposerName('Cristóbal de Morales'))}>Morales</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p className="milanP" onClick={() => dispatch(setComposerName('Luis de Milán'))}>de Milan</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p className="tallisP" onClick={() => dispatch(setComposerName('Thomas Tallis'))}>Tallis</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p className="arcadeltP" onClick={() => dispatch(setComposerName('Jacques Arcadelt'))}>Acradelt</p>
+        </div>
+        <div onClick={() => navigate('../results')}> 
+        <p className="palestrinaP" onClick={() => dispatch(setComposerName('Giovanni Pierluigi da Palestrina'))}>Palestrina</p>
+        </div>
+        <div onClick={() => navigate('../results')}> 
+        <p className="lassusP" onClick={() => dispatch(setComposerName('Orlande de Lassus'))}>Lassus</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p className="byrdP" onClick={() => dispatch(setComposerName('William Byrd'))}>Byrd</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p className="victoriaP" onClick={() => dispatch(setComposerName('Tomás Luis de Victoria'))}>Victoria</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p className="cacciniP" onClick={() => dispatch(setComposerName('Giulio Caccini'))}>Caccini</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p className="gabrieliP" onClick={() => dispatch(setComposerName('Giovanni Gabrieli'))}>Gabrieli</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p className="sweelinckP" onClick={() => dispatch(setComposerName('Jan Pieterszoon Sweelinck'))}>Sweelinck</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p className="dowlandP" onClick={() => dispatch(setComposerName('John Dowland'))}>Dowland</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p className="gesualdoP" onClick={() => dispatch(setComposerName('Carlo Gesualdo'))}>Gesualdo</p> 
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p className="monteverdiP" onClick={() => dispatch(setComposerName('Claudio Monteverdi'))}>Monteverdi</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p className="praetoriusP" onClick={() => dispatch(setComposerName('Claudio Monteverdi'))}>Praetorius</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Heinrich Schütz'))} className="schutzP">Schütz</p> 
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Francesco Cavalli'))} className="cavalliP">Cavalli</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Johann Jakob Froberger'))} className="frobergerP">Froberger</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Jean-Baptiste Lully"'))} className="lullyP">Lully</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Dieterich Buxtehude'))} className="buxtehudeP">Buxtehude</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Marc-Antoine Charpentier'))} className="charpentierP">Charpentier</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Arcangelo Corelli'))} className="corelliP">Corelli</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Johann Pachelbel'))} className="pachelbelP">Pachelbel</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Henry Purcell'))} className="purcellP">Purcell</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Alessandro Scarlatti'))} className="scarlattiP">Scarlatti</p> 
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('François Couperin'))} className="couperinP">Couperin</p> 
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Tomaso Albinoni'))} className="albinoniP">Albinoni</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Antonio Vivaldi'))} className="vivaldiP">Vivaldi</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Georg Philipp Telemann'))} className="telemannP">Telemann</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Jean-Philippe Rameau'))} className="rameauP">Rameau</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Johann Sebastian Bach'))} className="jsbachP">JS Bach</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Domenico Scarlatti'))} className="dscarlattiP">D Scarlatti</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('George Frideric Handel'))} className="handelP">Handel</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Johann Adolf Hasse'))} className="hasseP">Hasse</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Giovanni Battista Pergolesi'))} className="pergolesiP">Pergolesi</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Christoph Willibald Gluck'))} className="gluckP">Gluck</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Carl Philipp Emanuel Bach'))} className="cpebachP">CPE Bach</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Johann Stamitz'))} className="stamitzP">Stamitz</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Antonio Soler'))} className="solerP">Soler</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Joseph Haydn'))} className="haydnP">Haydn</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Johann Christian Bach'))} className="jcbachP">JC Bach</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Antonio Salieri'))} className="salieriP">Salieri</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Dmitry Bortniansky'))} className="bortnianskyP">Bortniansky</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Muzio Clementi'))} className="clementiP">Clementi</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Wolfgang Amadeus Mozart'))} className="mozartP">Mozart</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Luigi Cherubini'))} className="cherubiniP">Cherubini</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Ludwig van Beethoven'))} className="beethovenP">Beethoven</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('John Field'))} className="fieldP">Field</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Niccolò Paganini'))} className="paganiniP">Paganini</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Carl Maria von Weber'))} className="weberP">Weber</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Carl Czerny'))} className="czemyP">Czemy</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Gioachino Rossini'))} className="rossiniP">Rossini</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Franz Schubert'))} className="schubertP">Schubert</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Gaetano Donizetti'))} className="donizettiP">Donizetti</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Hector Berlioz'))} className="berliozP">Berlioz</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Felix Mendelssohn'))} className="mendelssohnP">Mendelssohn</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Frédéric Chopin'))} className="chopinP">Chopin</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Robert Schumann'))} className="schumannP">Schumann</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Franz Liszt'))} className="lisztP">Liszt</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Richard Wagner'))} className="wagnerP">Wagner</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Giuseppe Verdi'))} className="verdiP">Verdi</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Jacques Offenbach'))} className="offenbachP">Offenbach</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('César Franck'))} className="franckP">Franck</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Bedřich Smetana'))} className="smetanaP">Smetana</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Anton Bruckner'))} className="brucknerP">Bruckner</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Johann Strauss II'))} className="strauss2P">Johann Strauss II</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Johannes Brahms'))} className="brahmsP">Brahms</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Alexander Borodin'))} className="borodinP">Borodin</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Camille Saint-Saëns'))} className="saintsaensP">Saint-Saëns</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Georges Bizet'))} className="bizetP">Bizet</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Modest Mussorgsky'))} className="mussorgskyP">Mussorgsky</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Pyotr Ilyich Tchaikovsky'))} className="tchaikovskyP">Tchaikovsky</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Antonín Dvořák'))} className="dvorakP">Dvořák</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Edvard Grieg'))} className="griegP">Grieg</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Nikolai Rimsky-Korsakov'))} className="rimskyP">Rimsky-Korsakov</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Gabriel Fauré'))} className="faureP">Fauré</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Edward Elgar'))} className="elgarP">Elgar</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Eugène Ysaÿe'))} className="ysayeP">Ysaÿe</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Giacomo Puccini'))} className="pucciniP">Puccini</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Gustav Mahler'))} className="mahlerP">Mahler</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Frederick Delius'))} className="deliusP">Delius</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Claude Debussy'))} className="debussyP">Debussy</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Richard Strauss'))} className="straussP">Richard Strauss</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Jean Sibelius'))} className="sibeliusP">Sibelius</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Enrique Granados'))} className="granadosP">Granados</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Ralph Vaughan Williams'))} className="vwilliamsP">Vaughan Williams</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Sergei Rachmaninoff'))} className="rachmaninoffP">Rachmaninoff</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Arnold Schoenberg'))} className="schoenbergP">Schoenberg</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Gustav Holst'))} className="holstP">Holst</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Charles Ives'))} className="ivesP">Ives</p>
+        </div>        
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Maurice Ravel'))} className="ravelP">Ravel</p>
+        </div>        
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Manuel de Falla'))} className="fallaP">de Falla</p>
+        </div>        
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Béla Bartók'))} className="bartokP">Bartók</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Igor Stravinsky'))} className="stravinskyP">Stravinsky</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Edgard Varèse'))} className="vareseP">Varèse</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Sergei Prokofiev'))} className="prokofievP">Prokofiev</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Paul Hindemith'))} className="hindemithP">Hindemith</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Francis Poulenc'))} className="poulencP">Poulenc</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Aaron Copland'))} className="coplandP">Copland</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Harry Partch'))} className="partchP">Partch</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Dmitri Shostakovich'))} className="shostakovichP">Shostakovich</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Olivier Messiaen'))} className="messiaenP">Messiaen</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Samuel Barber'))} className="barberP">Barber</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('John Cage'))} className="cageP">Cage</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Witold Lutosławski'))} className="lutoslawskiP">Lutoslawski</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Benjamin Britten'))} className="brittenP">Britten</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Moondog'))} className="moondogP">Moondog</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Iannis Xenakis'))} className="xenakisP">Xenakis</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('György Ligeti'))} className="ligetiP">Ligeti</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Pierre Boulez'))} className="boulezP">Boulez</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Karlheinz Stockhausen'))} className="stockhausenP">Stockhausen</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Einojuhani Rautavaara'))} className="rautavaaraP">Rautavaara</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('George Crumb'))} className="crumbP">Crumb</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Sofia Gubaidulina'))} className="gubaidulinaP">Gubaidulina</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Rodion Shchedrin'))} className="shchedrinP">Shchedrin</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Alfred Schnittke'))} className="schnittkeP">Schnittke</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Harrison Birtwistle'))} className="birtwistleP">Birtwistle</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Terry Riley'))} className="rileyP">Riley</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('La Monte Young'))} className="youngP">Young</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Arvo Pärt'))} className="partP">Pärt</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Steve Reich'))} className="reichP">Reich</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('Philip Glass'))} className="glassP">Glass</p>
+        </div>
+        <div onClick={() => navigate('../results')}>
+        <p onClick={() => dispatch(setComposerName('John Adams'))} className="adamsP">Adams</p>
+        </div>
 
 
 
         <Space></Space>
     </EverythingDiv>
-
+ 
     )    
     }
 
